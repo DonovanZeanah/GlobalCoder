@@ -1,3 +1,0 @@
-This is the first example of text inserted from Minerva.
-
-A textfile will do line breaks.

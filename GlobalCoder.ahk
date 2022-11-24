@@ -77,6 +77,8 @@ pBitmap := Gdip_CreateBitmapFromFile("LoadingGraphics\Hourglass.png")
 Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2 - 128, A_ScreenHeight/2 - 128, Width/2, Height/2, 0, 0, Width, Height)
 
 ; Graphic has at this point been drawn, but view is not yet updated. Waiting to update view until script is called
+
+
 return
 
 ; CODE AUTO-EXECUTE ENDS HERE
@@ -93,7 +95,6 @@ PrepareMenu(PATH)
 
 	; Add Name, Icon and seperating line
 	Menu, %PATH%, Add, % ScriptName " vers. " Version, Github									; Name
-	Menu, %PATH%, Icon,% ScriptName " vers. " Version, %A_ScriptDir%\Icon\Minerva-logo.png 		; Logo
 	Menu, %PATH%, Add, 																			; seperating 
 		
 	; Add all custom items using algorithm 
@@ -437,6 +438,8 @@ GuiClose1(hWnd) {
     MsgBox, The Gui with title "%windowTitle%" has been closed!
     ExitApp
 }
+
+
 
 ; ---- Handlers ----
 
