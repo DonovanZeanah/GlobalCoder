@@ -11,7 +11,6 @@
 setbatchlines,-1
 SetTitleMatchMode, 2
 DetectHiddenWindows, on
-
 ;===================================================== Sometimes Changing Directives
 SetKeyDelay, 50
 Menu, Tray, Icon , Shell32.dll, 14 , 1
@@ -35,10 +34,9 @@ global MyProgress := 0
 Global TotalWords := 0
 
 ; comment if Gdip.ahk is in your standard library
-#Include, LoadingGraphics\Gdip.ahk 				
+#Include, includes\singles\Gdip.ahk 				
 
-; Change tray icon from default
-Menu, Tray, Icon, %A_ScriptDir%\icon\campfire.ico
+
 
 ; Get amount of items in folder and prepare the menu
 FindAmountItems()	
@@ -73,10 +71,12 @@ pBrush 	:= Gdip_BrushCreateSolid(0x80C7C7C7)
 Gdip_FillRectangle(G, pBrush, 0, 0, A_ScreenWidth, A_ScreenHeight)
 
 ; Create Hourglass image and draw it onto screen
-pBitmap := Gdip_CreateBitmapFromFile("LoadingGraphics\Hourglass.png")
-Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2 - 128, A_ScreenHeight/2 - 128, Width/2, Height/2, 0, 0, Width, Height)
+pBitmap := Gdip_CreateBitmapFromFile("includes\graphics\globe.png")
+Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0, 0, Width, Height)
 
 ; Graphic has at this point been drawn, but view is not yet updated. Waiting to update view until script is called
+;This is the first example of text inserted from Minerva.
+
 
 
 return
