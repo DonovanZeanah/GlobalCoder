@@ -12,7 +12,7 @@ Features:
 - "Global Google" - the fastest way to query google; skipping necessity for using browser UI
 - Git commands - remember shortcuts not strings.
 
-/*
+
 
 GlobalCoder: Purpose and Value-Statement:
                         [ CODING & LEARNING *UNITOOL* ]
@@ -30,9 +30,9 @@ GlobalCoder: Purpose and Value-Statement:
     -Quick SHortcuts
     -
     -
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 FOR:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 [Instructor - features:]
     -Presentation - mode -> non window specific drawing
@@ -87,3 +87,6 @@ FOR:
         ( universal editor-likeness )
         -hotkeys to remap/changing IDE shortcut keys to map to 
         -hotkeys converted to hotstring/menu items per window-instance
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

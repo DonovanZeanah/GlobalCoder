@@ -1,0 +1,4 @@
+﻿msgbox
+omniinput
+omnibox
+examplecommand

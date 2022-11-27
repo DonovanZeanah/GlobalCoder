@@ -42,19 +42,14 @@ global items	  := 0
 global MyProgress := 0
 Global TotalWords := 0
 
-; comment if Gdip.ahk is in your standard library
 #Include includes\lib\Gdip.ahk 				
 
-
-
-; Get amount of items in folder and prepare the menu
 FindAmountItems()	
 PrepareMenu(A_ScriptDir "\CustomMenuFiles") 
 ;preparemenu(A_ScriptDir "\includes\typing")
+;Runincludes(A_ScriptDir "\Includes\typing")
 
 
-; Run other scripts in the "IncludeOtherScripts" folder
-;RunOtherScripts(A_ScriptDir "\Includes\typing")
 
 ; Start gdi+
 If !pToken := Gdip_Startup()
@@ -69,6 +64,7 @@ Height := A_ScreenHeight
 Gui, 1: -Caption +E0x80000 +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs 
 Gui, 1: Show, NA
 
+
 ; Intro taken from GDIP library introduction, see https://github.com/tariqporter/Gdip/blob/master/Gdip.ahk
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
@@ -81,27 +77,23 @@ Gdip_SetSmoothingMode(G, 4) 				; Set the smoothing mode to antialias = 4 to mak
 pBrush 	:= Gdip_BrushCreateSolid(0x80C7C7C7) 
 Gdip_FillRectangle(G, pBrush, 0, 0, A_ScreenWidth, A_ScreenHeight)
 
-; Create Hourglass image and draw it onto screen
+
+
 pBitmap := Gdip_CreateBitmapFromFile("includes\graphics\globe.png")
 Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0, 0, Width, Height)
 
-; Graphic has at this point been drawn, but view is not yet updated. Waiting to update view until script is called
-;This is the first example of text inserted from Minerva.
 
 
 ;========= Typing Setup
-;#NoTrayIcon
 ;disable hotkeys until setup is complete
-
-;ListLines Off
-
 
 EvaluateScriptPathAndTitle()
 
 SuspendOn()
 BuildTrayMenu()      
 
-OnExit, SaveScript
+OnExit, SaveScript 
+;specifices this sub-routine to be called should/when script exits.
 
 ;Change the setup performance speed
 SetBatchLines, 20ms
@@ -1718,7 +1710,9 @@ SuspendOn(){
       Menu, tray, Icon, %A_ScriptFullPath%,3,1
    } else
    {
-      Menu, tray, Icon, %A_ScriptDir%\%g_ScriptTitle%-Inactive.ico, ,1
+   	
+  	Menu, Tray, Icon , Shell32.dll, 28 , 1
+    ;Menu, tray, Icon, %A_ScriptDir%\%g_ScriptTitle%-Inactive.ico, ,1
    }
 }
 
@@ -1728,7 +1722,7 @@ SuspendOff(){
    Menu, Tray, Tip, %g_ScriptTitle% - Active
    If A_IsCompiled
    {
-   	Menu, Tray, Icon , Shell32.dll, 10 , 1
+   	Menu, Tray, Icon , Shell32.dll, 28 , 1
 
 
    } else
