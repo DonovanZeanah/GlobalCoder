@@ -179,22 +179,16 @@ MainLoop()
 
 ; END
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 return
 
 ; CODE AUTO-EXECUTE ENDS HERE
+
+
+; main Call window R^Rshift ( f24 & rshift )
+; code stats - overview of current session classes/vars/methods/etc
+; Tool window -> immenates from botton right corner
+
+
 
 ;------------------------------------------------| MENU |------------------------------------------------#
 PrepareMenu(PATH){
@@ -229,6 +223,8 @@ PrepareMenu(PATH){
 
 ; From the perspective of a folder, items are read top to bottom, but AHK Expects menus to be build from bottom to top.
 ; Therefore; recurse into the most bottom element, note all the elements on the way there, and build from bottom up
+
+
 LoopOverFolder(PATH){
 	; Prepare empty arrays for folders and files
 	FolderArray := []
@@ -293,45 +289,62 @@ LoopOverFolder(PATH){
 CheckForCaretMove("LButton","UpdatePosition")
 return
    
-
-;------------------------------------------------------------------------
-
-~RButton:: 
+; rbutton - del?
+~RButton::
+;/  
 CheckForCaretMove("RButton","UpdatePosition")
-Return
+Return ;// 
+
+
+; Hotkey x
+x::
+;/ code
+
+return ;// end hotkey x
+
+
 
 ;------------------------------------------------------------------------
-F1::
-    CoordMode Menu, Screen
-    GetCaret(X, Y,, H)
-    Menu, MyMenu, Add, Menu Item 1, MenuHandler1
-    Menu, MyMenu, Add, Menu Item 2, MenuHandler2
-    Menu, MyMenu, Add, Menu Item 3, MenuHandler3
-    Menu, MyMenu, Show, % X, % Y + H
-Return
 
-
-
-; Bring up Minerva Menu
+; main menu
 ^f24::
 Ctrl & RShift::
+;/
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
 ;Menu, MyMenu, Show, % X, % Y + H
 Menu, %A_ScriptDir%\CustomMenuFiles, show , % X, % Y + H
 return
+;// endregion
 
+; quick menu / google, etc...
 !f24::
+;/
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
-;Menu, MyMenu, Show, % X, % Y + H
+Menu, MyMenu, Add, Menu Item 1, MenuHandler1
+Menu, MyMenu, Add, Menu Item 2, MenuHandler2
+Menu, MyMenu, Add, Menu Item 3, MenuHandler3
+Menu, MyMenu, Show, % X, % Y + H
 Menu, %A_ScriptDir%\includes, show , % X , % Y - 300 + H
 return
+;// endregion
 
-; Reload program if Graphics for whatever reason does not work
-LShift & Delete::
+; Reload 
+f24 & enter::
+;/
 	Reload
 return
+;// endregion
+
+; exit
+f24 & esc::
+;/
+goto exit
+ExitApp
+;// endregion
+
+
 
 
 
@@ -2006,13 +2019,13 @@ exitapp
 
 
 
-#Include %A_ScriptDir%\Includes\typing\includes\Conversions.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Helper.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\ListBox.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Preferences File.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Sending.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Settings.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Window.ahk
-#Include %A_ScriptDir%\Includes\typing\includes\Wordlist.ahk
+#Include %A_ScriptDir%\includes\Conversions.ahk
+#Include %A_ScriptDir%\includes\Helper.ahk
+#Include %A_ScriptDir%\includes\ListBox.ahk
+#Include %A_ScriptDir%\includes\Preferences File.ahk
+#Include %A_ScriptDir%\includes\Sending.ahk
+#Include %A_ScriptDir%\includes\Settings.ahk
+#Include %A_ScriptDir%\includes\Window.ahk
+#Include %A_ScriptDir%\includes\Wordlist.ahk
 #Include <DBA>
 #Include <_Struct>
