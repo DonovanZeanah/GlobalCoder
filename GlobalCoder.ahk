@@ -1,5 +1,5 @@
-﻿#SingleInstance Force
-;===================================================== Seldom Changing Directives 
+#SingleInstance Force
+;====================================================================================================================================================================================== Seldom Changing Directives 
 #Requires AutoHotkey v1.1.34.03
 #Persistent
 #NoEnv
@@ -11,14 +11,17 @@
 setbatchlines,-1
 SetTitleMatchMode, 2
 DetectHiddenWindows, on
-;===================================================== Sometimes Changing Directives
+;===================================================================================================================================================================================== Sometimes Changing Directives
 SetKeyDelay, 50
 Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %nowtime%
 Sleep 800   ; Let it display for 3 seconds.
 HideTrayTip()
 FormatTime, nowtime , YYYYMMDDHH24MISS, MMdd--HHmm
-;=====================================================
+;=======================================================================================================================================================================================================[START CODE]
+
+
+
 Gui, Font,Q4, MS Sans Serif ;opts-> (c)olor (s)ize (w)eight (Q)uality
 Gui, Font,, Arial
 Gui, Font,, Verdana  ; Preferred font.
@@ -31,27 +34,58 @@ g_OSVersion := GetOSVersion()
 CoordMode, Caret, Screen
 CoordMode, Mouse, Screen
 
+;=======================================================================================================================================================--------------------------------------| VARIABLES |
+
+
+Gui +LastFound        ; Window open/close detection
+hWnd := WinExist()        ; Window open/close detection
+DllCall( "RegisterShellHookWindow", UInt,hWnd )
+MsgNum := DllCall( "RegisterWindowMessage", Str,"SHELLHOOK" )
+OnMessage( MsgNum, "ShellMessage" )
+
+; To prevent Menu command errors from stopping script.
+Menu, MenuName, UseErrorLevel
+
+/*
+   The following code sets up the Gui with a DropDownList with the original list of
+   open windows. Remove or comment out this code for Menu only.
+*/
+Gui,+AlwaysOnTop
+Gui, Font, s12, Arial
+Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
+Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
+Menu, MyMenuBar, Add, &File, :FileMenu
+Gui, Menu, MyMenuBar
 
 
 
-;----------------------------------------------| VARIABLES |---------------------------------------------;
+
 FileEncoding, UTF-8
 global ScriptName := "GlobalCoder"
 global Version    := "1.0"
 global items	  := 0
 global MyProgress := 0
 Global TotalWords := 0
+global callingwindow := ""
 
 #Include includes\lib\Gdip.ahk 				
+          
+
+                 
+;/ unused clipstore 
+;initialize clipboardstore class; is adding clipboard to a list 'onclipchange' aka. when the clipboard is updated. ACTIVATION KEY:  >>> f24& c <<<
+;clipStore := new ClipboardStore()
+;clipboard := "new Menu Item Entry"
+;// 
+
 
 FindAmountItems()	
+
 PrepareMenu(A_ScriptDir "\CustomMenuFiles") 
-;preparemenu(A_ScriptDir "\includes\typing")
-;Runincludes(A_ScriptDir "\Includes\typing")
+;PrepareMenu(A_ScriptDir "\singles") 
+;RunOtherScripts(A_ScriptDir "\singles")
 
-
-
-; Start gdi+
+;-------------------------------------------------Start gdi+
 If !pToken := Gdip_Startup()
 {
 	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
@@ -61,11 +95,9 @@ OnExit, Exit
 
 Width  := A_ScreenWidth
 Height := A_ScreenHeight
-Gui, 1: -Caption +E0x80000 +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs 
-Gui, 1: Show, NA
 
 
-; Intro taken from GDIP library introduction, see https://github.com/tariqporter/Gdip/blob/master/Gdip.ahk
+
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
 hdc   := CreateCompatibleDC() 				; Get a device context compatible with the screen
@@ -73,22 +105,16 @@ obm   := SelectObject(hdc, hbm) 			; Select the bitmap into the device context
 G     := Gdip_GraphicsFromHDC(hdc) 			; Get a pointer to the graphics of the bitmap, for use with drawing functions
 Gdip_SetSmoothingMode(G, 4) 				; Set the smoothing mode to antialias = 4 to make shapes appear smother (only used for vector drawing and filling)
 
-; Create a slightly transparent gray brush to draw rectagle with
-pBrush 	:= Gdip_BrushCreateSolid(0x80C7C7C7) 
+pBrush 	:= Gdip_BrushCreateSolid(0x80C7C7C7) ; Create a slightly transparent gray brush to draw rectagle with
 Gdip_FillRectangle(G, pBrush, 0, 0, A_ScreenWidth, A_ScreenHeight)
-
-
-
 pBitmap := Gdip_CreateBitmapFromFile("includes\graphics\globe.png")
 Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0, 0, Width, Height)
-
 
 
 ;========= Typing Setup
 ;disable hotkeys until setup is complete
 
 EvaluateScriptPathAndTitle()
-
 SuspendOn()
 BuildTrayMenu()      
 
@@ -97,11 +123,11 @@ OnExit, SaveScript
 
 ;Change the setup performance speed
 SetBatchLines, 20ms
+
 ;read in the preferences file
 ReadPreferences()
 
 SetTitleMatchMode, 2
-
 ;set windows constants
 g_EVENT_SYSTEM_FOREGROUND := 0x0003
 g_EVENT_SYSTEM_SCROLLINGSTART := 0x0012
@@ -148,7 +174,6 @@ InitializeListBox()
 BlockInput, Send
 
 InitializeHotKeys()
-
 DisableKeyboardHotKeys()
 
 ;Change the Running performance speed (Priority changed to High in GetIncludedActiveWindow)
@@ -177,22 +202,40 @@ GetIncludedActiveWindow()
 
 MainLoop()
 
-; END
 
+
+;END Auto Execute===========================================================================================================================================================================================
+;===========================================================================================================================================================================================
+;===========================================================================================================================================================================================End Auto Execute
 return
 
 ; CODE AUTO-EXECUTE ENDS HERE
+#IfWinActive ahk_exe explorer.exe 
+rbutton::+f10
+#if 
 
+
+
+
+
+;=========================================================================================================
 
 ; main Call window R^Rshift ( f24 & rshift )
 ; code stats - overview of current session classes/vars/methods/etc
 ; Tool window -> immenates from botton right corner
-
-
-
 ;------------------------------------------------| MENU |------------------------------------------------#
+
+;/ premaremenu(path) ; a main function for creating menu system using folder paths
 PrepareMenu(PATH){
-	global
+	
+;static custom1 := A_ScriptDir "\custom1"
+static urls := { 0: ""
+        , 1 : "https://www.google.com/search?hl=en&q="
+        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
+        , 3 : "https://www.google.com/maps/search/"
+        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
+
+   global
 		
 	; GUI loading/progress bar
 	Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
@@ -200,11 +243,18 @@ PrepareMenu(PATH){
 	Gui, show	  											; Displaying Progressbar
 
 	; Add Name, Icon and seperating line
-	Menu, %PATH%, Add, % ScriptName " vers. " Version, Github									; Name
+	Menu, %PATH%, Add, % "googler", googler ; Regular search ;googler								; Name
+
 	Menu, %PATH%, Add, 																			; seperating 
 		
 	; Add all custom items using algorithm 
 	LoopOverFolder(Path)
+   loopoverfolder(singles)
+
+   Menu, %PATH%, Add,   ; seperater 
+   Menu, %PATH%, Add, % ScriptName " vers. " Version, github ;googler                        ; Name
+   Menu, %PATH%, Add,                                                         ; seperating 
+
 
 	; Add Admin Panel
 	Sleep, 200
@@ -218,13 +268,12 @@ PrepareMenu(PATH){
 	; Loadingbar GUI is no longer needed, remove it from memory
 	Gui, Destroy 
 }
+;// end
 
-;---------------------------------------| FOLDER ADDING ALGORITHM |--------------------------------------;
+; AHK Expects menus to be build from bottom to top.
+; recurses into the most bottom element, notes all the elements on the way there, and builds from bottom up.
 
-; From the perspective of a folder, items are read top to bottom, but AHK Expects menus to be build from bottom to top.
-; Therefore; recurse into the most bottom element, note all the elements on the way there, and build from bottom up
-
-
+;/ loopoverfolder(path) - another main function
 LoopOverFolder(PATH){
 	; Prepare empty arrays for folders and files
 	FolderArray := []
@@ -283,7 +332,9 @@ LoopOverFolder(PATH){
 
 
 
-;-----------------------------------------------| HOTKEYS |----------------------------------------------;
+;----------------------------------------------------------------------------------------| HOTKEYS |----------------------------------------------;
+
+
 
 ~LButton:: 
 CheckForCaretMove("LButton","UpdatePosition")
@@ -297,19 +348,23 @@ Return ;//
 
 
 ; Hotkey x
-x::
+f24 & x::
 ;/ code
 
 return ;// end hotkey x
 
 
+;/ [ WindowsMenu ] - Ctrl + WIN L,M === Ctrl + Alt + W 
+;//
 
-;------------------------------------------------------------------------
+; MAIN MENU & the Children MENUs
+;-------------------------
 
 ; main menu
 ^f24::
 Ctrl & RShift::
 ;/
+callingwindow := winactive("A")
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
 ;Menu, MyMenu, Show, % X, % Y + H
@@ -317,72 +372,126 @@ Menu, %A_ScriptDir%\CustomMenuFiles, show , % X, % Y + H
 return
 ;// endregion
 
+f24 & f1::
+f24 & 1::
+CoordMode Menu, Screen
+GetCaret(X, Y,, H)
+;Menu, MyMenu, Show, % X, % Y + H
+Menu, %A_ScriptDir%\singles, show , % X, % Y + H
+return
+
+;--------------------------- END Main Menu Family
+
 ; quick menu / google, etc...
-!f24::
+f24 & ralt::
 ;/
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
-Menu, MyMenu, Add, Menu Item 1, MenuHandler1
-Menu, MyMenu, Add, Menu Item 2, MenuHandler2
-Menu, MyMenu, Add, Menu Item 3, MenuHandler3
+Menu, MyMenu, Add, Menu Item 1(googler), GoMenuHandler1
+Menu, MyMenu, Add, Menu Item 2, GoMenuHandler1
+Menu, MyMenu, Add, Menu Item 3, GoMenuHandler1
 Menu, MyMenu, Show, % X, % Y + H
-Menu, %A_ScriptDir%\includes, show , % X , % Y - 300 + H
+;gui, menu, mymenu
 return
-;// endregion
+;// 
+
+;-------------------------- end quick menu
+
+;------ clipboard menu 
+f24 & c:: clipStore.ShowMenu()
+;ahk_class #32768 is uniform class for menu 'windows'
+; 2nd solution is binding left arrow to esc when menu is shown
+
 
 ; Reload 
 f24 & enter::
 ;/
 	Reload
 return
-;// endregion
+;// 
 
 ; exit
 f24 & esc::
 ;/
 goto exit
 ExitApp
-;// endregion
+;// 
 
 
-
-
-
-
-;----------------------------------------------| Hotkeys |---------------------------------------------;
-
-f24 & F1::
-CoordMode Menu, Screen
+goMenuHandler1:
 GetCaret(X, Y,, H)
-Menu, MyMenu, Add, Menu Item 1, GoMenuHandler
-Menu, MyMenu, Add, Menu Item 2, GoMenuHandler
-Menu, MyMenu, Add, Menu Item 3, GoMenuHandler
-Menu, MyMenu, Show, % X, % Y + H
-gui, menu, mymenu
-f24 & f2::
+;InputBox, test
+;InputBox, OutputVar [, Title, Prompt, HIDE, Width, Height, X, Y, Font, Timeout, Default]
+InputBox, omniinput, ,g - google `n f - search files? `n c - search currentdoc? `n m - main proj folder?, , , , % x, % y ,Consolas, 10000, g%a_space% ;
+StringLeft, checkvar, omniINPUT, 1
+msgbox, % omniinput
+StringTrimleft, omniinput, omniinput,1
+msgboX, % checkvar "-" omniinput
+clipboard := omniinput
+switch checkvar
+{
+   case "g":
+   clipboard := omniinput
+   runstring("www.google.com/search?q=" . clipboard)
+   WinWaitActive, ahk_exe chrome.exe
+   send, !g
+   return
+   case "f":
+   msgbox, % "return"
+   return
+   case "c":
+   msgbox, % "return"
+   return
+   case "m":
+   msgbox, % "return"
+   return
+   ;filesearch(frontfolder)
+}
+return
+;// omnibox 3-selection menu w/ 4 direction switch
 
-; Create the main Edit control and display the window:
-Gui, +Resize  ; Make the window resizable.
-Gui, Add, Edit, vMainEdit WantTab W300 R20
-Gui, Add, Button, gGoButton1, Go Button
-Gui, Show, ,% X, % Y + H, Functions instead of labels
-CurrentFileName := ""  ; Indicate that there is no current file.
+
+
+
+;hotkey to add reference notes via edit
+; -- under construction
+f24 & g::
+;Gui, Add, Button, gCtrlEvent vButton1, Button 1
+;Gui, Add, Button, gCtrlEvent vButton2, Button 2
+;gGui, MyGui:Add, Text,, Text for about-box.
+; Hotkey x
+
+Gui, mygui:+Resize 
+Gui, mygui:Add, Edit, w300 r10 vEditField1, Example text
+
+gui, mygui:Add, Button, gGoButton1, Go Button
+Gui, mygui:Show ,, Functions instead of labels
 return 
 
 
+GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
+    GuiControlGet, EditField1
+    MsgBox, % "Entered: " EditField1 "`n decide where it goes..."
+    clipboard := editfield1
+    gui, destroy
+    ;   exitapp
 
+}
+
+
+; -------------------------------------------------------------------------------------------------- under construction
+f24 & 3::
 BoundGivePar := Func("GivePar").Bind("First", "Test one")
 BoundGivePar2 := Func("GivePar").Bind("Second", "Test two")
 
-f24 & 3::
 ; Create the menu and show it:
-Menu MyMenu, Add, Give parameters, % BoundGivePar
-Menu MyMenu, Add, Give parameters2, % BoundGivePar2
+Menu MyMenu, Add, Menu Name 1, % BoundGivePar
+Menu MyMenu, Add, Menu Name 2, % BoundGivePar2
 Menu MyMenu, Show
-return
+
+
 ; Definition of custom function GivePar:
-GivePar(a, b, ItemName, ItemPos, MenuName)
-{
+GivePar(a, b, ItemName, ItemPos, MenuName){
     MsgBox % "a:`t`t" a "`n"
            . "b:`t`t" b "`n"
            . "ItemName:`t" ItemName "`n"
@@ -390,30 +499,60 @@ GivePar(a, b, ItemName, ItemPos, MenuName)
            . "MenuName:`t" MenuName
            return
        }
- 
+return
 
-
-
+; --------------------------------------------------------------------------------------------------- under construction
 ^F1::google(1) ; Regular search
 ^F2::google(2) ; Images search
 ^F3::google(3) ; Maps search
 ^F4::google(4) ; Translation
 
+$1:: 
+$2:: 
+$3:: 
+$4:: 
+$5:: 
+$6:: 
+$7:: 
+$8:: 
+$9:: 
+$0::
+CheckWord(A_ThisHotkey)
+Return
 
-f24 & g::
-;Gui, Add, Button, gCtrlEvent vButton1, Button 1
-;Gui, Add, Button, gCtrlEvent vButton2, Button 2
-Gui, Add, Button, gGoButton, Go Button
-Gui, Add, Edit, w300 hvEditField, Example text
-Gui, Show,, Functions instead of labels
+$^Enter::
+$^Space::
+$Tab::
+$Up::
+$Down::
+$PgUp::
+$PgDn::
+$Right::
+$Enter::
+$NumpadEnter::
+EvaluateUpDown(A_ThisHotKey)
+Return
 
+$^+h::
+MaybeOpenOrCloseHelperWindowManual()
+Return
+
+$^+c:: 
+AddSelectedWordToList()
+Return
+
+$^+Delete::
+DeleteSelectedWordFromList()
+Return
+
+;----------------------------------------------| quickmenu FUNCTIONS |---------------------------------------------;
 
 CtrlEvent(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
     GuiControlGet, controlName, Name, %CtrlHwnd%
     MsgBox, %controlName% has been clicked!
 }
 GoButton(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
-    GuiControlGet, EditField
+    GuiControlGet, EditField1
     MsgBox, Go has been clicked! The content of the edit field is "%EditField%"!
 }
 
@@ -424,9 +563,8 @@ GuiClose(hWnd) {
 }
 return
 
-
-
 ;----------------------------------------------| FUNCTIONS |---------------------------------------------;
+
 MainLoop(){
    global g_TerminatingEndKeys
    Loop 
@@ -453,6 +591,7 @@ MainLoop(){
    
       ProcessKey(InputChar,EndKey)
    }
+
 }
 
 
@@ -732,7 +871,6 @@ RecomputeMatches(){
    ShowListBox()
 }
 
-
 HideTrayTip() {
     TrayTip  ; Attempt to hide it the normal way.
     if SubStr(A_OSVersion,1,3) = "10." {
@@ -743,34 +881,587 @@ HideTrayTip() {
     }
 }
 
-google(service := 1){
-    static urls := { 0: ""
-        , 1 : "https://www.google.com/search?hl=en&q="
-        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
-        , 3 : "https://www.google.com/maps/search/"
-        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
+;/ IniSettingsEditor(ProgName,IniFile,OwnedBy = 0,DisableGui = 0) {
 
-    backup := ClipboardAll
-    Clipboard := ""
-    Send ^c
-    ClipWait 0
-    if ErrorLevel
-        InputBox query, Google Search,,, 200, 100
-    else query := Clipboard
-    Run % urls[service] query
-    Clipboard := backup
-}
+; LINTALIST NOTE: Made minor changes for Lintalist, if you want to use this 
+; function please use the original one which can be found at the link below.
+; http://www.autohotkey.com/forum/viewtopic.php?p=69534#69534
+; 
+; 
+; 
+;#############   Edit ini file settings in a GUI   #############################
+;  A function that can be used to edit settings in an ini file within it's own
+;  GUI. Just plug this function into your script.
+;
+;  by Rajat, mod by toralf
+;  www.autohotkey.com/forum/viewtopic.php?p=69534#69534
+;
+;   Tested OS: Windows XP Pro SP2
+;   AHK_version= 1.0.44.09     ;(http://www.autohotkey.com/download/)
+;   Language: English
+;   Date: 2006-08-23
+;
+;   Version: 6
+;
+; changes since 5:
+; - add key type "checkbox" with custom control name
+; - added key field options (will only apply in Editor window)
+; - whole sections can be set hidden
+; - reorganized code in Editor and Creator
+; - some fixes and adjustments
+; changes since 1.4
+; - Creator and Editor GUIs are resizeable (thanks Titan). The shortened Anchor function
+;    is added with a long name, to avoid nameing conflicts and avoid dependencies.
+; - switched from 1.x version numbers to full integer version numbers
+; - requires AHK version 1.0.44.09
+; - fixed blinking of description field
+; changes since 1.3:
+; - added field option "Hidden" (thanks jballi)
+; - simplified array naming
+; - shorted the code
+; changes since 1.2:
+; - fixed a bug in the description (thanks jaballi and robiandi)
+; changes since 1.1:
+; - added statusbar (thanks rajat)
+; - fixed a bug in Folder browsing
+; changes since 1.0:
+; - added default value (thanks rajat)
+; - fixed error with DisableGui=1 but OwnedBy=0 (thanks kerry)
+; - fixed some typos
+;  
+; format:
+; =======
+;   IniSettingsEditor(ProgName, IniFile[, OwnedBy = 0, DisableGui = 0])
+;
+; with
+;   ProgName - A string used in the GUI as text to describe the program 
+;   IniFile - that ini file name (with path if not in script directory)
+;   OwnedBy - GUI ID of the calling GUI, will make the settings GUI owned
+;   DisableGui - 1=disables calling GUI during editing of settings
+;
+; example to call in script:
+;   IniSettingsEditor("Hello World", "Settings.ini", 0, 0)
+;
+; Include function with:
+;   #Include Func_IniSettingsEditor_v6.ahk
+;
+; No global variables needed.
+;
+; features:
+; =========
+; - the calling script will wait for the function to end, thus till the settings
+;     GUI gets closed. 
+; - Gui ID for the settings GUI is not hard coded, first free ID will be used 
+; - multiple description lines (comments) for each key and section possible 
+; - all characters are allowed in section and key names
+; - when settings GUI is started first key in first section is pre-selected and
+;     first section is expanded
+; - tree branches expand when items get selected and collapse when items get
+;     unselected
+; - key types besides the default "Text" are supported 
+;    + "File" and "Folder", will have a browse button and its functionality 
+;    + "Float" and "Integer" with consistency check 
+;    + "Hotkey" with its own hotkey control 
+;    + "DateTime" with its own datetime control and custom format, default is
+;        "dddd MMMM d, yyyy HH:mm:ss tt"
+;    + "DropDown" with its own dropdown control, list of choices has to be given
+;        list is pipe "|" separated 
+;    + "Checkbox" where the name of the checkbox can be customized
+; - default value can be specified for each key 
+; - keys can be set invisible (hidden) in the tree
+; - to each key control additional AHK specific options can be assigned  
+;
+; format of ini file:
+; ===================
+;     (optional) descriptions: to help the script's users to work with the settings 
+;     add a description line to the ini file following the relevant 'key' or 'section'
+;     line, put a semi-colon (starts comment), then the name of the key or section
+;     just above it and a space, followed by any descriptive helpful comment you'd
+;     like users to see while editing that field. 
+;     
+;     e.g.
+;     [SomeSection]
+;     ;somesection This can describe the section. 
+;     Somekey=SomeValue 
+;     ;somekey Now the descriptive comment can explain this item. 
+;     ;somekey More then one line can be used. As many as you like.
+;     ;somekey [Type: key type] [format/list] 
+;     ;somekey [Default: default key value] 
+;     ;somekey [Hidden:] 
+;     ;somekey [Options: AHK options that apply to the control] 
+;     ;somekey [CheckboxName: Name of the checkbox control] 
+;     
+;     (optional) key types: To limit the choice and get correct input a key type can
+;     be set or each key. Identical to the description start an extra line put a
+;     semi-colon (starts comment), then the name of the key with a space, then the
+;     string "Type:" with a space followed by the key type. See the above feature
+;     list for available key types. Some key types have custom formats or lists,
+;     they are written after the key type with a space in-between.
+;     
+;     (optional) default key value: To allow a easy and quick way back to a 
+;     default value, you can specify a value as default. If no default is given,
+;     users can go back to the initial key value of that editing session.
+;     Format: Identical to the description start an extra line, put a semi-colon
+;     (starts comment line), then the name of the key with a space, then the
+;     string "Default:" with a space followed by the default value.
+;
+;     (optional) hide key in tree: To hide a key from the user, a key can be set 
+;     hidden.
+;     Format: Identical to the description start an extra line, put a semi-colon
+;     (starts comment line), then the name of the key with a space, then the
+;     string "Hidden:".
+;
+;     (optional) add additional AHK options to key controls. To limit the input
+;     or enforce a special input into the key controls in the GUI, additional 
+;     AHK options can be specified for each control.
+;     Format: Identical to the description start an extra line, put a semi-colon
+;     (starts comment line), then the name of the key with a space, then the
+;     string "Options" with a space followed by a list of AHK options for that
+;     AHK control (all separated with a space).
+;
+;     (optional) custom checkbox name: To have a more relavant name then e.g.
+;     "status" a custom name for the checkbox key type can be specified.
+;     Format: Identical to the description start an extra line, put a semi-colon
+;     (starts comment line), then the name of the key with a space, then the
+;     string "CheckboxName:" with a space followed by the name of the checkbox.
+;
+;
+; limitations:
+; ============
+; - ini file has to exist and created manually or with the IniFileCreator script
+; - section lines have to start with [ and end with ]. No comments allowed on
+;     same line
+; - ini file must only contain settings. Scripts can't be used to store setting,
+;     since the file is read and interpret as a whole. 
+; - code: can't use g-labels for tree or edit fields, since the arrays are not
+;     visible outside the function, hence inside the g-label subroutines. 
+; - code: can't make GUI resizable, since this is only possible with hard
+;     coded GUI ID, due to %GuiID%GuiSize label
 
+IniSettingsEditor(ProgName,IniFile,OwnedBy = 0,DisableGui = 0) {
+    static pos
+     
+    ;Find a GUI ID that does not exist yet 
+    Loop, 99 { 
+      Gui %A_Index%:+LastFoundExist 
+      If not WinExist() { 
+          SettingsGuiID = %A_Index% 
+          break 
+      }Else If (A_Index = 99){ 
+          MsgBox, 4112, Error in IniSettingsEditor function, Can't open settings dialog,`nsince no GUI ID was available. 
+          Return 0   
+        } 
+      } 
+    Gui, %SettingsGuiID%:Default 
 
-; Definition of custom function GivePar:
-/*GivePar(a, b, ItemName, ItemPos, MenuName){
-    MsgBox % "a:`t`t" a "`n"
-           . "b:`t`t" b "`n"
-           . "ItemName:`t" ItemName "`n"
-           . "ItemPos:`t`t" ItemPos "`n"
-           . "MenuName:`t" MenuName
-}
-*/
+    ;apply options to settings GUI 
+    If OwnedBy { 
+        Gui, +ToolWindow +Owner%OwnedBy% 
+        If DisableGui 
+            Gui, %OwnedBy%:+Disabled 
+    }Else
+        DisableGui := False 
+    
+    Gui, +Resize +LabelGuiIniSettingsEditor
+    ;create GUI (order of the two edit controls is crucial, since ClassNN is order dependent) 
+    Gui, Add, Statusbar
+    Gui, Add, TreeView, x16 y75 w200 h370 0x400
+    Gui, Add, Edit, x225 y114 w400 h20,                           ;ahk_class Edit1
+    Gui, Add, Edit, x225 y174 w400 h200 ReadOnly,                 ;ahk_class Edit2
+    Gui, Add, Button, x490 y420 w100 gExitSettings , E&xit     ;ahk_class Button1
+    Gui, Add, Button, x565 y88  gBtnBrowseKeyValue Hidden, B&rowse ;ahk_class Button2
+    Gui, Add, Button, x225 y420 gBtnDefaultValue, &Restore        ;ahk_class Button3
+    Gui, Add, DateTime, x225 y114 w340 h20 Hidden,                ;ahk_class SysDateTimePick321
+    Gui, Add, Hotkey, x225 y114 w340 h20 Hidden,                  ;ahk_class msctls_hotkey321
+    Gui, Add, DropDownList, x225 y114 w340 h120 Hidden,           ;ahk_class ComboBox1 
+    Gui, Add, CheckBox, x225 y114 w340 h20 Hidden,                ;ahk_class Button4 
+    Gui, Add, GroupBox, x4 y63 w640 h390 ,                        ;ahk_class Button5
+    Gui, Font, Bold 
+    Gui, Add, Text, x225 y93, Value                               ;ahk_class Static1
+    Gui, Add, Text, x225 y154, Description                        ;ahk_class Static2
+    Gui, Add, Text, x15 y48 w650 h20 +Center, (All changes are Auto-Saved - A Reload may be needed for changes to have affect) 
+    Gui, Font, S16 CDefault Bold, Verdana 
+    Gui, Add, Text, x45 y13 w480 h35 +Center, Settings for %ProgName% 
+  
+    ;read data from ini file, build tree and store values and description in arrays 
+    Loop, Read, %IniFile% 
+      { 
+        CurrLine = %A_LoopReadLine% 
+        CurrLineLength := StrLen(CurrLine) 
+    
+        ;blank line 
+        If CurrLine is space
+             Continue 
+    
+        ;description (comment) line 
+        If ( InStr(CurrLine,";") = 1 ){
+            StringLeft, chk2, CurrLine, % CurrLength + 2 
+            StringTrimLeft, Des, CurrLine, % CurrLength + 2 
+            ;description of key
+            If ( %CurrID%Sec = False AND ";" CurrKey A_Space = chk2){ 
+                ;handle key types  
+                If ( InStr(Des,"Type: ") = 1 ){ 
+                    StringTrimLeft, Typ, Des, 6 
+                    Typ = %Typ% 
+                    Des = `n%Des%     ;add an extra line to the type definition in the description control
+                    
+                    ;handle format or list  
+                    If (InStr(Typ,"DropDown ") = 1) {
+                        StringTrimLeft, Format, Typ, 9
+                        %CurrID%For = %Format%
+                        Typ = DropDown
+                        Des =
+                    }Else If (InStr(Typ,"DateTime") = 1) {
+                        StringTrimLeft, Format, Typ, 9
+                        If Format is space
+                            Format = dddd MMMM d, yyyy HH:mm:ss tt 
+                        %CurrID%For = %Format%
+                        Typ = DateTime
+                        Des =
+                      }
+                    ;set type
+                    %CurrID%Typ := Typ 
+                ;remember default value
+                }Else If ( InStr(Des,"Default: ") = 1 ){ 
+                    StringTrimLeft, Def, Des, 9 
+                    %CurrID%Def = %Def% 
+                ;remember custom options  
+                }Else If ( InStr(Des,"Options: ") = 1 ){ 
+                    StringTrimLeft, Opt, Des, 9 
+                    %CurrID%Opt = %Opt%
+                    Des =
+                ;remove hidden keys from tree
+                }Else If ( InStr(Des,"Hidden:") = 1 ){  
+                    TV_Delete(CurrID)
+                    Des =
+                    CurrID =
+                ;handle checkbox name
+                }Else If ( InStr(Des,"CheckboxName: ") = 1 ){  
+                    StringTrimLeft, ChkN, Des, 14 
+                    %CurrID%ChkN = %ChkN%  
+                    Des =
+                  } 
+                %CurrID%Des := %CurrID%Des "`n" Des 
+            ;description of section 
+            } Else If ( %CurrID%Sec = True AND ";" CurrSec A_Space = chk2 ){
+                ;remove hidden section from tree
+                If ( InStr(Des,"Hidden:") = 1 ){  
+                    TV_Delete(CurrID)
+                    Des =
+                    CurrSecID =
+                  }
+                ;set description
+                %CurrID%Des := %CurrID%Des "`n" Des 
+              } 
+                
+            ;remove leading and trailing whitespaces and new lines
+            If ( InStr(%CurrID%Des, "`n") = 1 )
+                StringTrimLeft, %CurrID%Des, %CurrID%Des, 1  
+            Continue 
+          } 
+    
+        ;section line 
+        If ( InStr(CurrLine, "[") = 1 And InStr(CurrLine, "]", "", 0) = CurrLineLength) { 
+            ;extract section name
+            StringTrimLeft, CurrSec, CurrLine, 1 
+            StringTrimRight, CurrSec, CurrSec, 1
+            CurrSec = %CurrSec% 
+            CurrLength := StrLen(CurrSec)  ;to easily trim name off of following comment lines
+            
+            ;add to tree
+            CurrSecID := TV_Add(CurrSec)
+            CurrID = %CurrSecID%
+            %CurrID%Sec := True
+            CurrKey =
+            Continue 
+          } 
+    
+        ;key line 
+        Pos := InStr(CurrLine,"=") 
+        If ( Pos AND CurrSecID ){ 
+            ;extract key name and its value
+            StringLeft, CurrKey, CurrLine, % Pos - 1 
+            StringTrimLeft, CurrVal, CurrLine, %Pos% 
+            CurrKey = %CurrKey%             ;remove whitespaces
+            CurrVal = %CurrVal% 
+            CurrLength := StrLen(CurrKey)
+            
+            ;add to tree and store value
+            CurrID := TV_Add(CurrKey,CurrSecID) 
+            %CurrID%Val := CurrVal
+            %CurrID%Sec := False
+            
+            ;store initial value as default for restore function
+            ;will be overwritten if default is specified later on comment line
+            %CurrID%Def := CurrVal 
+          } 
+      } 
+  
+    ;select first key of first section and expand section
+    TV_Modify(TV_GetChild(TV_GetNext()), "Select")
+  
+    ;show Gui and get UniqueID
+    TV_Modify(CurrSecID, "Sort") ; modification lintalist
+    Gui, Show, w650 h490, %ProgName% Settings 
+    Gui, +LastFound
+    GuiID := WinExist() 
+  
+    ;check for changes in GUI 
+    Loop { 
+        ;get current tree selection 
+        CurrID := TV_GetSelection() 
+        
+        If SetDefault { 
+            %CurrID%Val := %CurrID%Def 
+            LastID = 0
+            SetDefault := False
+            ValChanged := True
+          } 
+
+        MouseGetPos,,, AWinID, ACtrl 
+        If ( AWinID = GuiID){ 
+            If ( ACtrl = "Button3")  
+                SB_SetText("Restores Value to default (if specified), else restores it to initial value before change")
+        } Else 
+            SB_SetText("") 
+
+        ;change GUI content if tree selection changed 
+        If (CurrID <> LastID) {
+            ;remove custom options from last control
+            Loop, Parse, InvertedOptions, %A_Space%
+                GuiControl, %A_Loopfield%, %ControlUsed%
+
+            ;hide/show browse button depending on key type
+            Typ := %CurrID%Typ 
+            If Typ in File,Folder,Exe
+                GuiControl, Show , Button2, 
+            Else 
+                GuiControl, Hide , Button2, 
+
+            ;set the needed value control depending on key type
+            If (Typ = "DateTime")
+                ControlUsed = SysDateTimePick321
+            Else If ( Typ = "Hotkey" )
+                ControlUsed = msctls_hotkey321
+            Else If ( Typ = "DropDown")
+                ControlUsed = ComboBox1
+            Else If ( Typ = "CheckBox")
+                ControlUsed = Button4
+            Else                    ;e.g. Text,File,Folder,Float,Integer or No Tyo (e.g. Section) 
+                ControlUsed = Edit1
+
+            ;hide/show the value controls
+            Controls = SysDateTimePick321,msctls_hotkey321,ComboBox1,Button4,Edit1  
+            Loop, Parse, Controls, `,
+                If ( ControlUsed = A_LoopField )
+                    GuiControl, Show , %A_LoopField%,
+                Else
+                    GuiControl, Hide , %A_LoopField%,
+
+            If ( ControlUsed = "Button4" )
+                GuiControl,  , Button4, % %CurrID%ChkN
+
+            ;get current options
+            CurrOpt := %CurrID%Opt
+            ;apply current custom options to current control and memorize them inverted
+            InvertedOptions =   
+            Loop, Parse, CurrOpt, %A_Space%
+              {
+                ;get actual option name
+                StringLeft, chk, A_LoopField, 1
+                StringTrimLeft, chk2, A_LoopField, 1
+                If chk In +,-
+                  {
+                    GuiControl, %A_LoopField%, %ControlUsed%
+                    If (chk = "+")
+                        InvertedOptions = %InvertedOptions% -%chk2%
+                    Else
+                        InvertedOptions = %InvertedOptions% +%chk2%
+                }Else {
+                    GuiControl, +%A_LoopField%, %ControlUsed%
+                    InvertedOptions = %InvertedOptions% -%A_LoopField%
+                  }
+              }
+
+            If %CurrID%Sec {                      ;section got selected
+                CurrVal =                        
+                GuiControl, , Edit1, 
+                GuiControl, Disable , Edit1, 
+                GuiControl, Disable , Button3, 
+            }Else {                               ;new key got selected
+                CurrVal := %CurrID%Val   ;get current value
+                GuiControl, , Edit1, %CurrVal%   ;put current value in all value controls
+                GuiControl, Text, SysDateTimePick321, % %CurrID%For 
+                GuiControl, , SysDateTimePick321, %CurrVal%
+                GuiControl, , msctls_hotkey321, %CurrVal%
+                GuiControl, , ComboBox1, % "|" %CurrID%For
+                GuiControl, ChooseString, ComboBox1, %CurrVal% 
+                GuiControl, , Button4 , %CurrVal%
+                GuiControl, Enable , Edit1, 
+                GuiControl, Enable , Button3, 
+              } 
+            GuiControl, , Edit2, % %CurrID%Des 
+          }
+        LastID = %CurrID%                   ;remember last selection
+
+        ;sleep to reduce CPU load
+        Sleep, 100 
+
+        ;exit endless loop, when settings GUI closes 
+        If not WinExist("ahk_id" GuiID) 
+            Break 
+
+        ;if key is selected, get value
+        If (%CurrID%Sec = False){
+            GuiControlGet, NewVal, , %ControlUsed% 
+            ;save key value when it has been changed 
+            If ( NewVal <> CurrVal OR ValChanged ) {
+                ValChanged := False
+                
+                ;consistency check if type is integer or float
+                If (Typ = "Integer")
+                  If NewVal is not space
+                    If NewVal is not Integer
+                      {
+                        GuiControl, , Edit1, %CurrVal%
+                        Continue
+                      }
+                If (Typ = "Float")
+                  If NewVal is not space
+                    If NewVal is not Integer
+                      If (NewVal <> ".")
+                        If NewVal is not Float
+                          {
+                            GuiControl, , Edit1, %CurrVal%
+                            Continue
+                          }
+                
+                ;set new value and save it to INI      
+                %CurrID%Val := NewVal 
+                CurrVal = %NewVal%
+                PrntID := TV_GetParent(CurrID)
+                TV_GetText(SelSec, PrntID) 
+                TV_GetText(SelKey, CurrID) 
+                If (SelSec AND SelKey) 
+                    IniWrite, %NewVal%, %IniFile%, %SelSec%, %SelKey% 
+              } 
+          } 
+      } 
+
+    ;Exit button got pressed 
+    ExitSettings: 
+      ;re-enable calling GUI 
+      If DisableGui { 
+          Gui, %OwnedBy%:-Disabled 
+          Gui, %OwnedBy%:,Show 
+        } 
+      Gui, Destroy 
+    ;exit function 
+    Return 1
+    
+    ;browse button got pressed
+    BtnBrowseKeyValue: 
+      ;get current value
+      GuiControlGet, StartVal, , Edit1 
+      Gui, +OwnDialogs 
+      
+      ;Select file or folder depending on key type
+      If (Typ = "File"){ 
+;          ;get StartFolder
+;          IfExist %A_ScriptDir%\%StartVal% 
+;              StartFolder = %A_ScriptDir% 
+;          Else IfExist %StartVal% 
+;              SplitPath, StartVal, , StartFolder 
+;          Else 
+;              StartFolder = 
+;           ;select file LINTALIST "FIX"
+               StartFolder:=A_ScriptDir
+          FileSelectFile, Selected,M , %StartFolder%\bundles\, Select file for %SelSec% - %SelKey%, Any file (*.txt)  
+      }
+
+else      If (Typ = "Exe"){ 
+        StartFolder:=A_ScriptDir
+          FileSelectFile, Selected, , %StartFolder%\bundles\, Select EXE for Snippet Editor, (*.exe) 
+      }
+          
+      Else If (Typ = "Folder"){ 
+          ;get StartFolder
+          IfExist %A_ScriptDir%\%StartVal% 
+              StartFolder = %A_ScriptDir%\%StartVal% 
+          Else IfExist %StartVal% 
+              StartFolder = %StartVal% 
+          Else 
+              StartFolder = 
+          
+          ;select folder
+          FileSelectFolder, Selected, *%StartFolder% , 3, Select folder for %SelSec% - %SelKey% 
+          
+          ;remove last backslash "\" if any
+          StringRight, LastChar, Selected, 1 
+          If LastChar = \ 
+               StringTrimRight, Selected, Selected, 1 
+        } 
+      ;If file or folder got selected, remove A_ScriptDir (since it's redundant) and set it into GUI
+      If Selected { 
+          StringReplace, Selected, Selected, %A_ScriptDir%\bundles
+          StringReplace, Selected, Selected, `n, `, , All
+          StringReplace, Selected, Selected, `r,  , , All
+          If (SubStr(Selected,1,1) = ",")
+            StringTrimLeft, Selected, Selected, 1
+          GuiControl, , Edit1, %Selected% 
+          %CurrID%Val := Selected 
+        } 
+    Return  ;end of browse button subroutine
+
+    ;default button got pressed
+    BtnDefaultValue: 
+      SetDefault := True 
+    Return  ;end of default button subroutine
+    
+    ;gui got resized, adjust control sizes
+    GuiIniSettingsEditorSize:
+      GuiIniSettingsEditorAnchor("SysTreeView321"      , "wh") 
+      GuiIniSettingsEditorAnchor("Edit1"               , "x")
+      GuiIniSettingsEditorAnchor("Edit2"               , "xh")
+      GuiIniSettingsEditorAnchor("Button1"             , "xy",true)
+      GuiIniSettingsEditorAnchor("Button2"             , "x",true)
+      GuiIniSettingsEditorAnchor("Button3"             , "xy",true)
+      GuiIniSettingsEditorAnchor("Button4"             , "x",true)
+      GuiIniSettingsEditorAnchor("Button5"             , "wh",true)
+      GuiIniSettingsEditorAnchor("SysDateTimePick321"  , "x")
+      GuiIniSettingsEditorAnchor("msctls_Hotkey321"    , "x")
+      GuiIniSettingsEditorAnchor("ComboBox1"           , "x")
+      GuiIniSettingsEditorAnchor("Static1"             , "x")
+      GuiIniSettingsEditorAnchor("Static2"             , "x")
+      GuiIniSettingsEditorAnchor("Static3"             , "x")
+      GuiIniSettingsEditorAnchor("Static4"             , "x")
+    Return
+  }  ;end of function
+
+GuiIniSettingsEditorAnchor(ctrl, a, draw = false) { ; v3.2 by Titan (shortened)
+    static pos
+    sig = `n%ctrl%=
+    If !InStr(pos, sig) {
+      GuiControlGet, p, Pos, %ctrl%
+      pos := pos . sig . px - A_GuiWidth . "/" . pw  - A_GuiWidth . "/"
+        . py - A_GuiHeight . "/" . ph - A_GuiHeight . "/"
+    }
+    StringTrimLeft, p, pos, InStr(pos, sig) - 1 + StrLen(sig)
+    StringSplit, p, p, /
+    c = xwyh
+    Loop, Parse, c
+      If InStr(a, A_LoopField) {
+        If A_Index < 3
+          e := p%A_Index% + A_GuiWidth
+        Else e := p%A_Index% + A_GuiHeight
+        m = %m%%A_LoopField%%e%
+      }
+    If draw
+      d = Draw
+    GuiControl, Move%d%, %ctrl%, %m%
+  }
+
+;// end hotkey x
 
 GetCaret(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
 
@@ -811,54 +1502,6 @@ GetCaret(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
     W := 4
     H := 20
 }
-
-
-; ---- GoButton1 ---
-CtrlEvent1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
-    GuiControlGet, controlName, Name, %CtrlHwnd%
-    MsgBox, %controlName% has been clicked!
-}
-GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
-    GuiControlGet, EditField
-    MsgBox, % "Entered: " EditField "`n decide where it goes..."
-    clipboard := editfield
-
-}
-GuiClose1(hWnd) {
-    WinGetTitle, windowTitle, ahk_id %hWnd%
-    MsgBox, The Gui with title "%windowTitle%" has been closed!
-    ExitApp
-}
-
-
-MenuHandler1:
-GetCaret(X, Y,, H)
-;InputBox, test
-;InputBox, OutputVar [, Title, Prompt, HIDE, Width, Height, X, Y, Font, Timeout, Default]
-InputBox, omniinput, ,,, , , % x, % y ,Consolas, 10000,g 
-StringLeft, checkvar, omniINPUT, 1
-msgbox, % omniinput
-StringTrimleft, omniinput, omniinput,1
-msgboX, % checkvar "-" omniinput
-clipboard := omniinput
-switch checkvar
-{
-   case "g":
-   clipboard := omniinput
-   runstring("www.google.com/search?q=" . clipboard)
-   return
-   case "f":
-   msgbox, % "return"
-   return
-   case "c":
-   msgbox, % "return"
-   return
-   case "m":
-   msgbox, % "return"
-   return
-   ;filesearch(frontfolder)
-}
-
 
 ; ---- Menu Handler Functions for switch cases ----
 
@@ -947,8 +1590,6 @@ Handler_html(filepath){
 return
 }
 
-
-
 ; ---- Other Functions ----
 ; Amountfile is a .csv that the user can use to see how much info was saved. 
 AddAmountFile(FileName, WordCount){
@@ -1026,6 +1667,41 @@ GoToCustomFolder(){
 Github(){
 	run, https://github.com/donovanzeanah
 }
+googler(){
+   WinActivate, % callingwindow
+   send, ^c
+   if (clipboard = "")
+{
+   inputbox, googlequery
+   clipboard := googlequery
+}
+   runstring("www.google.com/search?q=" . clipboard)
+   ;Run, www.google.com/search?q=%clipboard%
+   WinWaitActive, ahk_exe chrome.exe
+   send, !g
+   clipboard := ""
+}
+google(service := 1){
+   if clipboard := "" 
+   {
+      return
+   }
+    static urls := { 0: ""
+        , 1 : "https://www.google.com/search?hl=en&q="
+        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
+        , 3 : "https://www.google.com/maps/search/"
+        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
+
+    backup := ClipboardAll
+    Clipboard := ""
+    Send ^c
+    ClipWait 0
+    if ErrorLevel
+        InputBox query, Google Search,,, 200, 100
+    else query := Clipboard
+    Run % urls[service] query
+    Clipboard := backup
+}
 
 ; Attemps to start all other files in the specified path.
 RunOtherScripts(PATH){
@@ -1035,7 +1711,76 @@ RunOtherScripts(PATH){
 		run, % A_LoopFilePath 
 	}
 }
+;====================================To Do Functions 
+/*
+todo(){
+static todolistview
+Gui, two: default
+Gui, two: +AlwaysOnTop +Resize
+Gui, two: Add, ListView, sort r10 checked -readonly vtodoListView gtodoListView AltSubmit, Items To Do 
+Gui, two: Add, Button, section gAddItem,Add to list
+Gui, two: Add, Edit, ys r20 vNewItem w180 , <Enter New Item Here>
 
+;LV_ModifyCol(2, 0)
+
+SelectedRow := 0
+
+IfnotExist, ToDoList.txt
+{
+FileAppend, a_space, % a_scriptdir "/todolist.txt"
+}
+Loop, Read, ToDoList.txt
+  {
+  If (A_index = 1 and SubStr(A_LoopReadLine, 1, 1) = "x")
+     {
+       WinPos := A_LoopReadLine
+       If Substr(WinPos, 2, 1) = "-"
+         WinPos := "x600 y200 w360 h220"
+
+       Continue
+     }
+  If SubStr(A_LoopReadLine, 1, 1) = "*"
+    {
+     StringTrimLeft, CheckedText, A_LoopReadLine, 1
+     LV_Add("Check", CheckedText,A_Index-1)
+    }
+  Else
+  {
+     LV_Add("", A_LoopReadLine,A_Index-1)
+  }
+
+
+
+
+
+}
+
+
+
+LV_ModifyCol(1,"AutoHdr")
+
+
+
+
+IfExist, ToDoList.txt
+  {
+     Gui, two: Show, %WinPos% , To Do List
+  }
+Else
+  {
+     WinGetPos,X1,Y1,W1,H1,Program Manager
+     X2 := W1-300
+     Gui, two: Show, x%x2% y50 , To Do List
+  }
+
+LV_ColorInitiate() ; (Gui_Number, Control) - defaults to: (1, SysListView321)
+SetColor()
+
+GUI, 2: Destroy
+ 
+Return
+}
+*/
 
 ;====================================Typing Text Functions 
 
@@ -1052,14 +1797,11 @@ Return
 MenuHandler3:
     ; do something
 Return
-
 readomni(omniinput){
    StrSplit(omniinput, a_space ," ")
    for k,v in omniinput
    msgbox, % v
 }
-
-
 GetCaretdupe(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
 
     ; UIA caret
@@ -1099,8 +1841,8 @@ GetCaretdupe(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
     W := 4
     H := 20
 }
-
 CheckForCaretMove(MouseButtonClick, UpdatePosition = false){
+   ;/
    global g_LastInput_Id
    global g_MouseWin_Id
    global g_OldCaretX
@@ -1154,12 +1896,12 @@ CheckForCaretMove(MouseButtonClick, UpdatePosition = false){
    }
 
    Return
-}
-   
-   
+} ;//
+     
 ;------------------------------------------------------------------------
 
 InitializeHotKeys(){
+   ;/
    global g_DelimiterChar
    global g_EnabledKeyboardHotKeys
    global prefs_ArrowKeyMethod
@@ -1227,7 +1969,7 @@ InitializeHotKeys(){
    ; remove last ascii 2
    StringTrimRight, g_EnabledKeyboardHotKeys, g_EnabledKeyboardHotKeys, 1
    
-}
+} ;//
 
 EnableKeyboardHotKeys(){
    global g_DelimiterChar
@@ -1247,52 +1989,9 @@ DisableKeyboardHotKeys(){
       HotKey, %A_LoopField%, Off
    }
    Return
-}
-   
+}   
 ;------------------------------------------------------------------------
-
-#MaxThreadsPerHotkey 1 
-    
-$1:: 
-$2:: 
-$3:: 
-$4:: 
-$5:: 
-$6:: 
-$7:: 
-$8:: 
-$9:: 
-$0::
-CheckWord(A_ThisHotkey)
-Return
-
-$^Enter::
-$^Space::
-$Tab::
-$Up::
-$Down::
-$PgUp::
-$PgDn::
-$Right::
-$Enter::
-$NumpadEnter::
-EvaluateUpDown(A_ThisHotKey)
-Return
-
-$^+h::
-MaybeOpenOrCloseHelperWindowManual()
-Return
-
-$^+c:: 
-AddSelectedWordToList()
-Return
-
-$^+Delete::
-DeleteSelectedWordFromList()
-Return
-
-;------------------------------------------------------------------------
-
+;/ checkword(key)
 ; If hotkey was pressed, check wether there's a match going on and send it, otherwise send the number(s) typed 
 CheckWord(Key){
    global g_ListBox_Id
@@ -1433,12 +2132,10 @@ CheckWord(Key){
       SuspendOff()
    Return 
 }
-
+;// 
 ;------------------------------------------------------------------------
-
 ;If a hotkey related to the up/down arrows was pressed
-EvaluateUpDown(Key)
-{
+EvaluateUpDown(Key){
    global g_ListBox_Id
    global g_Match
    global g_MatchPos
@@ -1618,7 +2315,6 @@ EvaluateUpDown(Key)
    }
    Return
 }
-
 ;------------------------------------------------------------------------
 
 ReturnLineWrong(){
@@ -1632,7 +2328,6 @@ ReturnLineWrong(){
       
    Return, ( g_OldCaretY != HCaretY() )
 }
-
 ;------------------------------------------------------------------------
 
 AddSelectedWordToList(){      
@@ -1647,7 +2342,6 @@ AddSelectedWordToList(){
    }
    Clipboard = %ClipboardSave%
 }
-
 DeleteSelectedWordFromList(){
    global g_MatchPos
    global g_SingleMatch
@@ -1658,12 +2352,9 @@ DeleteSelectedWordFromList(){
       DeleteWordFromList(g_SingleMatch[g_MatchPos])
       RecomputeMatches()
       Return
-   }
-   
+   }  
 }
-
 ;------------------------------------------------------------------------
-
 EvaluateScriptPathAndTitle(){
    ;relaunches to 64 bit or sets script title
    global g_ScriptTitle
@@ -1728,7 +2419,6 @@ SuspendOn(){
     ;Menu, tray, Icon, %A_ScriptDir%\%g_ScriptTitle%-Inactive.ico, ,1
    }
 }
-
 SuspendOff(){
    global g_ScriptTitle
    Suspend, Off
@@ -1748,7 +2438,6 @@ SuspendOff(){
 
    }
 }   
-
 ;------------------------------------------------------------------------
 
 BuildTrayMenu(){
@@ -1767,7 +2456,6 @@ BuildTrayMenu(){
    ;Initialize Tray Icon
    Menu, Tray, Icon
 }
-
 ;------------------------------------------------------------------------
 
 ; This is to blank all vars related to matches, ListBox and (optionally) word 
@@ -1793,9 +2481,7 @@ ClearAllVars(ClearWord){
    g_OriginalMatchStart=
    Return
 }
-
 ;------------------------------------------------------------------------
-
 FileAppendDispatch(Text,FileName,ForceEncoding=0){
    IfEqual, A_IsUnicode, 1
    {
@@ -1863,9 +2549,7 @@ MaybeFixFileEncoding(File,Encoding){
 GetOSVersion(){
    return ((r := DllCall("GetVersion") & 0xFFFF) & 0xFF) "." (r >> 8)
 }
-
 ;------------------------------------------------------------------------
-
 MaybeCoInitializeEx(){
    global g_NULL
    global g_ScrollEventHook
@@ -1874,10 +2558,8 @@ MaybeCoInitializeEx(){
    if (!g_WinChangedEventHook && !g_ScrollEventHook)
    {
       DllCall("CoInitializeEx", "Ptr", g_NULL, "Uint", g_NULL)
-   }
-   
+   }   
 }
-
 
 MaybeCoUninitialize(){
    global g_WinChangedEventHook
@@ -1888,13 +2570,8 @@ MaybeCoUninitialize(){
    }
 }
 
-
-
-
 ;========================= labels 
 ;-----------------------------------------------| LABELS |-----------------------------------------------#;
-; Labels are a simple .AHK implementation of Functions (which .AHK also supports), but only labels are supported some places - like in menus.
-; See more here: https://www.autohotkey.com/board/topic/25097-are-there-any-advantages-with-labels-over-functions/
 
 ; This is called when user selects an item from a menu in GUI window
 MenuEventHandler:
@@ -1966,9 +2643,313 @@ DeleteGraphics:
 	return
 }
 
+;========================================================================================================[ Windows Menu auxillaries ]
+
+;/ autoexecute_windowsmenu() - autoexecute section
+
+autoexecute_windowsmenu:
+msgbox, % "went to" A_ThisLabel 
+Gui +LastFound        ; Window open/close detection
+hWnd := WinExist()        ; Window open/close detection
+DllCall( "RegisterShellHookWindow", UInt,hWnd )
+MsgNum := DllCall( "RegisterWindowMessage", Str,"SHELLHOOK" )
+OnMessage( MsgNum, "ShellMessage" )
+
+; To prevent Menu command errors from stopping script.
+Menu, MenuName, UseErrorLevel
+
+/*
+   The following code sets up the Gui with a DropDownList with the original list of
+   open windows. Remove or comment out this code for Menu only.
+*/
+Gui,+AlwaysOnTop
+Gui, Font, s12, Arial
+Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
+Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
+Menu, MyMenuBar, Add, &File, :FileMenu
+Gui, Menu, MyMenuBar
+
+GoSub, GuiReset
+
+Return 
+
+ ;// end autoexecute_windowsmenu()
+
+;/ ALL Windows Menu Labels & Functions
+ShellMessage( wParam,lParam ) {
+   If ( wParam = 1 ) ; or ( wParam = 2 )  HSHELL_WINDOWCREATED := 1
+   {
+      GoSub, GuiReset
+   }
+}
+
+; Subroutine scans open windows and creates a list for both the menu and Gui DropDownList.
+GuiReset:
+
+WinGet, OpenWindow, List
+GuiControl,,WindowMove, |
+Menu, WindowMenu, Delete
+Menu, WindowMenu, Add, Rescan Windows, GuiReset
+Menu, WindowMenu, Icon, Rescan Windows, C:\Windows\System32\imageres.dll, 140
+
+Loop, %OpenWindow%
+{
+   WinGetTitle, Title, % "ahk_id " OpenWindow%A_Index%
+   WinGetClass, Class, % "ahk_id " OpenWindow%A_Index%
+   WinGet, AppName, ProcessPath, %Title%
+   
+   If (Title != "" and Class != "BasicWindow" and Title != "Start"
+      and Title != "Program Manager")
+   {
+      Title := StrSplit(Title,"|")
+      GuiControl,,WindowMove, % Title[1]
+      Menu, WindowMenu, Insert,, % Title[1] . " |" . OpenWindow%A_Index%, MenuChoice
+      Menu, WindowMenu, Icon, % Title[1] . " |" . OpenWindow%A_Index%, %AppName%
+      If ErrorLevel
+         Menu, WindowMenu, Icon, % Title[1] . " |" . OpenWindow%A_Index%
+      , C:\WINDOWS\System32\SHELL32.dll,36
+   }
+}
+
+GuiControl, Choose, WindowMove, 1
+Return
+
+
+MenuChoice:
+
+ProcessID := StrSplit(A_ThisMenuItem,"|")
+WinActivate, % "ahk_id " ProcessID[2]
+
+Return
+
+PosChoice:
+Gui, Submit, NoHide
+WinActivate, %WindowMove%
+
+; Checks for window location off screen and resets to on screen.
+WinGetPos,X1,Y1,W1,H1,Program Manager
+WinGetPos,X2,Y2,W2,H2,%WindowMove%
+If (X2 > W1 or Y2 > H1)
+   WinMove, %WindowMove%,, 20, 20
+Return
+;// End Windows Menu Labels & Functions
+;========================================================================================================[ To Do Auxillaries ]
+
+;/ ==== All Labels for ToDo
+
+;// end of all labels for this section
+
+;/ showtodo
+ShowTodo:
 
 
 
+
+toggle := !toggle
+if (toggle)
+{
+
+  Gui, 2: Show,, To Do List
+  LV_ColorInitiate()
+  SetColor()
+}
+else 
+WinMinimize, To Do List 
+;gui, show,,hide
+Return ;//
+
+;/ mylistview
+todoListView:
+;  GUI, +LastFound
+  HighlightRow := A_EventInfo
+  If A_GuiEvent = e
+    UpdateFile()
+  If (A_GuiEvent = "I") and (InStr(ErrorLevel, "C", true))
+        LV_ColorChange(HighlightRow, "0x660000", "0xCC99FF") 
+  If (A_GuiEvent = "I") and (InStr(ErrorLevel, "c", true))
+        LV_ColorChange(HighlightRow, "0x000000", "0xFFFFFF") 
+;  MsgBox, %A_GuiEvent% %ErrorLevel%
+Return ;//
+
+
+;/ guicontextmenu
+GuiContextMenu:  ; Launched in response to a right-click or press of the Apps key.
+if A_GuiControl <> MyListView  ; Display the menu only for clicks inside the ListView.
+    return
+  LV_GetText(EditText, A_EventInfo) 
+; Show the menu at the provided coordinates, A_GuiX and A_GuiY.  These should be used
+; because they provide correct coordinates even if the user pressed the Apps key:
+Menu, MyContextMenu, Show , %A_GuiX%, %A_GuiY%
+return ;// 
+
+;/ DeleteItem
+DeleteItem:  ; The user selected "Clear" in the context menu.
+RowNumber = 0  ; This causes the first iteration to start the search at the top.
+Loop
+{
+    ; Since deleting a row reduces the RowNumber of all other rows beneath it,
+    ; subtract 1 so that the search includes the same row number that was previously
+    ; found (in case adjacent rows are selected):
+    RowNumber := LV_GetNext(RowNumber - 1)
+    if not RowNumber  ; The above returned zero, so there are no more selected rows.
+        break
+    LV_Delete(RowNumber)  ; Clear the row from the ListView.
+}
+UpdateFile()
+SetColor()
+return ;//
+
+;/ AddItem
+AddItem:
+  Gui, Submit, NoHide
+
+If SelectedRow = 0
+{
+  LV_Add("", trim(NewItem))
+}
+else
+{
+  LV_Modify(SelectedRow,"",Trim(NewItem))
+  SelectedRow := 0
+  GuiControl, ,Button1, Add to list
+}
+  UpdateFile()
+  LV_ModifyCol(1,"AutoHdr")
+
+  SetColor()
+
+Return ;//
+
+;/ EditItem
+EditItem:
+  SelectedRow := LV_GetNext()
+  GuiControl, ,Edit1, %EditText%
+  GuiControl, ,Button1, Update
+Return ;//
+
+;/ UpdateFile
+UpdateFile:
+  DetectHiddenWindows On
+  UpdateFile()
+  ExitApp
+Return ;//
+
+;/ Guisize
+GuiSize:  ; Expand or shrink the ListView in response to the user's resizing of the window.
+if A_EventInfo = 1  ; The window has been minimized.  No action needed.
+    return
+; Otherwise, the window has been resized or maximized. Resize the ListView to match.
+GuiControl, Move, MyListView, % "W" . (A_GuiWidth - 20) . " H" . (A_GuiHeight - 40)
+GuiControl, Move, Button1, % "y" . (A_GuiHeight - 30) 
+GuiControl, Move, Edit1, % "y" . (A_GuiHeight - 30) . "W" . (A_GuiWidth - 90)
+Return ;//
+
+
+
+;/ ==== All functions for this section
+UpdateFile(){
+    FileDelete, ToDoList.txt
+    WinGetPos, X, Y, Width, Height, To Do List
+    Width -= 16
+    Height -= 38
+    FileAppend, x%x% y%y% w%Width% h%Height% `n, ToDoList.txt
+    Loop % LV_GetCount()
+     {
+       Gui +LastFound
+       SendMessage, 4140, A_Index - 1, 0xF000, SysListView321 
+       IsChecked := (ErrorLevel >> 12) - 1
+       If IsChecked
+        {
+          LV_GetText(Text, A_Index)
+          FileAppend, *%Text% `n, ToDoList.txt
+        }
+         else
+        {
+          LV_GetText(Text, A_Index)
+          FileAppend, %Text% `n, ToDoList.txt
+        }
+      }
+   }
+
+SetColor() {
+  Loop, % LV_GetCount()
+  {
+       SendMessage, 4140, A_Index - 1, 0xF000, SysListView321 
+       IsChecked := (ErrorLevel >> 12) - 1
+       If IsChecked
+         LV_ColorChange(A_Index, "0x660000", "0xCC99FF")
+       Else
+         LV_ColorChange(A_Index, "0x000000", "0xFFFFFF") 
+ 
+  }
+}
+
+; These are the functions that change the row colors. 
+; I only changed WM_NOTIFY( p_w, p_l, p_m ) for this app
+
+LV_ColorInitiate(Gui_Number=1, Control=""){ ; initiate listview color change procedure 
+  global hw_LV_ColorChange 
+  If Control =
+    Control =SysListView321
+  Gui, %Gui_Number%:+Lastfound 
+  Gui_ID := WinExist() 
+  ControlGet, hw_LV_ColorChange, HWND,, %Control%, ahk_id %Gui_ID% 
+  OnMessage( 0x4E, "WM_NOTIFY" ) 
+} 
+
+LV_ColorChange(Index="", TextColor="", BackColor="") { ; change specific line's color or reset all lines 
+  global
+  If Index = 
+    Loop, % LV_GetCount() 
+      LV_ColorChange(A_Index) 
+  Else
+    { 
+    Line_Color_%Index%_Text := TextColor 
+    Line_Color_%Index%_Back := BackColor 
+   WinSet, Redraw,, ahk_id %hw_LV_ColorChange% 
+    } 
+}
+
+
+
+WM_NOTIFY( p_w, p_l, p_m ){ 
+  local  draw_stage, Current_Line, Index
+  if ( DecodeInteger( "uint4", p_l, 0 ) = hw_LV_ColorChange ) { 
+      if ( DecodeInteger( "int4", p_l, 8 ) = -12 ) {                            ; NM_CUSTOMDRAW 
+          draw_stage := DecodeInteger( "uint4", p_l, 12 ) 
+          if ( draw_stage = 1 )                                                 ; CDDS_PREPAINT 
+              return, 0x20                                                      ; CDRF_NOTIFYITEMDRAW 
+          else if ( draw_stage = 0x10000|1 ){                                   ; CDDS_ITEM 
+              Current_Line := DecodeInteger( "uint4", p_l, 36 )+1 
+;              LV_GetText(Index, Current_Line, 2) 
+              If (Line_Color_%Current_Line%_Text != ""){ 
+                  EncodeInteger( Line_Color_%Current_Line%_Text, 4, p_l, 48 )   ; foreground 
+                  EncodeInteger( Line_Color_%Current_Line%_Back, 4, p_l, 52 )   ; background 
+                } 
+            } 
+        } 
+    } 
+} 
+
+DecodeInteger( p_type, p_address, p_offset, p_hex=true ){ 
+  old_FormatInteger := A_FormatInteger 
+  ifEqual, p_hex, 1, SetFormat, Integer, hex 
+  else, SetFormat, Integer, dec 
+  StringRight, size, p_type, 1 
+  loop, %size% 
+      value += *( ( p_address+p_offset )+( A_Index-1 ) ) << ( 8*( A_Index-1 ) ) 
+  if ( size <= 4 and InStr( p_type, "u" ) != 1 and *( p_address+p_offset+( size-1 ) ) & 0x80 ) 
+      value := -( ( ~value+1 ) & ( ( 2**( 8*size ) )-1 ) ) 
+  SetFormat, Integer, %old_FormatInteger% 
+  return, value 
+} 
+
+EncodeInteger( p_value, p_size, p_address, p_offset )
+{ 
+  loop, %p_size% 
+    DllCall( "RtlFillMemory", "uint", p_address+p_offset+A_Index-1, "uint", 1, "uchar", p_value >> ( 8*( A_Index-1 ) ) ) 
+} 
+;// end of todo functions
 
 ;=========================== Typing
 Configuration:
@@ -2016,7 +2997,46 @@ MaybeUpdateWordlist()
 
 exitapp 
 
+;-----------------------------------------------| classes |-----------------------------------------------;
 
+class ClipboardStore {
+   __New() {
+      this.OnClipboardChange := new this.OnClipboard()
+   }
+   
+   __Delete() {
+      this.OnClipboardChange.Clear()
+   }
+   
+   ShowMenu() {
+      Menu, clipMenu, Show
+   }
+   
+   class OnClipboard {
+      __New() {
+         this.testFnObj := ObjBindMethod(this, "InsertClip")
+         this.Clip := ObjBindMethod(this, "SaveClip")
+         OnClipboardChange(this.Clip)
+      }
+      
+      SaveClip(type) {
+         if (type = 1) {
+            testFnObj := this.testFnObj
+            Menu, clipMenu, Add, % Clipboard, % testFnObj
+         }
+      }
+      
+      InsertClip() {
+         Clipboard := A_ThisMenuItem
+         Sleep, 50
+         Send ^v
+      }
+      
+      Clear() {
+         OnClipboardChange(this.Clip, 0)
+      }
+   }
+}
 
 
 #Include %A_ScriptDir%\includes\Conversions.ahk

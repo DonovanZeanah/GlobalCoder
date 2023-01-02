@@ -1,0 +1,931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DE",
+				"Destroy"
+			],
+			[
+				"msg",
+				"MsgBox"
+			],
+			[
+				"got",
+				"Goto"
+			],
+			[
+				"file",
+				"FileAppend"
+			],
+			[
+				"close",
+				"Close()"
+			],
+			[
+				"gui",
+				"Gui"
+			],
+			[
+				"Guic",
+				"GuiEscape"
+			],
+			[
+				"guio",
+				"GuiClose"
+			],
+			[
+				"hide",
+				"HideGUI"
+			],
+			[
+				"ahk_",
+				"ahk_exe"
+			],
+			[
+				"setw",
+				"SetWorkingDir"
+			],
+			[
+				"a_this",
+				"A_ThisFunc"
+			],
+			[
+				"c",
+				"CustomMenuFiles"
+			],
+			[
+				"winwai",
+				"WinWaitActive"
+			],
+			[
+				"Input",
+				"InputBox"
+			],
+			[
+				"input",
+				"InputBox"
+			],
+			[
+				"stringre",
+				"StringReplace"
+			],
+			[
+				"a_pro",
+				"A_ProgramFiles"
+			],
+			[
+				"a_script",
+				"A_ScriptFullPath"
+			],
+			[
+				"regexr",
+				"RegExReplace()"
+			],
+			[
+				"FileCreate",
+				"FileCreateDir"
+			],
+			[
+				"exist",
+				"FileExist()"
+			],
+			[
+				"timesin",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_p",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_ho",
+				"A_PriorHotkey"
+			],
+			[
+				"fileappen",
+				"FileAppend"
+			],
+			[
+				"a_screen",
+				"A_ScreenHeight"
+			],
+			[
+				"a_scr",
+				"A_ScreenWidth"
+			],
+			[
+				"winget",
+				"WinGetTitle"
+			],
+			[
+				"Winget",
+				"WinGetTitle"
+			],
+			[
+				"setk",
+				"SetKeyDelay"
+			],
+			[
+				"a_pr",
+				"A_PriorHotkey"
+			],
+			[
+				"too",
+				"ToolTip"
+			],
+			[
+				"string",
+				"StringReplace"
+			],
+			[
+				"strre",
+				"StrReplace()"
+			],
+			[
+				"repl",
+				"StrReplace()"
+			],
+			[
+				"win",
+				"WinActivate"
+			],
+			[
+				"change",
+				"changeFirstName"
+			],
+			[
+				"rnd",
+				"Round()"
+			],
+			[
+				"str",
+				"StrSplit()"
+			],
+			[
+				"getke",
+				"GetKeyState()"
+			],
+			[
+				"br",
+				"Break"
+			],
+			[
+				"ifwi",
+				"IfWinActive"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
+				"caps",
+				"CapsLock"
+			],
+			[
+				"Sendi",
+				"SendInput"
+			],
+			[
+				"sen",
+				"SendMessage"
+			],
+			[
+				"retur",
+				"ReturnValue"
+			],
+			[
+				"sendmod",
+				"SendMode"
+			],
+			[
+				"contro",
+				"ControlList"
+			],
+			[
+				"inire",
+				"IniRead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "GlobalCoder.ahk",
+			"settings":
+			{
+				"buffer_size": 89912,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKAhAAAAAAAAoCEAAAAAAAABAAAAOw",
+					"AQAAAAAAAAABAAAAoSEAAAAAAAChIQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"left_delete",
+					null,
+					"AQAAANQLAAAAAAAA1AsAAAAAAAABAAAAOw",
+					"AQAAAAAAAAABAAAA1QsAAAAAAADVCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					9,
+					"left_delete",
+					null,
+					"CQAAAAgKAAAAAAAACAoAAAAAAAABAAAAIAcKAAAAAAAABwoAAAAAAAABAAAAIAYKAAAAAAAABgoAAAAAAAABAAAAIAUKAAAAAAAABQoAAAAAAAABAAAAIAQKAAAAAAAABAoAAAAAAAABAAAAIAMKAAAAAAAAAwoAAAAAAAABAAAAIAIKAAAAAAAAAgoAAAAAAAABAAAAIAEKAAAAAAAAAQoAAAAAAAABAAAAIAAKAAAAAAAAAAoAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAACQoAAAAAAAAJCgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"left_delete",
+					null,
+					"AQAAAP8JAAAAAAAA/wkAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAAAoAAAAAAAAACgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"left_delete",
+					null,
+					"AQAAAP8JAAAAAAAA/wkAAAAAAACCAAAATWVudSwgTXlDb250ZXh0TWVudSwgQWRkLCBFZGl0LCBFZGl0SXRlbQpNZW51LCBNeUNvbnRleHRNZW51LCBBZGQsIERlbGV0ZSwgRGVsZXRlSXRlbQpNZW51LCBUcmF5LCBBZGQsIFNob3cgVG8gRG8gTGlzdCwgU2hvd1RvZG8gIA",
+					"AQAAAAAAAAABAAAAgQoAAAAAAAD/CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAcJAAAAAAAABwkAAAAAAAAVAAAASG90a2V5LCBeIXQsIFNob3dUb2Rv",
+					"AQAAAAAAAAABAAAAHAkAAAAAAAAHCQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"toggle_comment",
+					{
+						"block": true
+					},
+					"AgAAAOvbAAAAAAAA7tsAAAAAAAAAAAAAO9cAAAAAAAA91wAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAO9cAAAAAAADr2wAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAD3XAAAAAAAAPtcAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPdcAAAAAAAA91wAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/User/AHK_V2.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/AHK2.sublime-build",
+					""
+				],
+				[
+					"Packages/User/AHK_V2 - Copy.sublime-build",
+					""
+				],
+				[
+					"Packages/User/AHK_V2.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/AHK_V2.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"refres",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxfold ke",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"syntax",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"fold ",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxa",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"preferences pack",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"resouu",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"history",
+				"History: Revert Modification"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: SideBarTools Settings"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"viewer",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"white sp",
+				"Trim Trailing White Space"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"ahk",
+				"AutoHotkey - Run"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				"find ",
+				"Preferences: Search in Project Settings – Default"
+			],
+			[
+				"conda",
+				"Conda: List Packages"
+			],
+			[
+				"high",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"highl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"rename",
+				"Rename File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"gh repo clone hi5/Rufaydium-Webdriver"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/github/GlobalCoder/GlobalCoder",
+		"/D/github/GlobalCoder/GlobalCoder/singles"
+	],
+	"file_history":
+	[
+		"/D/github/GlobalCoder/GlobalCoder/singles/1_ToDoList.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/70c14e793c306c912025db7890b32769/workspace.json",
+		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder.ahk.log",
+		"/P/App/App/discord-item.ahk",
+		"/P/App/App/.singles/exkeyfromlist.ahk",
+		"/C/Program Files/AutoHotkey/Lib/Gdip.ahk",
+		"/P/App/App/.singles/inputbox-FB.ahk",
+		"/P/App/App/.singles/inputbox.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/singles/trayExamples.ahk",
+		"/P/App/App/.singles/inputbox-FB(master).ahk",
+		"/D/ahk/(COPY-OF-ALL-Modified-RECENTLY)/discord-tool2.ahk",
+		"/D/ahk/(COPY-OF-ALL-Modified-RECENTLY)/discord-chunjee-gps3-class-tool (2).ahk",
+		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/discord-shuttercoder.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
+		"/P/App/App/.singles/gui2.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/discord-ex.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/discord-tool.ahk",
+		"/P/DCIM/ahk/discord_code.ahk",
+		"/D/AHKZeanah/.Front/discord-testdb.ahk",
+		"/P/App/App/(Appmaster)/App/sb.traytest.ahk",
+		"/Z/code/AHK/(start)/Tools/New folder/tools.ahk",
+		"/P/App/App/(Appmaster)/App/(ext)/t5.ahk",
+		"/P/App/App/.singles/tool9.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/tools_WORKING.ahk",
+		"/P/App/App/tools-1.ahk",
+		"/P/App/App/tools-1 (2).ahk",
+		"/D/ahk/start/Tools/New folder/tools.ahk",
+		"/P/App/App/master-multiple-tools-time-tracking.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/1_globalcoder/0_globalcoder_windowMenu.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sample-myexample.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/!.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/singles/keypress-osd.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/1_AHK-Project-Manager/AHK Project Manager.config",
+		"/D/mssa/gitFolder/MSSA_CCAD8_LiveDemos/README_WK10.md",
+		"/D/github/GlobalCoder/GlobalCoder/singles/DotnetCLI.ahk",
+		"/P/App/App/!.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/1_AHK-Project-Manager/AHK Project Manager.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/singles/1_snippetholder.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/[]todo fileheader.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/2globalcoder.ahkp",
+		"/D/github/GlobalCoder/GlobalCoder/projmanagerahkp backup.txt",
+		"/D/lib/class_SQLiteDB_L.ahk",
+		"/D/lib/Class_SQLiteDB_AHK1.ahk",
+		"/D/lib/Class_SQLiteDB.ahk",
+		"/D/lib/Class_sqlite3.ahk",
+		"/D/lib/class_sqlite_Light.ahk",
+		"/D/lib/Class_sqlite.ahk",
+		"/D/lib/class_SQLite_L.ahk",
+		"/D/lib/Class_SQLiteDB (2).ahk",
+		"/C/Program Files/AutoHotkey/Lib/struct.ahk",
+		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/Base.ahk",
+		"/D/lib/Base2.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/1_globalcoder/scratch/sqliteex2.ahk",
+		"/E/mssa/collection/1_globalcoder/scratch/example.ahk",
+		"/D/globalcoder/scratch/example.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sample4.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sampleCheck.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sample.ahk",
+		"/D/(Projects)/globalcoder/scratch/Class_SQLiteDB.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sample-workshop.ahk",
+		"/D/(Projects)/globalcoder/Lib/Class_SQLiteDB.ahk",
+		"/D/(Projects)/globalcoder/SQLiteDB_sample2.ahk",
+		"/D/(Projects)/globalcoder/lib/Class_SQLiteDB.ahk",
+		"/D/(Projects)/mssa/collection/1_globalcoder/scratch/example.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/example.ahk",
+		"/D/(Projects)/globalcoder/scratch/SQLiteDB_sample-myexample.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/1_globalcoder/scratch/example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/VMR/examples/ui_example.ahk",
+		"/D/lib/README.md",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/AHK_V2/examples/CreateDirectoryMap_example.ahk2",
+		"/D/github/GlobalCoder/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/example.ahk",
+		"/D/(Projects)/globalcoder/scratch/example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK_V2/examples/Webview2-example 4.ahk2",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/classes/_examples/class_BTT--example 2.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/classes/_examples/class_AHDLib-example1.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK_V2/examples/Webview2-example.ahk2",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/AHK_V2/examples/scintilla_example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/classes/_examples/class_ColorTip-example.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/a-f/examples/callbackcreate_example.ahk",
+		"/P/App/repos-GitHub/AHK-libs-and-classes-collection/classes/_examples/class_sqlite_Light-example.ahk",
+		"/P/App/repos-GitHub/AHK-libs-and-classes-collection/classes/_examples/class_Multipart_example1.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/hXexample.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/huffmann_example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/FileSelectSpecific_example.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/FindInstalled-example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection-master/libs/a-f/examples/AHKSock/example_2_server_transmitfile.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/AHKSock/example_2_server_single_client.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection-master/libs/a-f/examples/AHKSock/example_2_server_multiple_clients.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!examples/AHKSock/example_2_client.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection-master/libs/a-f/examples/CtlColorStatic_example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!classes/_examples/class_NotifyTitle-example.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection-master/classes/_examples/class_OD_Colors_example.ahk",
+		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/!classes/_examples/class_quicktimer_example_test_speed.ahk",
+		"/D/ahk/start/lib/AHK-libs-and-classes-collection-master/libs/o-z/examples/xStr-examples.ahk",
+		"/D/ahk/start/lib/AHK-libs-and-classes-collection-master/libs/g-n/examples/gv_example.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/(start)/lib/AHK-libs-and-classes-collection-master/classes/_examples/class_TaskDialog-Navigate-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/!classes/_examples/class_Structure2-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/lib/classes/_examples/class_Slider_Vertical-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/!classes/_examples/class_RichEdit-example-2.3.ahk",
+		"/C/Program Files/AutoHotkey/lib/!classes/_examples/class_Json_Parse-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/!classes/_examples/class_GUIClass-example.ahk",
+		"/D/ahk/start/lib/!classes/_examples/class_EditView-example.ahk",
+		"/P/!desktop/_Ahk_/ahk-zips/AHK-CGDipSnapShot-master/Screenshot Tool example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/o-z/examples/RegEx_example1.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/o-z/examples/DictionaryDatabase-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/watchfolder_AHKV2-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/sort_len_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/AHK-libs-and-classes-collection/libs/o-z/examples/WatchDirectory-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/WinGroup_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/WorkerThread-for_examples-EventHandler.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/oh_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/Subtitle_class_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/StrQ_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/Sift_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/RegEx_example1.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/ObjectSort-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/Open_gl- example-by-nnnik.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/DictionaryDatabase-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/o-z/examples/7ZipExtract-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/LoadLibrary-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/LoadFile_example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/Lastkey-example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/InjectJS-example.ahk",
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/(start)/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/gv_example.ahk",
+		"/C/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/g-n/examples/GoogleEarth_LatLongConversion-example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/g-n/examples/guiCreate_example.ahk",
+		"/C/Program Files/AutoHotkeybackup/Lib/.AHK-libs-and-classes-collection/libs/g-n/examples/hotstring-example-dynamic_hotstring.ahk"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"showtodo",
+			"^!t",
+			"todolistview",
+			"showtodo",
+			"todo",
+			"(",
+			") {",
+			"){",
+			"gdip",
+			"lv_modify(){",
+			"lv_modify",
+			"lv_mod",
+			",",
+			"runin",
+			"runcin",
+			"addfo",
+			"add",
+			"*/",
+			"f24 & 1",
+			"custom1",
+			"googler",
+			"google(",
+			"chrome",
+			"google(",
+			"google()",
+			"google",
+			"google()",
+			"google(1)",
+			"github",
+			"gobutton1",
+			"lv",
+			"menuhandler1",
+			"f24 & ",
+			"prepa",
+			"readwordlist",
+			"gobutton1",
+			"gomenu",
+			";endregion",
+			";region",
+			"addwordtolist",
+			"addse",
+			"exit",
+			"menu",
+			"minerva \n",
+			"This is the first \n",
+			"This is the first example of text inserted from Minerva.\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "GlobalCoder.ahk",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 89912,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+									[
+										11929,
+										11929
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								55102,
+								55102
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "efefd613",
+							"lsp_uri": "file:///D:/github/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"tabs_extra_last_activated": 1671349224.39,
+							"tabs_extra_last_activated_sheet_index": 0,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 30706.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 196.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.golang_build":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+	"project": "globalcoder-sublime-WS.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"P:\\App\\App\\ws\\tools & WS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 300.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

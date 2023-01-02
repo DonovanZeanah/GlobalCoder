@@ -3,6 +3,9 @@
 	[
 		{
 			"path": ".",
-		}
+		},
+		{
+			"path": "D:\\(Projects)\\globalcoder"
+		},
 	],
 }

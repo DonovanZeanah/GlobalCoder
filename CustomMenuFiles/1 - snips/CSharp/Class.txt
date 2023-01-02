@@ -1,0 +1,11 @@
+//This is an example of class code for c#
+
+class x
+{
+	//prop
+
+	//ctor
+
+	//methds
+
+}

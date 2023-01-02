@@ -1,0 +1,102 @@
+my interesting projects/functionalities:
+
+Windows code OCR - (teams) - in ahk vs powertoys
+
+no UI - interfaces
+
+Iaccessabilities to master windows - (getcaret func)
+
+integrating learning app/db into windows itself - no computer is used without subsequent learning inherently taking place. there should be a system for the user to database the learning and call upon it globally within their computing system..
+
+webview2 with MS edge - Desktop apps that leverage web/ maintain macro-ability via windows OS
+
+globalcoder - no ui based coding helper. --- docks at bottom right window -. expands into 1/3 of right side of sscreen for Main Interface -> that expands to the rest 2/3 only when necessary
+
+midi keyboards for controlling windows/ video/ production/ etc....
+
+macro keyboards to trigger OS local-remotely ( at a distance )
+
+emphasis on OCR to capture information/metrics/ - ocr is unblockable.
+
+
+
+
+
+
+
+
+
+
+
+For Live Demos :
+
+- Impliments Keypress OSD, especially helpful for when demonstrators are utilizing a zoomed out
+IDE.
+
+- Especially useful for In-IDE shortcuts that an instructor may use - often leaving the student wondering / unknowing of a 'seasoned-developers second-nature actions'.
+
+- Especially useful for copy and pasted snippets, as clipboard selection lingers onscreen a couple of extra seconds.
+
+
+
+- Window Management, like using captain to rename titlebars, is helpful with apps that stack in the taskbar - ( It's sublime text that does this for me, sometimes vscode and notepad ) - control click a windows top section to see this.
+
+- The 'global google' is an example of not fishing the taskbar for windows, rather its more like yelling at the sea your question and the answer jumping on your deckplates.
+ - press f24 & alt to see this, or f24 and g, or f24 and space, f24/shift menu selection etc...
+
+Heres a BANGER.... press ctrl+alt and w.
+
+
+
+;======
+entity framework wraps ado.net
+
+connecting to a database using ado.net
+
+object relational mapper
+
+entity framework core - using to build database
+
+ado.net is the basic data access api that contains a set of data provider
+
+entity framework is an orm framework ( there are many )
+
+orm maps tabular structure to data model class
+
+
+
+you can use orm framework to modify objects in a database
+
+
+
+
+
+
+
+
+
+
+Never is any computer system ever devoid of the user learning. That's specifically and explicitly why the learning functionality should be persistent and integrated into windows as opposed to something like a onenote apperiod Information and notes should be devoid of a file system and rather segmented into its own database system for learn information.
+
+;==================
+
+
+Why Me choosing MS, Why MS should choose me, etc..
+;=====================
+
+I'm AM one of the greatest flaw finders, so many things annoy me about windows.
+
+Paired with my honesty and background in Designing Video, Graphic layouts ( adobe suite trained ) etc... Id be an excellent UI designer/ improve majorly in these areas the windows system.
+
+
+
+ Your gonna get honesty, I view that as a massive strength to an employer, so if thats values, I'm golden.
+
+Look at windows tab. Completely disassociate the user from what they were doing, discombobulated their whole screen. I easily fix this functionality with a shitty 3rd party scripting language. Microsoft is a multi billion dollar company, act like it. We should have advanced, seamless features ND functionality like this.
+
+Look at the find everything app. Fkin blows explorer search out of the water. How?? Why?? You can't sink 100,000k Into 1 persons mission to fix this in a year? Cmon...
+
+The global Googler etc, I can't blame MS for not having. I'm just saying.. you put that functionality into native windows and pair it with bing, edge browser usage and bing usage will increase by exponential.
+
+I'm not a code hotshot, but damnit I am so passion about it. Obvsiously I am tailoring the showcase of my strengths to offset this, and can only give my word and attest to the fact that I WILL learn it at all cost, and hope I have demonstrated my values on a team to be something that can hopefully fill gaps in missing areas less thought about, yet highly relevant to the bottom line.
+
