@@ -36,7 +36,7 @@ CoordMode, Mouse, Screen
 
 ;=======================================================================================================================================================--------------------------------------| VARIABLES |
 
-/*
+
 Gui +LastFound        ; Window open/close detection
 hWnd := WinExist()        ; Window open/close detection
 DllCall( "RegisterShellHookWindow", UInt,hWnd )
@@ -46,10 +46,10 @@ OnMessage( MsgNum, "ShellMessage" )
 ; To prevent Menu command errors from stopping script.
 Menu, MenuName, UseErrorLevel
 
-
+/*
    The following code sets up the Gui with a DropDownList with the original list of
    open windows. Remove or comment out this code for Menu only.
-
+*/
 Gui,+AlwaysOnTop
 Gui, Font, s12, Arial
 Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
@@ -57,7 +57,7 @@ Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
 Menu, MyMenuBar, Add, &File, :FileMenu
 Gui, Menu, MyMenuBar
 
-*/
+
 
 
 FileEncoding, UTF-8
@@ -211,7 +211,7 @@ return
 
 ; CODE AUTO-EXECUTE ENDS HERE
 #IfWinActive ahk_exe explorer.exe 
-enter::+f10
+rbutton::+f10
 #if 
 
 
@@ -229,14 +229,13 @@ enter::+f10
 PrepareMenu(PATH){
 	
 ;static custom1 := A_ScriptDir "\custom1"
-/*static urls := { 0: ""
+static urls := { 0: ""
         , 1 : "https://www.google.com/search?hl=en&q="
         , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
         , 3 : "https://www.google.com/maps/search/"
         , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
-        */
 
-   ;global
+   global
 		
 	; GUI loading/progress bar
 	Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
@@ -250,7 +249,7 @@ PrepareMenu(PATH){
 		
 	; Add all custom items using algorithm 
 	LoopOverFolder(Path)
-   ;loopoverfolder(singles)
+   loopoverfolder(singles)
 
    Menu, %PATH%, Add,   ; seperater 
    Menu, %PATH%, Add, % ScriptName " vers. " Version, github ;googler                        ; Name
@@ -304,18 +303,6 @@ LoopOverFolder(PATH){
 	; Arrays are sorted to get alphabetical representation in GUI menu
 	Sort, FolderArray
 	Sort, FileArray
-
-	for k,v in folderarray
-{
-	value  .= v "`n"
-}
-	for k,v in filearray
-{
-	value2  .= v "`n"
-}
-
-msgbox, % value 
-msgbox, % value2 
 	
 	; First add all folders, so files have a place to stay
 	for index, element in FolderArray
@@ -494,7 +481,6 @@ GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
 
 ; -------------------------------------------------------------------------------------------------- under construction
 f24 & 3::
-;/
 BoundGivePar := Func("GivePar").Bind("First", "Test one")
 BoundGivePar2 := Func("GivePar").Bind("Second", "Test two")
 
@@ -514,7 +500,7 @@ GivePar(a, b, ItemName, ItemPos, MenuName){
            return
        }
 return
-;//
+
 ; --------------------------------------------------------------------------------------------------- under construction
 ^F1::google(1) ; Regular search
 ^F2::google(2) ; Images search
