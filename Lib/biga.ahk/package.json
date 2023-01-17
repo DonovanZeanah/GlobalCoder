@@ -1,0 +1,27 @@
+{
+	"name": "biga.ahk",
+	"version": "0.54.0",
+	"description": "A modern immutable utility library for AutoHotkey",
+	"main": "export.ahk",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/biga-ahk/biga.ahk.git"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"expect.ahk": "^0.1.0"
+	},
+	"author": "Shawn Brooker",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/biga-ahk/biga.ahk/issues"
+	},
+	"homepage": "https://biga-ahk.github.io/biga.ahk",
+	"keywords": [
+		"autohotkey",
+		"ahk",
+		"utility",
+		"lodash",
+		"immutable"
+	]
+}

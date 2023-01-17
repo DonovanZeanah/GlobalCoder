@@ -1,0 +1,58 @@
+{
+	"name": "array.ahk",
+	"version": "0.1.8",
+	"description": "Conversion of JavaScript's Array methods to AutoHotkey",
+	"main": "export.ahk",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Chunjee/array.ahk.git"
+	},
+	"dependencies": { },
+	"devDependencies": {
+		"unit-testing.ahk": "^0.3.3"
+	},
+	"author": "Shawn Brooker",
+	"contributors": [
+		{
+			"name": "Ryan Paul",
+			"url": "https://github.com/ryunp"
+		},
+		{
+			"name": "Shawn Brooker",
+			"url": "https://github.com/chunjee"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Chunjee/array.ahk"
+	},
+	"homepage": "https://chunjee.github.io/array.ahk",
+	"keywords": [
+		"autohotkey",
+		"ahk",
+		"array",
+		"methods",
+		"concat",
+		"every",
+		"fill",
+		"filter",
+		"find",
+		"findIndex",
+		"forEach",
+		"includes",
+		"indexOf",
+		"join",
+		"lastIndexOf",
+		"map",
+		"reduce",
+		"reduceRight",
+		"reverse",
+		"shift",
+		"slice",
+		"some",
+		"sort",
+		"splice",
+		"toString",
+		"unshift"
+	]
+}

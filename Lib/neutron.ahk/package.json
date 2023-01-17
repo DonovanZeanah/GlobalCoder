@@ -1,0 +1,24 @@
+{
+	"name": "neutron.ahk",
+	"version": "0.1.0",
+	"description": "provides a powerful set of tools for build HTML-based user interfaces with AutoHotkey",
+	"main": "export.ahk",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Chunjee/neutron.ahk"
+	},
+	"dependencies": { },
+	"devDependencies": { },
+	"author": "Shawn Brooker",
+	"contributors": [
+		{
+			"name": "Philip Taylor",
+			"url": "https://github.com/G33kDude"
+		},
+		{
+			"name": "Shawn Brooker",
+			"url": "https://github.com/chunjee"
+		}
+	  ],
+	"license": "MIT"
+}

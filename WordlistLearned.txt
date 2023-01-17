@@ -2,3 +2,4 @@
 omniinput
 omnibox
 examplecommand
+model
