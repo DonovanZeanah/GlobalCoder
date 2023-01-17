@@ -68,7 +68,7 @@ global MyProgress := 0
 Global TotalWords := 0
 global callingwindow := ""
 
-#Include includes\lib\Gdip.ahk 				
+#Include lib\Gdip.ahk 				
           
 
                  
@@ -314,8 +314,8 @@ LoopOverFolder(PATH){
 	value2  .= v "`n"
 }
 
-msgbox, % value 
-msgbox, % value2 
+;msgbox, % value 
+;msgbox, % value2 
 	
 	; First add all folders, so files have a place to stay
 	for index, element in FolderArray
@@ -3053,13 +3053,13 @@ class ClipboardStore {
 }
 
 
-#Include %A_ScriptDir%\includes\Conversions.ahk
-#Include %A_ScriptDir%\includes\Helper.ahk
-#Include %A_ScriptDir%\includes\ListBox.ahk
-#Include %A_ScriptDir%\includes\Preferences File.ahk
-#Include %A_ScriptDir%\includes\Sending.ahk
-#Include %A_ScriptDir%\includes\Settings.ahk
-#Include %A_ScriptDir%\includes\Window.ahk
-#Include %A_ScriptDir%\includes\Wordlist.ahk
+#Include lib\Conversions.ahk
+#Include lib\Helper.ahk
+#Include lib\ListBox.ahk
+#Include lib\Preferences File.ahk
+#Include lib\Sending.ahk
+#Include lib\Settings.ahk
+#Include lib\Window.ahk
+#Include lib\Wordlist.ahk
 #Include <DBA>
 #Include <_Struct>
