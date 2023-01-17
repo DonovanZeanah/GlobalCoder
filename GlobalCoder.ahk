@@ -69,6 +69,7 @@ Global TotalWords := 0
 global callingwindow := ""
 
 #Include lib\Gdip.ahk 				
+;#Include d:/lib/((start)).ahk 				
           
 
                  
@@ -214,7 +215,87 @@ return
 enter::+f10
 #if 
 
+chrome_name(){
+    SetKeyDelay 100
+send,{f10}
 
+send,{space 2}
+send, l
+send, w
+send, dkz
+send,{enter}
+return
+}
+
+chrome_group(){
+;WinActivate, dkz 
+WinWaitActive, dkz
+
+send, !g
+return
+}
+
+
+xbutton2 & 3::
+ SendMode Input
+ SendRaw, `;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
+ SendRaw, `;~   ~
+ SendRaw, `;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
+ send,{home}
+ send, {up}
+ send, {right 2}
+return
+
+xbutton2 & b::
+ SendMode Input
+ SendRaw, `;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
+return
+
+xbutton1 & b::
+    SendMode Input
+  
+    Send, `;==============================[]=================================[]
+return
+
+f13 & b::
+send, `//================
+clipboard := "`;================"
+return
+
+xbutton2 & n::
+f24 & n::
+
+chrome_name()
+
+return
+f24 & Space:: ;------------------------------------------------------------------
+InputBox, ans
+Run, www.google.com/search?q=%ans%
+chrome_group()
+;send, !g
+;removespace(ans) ;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
+
+answer := clipboard
+basedir := "c:\answer" 
+
+createddir = %A_WorkingDir%\logs\questions\%answer%
+FileCreateDir, %A_WorkingDir%\logs\questions\%answer% ;
+FileCreateDir, %basedir%\%answer%
+frontdir = %testdir%\%answer% 
+fileappend, %answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-- make text inside folder
+frontdir = c:\answer\%answer%
+file = %frontdir%\Q.txt
+Masterfile = %basedir%\Q-Master.txt
+
+fileappend, Q-%answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-- make text inside folder
+FileAppend, -%answer%__%time% `n, %A_WorkingDir%\logs\Q-google.txt ;--- update global log file11
+fileappend, -%answer%__%time% `n ,%file%
+fileappend, -%answer%__%time% `n ,%masterfile%
+
+;run %frontdir%
+;run, %file%
+
+return 
 
 
 
@@ -315,7 +396,7 @@ LoopOverFolder(PATH){
 }
 
 ;msgbox, % value 
-;msgbox, % value2 
+;ssmsgbox, % value2 
 	
 	; First add all folders, so files have a place to stay
 	for index, element in FolderArray
@@ -1517,6 +1598,9 @@ GetCaret(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
     H := 20
 }
 
+
+
+
 ; ---- Menu Handler Functions for switch cases ----
 
 ; Case not known; try to open the file
@@ -1595,6 +1679,8 @@ Handler_hotstrings(filepath){
 return
 }
 Handler_Ahk(filepath){
+
+
 return
 }
 Handler_json(filepath){

@@ -1,4 +1,4 @@
-﻿#include ..\Lib\Acc.ahk
+﻿#include Lib\Acc.ahk
 #Requires AutoHotkey v2.0-a
 
 oCaretPos := {x:0,y:0}
