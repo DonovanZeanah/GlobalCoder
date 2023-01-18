@@ -18,7 +18,7 @@
 x := floor(a_screenwidth * 0.2)
 y := floor(a_screenheight * 0.2)
 width := floor(a_screenwidth * 0.6)
-height := floor(a_screenheight * 0.6)
+height := floor(a_screenheight * 0.9)
 msgbox, % x "`n" y "`n" width "`n" height
 
 overlay := new ShinsOverlayClass(x,y,width,height,0,0,1)
@@ -91,7 +91,11 @@ if (overlay.BeginDraw()) {
 	;draw text elements
 	overlay.DrawText(inputText,50,150,28)
 	overlay.DrawText(stepsText[step],50,50,24,0xFFFFFFFF,"Arial","dsFF000000")
-	overlay.DrawText("Press ESC to close",overlay.width-1200,50,32,0xFFCC0000,"Arial","aRight dsFF222222 w" 400-50)
+
+	overlay.DrawText("ESC->close F3->Add ",overlay.width-1000,00,32,0xFFCC0000,"Arial","aRight dsFF222222 w" 450-50)
+	overlay.DrawText("Left/Right-> >><<<<>>",overlay.width-1000,100,32,0xFFCC0000,"Arial","aRight dsFF222222 w" 400-50)
+
+
 	overlay.DrawText("Page " step " of " stepsText.length(),50,overlay.height-74,24,0xFFFFFFFF,"Arial","dsFF000000")
 	overlay.EndDraw()
 }
@@ -103,6 +107,7 @@ WindowMove() {
 	moving := 1
 }
 
+xbutton2 & t::WinSet, AlwaysOnTop, Toggle, A
 
 f9::Reload
 esc::exitapp

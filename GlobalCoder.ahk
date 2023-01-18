@@ -68,6 +68,12 @@ global MyProgress := 0
 Global TotalWords := 0
 global callingwindow := ""
 
+global myGC := new gc()
+
+
+
+
+
 #Include lib\Gdip.ahk 				
 ;#Include d:/lib/((start)).ahk 				
           
@@ -78,6 +84,8 @@ global callingwindow := ""
 ;clipStore := new ClipboardStore()
 ;clipboard := "new Menu Item Entry"
 ;// 
+
+
 
 
 FindAmountItems()	
@@ -286,16 +294,22 @@ fileappend, %answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-
 frontdir = c:\answer\%answer%
 file = %frontdir%\Q.txt
 Masterfile = %basedir%\Q-Master.txt
-
 fileappend, Q-%answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-- make text inside folder
 FileAppend, -%answer%__%time% `n, %A_WorkingDir%\logs\Q-google.txt ;--- update global log file11
 fileappend, -%answer%__%time% `n ,%file%
 fileappend, -%answer%__%time% `n ,%masterfile%
-
 ;run %frontdir%
 ;run, %file%
-
 return 
+
+
+f24 & 2:: 
+;run sublime_text.exe "0_globalcoder.ahk" ;;"%A_ScriptFullPath%" run, d:/ 
+run sublime_text.exe "scratch\globalcoderv2.ah2" ;;"%A_ScriptFullPath%" run, d:/ 
+;run, "C:\Program Files\AutoHotkey\AutoHotkey.exe" /ErrorStdOut "d:\globalcoder\0_globalcoder.ahk" ;/ErrorStdOut %programfiles%\autohotkey\autohotkey.exe ;"d:\globalcoder\globalcoder.ahk"
+;run, "C:\Program Files\AutoHotkey\v2\AutoHotkey.exe" /ErrorStdOut "d:\globalcoder\0_globalcoderv2.ah2" ;/ErrorStdOut %programfiles%\autohotkey\v2\autohotkey.exe ;"d:\globalcoder\globalcoder.ahk"
+return
+
 
 
 
@@ -424,7 +438,15 @@ LoopOverFolder(PATH){
 	}
 }
 
+; Hotkey x
+x::
+;/ code
 
+return
+;// end hotkey x
+
+
+;trippleclick@caret
 
 ;----------------------------------------------------------------------------------------| HOTKEYS |----------------------------------------------;
 
@@ -455,6 +477,7 @@ return ;// end hotkey x
 ;-------------------------
 
 ; main menu
+~space & up::
 ^f24::
 Ctrl & RShift::
 ;/
@@ -1132,8 +1155,10 @@ HideTrayTip() {
 ;     visible outside the function, hence inside the g-label subroutines. 
 ; - code: can't make GUI resizable, since this is only possible with hard
 ;     coded GUI ID, due to %GuiID%GuiSize label
+;//
 
 IniSettingsEditor(ProgName,IniFile,OwnedBy = 0,DisableGui = 0) {
+	;/ start
     static pos
      
     ;Find a GUI ID that does not exist yet 
@@ -1531,7 +1556,7 @@ else      If (Typ = "Exe"){
       GuiIniSettingsEditorAnchor("Static3"             , "x")
       GuiIniSettingsEditorAnchor("Static4"             , "x")
     Return
-  }  ;end of function
+  }  ;// end of function
 
 GuiIniSettingsEditorAnchor(ctrl, a, draw = false) { ; v3.2 by Titan (shortened)
     static pos
@@ -1598,9 +1623,34 @@ GetCaret(ByRef X:="", ByRef Y:="", ByRef W:="", ByRef H:="") {
     H := 20
 }
 
+;==========================[]=====================[]=[];==========================[]=====================[]=[]
+global GC_Subjects := {}
+;GC_Subjects.containers := {}
+GC_Subjects.folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
+GC_Subjects.Keywords := { 1 : "test", 2 : "code", 3 : "git"}
+GC_Subjects.path := { 1 : "%a_scriptdir%/notes/test", 2 : "%a_scriptdir%/notes/code", 3 : "%a_scriptdir%/notes/git"}
 
+class GC
+{
+	;/[class] class subject{ } ;//
+	static propogationString := ";/[class] class subject{ } `;// "
+	static propogationStringNoSpace := "`n;/[class]`nclass subject{`n}`n;//`n"
 
+		;/[class]
+		 class subjects{
 
+		 		static folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
+		 	} ;//
+		 		;/[class]
+		 class paths{
+
+		 	} ;//
+		 		;/[class]
+		 class keywords{
+
+		 	} ;//
+}
+;==========================[]=====================[]=[];==========================[]=====================[]=[]
 ; ---- Menu Handler Functions for switch cases ----
 
 ; Case not known; try to open the file
@@ -1611,15 +1661,43 @@ Handler_Default(PATH){
 ; contents of .txt should be copied to clipboard and pasted. This is fast.
 Handler_txt(PATH){
 
-
-
-
 	FileRead, Clipboard, %PATH%
 	
 	; Gets amount of words (spaces) in file just pasted
 	GetWordCount()						
 	Sleep, 50
 	
+	; Adds Info to file
+	AddAmountFile(A_ThisMenuItem, TotalWords)
+	Sleep, 50
+	
+	; Paste content of clipboard
+	Send, ^v
+}
+Handler_note(PATH){
+	;put all into clipboard
+	FileRead, Clipboard, %PATH%
+
+	;all into variable 'readfile'
+	FileRead, readfile, %PATH%
+
+	;split file by each line in file '`n' and report the first
+	StrSplit(String, [Delimiters, OmitChars])
+	readfile := strsplit(readfile, "`n", "`r")
+	report := readfile[1]
+
+	;pass the 'report' into a validator, or -director- I should say.
+	determine(report)
+
+
+
+
+
+
+
+; Gets amount of words (spaces) in file just pasted
+	GetWordCount()						
+	Sleep, 50
 	; Adds Info to file
 	AddAmountFile(A_ThisMenuItem, TotalWords)
 	Sleep, 50
@@ -1690,6 +1768,72 @@ Handler_html(filepath){
 return
 }
 
+
+
+determine(content){
+gc_subjects := {}
+gc_subjects.list := { 1 : "test", 2 : "code", 3 : "git"}
+gc_subjects.path := { 1 : "%a_scriptdir%/notes/test", 2 : "%a_scriptdir%/notes/code", 3 : "%a_scriptdir%/notes/git"}
+
+for k,v in mygc.gc.folders
+	MsgBox, % k "- " v
+	for k,v in mygc.folders
+	MsgBox, % k "- " v
+
+MsgBox, % "CONTENT IS: " content
+
+	for k,v in GC_Subjects.list
+	{
+		;InStr(Haystack, Needle [, CaseSensitive?, StartingPos])
+		if (InStr( content,v))
+		{
+			MsgBox, % content " - does contains - " v
+			return true
+		}
+		else
+		{
+			MsgBox, % content " - doesnt contains - " v
+			;return false
+		}
+	}
+		for k,v in GC_Subjects.folder
+	{
+		;InStr(Haystack, Needle [, CaseSensitive?, StartingPos])
+		if (InStr( content,k))
+		{
+			MsgBox, % content " - does contains - `n" k "- " v 
+						return true
+
+		}
+		else
+		{
+			MsgBox, % content " - doesnt contains - `n" k "- " v 
+						;return false
+
+		}
+	}
+	
+
+}
+director(report, path, rec = 1, case = 0){
+    len := strlen(report)
+    if (len = 0)
+        return
+}
+/*    loop,% filepattern, 0,% rec    {
+        fileread, x,% a_loopfilefullpath
+        if (pos := instr(x, string, case)){
+            positions .= a_loopfilefullpath "|" pos
+            while(pos := instr(x, string, case, pos+len))
+                positions .= "|" pos
+            positions .= "`n"
+        }
+    }
+     return
+}
+
+*/
+
 ; ---- Other Functions ----
 ; Amountfile is a .csv that the user can use to see how much info was saved. 
 AddAmountFile(FileName, WordCount){
@@ -1701,7 +1845,7 @@ AddAmountFile(FileName, WordCount){
 	
 	; Check if file already exists. All other times than the very first run, it will exist.
 	; If if not, create it and append, otherwise just append
-	if FileExist("AmountUsed.csv") 					
+	if FileExist("logs/AmountUsed.csv") 					
 	{
 		FileAppend, %CurrentDateTime%`,%FileName%`,%WordCount%`,%MinutesSaved%`n, %A_ScriptDir%\AmountUsed.csv
 	}
@@ -2697,6 +2841,8 @@ MenuEventHandler:
 		case "txt" : Handler_txt(FilePath)
 		case "lnk" : Handler_LaunchProgram(FilePath)
 		case "exe" : Handler_LaunchProgram(FilePath)
+		case "ahn" : Handler_Note(FilePath)
+
 		Default: Handler_Default(FilePath)
 	}
 	

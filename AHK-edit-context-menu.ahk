@@ -1,5 +1,6 @@
 #Requires AutoHotkey v2.0-beta.3
 
+#NoTrayIcon
 #HotIf WinActive("ahk_class CabinetWClass")
     && WinExist("PopupHost ahk_class Xaml_WindowedPopupClass")
 
