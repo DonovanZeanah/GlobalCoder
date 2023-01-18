@@ -3,8 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+
+/(dev)
 /scratch
 /collection
+/settings
+
+
 worlistlearned.db
 vid3-in-browser-intellisense.mp4
 vid1.mkv
