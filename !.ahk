@@ -23,7 +23,8 @@ FormatTime, time , YYYYMMDDHH24MISS, MMdd--HHmm
 ;SetTitleMatchMode, slow ; june 30
 
 ;================
-
+;StrReplace(Haystack, SearchText [, ReplaceText, OutputVarCount, Limit := -1])
+;removespace()
 SendMode, event
 ;===
 SetKeyDelay,

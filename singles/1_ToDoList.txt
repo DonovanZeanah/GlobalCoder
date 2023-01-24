@@ -1,3 +1,0 @@
-x2125 y-1085 w268 h243 
-Link the css page   
-test    

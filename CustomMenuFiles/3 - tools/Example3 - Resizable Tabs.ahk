@@ -1,4 +1,6 @@
-﻿#Requires AutoHotkey v2.0-beta
+﻿;#stderr
+;
+;#Requires AutoHotkey v2.0-beta
 #Include d:/lib/v2/WebView2.ahk
 
 main := Gui("+Resize"), main.MarginX := main.MarginY := 0

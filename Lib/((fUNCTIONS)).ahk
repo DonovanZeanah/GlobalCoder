@@ -721,19 +721,7 @@ findstring1(string, filepattern = "*.*", rec = 1, case = 0){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+;/ [doc]
 
 ; ==================================================================================================================================
 ; Function:       Notifies about changes within folders.
@@ -942,30 +930,10 @@ WatchFolder(Folder, UserFunc, SubTree := False, Watch := 0x03) {
    Return (RebuildWaitObjects) ; returns True on success, otherwise False
 }
 */
-
-/*  
-
-
-*/
+;//
 
 
-;test
-/*
-||||=====================
-||||=====================
-||||
-||||
-||||
-||||
-||||=====================
-||||=====================
-||||
-||||
-||||
-||||
-||||
-||||
-*/
+
 
 replaceFile(File, Content){
     FileDelete, %File%
@@ -1000,7 +968,7 @@ findstring(string, filepattern = "*.*", rec = 0, case = 0){
 */
 
 ini( filename = 0, updatemode = 0 ){
-;
+;/
 ; updates From/To a whole .ini file
 ;
 ; By default the update mode is set to 0 (Read)
@@ -1045,7 +1013,7 @@ Local s, c, p, key, k, write
          }
       }
    }
-}
+} ;//
 
 findHWND(controlNames,executableName){
 

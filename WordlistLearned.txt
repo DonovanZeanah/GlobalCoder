@@ -1,7 +1,9 @@
 ﻿msgbox
 omniinput
 3de32882D
+fulldata
 omnibox
+3de32882d
 report
 kristinezeanah
 examplecommand
@@ -11,4 +13,8 @@ ddSelectedWordToList
 taPropert
 GetIncludedActiveWindow
  WinWaitNotActive
-3de32882d
+function
+paths
+globalcompletioning
+test2
+clipboard

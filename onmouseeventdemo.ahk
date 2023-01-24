@@ -1,4 +1,5 @@
-#include OnMouseEvent.ahk
+;#include 
+#include LIB/OnMouseEvent.AHK
 ; #include <Flags>
 ; Pretty-print an integer as a |-separated string of flag names
 ; warning: assumes each flag is only a single bit
