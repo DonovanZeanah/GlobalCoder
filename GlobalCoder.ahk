@@ -17,10 +17,7 @@ Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %nowtime%
 Sleep 800   ; Let it display for 3 seconds.
 ;HideTrayTip()
-FormatTime, nowtime , YYYYMMDDHH24MISS, MMdd--HHmm
 ;=======================================================================================================================================================================================================[START CODE]
-
-
 
 Gui, Font,Q4, MS Sans Serif ;opts-> (c)olor (s)ize (w)eight (Q)uality
 Gui, Font,, Arial
@@ -61,6 +58,9 @@ Gui, Menu, MyMenuBar
 
 
 FileEncoding, UTF-8
+global frontproject := "d:/(github)/globalcoder/gc/globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
+global rootfolder := "d:/mssa"
+global projname := "GlobalCoder"
 global ScriptName := "GlobalCoder"
 global Version    := "1.0"
 global items	  := 0
@@ -70,9 +70,13 @@ global callingwindow := ""
 
 global rootpath := a_scriptdir 
 global hotpath := a_scriptdir . "/CustomMenuFiles"
-global notepath := rootpath . "/log/notes"
+global notepath := a_scriptdir . "\log\notes"
 
 global myGC := new gc()
+global timestring := ""
+;FormatTime, time, YYYYMMDDHH24MISS, MMDD-HHmm
+FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
+;MsgBox The specified date and time, when formatted, is %TimeString%.
 
 
 
@@ -227,6 +231,211 @@ return
 enter::+f10
 #if 
 
+
+
+
+^left::
+!enter::
+selectsubject()
+return
+
+^down::
+newsubject()
+msgbox, % "" frontproject
+return
+
+^2::
+inputbox, ans
+noteex(ans)
+return
+
+^1::
+;inputbox, ans
+
+notein() ;no input - default to frontproj
+return
+
+^right::
+run()
+return
+
+xbutton1 & g::
+;Gui, Add, Button, gCtrlEvent vButton1, Button 1
+;Gui, Add, Button, gCtrlEvent vButton2, Button 2
+;gGui, MyGui:Add, Text,, Text for about-box.
+; Hotkey x
+
+Gui, mygui:+Resize 
+Gui, mygui:Add, Edit, w300 r10 vhotedit, Example text
+
+gui, mygui:Add, Button, gGoButton1, Go Button
+Gui, mygui:Show ,, Functions instead of labels
+return 
+
+
+GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
+;static hotpath := a_scriptdir . "/notes"	;static hotpath := a_scriptdir
+	msgbox, % frontproject
+
+	SelectHotpath(hotpath)
+    GuiControlGet, hotedit
+    clipboard := hotedit
+    msgbox, % "cont to pass clipboard to notex()"
+    noteex(clipboard)
+    gui, destroy
+}
+
+
+
+newsubject(path := ""){
+  if (path = "")
+  path := frontproject
+
+  ;inputbox, ProjName,, " Name your Project: `n this is the SLN file created. " ,,,,,,,,SLN_
+  InputBox, subject ,, "enter a subject"
+  frontproject := notepath . "\" . subject ; ".txt"
+  if fileexist(frontproject . "\notes.txt"){
+  MsgBox, already exists.
+  return frontproject
+   }
+
+  filecreatedir, % frontproject
+  ;fileappend,"init", % frontproject "\note.txt"  
+  return frontproject
+ } ; should add new folder and set to frontproj
+
+
+selectsubject(path := ""){
+  if (path = "")
+  path := notepath
+  msgbox, % ": " path
+
+  Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView3, Name
+  Loop, % path . "\* " , 2 ; 2 = folders only
+  LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
+  LV_ModifyCol()  ; Auto-size each column to fit its contents.
+  LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
+  FolderList .= A_LoopFileName . "`n"
+
+Gui, Show
+
+  
+  MyListView3:
+    if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
+    {
+      LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
+      LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
+ 
+            frontproject := notepath . "\" . filename
+            msgbox, % frontproject
+
+    GuiControl,, Folder, %frontproject%
+
+    gui, destroy
+  
+} ;selecting a subj should return notepaath + chosen folder
+return frontproject
+}
+
+;path is frontproject
+;note external
+noteex(data){
+static count := 0
+ inputbox, fname	, "w/ Extension"  
+  if (fileexist(file := frontproject . "/" fname ))
+	  {
+		  while ( FileExist(file))
+			  {
+			  	file := frontproject . "/" ++count fname ;g. ".txt"
+			  }
+	  }
+MsgBox, % "appending file: `n" file 
+fileappend, `n %clipboard% , % file
+  return
+}
+
+;path is predeterined and inputted
+;newnote gets input inside the func
+notein(path := ""){
+  if (path = "")
+  path := frontproject
+
+  ;inputbox, ProjName,, " Name your Project: `n this is the SLN file created. " ,,,,,,,,SLN_
+  InputBox, note,, % frontproject - "new note:"
+  fileappend, %  note . " - " . timestring "`n"  , % frontproject "\notes.txt"
+  return
+}
+
+hotpath(folder) {
+	if (folder = "")
+  folder := notepath 
+    Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView AltSubmit, Name
+        Loop, Files, % folder "\*", D
+        {
+            LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
+            LV_ModifyCol()  ; Auto-size each column to fit its contents.
+            LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
+            FolderList .= A_LoopFileName . "`n"
+        }
+    Gui, Show
+    return 
+
+GuiContextMenu:  ; Launched in response to a right-click or press of the Apps key.
+if (A_GuiControl != "MyListView")  ; This check is optional. It displays the menu only for clicks inside the ListView.
+    return
+; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
+; because they provide correct coordinates even if the user pressed the Apps key:
+Menu, MyContextMenu, Show, %A_GuiX%, %A_GuiY%
+return
+
+MyListView:
+if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the script can check.
+{
+    LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
+    LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
+    
+    Run %Dir%\%FileName%,, UseErrorLevel
+    hotpath := dir
+    msgbox, % hotpath
+    ;Run %FileDir%\%FileName%,, UseErrorLevel
+    if ErrorLevel
+        MsgBox Could not open "%FileDir%\%FileName%".
+}
+return hotpath
+
+
+}
+selecthotpath(path){
+  ;if (path = "")
+  ;hotpath := a_scriptdir . "/notes/"
+
+  Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gHotFileView, Name
+  Loop, % notepath . "/"* , 2 ; 2 = folders only
+  LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
+  LV_ModifyCol()  ; Auto-size each column to fit its contents.
+  LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
+  FolderList .= A_LoopFileName . "`n"
+
+Gui, Show
+
+  
+  HotFileView:
+    if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
+    {
+      LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
+      LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
+    hotpath := hotpath . "/" . filename
+    GuiControl,, Folder, %hotpath%
+    gui, destroy
+  
+}
+return
+
+}
+
+run(path := ""){
+  run, %frontproject%
+}
 chrome_name(){
     SetKeyDelay 100
 send,{f10}
@@ -571,117 +780,9 @@ return
 
 ;hotkey to add reference notes via edit
 ; -- under construction
-f24 & g::
-;Gui, Add, Button, gCtrlEvent vButton1, Button 1
-;Gui, Add, Button, gCtrlEvent vButton2, Button 2
-;gGui, MyGui:Add, Text,, Text for about-box.
-; Hotkey x
-
-Gui, mygui:+Resize 
-Gui, mygui:Add, Edit, w300 r10 vhotedit, Example text
-
-gui, mygui:Add, Button, gGoButton1, Go Button
-Gui, mygui:Show ,, Functions instead of labels
-return 
 
 
-GoButton1(ByRef hotpath:="", CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
-;static hotpath := a_scriptdir . "/notes"	;static hotpath := a_scriptdir
-	msgbox, % hotpath
-	SelectHotpath(hotpath)
-    GuiControlGet, hotedit
-    clipboard := hotedit
-    newnote(clipboard)
-}
-
-
-selecthotpath(path){
-  if (path = "")
-  hotpath := a_scriptdir . "/notes/"
-
-  Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gHotFileView, Name
-  Loop, % hotpath . "/"* , 2 ; 2 = folders only
-  LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
-  LV_ModifyCol()  ; Auto-size each column to fit its contents.
-  LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
-  FolderList .= A_LoopFileName . "`n"
-
-Gui, Show
-
-  
-  HotFileView:
-    if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
-    {
-      LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
-      LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
-    hotpath := hotpath . "/" . filename
-    GuiControl,, Folder, %hotpath%
-    gui, destroy
-  
-}
-return
-
-}
-
-newnote(data){
-static count := 0
-  if (notepath = "")
-	  {
-	  	selecthotpath(hotpath)
-	  }
-  if (fileexist(file := notepath . "/note.txt"))
-	  {
-		  while ( FileExist(file))
-			  {
-			  	file := hotpath . "/note" . ++count . ".txt"
-			  }
-	  }
-
-fileappend, `n %clipboard% , % file
-  return
-}
-
-
-/*hotpath(folder) {
-    Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView AltSubmit, Name
-        Loop, Files, % folder "\*", D
-        {
-            LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
-            LV_ModifyCol()  ; Auto-size each column to fit its contents.
-            LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
-            FolderList .= A_LoopFileName . "`n"
-        }
-    Gui, Show
-    return 
-
-GuiContextMenu:  ; Launched in response to a right-click or press of the Apps key.
-if (A_GuiControl != "MyListView")  ; This check is optional. It displays the menu only for clicks inside the ListView.
-    return
-; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
-; because they provide correct coordinates even if the user pressed the Apps key:
-Menu, MyContextMenu, Show, %A_GuiX%, %A_GuiY%
-return
-
-MyListView:
-if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the script can check.
-{
-    LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
-    LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
-    
-    Run %Dir%\%FileName%,, UseErrorLevel
-    hotpath := dir
-    msgbox, % hotpath
-    ;Run %FileDir%\%FileName%,, UseErrorLevel
-    if ErrorLevel
-        MsgBox Could not open "%FileDir%\%FileName%".
-}
-return hotpath
-
-
-}
-*/
-
-
+rctrl::f24
 ; -------------------------------------------------------------------------------------------------- under construction
 f24 & 3::
 ;/
@@ -2491,7 +2592,7 @@ Return ;//
 
 
 ;/ guicontextmenu
-GuiContextMenu:  ; Launched in response to a right-click or press of the Apps key.
+GuiContextMenu2:  ; Launched in response to a right-click or press of the Apps key.
 if A_GuiControl <> MyListView  ; Display the menu only for clicks inside the ListView.
     return
   LV_GetText(EditText, A_EventInfo) 
@@ -3460,3 +3561,4 @@ folderlooper(PATH){
 		FoundItem("File")
 	}
 }
+

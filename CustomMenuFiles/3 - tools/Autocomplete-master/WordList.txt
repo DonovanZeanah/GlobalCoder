@@ -1,2 +1,0 @@
-msgbox, % "0: " ar
-msgbox("hello")
