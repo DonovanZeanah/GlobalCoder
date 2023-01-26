@@ -1,0 +1,13 @@
+mssa notes
+
+strategy design pattern
+;=========================================
+
+GetAll method for states
+GetSingle method for states
+
+AddStates
+
+DeleteStates
+
+ExistsStates

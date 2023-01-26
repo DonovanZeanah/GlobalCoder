@@ -1,0 +1,210 @@
+/* You can add global styles to this file, and also import other style files */
+
+@subheaderbackground: #18a9cF;
+@activelinkbackground: #0F859D;
+@activelinkcolor: #FFF;
+@panelbackground: #B1E7F1;
+@panelheadercolor: #fff;
+@panelheader: #076374;
+@panelfooter: #076374;
+@panelfootercolor: #c3c3c3;
+
+
+* {
+  box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .header-text-suggestions
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: @subheaderbackground;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #17273c;
+    color: #fff;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: @panelbackground;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .card-header
+  {
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  .card-subheader
+  {
+    border: 1px solid black;
+    /* border-top-right-radius: 3px;
+    border-top-left-radius: 3px; */
+  }
+  .card-body
+  {
+    background-color: #ddd;
+  }
+
+  .card-body > img {
+    max-width: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  .topnav > a.active 
+  {
+    background-color: @activelinkbackground;
+    color: @activelinkcolor;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+/* stolen */
+.panel {
+    margin-bottom: 20px;
+    background-color: @panelbackground;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.panel-default {
+    border-color: @panelbackground;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    background-color: @panelheader;
+    color: @panelheadercolor; 
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.panel-body {
+    padding: 0px 0px 0px 15px;
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: @panelfooter;
+    color: @panelfootercolor;   
+    border-top: 1px solid transparent;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.flag-wrapper {
+    position: relative;
+}
+
+.foodImage {
+  padding: 0px 50px 0px 15px;
+  max-width:100%;
+  max-height: 500px;
+}
+
+.panelDetailHeader {
+  padding: 5px 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}

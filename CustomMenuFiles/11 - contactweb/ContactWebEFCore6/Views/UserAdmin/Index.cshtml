@@ -1,0 +1,66 @@
+﻿@model UserAdminViewModel
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class = "col-sm-10">
+                <input type="Email" id="email" value="" />
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class = "col-sm-10">
+                <input type="password" id="password" value="" />
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.PasswordConfirmed)
+            </dt>
+            <dd class = "col-sm-10">
+                <input type="password" id="pwdConfirmed" value="" />
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.PasswordPhrase)
+            </dt>
+            <dd class = "col-sm-10">
+                <input type="text" id="pwdPhrase" value="" />
+            </dd>
+        </dl>
+        <div class="row">
+            <button id="createUser" class="btn btn-primary")">Create User</button>
+        </div>
+    </div>
+
+</div>
+
+@section scripts
+{
+    <script>
+        $(function(){
+        
+            $("#createUser").on('click', function(){
+                var pwd = $("#password").val();
+                //alert(pwd);
+
+                    
+                var pwdConfirmed = $("#pwdConfirmed").val();
+                    //TODO: Validate passwords match:
+
+                $.ajax({
+                url: '@Url.Action("CreateUser", "UserAdmin")',
+                type: 'POST',
+                data: { "password": pwd, "passwordConfirmed": pwdConfirmed },
+                success: function(result) {
+                    //$('#editTaskModal').modal('hide');
+                    //redirectToIndex();
+                    alert('completed');
+                },
+                error: function(result) {
+                    alert("Failed to create user, please try again!");
+                }
+            });
+            });
+        });
+    </script>
+}

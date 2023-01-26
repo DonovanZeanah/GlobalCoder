@@ -1,0 +1,75 @@
+ Console.WriteLine("How many stamps would you like to buy?");
+      // var result = Console.ReadLine();
+      int numberOfStamps = int.Parse(Console.ReadLine());
+      PayForStamps(numberOfStamps);
+
+
+
+      //Console.WriteLine("Hello, World!");
+    }
+
+    public static void PayForStamps(int NumberOfStamps)
+    {
+      // 1. Get the number of stamps from the user
+      // 2. Calculate the cost of the stamps
+      double stampPrice = 00.60;
+      double totalCost = NumberOfStamps * stampPrice;
+      Console.WriteLine("The total cost of your stamps is: $" + totalCost);
+      // 3. Ask the user for the amount of money they are paying with
+      Console.WriteLine("How much money are you paying with?");
+      DivvyPayment(Console.ReadLine(),totalCost);
+
+    }
+
+    private static void DivvyPayment(string payment, double total)
+    {
+      double goldDollar = 01.00;
+      double quarter = 00.25;
+      double dime = 00.10;
+      double nickel = 00.05;
+      double penny = 00.01;
+
+      double paymentAmount = double.Parse(payment);
+      var changeResult = paymentAmount - total;
+      Console.WriteLine("Your change is: $" + changeResult);
+
+      if (changeResult % goldDollar == 0)
+      {
+        Console.WriteLine("You will receive " + (changeResult / goldDollar) + " gold dollar(s). or, ");
+        Console.WriteLine("You will receive " + (changeResult / quarter) + "  quarter(s). or, ");
+        Console.WriteLine("You will receive " + (changeResult / dime) + " dimes(s). or, ");
+        Console.WriteLine("You will receive " + (changeResult / nickel) + " nickels◘(s). or, ");
+        Console.WriteLine("You will receive " + (changeResult / penny) + " pennies(s). or, ");
+
+
+
+        var result = changeResult % goldDollar;
+        Console.WriteLine("left is: $" + result);
+        Console.WriteLine("answer is: " + changeResult.ToString() + "gold dollars.");
+
+      }
+      else
+      {
+        var result = changeResult % goldDollar;
+        Console.WriteLine("left is: $" + result);
+        
+
+      }
+
+    }
+
+    private static bool RemoveText(string line)
+    {
+      var removedText = Regex.Replace(line, @"[A-Za-z0-9\.\,\s\-]", string.Empty);
+      Console.WriteLine(removedText);
+      string temp_text = string.Empty;
+      while (removedText != temp_text)
+      {
+        temp_text = removedText;
+        removedText = removedText.Replace("[]", "").Replace("()", "").Replace("{}", "");
+      }
+      Console.WriteLine(removedText == string.Empty ? "true" : "false");
+      Console.WriteLine(new string('-', 40));
+      bool valid = removedText == string.Empty;
+      return valid;
+    }

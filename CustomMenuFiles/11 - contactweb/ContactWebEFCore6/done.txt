@@ -1,0 +1,4 @@
+update-database -context ApplicationDbContext
+update-database -context MyContactManagerDbContext
+add-migration "customized-contact-web-user-added-passphrase" -Context ApplicationDbContext
+update-database -context ApplicationDbContext

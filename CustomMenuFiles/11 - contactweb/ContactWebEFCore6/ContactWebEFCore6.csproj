@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ContactWebEFCore6-0090AE31-94A8-496D-A320-A47AC4A04536</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CategorysController.cs" />
+    <Compile Remove="Controllers\SupplysController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Contacts\Create.cshtml" />
+    <None Include="Views\Contacts\Delete.cshtml" />
+    <None Include="Views\Contacts\Details.cshtml" />
+    <None Include="Views\Contacts\Edit.cshtml" />
+    <None Include="Views\Contacts\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\States\Create.cshtml" />
+    <None Include="Views\States\Delete.cshtml" />
+    <None Include="Views\States\Details.cshtml" />
+    <None Include="Views\States\Edit.cshtml" />
+    <None Include="Views\States\Index.cshtml" />
+    <None Include="Views\UserAdmin\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0-*" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactWebModels\ContactWebModels.csproj" />
+    <ProjectReference Include="..\MyContactManagerServices\MyContactManagerServices.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+Hello world!
+This is a new list of strings!
+One option is to do this in a group of lines
+Another is to do this line by line individually
+Send just one line with an append boolean to make it happen!
+This is another line, appended!

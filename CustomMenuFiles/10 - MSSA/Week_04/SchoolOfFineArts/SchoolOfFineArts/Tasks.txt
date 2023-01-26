@@ -1,0 +1,23 @@
+﻿1) Update your connection string to the connection string you used in the ADO.Net example
+2) Change the connection string database name to: SchoolOfFineArtsDB
+3) Package Manager Console: Flip to the DB project then try to run `update-database`.  get the error for "The term 'update-database' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+4) PMC -> flip to the School of Fine arts project, then run:
+- Install-Package Microsoft.EntityFrameworkCore.Tools
+- Install-Package Microsoft.EntityFrameworkCore.Design
+5) Flip back to the School of FineArtsDB project and run `update-database`
+6) Add appsettings.json to the db project
+7) add code to override the db options
+8) add NuGet package references for the json configuration and configuration to the db project
+9) Add the default constructor
+10) run update-database "no migrations..."
+---
+11) add-migration rollback-point
+12) update-database
+13) Add the teacher object to the context
+14) add-migration create-teacher-table
+15) seed teachers with override model creating
+16) add-migration seed-teacher-table
+17) update-database
+18) Add code to get the teachers from the database "Load teachers"
+        and Bind the new list to the grid

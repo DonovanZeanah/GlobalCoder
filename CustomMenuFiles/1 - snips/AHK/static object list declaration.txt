@@ -1,0 +1,5 @@
+static urls := { 0: ""
+        , 1 : "https://www.google.com/search?hl=en&q="
+        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
+        , 3 : "https://www.google.com/maps/search/"
+        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }

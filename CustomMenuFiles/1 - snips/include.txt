@@ -1,0 +1,3 @@
+#include d:/lib
+#include d:/lib/_libflat
+#include gdip.ahk

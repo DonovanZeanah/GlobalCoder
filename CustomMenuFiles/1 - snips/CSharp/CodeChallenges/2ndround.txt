@@ -1,0 +1,56 @@
+/*
+return the number of
+Given a string ,
+*segments* in the string.
+A *segment* is defined to be a contiguous
+sequence of *non-space characters*.
+## Example 1 :
+- "Hello, my name is
+> **lnput:**
+John"
+The five segments are
+> **Exp1anation : **
+' ["Hello," , "
+my", "name", "is" ,
+"John"
+## Example 2:
+> **lnput:**
+> **Output:** 41
+## Condition :
+* segment minimum length is 1
+* s is not null
+*/  
+
+
+
+ public class Solution {
+        public static void Main(string[] args) {
+            // you can write to stdout for debugging purposes, e.g.
+
+            string s = "Hello, I am   Donovan ";
+        Console.WriteLine("This is a debug message");
+
+            var numberOfSegments = takeString(s);
+            Console.WriteLine(numberOfSegments.Length);
+
+
+        }
+        public static string[] takeString(string s)
+        {
+            var result = s.Split(" ");
+            List<string> r = new List<string>();
+
+            foreach (var element in result)
+            {
+                if (element.Length >= 1)
+                {
+                    r.Add(element.ToString());
+                }
+                //subtract r[] from result[]
+
+
+            }
+
+
+            return r.ToArray();
+        }

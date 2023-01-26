@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Health Tracker</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Health Tracker</h1>
+      <p>A place to record my food and exercise</p>
+    </div>
+
+    <div class="topnav">
+      <a routerLink="/home">Home</a>
+      <a routerLink="/meals">Meals</a>
+      <a routerLink="/vehicles">Vehicles</a>
+      <a href="#" style="float:right" (click)="notWorking()">Login (not working)</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="rightcolumn">
+        
+      <!-- content right here-->
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>&copy; 2022 - Fitness Weight Tracker, inc</h2>
+    </div>
+  </body>
+</html>
+

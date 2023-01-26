@@ -1,0 +1,2 @@
+#Warn All, Off
+;#Warn LocalSameAsGlobal, OutputDebug

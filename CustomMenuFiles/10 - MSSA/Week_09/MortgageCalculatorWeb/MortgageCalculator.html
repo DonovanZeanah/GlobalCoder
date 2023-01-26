@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <!-- styles -->
+    <!-- bootstrap -->
+    
+    <!-- site -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <style>
+        <!-- 
+            inline styles 
+        -->
+
+    </style>
+</head>
+<body>
+
+    <!-- nav bars -->
+
+    <!-- Meat of the program -->
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="income">Income</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" id="inputIncome" placeholder="100000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="inputPurchasePrice">Purchase Price</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" id="inputPurchasePrice" placeholder="100000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="inputMarketValue">Market Value</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" id="inputMarketValue" placeholder="100000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="inputDownPayment">Down Payment</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" id="inputDownPayment" placeholder="100000">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="inputInterestRate">Interest Rate</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" id="inputInterestRate" placeholder="5.25">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for="inputHOA">HOA</label>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input hoa-switch" type="checkbox" role="switch" id="switchHOA" onclick="toggleHOA();">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="number" class="form-control" id="inputHOAFees" placeholder="0" value="0" style="visibility:hidden;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label for "loanTerm">Loan Term</label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check2">
+                            <input class="form-check-input" type="radio" name="rdoLoanTerm" id="rdo15Years">
+                            <label class="form-check-label" for="rdo15Years">
+                                15 years
+                            </label>
+                        </div>
+                        <div class="form-check2">
+                            <input class="form-check-input" type="radio" name="rdoLoanTerm" id="rdo30Years" checked>
+                            <label class="form-check-label" for="rdo30Years">
+                                30 years
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type=""button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+                </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span id="loanApprovalText"></span>
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="inputLoanPayment">Loan Payment Amount</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="inputLoanPayment">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        function toggleHOA(){
+            var toggle = document.getElementById("switchHOA").checked;
+            document.getElementById("inputHOAFees").style.visibility = toggle ? "visible" : "hidden";
+        }
+
+        function calculate() {
+            var income = document.getElementById("inputIncome").value;
+            var purchasePrice = document.getElementById("inputPurchasePrice").value;
+            var marketValue = document.getElementById("inputMarketValue").value;
+            var downPayment = document.getElementById("inputDownPayment").value;
+            var termYears = document.getElementById("rdo30Years").checked ? 30 : 15;
+            var interestRate = document.getElementById("inputInterestRate").value;
+            var hoaFeesInput =  document.getElementById("inputHOAFees").value;
+            var hoaFees = (document.getElementById("switchHOA").checked) ? hoaFeesInput : 0;
+
+            /* console.log("Income", income);
+            console.log("Purchase Price", purchasePrice);
+            console.log("Market Value", marketValue);
+            console.log("Down Payment", downPayment);
+            console.log("Hoa Fees", hoaFees);
+            console.log("interestRate", interestRate);
+            console.log("term years", termYears); */
+
+            var monthlyPayment = calculatePayment(income, purchasePrice, marketValue, downPayment, termYears, interestRate, hoaFees);
+            displayResult(monthlyPayment);
+
+        }
+
+        function displayResult(monthlyPayment)
+        {
+            //write into the approval span
+            document.getElementById("loanApprovalText").innerHTML = "Loan is denied, sorry.";
+            //
+            
+            const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            });
+            console.log(formatter.format(monthlyPayment));
+            var x = formatter.format(monthlyPayment);
+            document.getElementById("inputLoanPayment").value = `${x}`;
+        }
+    </script>
+</body>

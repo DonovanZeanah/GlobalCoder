@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Health Tracker</title>
+    <link href="css/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Health Tracker</h1>
+      <p>A place to record my food and exercise</p>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="meals.html">Meals</a>
+      <a href="workouts.html">Workouts</a>
+      <a class="active" href="vehicles.html">Vehicles</a>
+      <a href="#" style="float:right" onclick="notworking()">Login (not working)</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        
+        <!-- List all Vehicles-->
+        <div id="vehiclesTable">
+
+        </div>
+
+
+      </div>
+      <div class="rightcolumn">
+        
+      <!-- content right here-->
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>&copy; 2022 - Fitness Weight Tracker, inc</h2>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            loadVehicles();
+        });
+
+        function notworking()
+        {
+            alert("This feature is not yet working");
+        }
+
+        function loadVehicles()
+        {
+            alert('here');
+            
+            var dataUrl = "https://mssaautolot.azurewebsites.net/api/GetVehicles?";
+
+            //make a request to the vehicles endpoint
+            $.ajax({
+                url: dataUrl,
+                data: {},
+                contentType: "application/json",
+                success: function( result ) {
+                    console.log("result", result);
+                    alert(result);
+                    var data = JSON.parse(result);
+                    var tableString = "<table><tr><th>Id</th><th>Make</th><th>Model</th><th>VIN</th></tr>";
+                    
+                    console.log("data value", data);
+                    for (var i = 0; i < data.length; i++)
+                    {
+                        tableString += "<tr>";
+                        var nextCar= data[i];
+                        
+                        tableString += "<td>" + data[i].Id + "</td>";
+                        tableString += "<td>" + data[i].Make + "</td>";
+                        tableString += "<td>" + data[i].Model + "</td>";
+                        tableString += "<td>" + data[i].VIN + "</td>";
+                        tableString += "</tr>";
+                    }
+                    tableString += "</table>";
+
+                    $("#vehiclesTable").html(tableString);
+                    //document.getElementById("vehiclesTable").innerHTML = tableString;
+                },
+                error: function(x, d, xhr) {
+                    console.log(xhr);
+                }
+            });
+
+            //iterate the JSON to make each vehicle into a row
+
+            //Create the row data and set  it in the table
+
+
+
+        }
+    </script>
+  </body>
+</html>

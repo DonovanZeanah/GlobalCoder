@@ -1,0 +1,35 @@
+<h1>Meals</h1>
+<div *ngFor="let meal of meals">
+
+<div class="panel panel-default">
+    <div class="panel-heading lead">
+        <b>{{meal.title}}</b>&nbsp;
+        <span class="flag-wrapper flag-favorites flag-favorites-65">
+            <a href="" title="Add to favorites" class="" rel="nofollow">
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </a>
+            <span class="flag-throbber">&nbsp;</span>
+        </span>&nbsp;
+        <a href="/recipes/{{meal.id}}" target="_blank">
+            <span class="glyphicon glyphicon-print"></span>
+        </a>
+    </div>
+    <div class="panel-body">
+        
+        <img src="{{meal.imagePath}}" />
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li *ngFor="let ingredient of meal.ingredients">{{ingredient}}</li>
+        </ul>
+    </div>
+    <div class="panel-body">
+        <p>
+            <span *ngFor="let direction of meal.directions">{{direction}}<br /></span>
+        </p>
+    </div>
+    <div class="panel-footer">
+        {{meal.category}}
+    </div>
+</div>
+</div>

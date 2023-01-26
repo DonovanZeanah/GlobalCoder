@@ -1,0 +1,3 @@
+//int x = int.Parse(Console.ReadLine());
+//var x = int.Parse(Console.ReadLine());
+var x = double.Parse(Console.ReadLine());

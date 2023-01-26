@@ -1,0 +1,29 @@
+1) Create a class with two properties
+2) Create an explicit constructor to set the properties
+3) Override ToString to print the details
+
+4) In the main method, create an instance of the class and set the values in one line of code
+5) Print the class details using its ToString method
+
+6) Create an array of 10 of your class
+7) put four of your class objects in the array with different properties
+8) Iterate the array and print out the details for the four items
+
+9) Change to using a list
+10) Repeat #8 on the list
+
+
+----------------------------------
+
+1) Create an interface called Instrument with at least one method called "Play".  Create an abtract class to implement common functionality. 
+2) Create classes for Keyboard, Guitar, and Drum.  All classes implement instrument.  Additional properties are Name, Brand, and a condition of Poor, Fair, Good, or New.
+3) Create an inventory of musical instruments avaliable for checkout.
+4) Populate the inventory with at least 20 instruments
+5) Create a User.  Users can only check out one instrument at a time
+6) Create ability for the user to list all instruments
+7) Create ability for user to check out an instrument
+8) Create ability for user to return an instrument
+9) Create ability for user to be placed on a wait list if there are no instruments of the type they want
+10) Store all data in a datbase
+11) Use proper relationships between entities
+12) Create ability to update condition of instruments

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Welcome to the best part of the MSSA program!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p id="theParagraph">Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <ul>
+        <li class="something">asdf</li>
+        <li class="something">qer</li>
+        <li class="something">234</li>
+        <li class="something">zzzz</li>
+        <li class="something">eeee</li>
+        <li class="something">mmmm</li>
+    </ul>
+</div>
+
+@section scripts {
+    <script>
+        alert('here');
+
+        $(".something").click(function(e){
+            console.log(e);
+            console.log($(this).text());
+            alert('you clicked  me');
+        });
+
+        $("#theParagraph").click(function () {
+            alert('you clicked me!');
+        });
+    </script>
+}

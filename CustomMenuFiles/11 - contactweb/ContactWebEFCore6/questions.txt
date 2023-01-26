@@ -1,0 +1,6 @@
+﻿-linking categories to:
+
+-supplies
+-tools
+-projects
+-topics of study

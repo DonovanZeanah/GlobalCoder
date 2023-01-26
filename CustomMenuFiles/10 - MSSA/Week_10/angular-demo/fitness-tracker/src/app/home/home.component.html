@@ -1,0 +1,11 @@
+<h1>This is the home page</h1>
+<h2>It's working</h2>
+
+<button type="button" (click)="sayHello();">Say Hello</button>
+<input type="text" id="theName" value="{{theNameValue}}" />
+<input [(ngModel)]="theNameValue2" />
+
+<span id="LiveUpdates">
+    {{theNameValue2}}
+</span> 
+<button type="button" (click)="neatEffect();">Effect!</button>

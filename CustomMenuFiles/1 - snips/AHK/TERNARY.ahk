@@ -1,0 +1,1 @@
+﻿SetTimer, WatchCursor, % (Toggle:=!Toggle) ? "Off" : "On"

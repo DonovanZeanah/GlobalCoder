@@ -1,0 +1,12 @@
+﻿@model IEnumerable<TodoListModels.State>
+
+<h1>My favorite state</h1>
+
+<p>
+    <ul>
+        @foreach(var state in Model)
+        {
+            <li>@state.Id | @state.Name | @state.Abbreviation </li>
+        }
+    </ul>
+</p>

@@ -1,0 +1,45 @@
+﻿1. Create a console application
+2. Create code in the console application to add two numbers (do not take user input for these numbers, do not put this in a method)
+
+3. Use tools if possible to extract your code for adding two numbers to a method.  If you can't use tools, write the method.
+4. Call the method from your main program and output the results in the main program
+
+5. Use a data structure of your choice to store 100 numbers
+6. Populate the data structure with 100 numbers as quickly/efficiently as you can
+7. Output the result of adding each number to the previous number in your data structure.  If there is no previous number, use 0 or ignore it, your choice.  The output should look something like this:
+
+n1: 10 | n2: 20 | result: 30
+
+
+8. In C#, you can generate a Random number with the following class: Random
+
+https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-6.0
+
+//Code would look like this:
+Random r = new Random();
+
+//To get a random number, use 
+r.Next() //make sure to use the correct type for your structure
+
+Call a method that returns a data structure like your previous choice with 100 random numbers in it
+
+9. Use similar code to #7 to show the result of adding all the numbers, once again, use 0 if no previous number in the sequence, or ignore it, your choice.
+
+10. If you used anything other than a list, make changes to your code now to switch to a list
+
+11. Use the following code to sort your list in place before output of the addition of the numbers so that the highest resulting value will be the first item displayed:
+
+yourList.Sort((a, b) => b.CompareTo(a));
+
+12. With all of that working, create one class called SequenceGenerator that returns a sequence of numbers with a starting and ending integer/double so that if the start is 10 and the length is 10 the sequence would be 10, 11, ..., 19.
+
+Replace your code that created a sequence of 100 numbers (not random) with a call to that class
+
+13. Repeat 12 for a new class called RandomGenerator and return a set number of random numbers with a similar functionality to #12 -> length 10 returns 10 random numbers.  Don't need the start, just length here.
+
+14. Create an interface to model one method required for use in your program to generate either a sequence of numbers or a random set of numbers.  Use the interface to change your program code to call each of the methods using polymorphism (hint: there is a gap here you have to remember to do) (additional hint: use the interface type as your variable type and instantiate the correct class for the job).
+
+Extra Credit:
+
+1) Make a method that prints out the values of the data added to the next so you don't have to repeat that code in the program but instead can call a method
+2) Move the NumberGenerator logic to a class library.

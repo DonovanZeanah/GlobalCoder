@@ -1,0 +1,33 @@
+
+- Get user input for the secret word (random from a file).
+
+- Simulate that we got the word (for now)
+
+- array of possible words
+- dictionary of index + isPlayed
+- dictionary of letters and isGuessed
+
+- allow a user to "guess" letters
+
+- determine if the user has hit a good or a bad letter
+
+-- if good -> reveal the letter
+-- if bad -> reveal part of the hangman (countdown to loss)
+-- 6-->0
+
+-- contains two separate strings that are not side-by-side
+
+== challenge question
+-- contain permutations of a string
+
+-- get all game logic into its own class
+
+Text = 'A'
+TextAlign = center
+Font.Size = 20
+
+X = offset + 45
+Y = Top (75)
+
+width:35
+

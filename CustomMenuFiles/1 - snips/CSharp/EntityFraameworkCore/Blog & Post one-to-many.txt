@@ -1,0 +1,78 @@
+C#:
+
+
+public class Blog
+{
+    public int BlogId { get; set; }
+    public string Url { get; set; }
+
+    public List<Post> Posts { get; set; }
+}
+
+public class Post
+{
+    public int PostId { get; set; }
+    public string Title { get; set; }
+    public string Content { get; set; }
+
+    public int BlogId { get; set; }
+    public Blog Blog { get; set; }
+}
+
+/*
+You can also configure the constraint name as follows:
+
+C#:
+
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<Post>()
+        .HasOne(p => p.Blog)
+        .WithMany(b => b.Posts)
+        .HasForeignKey(p => p.BlogId)
+        .HasConstraintName("ForeignKey_Post_Blog");
+}
+*/
+
+/*
+If you want the foreign key to reference a property other than the primary key, you can use the Fluent API to configure the principal key property for the relationship. The property that you configure as the principal key will automatically be set up as an alternate key.
+
+Simple key
+Composite key
+C#
+
+Copy
+internal class MyContext : DbContext
+{
+    public DbSet<Car> Cars { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<RecordOfSale>()
+            .HasOne(s => s.Car)
+            .WithMany(c => c.SaleHistory)
+            .HasForeignKey(s => s.CarLicensePlate)
+            .HasPrincipalKey(c => c.LicensePlate); //****//
+    }
+}
+
+public class Car
+{
+    public int CarId { get; set; }
+    public string LicensePlate { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+
+    public List<RecordOfSale> SaleHistory { get; set; }
+}
+
+public class RecordOfSale
+{
+    public int RecordOfSaleId { get; set; }
+    public DateTime DateSold { get; set; }
+    public decimal Price { get; set; }
+
+    public string CarLicensePlate { get; set; }
+    public Car Car { get; set; }
+}
+*/

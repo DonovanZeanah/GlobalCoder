@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*
+    Add two: 2 + 3 = <span id="theResult"></span><br />
+Multiply two: 2 * 3 = <span id="theResult2"></span>
+*@
+@*@section scripts
+{
+    <script>
+        $(function(){
+        var x = addTwo(2, 3);
+        $("#theResult").text(x);
+
+        var y = multiply(2, 3);
+        $("#theResult2").text(y);
+    });
+    </script>
+    
+}*@

@@ -1,0 +1,96 @@
+function getData() {
+    // var theData = '[ \
+    //     { "title": "Soup", "imagePath": "images/thepicture.jpg", "ingredients": ["i1","i2","i3","i4"], "directions": ["d1","d2","d3","d4"],"category": "Lunch"}, \
+    //     { "title": "Hamburger", "imagePath": "images/thepicture.jpg", "ingredients": ["i1","i2","i3"], "directions": ["d1","d2"],"category": "Lunch" } \
+    // ]';
+
+    var myMeals = '[';
+
+    //meal 1
+    myMeals = myMeals + "{";
+    myMeals = myMeals + '"title": "Soup", ';
+    myMeals = myMeals + '"imagePath": "images/fruit-salad-dressing.jpg", '
+    myMeals = myMeals + '"ingredients": ["i1","i2","i3","i4"], '
+    myMeals = myMeals + '"directions": ["d1","d2","d3","d4"], '
+    myMeals = myMeals + '"category": "Lunch"'
+    myMeals = myMeals + "},";
+
+    //meal 2
+    myMeals = myMeals + "{";
+    myMeals = myMeals + '"title": "Hamburger", ';
+    myMeals = myMeals + '"imagePath": "images/fruit-salad-dressing.jpg", '
+    myMeals = myMeals + '"ingredients": ["i1","i2","i3"], '
+    myMeals = myMeals + '"directions": ["d1","d2"], '
+    myMeals = myMeals + '"category": "Beef"'
+    myMeals = myMeals + "}";
+
+    myMeals = myMeals + "]";
+    
+    var data = JSON.parse(myMeals);
+    
+    console.log("my Meals", data);
+    var generatedHtml = "";
+
+    //..iterate it
+    for (var i = 0; i < data.length; i++)
+    {
+        // compose the html for each item
+        generatedHtml += "<h1>" + data[i].title + "</h1>";
+
+        /*
+        <div class="panel panel-default">
+            <div class="panel-heading lead">
+                <b>Title</b>&nbsp;
+                <span class="flag-wrapper flag-favorites flag-favorites-65">
+                    <a href="" title="Add to favorites" class="" rel="nofollow">
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </a>
+                    <span class="flag-throbber">&nbsp;</span>
+                </span>&nbsp;
+                <a href="/recipes/65" target="_blank">
+                    <span class="glyphicon glyphicon-print"></span>
+                </a>
+            </div>
+            <div class="panel-body">
+                <img class="fakeimg" />
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>ingredient 1</li>
+                    <li>ingredient 2</li>
+                    <li>ingredient 3</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 5</li>
+                </ul>
+            </div>
+            <div class="panel-body">
+                <p>
+                    direction line 1 <br />
+                    direction line 2 <br />
+                    direction line 3 <br />
+                    direction line 4 <br />
+                    direction line 5 <br />
+                </p>
+            </div>
+            <div class="panel-footer">
+                Food-Category
+            </div>
+        </div>
+        */
+        /*
+        console.log("Title", data[i].title);
+        console.log("image", data[i].imagePath);
+        console.log("ingre", data[i].ingredients);
+        console.log("dir", data[i].directions);
+        console.log("cat", data[i].category);
+        */
+        
+
+        
+    }
+
+
+    
+    // inject it to the form
+    document.getElementById("myMeals").innerHTML = generatedHtml;
+}
