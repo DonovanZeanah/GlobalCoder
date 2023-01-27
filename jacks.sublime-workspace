@@ -258,10 +258,7 @@
 				"buffer_size": 6386,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/seethrough.ahk",
@@ -279,7 +276,7 @@
 					"paste",
 					null,
 					"AgAAAAAAAAAAAAAATAcAAAAAAAAAAAAATAcAAAAAAABMBwAAAAAAAPQYAAAvKgpBcHJpbCAyNCwgMjAxOAoKVGhpcyB2ZXJzaW9uIG9mIHRoZSBBdXRvSG90a2V5IFNjcmlwdCBSZWZlcmVuY2UgYXBwIGlzIHVuZGVyIGRldmVsb3BtZW50LiBXaGlsZSAKdGhpcyBzY3JpcHQgY3VycmVudGx5IHdvcmtzLCBpdCdzIG5vdCB3aXRob3V0IGl0cyBwcm9ibGVtc+KAlHBhcnRpY3VsYXJseSBpbiB0aGUgSU5JIApmaWxlLiBTcGVjaWZpY2FsbHksIHRoZSBJTkkgbG9va3VwIHRhYmxlIG5lZWRzIG1vcmUgd29yayB0byBjb3JyZWxhdGUgVjEuMSB0ZXJtcwp3aXRoIFYyLjAgdGVybXMuIE9uIG9jY2FzaW9uLCB0aGUgc2NyaXB0IGdlbmVyYXRlcyBhbiB1bndpZWxkeSBtZXNzYWdlIGJveC4KClNpbmNlIHRoZSBvbGQgQXV0b0hvdGtleSByZWZlcmVuY2Ugc2NyaXB0IG5vIGxvbmdlciB3b3JrcywgSSdtIG1ha2luZwp0aGlzIG9uZSBhdmFpbGFibGUgaW4gc3BpdGUgb2YgaXRzIGluYWRlcXVhY2llcy4KClNlbGVjdCBhIFYxLjEgY29tbWFuZCBhbmQgdXNlIHRoZSBIb3RrZXkgY29tYmluYXRpb24gQ1RSTCtBTFQrSi4gQ3VycmVudGx5LCBhIAptZXNzYWdlIGJveCBwb3BzIHVwIGRpc3BsYXlpbmcga2V5IGluZm9ybWF0aW9uIGZvciBib3RoIFYxLjEgYW5kIFYyLjAuIFVzZSBidXR0b25zCnRvIGxvYWQgcGFnZXMuIEZvciBtb3JlIGluZm9ybWF0aW9uIHNlZToKCmh0dHBzOi8vamFja3NhdXRvaG90a2V5YmxvZy53b3JkcHJlc3MuY29tLzIwMTgvMDMvMTUvYnVpbGRpbmctYS1sb29rdXAtdGFibGUtd2l0aC1hbi1pbmktZmlsZS1hdXRvaG90a2V5LXJlZmVyZW5jZS10aXAvCgpUaGUgc2NyaXB0IHJlcXVpcmVzIHRoZSBBSEtWZXIyUmVmLklOSSBmaWxlIGluIHRoZSBzYW1lIHdvcmtpbmcgZGlyZWN0b3J5LiBJbnRlcm5ldCAKYWNjZXNzIHJlcXVpcmVkLgoKKi8KCgoKXiFqOjoKCklmIChDb25uZWN0ZWRUb0ludGVybmV0KCkgPSAwKQogIHsKICAgIE1zZ0JveCBJbnRlcm5ldCBub3QgY29ubmVjdGVkIQoJUmV0dXJuCiAgfQoKCiBKdW1wIDo9ICIiCiBHdWkgK093bkRpYWxvZ3MKIE9sZENsaXBib2FyZCA6PSBDbGlwYm9hcmRBbGwKIENsaXBib2FyZCA6PSAiIgogU2VuZElucHV0IF5jIDsgY29waWVzIHNlbGVjdGVkIHRleHQKIENsaXBXYWl0IDAKIElmIEVycm9yTGV2ZWwKICAgewogICAgIE1zZ0JveCwgTm8gVGV4dCBTZWxlY3RlZCEKICAgICBSZXR1cm4KICAgfQogSW5pUmVhZCwgT3V0cHV0VmFyLCBBSEtWZXIyUmVmLmluaSwgQ29tbWFuZHMsICVDbGlwYm9hcmQlLCBOb3QgRm91bmQKOyBNc2dCb3gsIFRoZSB2YWx1ZSBpcyAlT3V0cHV0VmFyJS4KIElmIChPdXRwdXRWYXIgPSAiTm90IEZvdW5kIikKICAgIHsKICAgICBNc2dCb3ggQ29tbWFuZCBub3QgZm91bmQgaW4gbG9va3VwIHRhYmxlIQoJUmV0dXJuCgl9CiAKOyBJbmlSZWFkLCBDbGlwYm9hcmQsIFZlcjJBSEtSZWYuaW5pLCBDb21tYW5kcywgYmV0d2VlbgogT3V0cHV0VmFyIDo9IFJlZ0V4UmVwbGFjZShPdXRwdXRWYXIsIjwuKj8+IikKIDsgbXNnYm94ICVPdXRwdXRWYXIlCgogY29tbWFuZF9hcnJheSA6PSBTdHJTcGxpdChPdXRwdXRWYXIsICJ8IikKOyAgbXNnYm94LCAlIGNvbW1hbmRfYXJyYXlbMl0gLiAiKiIgLiBjb21tYW5kX2FycmF5WzNdIC4gIioiIC4gIGNvbW1hbmRfYXJyYXlbNF0gLiAiKiIgLiAgY29tbWFuZF9hcnJheVs1XQogOyBzZW5kaW5wdXQgICVPdXRwdXRWYXIlCgogCiBwYWdlIDo9IGNvbW1hbmRfYXJyYXlbMl0KY29tbWFuZF9hcnJheVszXSA6PSBTdHJSZXBsYWNlKGNvbW1hbmRfYXJyYXlbM10sIiZsdDsiLCI8IikKY29tbWFuZF9hcnJheVszXSA6PSBTdHJSZXBsYWNlKGNvbW1hbmRfYXJyYXlbM10sIiZndDsiLCI+IikKCgpWMVBhZ2UgOj0gR2V0V2ViUGFnZSgiaHR0cHM6Ly9hdXRvaG90a2V5LmNvbS9kb2NzL2NvbW1hbmRzLyIgLiBwYWdlKQpJZiBjb21tYW5kX2FycmF5WzRdID0gIiIKICAgVjJQYWdlIDo9IEdldFdlYlBhZ2UoImh0dHBzOi8vbGV4aWtvcy5naXRodWIuaW8vdjIvZG9jcy9jb21tYW5kcy8iIC4gcGFnZSkKRWxzZQoJSWYgY29tbWFuZF9hcnJheVs0XSB+PSAib2JqZWN0cyIKCXsKICAgICAgIFYyUGFnZSA6PSBHZXRXZWJQYWdlKCJodHRwczovL2xleGlrb3MuZ2l0aHViLmlvL3YyL2RvY3MvIiAuIGNvbW1hbmRfYXJyYXlbNF0pCgkgICBqdW1wb3RoZXIgOj0gUmVnRXhSZXBsYWNlKGNvbW1hbmRfYXJyYXlbNV0sImlkPSIiKC4qPykiIlwuXCpcPyIsIiMkMSIpCgl9CglFbHNlCiAgICAgICBWMlBhZ2UgOj0gR2V0V2ViUGFnZSgiaHR0cHM6Ly9sZXhpa29zLmdpdGh1Yi5pby92Mi9kb2NzL2NvbW1hbmRzLyIgLiBjb21tYW5kX2FycmF5WzRdKQo7IG1zZ2JveCAldjJwYWdlJQpJZiBjb21tYW5kX2FycmF5WzJdID0gIk1hdGguaHRtIgoJewogICAgIFYxQ29tbWFuZCA6PSBSZWdFeFJlcGxhY2UoVjFQYWdlLCIuKj8iIC4gY29tbWFuZF9hcnJheVs1XSAuICI8cHJlLio/PiguKj8pPC9wcmUuKiIsIiQxIiwxKQoJIGp1bXAgOj0gIiMiIC4gY29tbWFuZF9hcnJheVsxXQoJfQpFbHNlCgl7CiAgICAgVjFDb21tYW5kIDo9IFJlZ0V4UmVwbGFjZShWMVBhZ2UsIi4qPzxwcmUuKj8+KC4qPyk8L3ByZS4qIiwiJDEiLDEpCgl9ClYxQ29tbWFuZCA6PSBSZWdFeFJlcGxhY2UoVjFDb21tYW5kLCI8Lio/PiIpClYxQ29tbWFuZCA6PSBTdHJSZXBsYWNlKFYxQ29tbWFuZCwiJmx0OyIsIjwiKQpWMUNvbW1hbmQgOj0gU3RyUmVwbGFjZShWMUNvbW1hbmQsIiZndDsiLCI+IikKCklmIGNvbW1hbmRfYXJyYXlbMl0gIT0gIk1hdGguaHRtIgoJewoJUmVsYXRlZDEgOj0gUmVnRXhSZXBsYWNlKFYxUGFnZSwiLio/UmVsYXRlZC4qPzxwLio/PiguKj8pPC9wLioiLCIkMSIsMSkKCVJlbGF0ZWQxIDo9IFJlZ0V4UmVwbGFjZShSZWxhdGVkMSwiPC4qPz4iKQoJUmVsYXRlZDEgOj0gImByYHJSZWxhdGVkIFYxLjE6YHIiIC4gIFJlbGF0ZWQxCgl9CkVsc2UKICAgIHsKCVJlbGF0ZWQxIDo9ICIiCgl9CgogSWYgVjFQYWdlIH49ICI8c3Ryb25nPkRlcHJlY2F0ZWQ6PC9zdHJvbmc+IgogICAgewogICAgIElmIFYxUGFnZSB+PSAiPGgyIGlkPSIiZnVuY3Rpb24iIj4iCgkgICAgewoJICAgICAgIFYxRnVuY3Rpb24gOj0gUmVnRXhSZXBsYWNlKFYxUGFnZSwiLio/PGgyIGlkPSIiZnVuY3Rpb24iIj4uKj88cHJlLio/PiguKj8pPC9wcmUuKiIsIiQxIiwxKQoJICAgIH0KCUlmIEVsc2UgVjFQYWdlIH49ICJVc2UgdGhlIDxhIGhyZWY9IiIjbmV3IiI+bmV3IHN5bnRheDwvYT4gaW5zdGVhZC4iCgkgICAgewoJCSAgIFYxRnVuY3Rpb24gOj0gIlVzZSBuZXcgc3ludGF4IHNob3duIGFib3ZlLiIKCQl9CglFbHNlCgkgICAgewoJCSAgVjNQYWdlIDo9IEdldFdlYlBhZ2UoImh0dHBzOi8vYXV0b2hvdGtleS5jb20vZG9jcy9jb21tYW5kcy8iIC4gY29tbWFuZF9hcnJheVs0XSkgCiAgICAgICAgICBWMUZ1bmN0aW9uIDo9IFJlZ0V4UmVwbGFjZShWM1BhZ2UsIi4qPzxwcmUuKj8+KC4qPyk8L3ByZS4qIiwiJDEiLDEpCgkJfQogICAgICAgICBWMUZ1bmN0aW9uIDo9IFJlZ0V4UmVwbGFjZShWMUZ1bmN0aW9uLCI8Lio/PiIpCiAgIH0KIEVsc2UKICAgIHsKICAgICAgVjFGdW5jdGlvbiA6PSAiTm8gcGFyYWxsZWwgVjEuMSBmdW5jdGlvbi4iCiAgICB9CgogSWYgVjJQYWdlIH49ICI8dGl0bGU+RXJyb3IhPC90aXRsZT4iCiAgICAgVjJGdW5jdGlvbiA6PSAiTm8gbWF0Y2hpbmcgcGFnZSIKIEVsc2UKICB7CjsgICAgIFYyRm91bmQgOj0gImh0dHBzOi8vbGV4aWtvcy5naXRodWIuaW8vdjIvZG9jcy9jb21tYW5kcy8iIC4gcGFnZQogICAgIFYyRnVuY3Rpb24gOj0gUmVnRXhSZXBsYWNlKFYyUGFnZSwiLio/IiAuIGNvbW1hbmRfYXJyYXlbNV0gLiAiPHByZS4qPz4oLio/KTwvcHJlLioiLCIkMSIsMSkKICAgICBWMkZ1bmN0aW9uIDo9IFJlZ0V4UmVwbGFjZShWMkZ1bmN0aW9uLCI8Lio/PiIpCiAgIH0KICAgCklmIChjb21tYW5kX2FycmF5WzJdICE9ICJNYXRoLmh0bSIpIGFuZCAoSW5TdHIoY29tbWFuZF9hcnJheVs0XSwib2JqZWN0cy9HdWlDb250cm9sIikgPSAwKQoJewoJSWYgKEluU3RyKGNvbW1hbmRfYXJyYXlbNF0sIm9iamVjdHMiKSkKCSAgewoJICAgUmVsYXRlZDIgOj0gUmVnRXhSZXBsYWNlKFYyUGFnZSwiLio/aWQ9IiJSZWxhdGVkIiIuKj88cD4oLio/KTwvcD4uKiIsIiQxIiwxKQoJICAgUmVsYXRlZDIgOj0gUmVnRXhSZXBsYWNlKFJlbGF0ZWQyLCI8Lio/PiIpCgkgICBSZWxhdGVkMiA6PSAiYHJgclJlbGF0ZWQgVjIuMDpgciIgLiAgUmVsYXRlZDIKCSAgfQkKCUVsc2UKCSAgewoJICAgUmVsYXRlZDIgOj0gUmVnRXhSZXBsYWNlKFYyUGFnZSwiLio/UmVsYXRlZC4qPzxwLio/PiguKj8pPC9wLioiLCIkMSIsMSkKCSAgIFJlbGF0ZWQyIDo9IFJlZ0V4UmVwbGFjZShSZWxhdGVkMiwiPC4qPz4iKQoJICAgUmVsYXRlZDIgOj0gImByYHJSZWxhdGVkIFYyLjA6YHIiIC4gIFJlbGF0ZWQyCgkgIH0KCX0KRWxzZQogICAgewoJUmVsYXRlZDIgOj0gIiIKCX0KICAgCiBPbk1lc3NhZ2UoMHg1MywgIldNX0hFTFAiKQogU2V0VGltZXIsIENoYW5nZUJ1dHRvbk5hbWVzVmFyLCA1MAogTXNnQm94LCAxNjM4NywgJSBjb21tYW5kX2FycmF5WzFdLCAlIFYxQ29tbWFuZCAKICAgICAgIC4gImByYHJWMS4xIEZ1bmN0aW9uIChyZWNvbW1lbmRlZCwgaWYgYXZhaWxhYmxlKWByIiAuICBWMUZ1bmN0aW9uCiAgICAgICAuIFJlbGF0ZWQxCiAgICAgICAuICJgcmByVjIuMCBGdW5jdGlvbmByIiAuICBWMkZ1bmN0aW9uCiAgICAgICAuIFJlbGF0ZWQyCiAgICAgICAuICJgcmByIiAuIGNvbW1hbmRfYXJyYXlbM10gOyBjb21tYW5kX2FycmF5WzRdICBjb21tYW5kX2FycmF5WzVdICAKOyBSdW4gaHR0cHM6Ly9hdXRvaG90a2V5LmNvbS9kb2NzL2NvbW1hbmRzLyVwYWdlJQo7IFYyUGFnZSA6PSBHZXRXZWJQYWdlKCJodHRwczovL2xleGlrb3MuZ2l0aHViLmlvL3YyL2RvY3MvY29tbWFuZHMvIiAuIHBhZ2UpCjsgTXNnQm94ICUgVjJQYWdlCklmTXNnQm94IFllcwoJUnVuIGh0dHBzOi8vYXV0b2hvdGtleS5jb20vZG9jcy9jb21tYW5kcy8lcGFnZSUlanVtcCUKSWZNc2dCb3ggTm8KICBJZiBjb21tYW5kX2FycmF5WzRdID0gIiIKCVJ1biBodHRwczovL2xleGlrb3MuZ2l0aHViLmlvL3YyL2RvY3MvY29tbWFuZHMvJXBhZ2UlJWp1bXAlCiAgRWxzZQogCUlmIGNvbW1hbmRfYXJyYXlbNF0gfj0gIm9iamVjdHMiCiAgICAgICBSdW4gJSAiaHR0cHM6Ly9sZXhpa29zLmdpdGh1Yi5pby92Mi9kb2NzLyIgLiBjb21tYW5kX2FycmF5WzRdIC4ganVtcG90aGVyCglFbHNlIElmIGNvbW1hbmRfYXJyYXlbNV0gfj0gIlJlbWFya3MiCgkgICBSdW4gJSAiaHR0cHM6Ly9sZXhpa29zLmdpdGh1Yi5pby92Mi9kb2NzL2NvbW1hbmRzLyIgLiBjb21tYW5kX2FycmF5WzRdIC4gIiNSZW1hcmtzIgkKCUVsc2UKCSAgIFJ1biAlICJodHRwczovL2xleGlrb3MuZ2l0aHViLmlvL3YyL2RvY3MvY29tbWFuZHMvIiAuIGNvbW1hbmRfYXJyYXlbNF0gLiBqdW1wClJldHVybgoKQ2hhbmdlQnV0dG9uTmFtZXNWYXI6IAogIElmIFdpbkV4aXN0KGNvbW1hbmRfYXJyYXlbMV0pID0gMAogICAgUmV0dXJuICA7IEtlZXAgd2FpdGluZy4KICBTZXRUaW1lciwgQ2hhbmdlQnV0dG9uTmFtZXNWYXIsIG9mZiAKICBXaW5BY3RpdmF0ZSAKICBDb250cm9sU2V0VGV4dCwgQnV0dG9uMSwgVjEuMSBQYWdlLCAlIGNvbW1hbmRfYXJyYXlbMV0KICBDb250cm9sU2V0VGV4dCwgQnV0dG9uMiwgVjIuMCBQYWdlLCAlIGNvbW1hbmRfYXJyYXlbMV0KICBDb250cm9sU2V0VGV4dCwgQnV0dG9uMywgQ2FuY2VsLCAlIGNvbW1hbmRfYXJyYXlbMV0KICBDb250cm9sU2V0VGV4dCwgQnV0dG9uNCwgSGVscCwgJSBjb21tYW5kX2FycmF5WzFdClJldHVybgoKCkdldFdlYlBhZ2UoV2ViUGFnZSkKewogICB3aHIgOj0gQ29tT2JqQ3JlYXRlKCJXaW5IdHRwLldpbkh0dHBSZXF1ZXN0LjUuMSIpICAgCiAgIHdoci5PcGVuKCJHRVQiLCBXZWJQYWdlLCB0cnVlKQogICB3aHIuU2VuZCgpCiAgIDsgVXNpbmcgJ3RydWUnIGFib3ZlIGFuZCB0aGUgY2FsbCBiZWxvdyBhbGxvd3MgdGhlIHNjcmlwdCB0byByZW1haW4gcmVzcG9uc2l2ZS4KICAgd2hyLldhaXRGb3JSZXNwb25zZSgpCiAgIFJlZlNvdXJjZSA6PSB3aHIuUmVzcG9uc2VUZXh0CiAgIFJldHVybiBSZWZTb3VyY2UKfQoKCldNX0hFTFAoKQp7CiAgIE1zZ0JveCw0MDk2LCBJbmZvISwgQ2xpY2sgIlYxLjEgUGFnZSIgdG8gYWNjZXNzcyBWMS4xIFdlYiBwYWdlLmByQ2xpY2sgIlYyLjAgUGFnZSIgYWNjZXNzcyBWMi4wIFdlYiBwYWdlLmByQ2xpY2sgIkNhbmNlbCIgdG8gRXhpdC4KfQoKQ29ubmVjdGVkVG9JbnRlcm5ldChmbGFnPTB4NDApIHsgClJldHVybiBEbGxDYWxsKCJXaW5pbmV0LmRsbFxJbnRlcm5ldEdldENvbm5lY3RlZFN0YXRlIiwgIlN0ciIsIGZsYWcsIkludCIsMCkgCn0K",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAA8hgAAAAAAAAAAAAAAADwvw"
+					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAPIYAAAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
@@ -299,10 +296,7 @@
 				"buffer_size": 13375,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/QuickLinks GoSub.ahk",
@@ -310,10 +304,7 @@
 			{
 				"buffer_size": 2963,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/QuickLinks.ahk",
@@ -322,10 +313,7 @@
 				"buffer_size": 10759,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/QuickPrompt.ahk",
@@ -333,10 +321,7 @@
 			{
 				"buffer_size": 1676,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/RecipeTree.ahk",
@@ -345,10 +330,7 @@
 				"buffer_size": 1961,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/WindowRollup.ahk",
@@ -356,10 +338,7 @@
 			{
 				"buffer_size": 2030,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "collection/1_jacks/ShortcutAnalyze.ahk",
@@ -368,15 +347,32 @@
 				"buffer_size": 1071,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Run"
+			]
+		],
 		[
 			[
 				[
@@ -422,7 +418,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Run",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -618,6 +614,7 @@
 	],
 	"file_history":
 	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/ZeanahAutoComplete.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/calc.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickLinks 1.1.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/PathCheck.ahk",
@@ -744,12 +741,11 @@
 		"/P/.desktop/_Ahk_/ahk-zips/example.ahk",
 		"/P/App/App/json/json/tests/test-all.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/windowmenu.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/mainwindow.ahk",
-		"/D/lib/more libs/Splash-Gui/splashConsole.ahk"
+		"/D/github/GlobalCoder/GlobalCoder/singles/mainwindow.ahk"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -801,6 +797,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -909,6 +909,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -942,6 +946,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -975,6 +983,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -1008,6 +1020,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -1041,6 +1057,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -1074,6 +1094,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -1107,6 +1131,10 @@
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
@@ -1133,7 +1161,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1182,11 +1210,11 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
+	"pinned_build_system": "Packages/User/autohotkey1.sublime-build",
 	"project": "jacks.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 44.8
 	},
 	"save_all_on_build": true,
 	"select_file":

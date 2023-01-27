@@ -232,15 +232,12 @@
 	"buffers":
 	[
 		{
-			"file": "GlobalCoder.ahk",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
 			"settings":
 			{
-				"buffer_size": 89828,
+				"buffer_size": 2399,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "Packages/User/AHK_V2.sublime-build",
@@ -429,6 +426,7 @@
 	},
 	"file_history":
 	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/4 - Projects/5 - workspaces/GlobalCoder.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/.gitignore",
 		"/D/github/GlobalCoder/GlobalCoder/!.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/CustomMenuFiles/9 - Showcase & Examples/pixelsearch_DLL.ahk",
@@ -555,12 +553,11 @@
 		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK_V2/examples/Webview2-example.ahk2",
 		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/AHK_V2/examples/scintilla_example.ahk",
 		"/D/(Projects)/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/classes/_examples/class_ColorTip-example.ahk",
-		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/a-f/examples/callbackcreate_example.ahk",
-		"/P/App/repos-GitHub/AHK-libs-and-classes-collection/classes/_examples/class_sqlite_Light-example.ahk"
+		"/E/mssa/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/a-f/examples/callbackcreate_example.ahk"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -663,32 +660,34 @@
 			[
 				{
 					"buffer": 0,
-					"file": "GlobalCoder.ahk",
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 89828,
+						"buffer_size": 2399,
 						"regions":
 						{
 						},
 						"selection":
 						[
+							[
+								0,
+								0
+							]
 						],
 						"settings":
 						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "efefd613",
-							"lsp_uri": "file:///D:/github/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e8e48682",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5%20-%20examples/class%20MyTextEditor-gpt.ahk",
 							"spell_check": false,
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 3,
-							"tabs_extra_last_activated": 1672680728.16,
-							"tabs_extra_last_activated_sheet_index": 0,
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4057.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -700,7 +699,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -749,7 +748,7 @@
 	"project": "GlobalCoder.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 44.8
 	},
 	"save_all_on_build": true,
 	"select_file":

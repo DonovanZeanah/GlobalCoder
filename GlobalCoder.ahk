@@ -249,9 +249,7 @@ inputbox, ans
 noteex(ans)
 return
 
-^1::
-;inputbox, ans
-
+f24 & n::
 notein() ;no input - default to frontproj
 return
 
@@ -259,15 +257,10 @@ return
 run()
 return
 
-xbutton1 & g::
-;Gui, Add, Button, gCtrlEvent vButton1, Button 1
-;Gui, Add, Button, gCtrlEvent vButton2, Button 2
-;gGui, MyGui:Add, Text,, Text for about-box.
-; Hotkey x
-
+rshift & m::
+f24 & m::
 Gui, mygui:+Resize 
 Gui, mygui:Add, Edit, w300 r10 vhotedit, Example text
-
 gui, mygui:Add, Button, gGoButton1, Go Button
 Gui, mygui:Show ,, Functions instead of labels
 return 
@@ -484,7 +477,7 @@ clipboard := "`;================"
 return
 
 xbutton2 & n::
-f24 & n::
+f24 & g::
 
 chrome_name()
 

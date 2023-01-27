@@ -6,6 +6,7 @@ omnibox
 3de32882d
 report
 kristinezeanah
+test2
 clipboard
 examplecommand
 model
@@ -17,4 +18,3 @@ GetIncludedActiveWindow
 function
 paths
 globalcompletioning
-test2

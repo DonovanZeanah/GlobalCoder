@@ -255,7 +255,7 @@
 			"file": "GlobalCoder.ahk",
 			"settings":
 			{
-				"buffer_size": 99427,
+				"buffer_size": 101934,
 				"line_ending": "Windows"
 			}
 		},
@@ -266,21 +266,7 @@
 				"buffer_size": 21628,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
-			"file": "/D/globalcoder/globalcoder-windows.ahk",
-			"settings":
-			{
-				"buffer_size": 978,
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -521,11 +507,13 @@
 	},
 	"expanded_folders":
 	[
-		"/D/globalcoder",
-		"/D/working"
+		"/D/(github)/GlobalCoder/gc/GlobalCoder"
 	],
 	"file_history":
 	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/mvc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!implimentedlibs/3. OCR a monitor.ahk",
+		"/D/globalcoder/globalcoder-windows.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/calc.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickLinks 1.1.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/PathCheck.ahk",
@@ -650,10 +638,7 @@
 		"/D/github/GlobalCoder/GlobalCoder/singles/globalcoder-captain.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder2.ahk",
 		"/P/.desktop/_Ahk_/ahk-zips/example.ahk",
-		"/P/App/App/json/json/tests/test-all.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/windowmenu.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/mainwindow.ahk",
-		"/D/lib/more libs/Splash-Gui/splashConsole.ahk"
+		"/P/App/App/json/json/tests/test-all.ahk"
 	],
 	"find":
 	{
@@ -695,18 +680,19 @@
 				{
 					"buffer": 0,
 					"file": "GlobalCoder.ahk",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 99427,
+						"buffer_size": 101934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								54186,
-								54186
+								9780,
+								9780
 							]
 						],
 						"settings":
@@ -722,10 +708,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 16725.0,
+						"translation.y": 2897.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
 				},
@@ -759,44 +745,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 14149.0,
+						"translation.y": 13426.4,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/globalcoder/globalcoder-windows.ahk",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-						],
-						"settings":
-						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "c9ecd4bc",
-							"lsp_uri": "file:///D:/globalcoder/globalcoder-windows.ahk",
-							"spell_check": false,
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 4,
-							"tabs_extra_last_activated": 1674661763.87,
-							"tabs_extra_last_activated_sheet_index": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 726.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -854,7 +806,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
+	"pinned_build_system": "Packages/User/autohotkey1.sublime-build",
 	"project": "GC-Workspace.sublime-project",
 	"replace":
 	{
