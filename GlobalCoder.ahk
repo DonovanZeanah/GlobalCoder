@@ -75,6 +75,9 @@ TrayTip, GlobalCoder, Started %timestring%
 					Gui, Menu, MyMenuBar
 
 ReadIni(settingsINI)
+setUpHotkey(HotKeys_OpenMinervaMenu, "showMinervaMenu", "%settingsINI% [HotKeys]OpenMinervaMenu")
+setUpHotkey(HotKeys_ReloadProgram,   "ReloadProgram",   "%settingsINI% [HotKeys]ReloadProgram")
+ignoreFiles := General_IgnoreFiles
 If !pToken := Gdip_Startup()
 {
 	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
@@ -210,7 +213,7 @@ return
 
 ^2::
 inputbox, ans
-noteex(ans)
+noteex(ans, frontproject)
 return
 
 f24 & n::
@@ -235,14 +238,15 @@ GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
 static hotpath := { 0 : ""
 	, 1 : a_scriptdir . "\notes"
 	, 2 : a_scriptdir . "\logs\notes" }
-	msgbox, % hotpath.2
-	msgbox, % frontproject
+	;msgbox, % hotpath.2
+	;msgbox, % frontproject
 
-	SelectHotpath(hotpath)
+	SelectHotpath(hotpath.2)
     GuiControlGet, hotedit
     clipboard := hotedit
     msgbox, % "cont to pass clipboard to notex(): `n" clipboard
-    noteex(clipboard)
+    noteex(clipboard, hotpath.2)
+    notein(hotpath.2)
     gui, destroy
 }
 
@@ -300,14 +304,14 @@ return frontproject
 
 ;path is frontproject
 ;note external
-noteex(data){
-static count := 0
- inputbox, fname	, "w/ Extension"
-  if (fileexist(file := frontproject . "/" fname ))
+noteex(data,hotpath){
+count := 0
+ inputbox, fname	, "Enter filename w/ Extension:"
+  if (fileexist(file := hotpath . "/" fname ))
 	  {
 		  while ( FileExist(file))
 			  {
-			  	file := frontproject . "/" ++count fname ;g. ".txt"
+			  	file := hotepath . "/" . ++count fname ;g. ".txt"
 			  }
 	  }
 MsgBox, % "appending file: `n" file
@@ -327,9 +331,10 @@ notein(path := ""){
   return
 }
 
-hotpath(folder) {
+hotpath(folder:="") {
 	if (folder = "")
-  folder := notepath
+  folder := frontproject
+
     Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView AltSubmit, Name
         Loop, Files, % folder "\*", D
         {
@@ -367,8 +372,12 @@ return hotpath
 
 }
 selecthotpath(path){
-  ;if (path = "")
-  ;hotpath := a_scriptdir . "/notes/"
+  if (path = "")
+  {
+  hotpath := a_scriptdir . "/notes/"
+  return
+  }
+
 
   Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gHotFileView, Name
   Loop, % notepath . "/"* , 2 ; 2 = folders only
@@ -647,6 +656,16 @@ return ;// end hotkey x
 
 ; main menu
 ~space & up::
+showGlobalcodermenu(){
+	WinGet, active_proc, ProcessName, A
+	Try{
+		Menu, %A_ScriptDir%\CustomMenuFiles, Check, %active_proc%
+	}
+	Menu, %A_ScriptDir%\CustomMenuFiles, show
+	Try{
+		Menu, %A_ScriptDir%\CustomMenuFiles, UnCheck, %active_proc%
+	}
+} 
 ^f24::
 Ctrl & RShift::
 ;/
