@@ -1,5 +1,6 @@
-;Seldom Changing Directives
-#Requires AutoHotkey v1.1+ ;.34.03+
+#SingleInstance Force
+;====================================================================================================================================================================================== Seldom Changing Directives
+#Requires AutoHotkey v1.1.34.03
 #Persistent
 #NoEnv
 #SingleInstance
@@ -10,8 +11,13 @@
 setbatchlines,-1
 SetTitleMatchMode, 2
 DetectHiddenWindows, on
-;Sometimes Changing Directives
+;===================================================================================================================================================================================== Sometimes Changing Directives
 SetKeyDelay, 50
+Menu, Tray, Icon , Shell32.dll, 14 , 1
+TrayTip, GlobalCoder, Started %nowtime%
+Sleep 800   ; Let it display for 3 seconds.
+;=======================================================================================================================================================================================================[START CODE]
+;Set the Coordinate Modes before any threads can be executed
 CoordMode, Caret, Screen
 CoordMode, Mouse, Screen
 Suspend, On
@@ -20,61 +26,78 @@ Gui, Font,, Arial
 Gui, Font,, Verdana  ; Preferred font.
 applicationname := "GlobalCoder"
 g_OSVersion := GetOSVersion()
-FileEncoding, UTF-8
-					;[GLOBALS]==============================[GLOBALS]=================================[GLOBALS]
-global ScriptName  := StrReplace(A_ScriptName, ".ahk")
-global Version     := "1.0"
-global GitHub      := "https://github.com/donovanzeanah/globalcoder"
-global FileCount   := 0
-global MyProgress  := 0
-global TotalWords  := 0
-global settingsINI := "settings.ini"
-global ignoreFiles := ""
+;=======================================================================================================================================================--------------------------------------| VARIABLES |
 
-global frontproject := "d:/(github)\globalcoder\gc\globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
-global rootfolder := "d:/(github)\globalcoder\gc\globalcoder"
-global projectname := "GlobalCoder"
+
+Gui +LastFound        ; Window open/close detection
+hWnd := WinExist()        ; Window open/close detection
+DllCall( "RegisterShellHookWindow", UInt,hWnd )
+MsgNum := DllCall( "RegisterWindowMessage", Str,"SHELLHOOK" )
+OnMessage( MsgNum, "ShellMessage" )
+
+; To prevent Menu command errors from stopping script.
+Menu, MenuName, UseErrorLevel
+
+
+   ;The following code sets up the Gui with a DropDownList with the original list of
+   ;open windows. Remove or comment out this code for Menu only.
+
+Gui,+AlwaysOnTop
+Gui, Font, s12, Arial
+Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
+Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
+Menu, MyMenuBar, Add, &File, :FileMenu
+Gui, Menu, MyMenuBar
+
+
+
+
+FileEncoding, UTF-8
+global frontproject := "d:/(github)/globalcoder/gc/globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
+global rootfolder := "d:/mssa"
+global projname := "GlobalCoder"
+global ScriptName := "GlobalCoder"
+global Version    := "1.0"
 global items	  := 0
 global MyProgress := 0
 Global TotalWords := 0
 global callingwindow := ""
+
 global rootpath := a_scriptdir
-global hotpath := a_scriptdir . "\CustomMenuFiles"
-global notepath := a_scriptdir . "\logs\notes"
-global timestring := ""
-FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
+global hotpath := a_scriptdir . "/CustomMenuFiles"
+global notepath := a_scriptdir . "\log\notes"
+
 global myGC := new gc()
-Menu, Tray, Icon , Shell32.dll, 14 , 1
-TrayTip, GlobalCoder, Started %timestring%
-					;[//Includes]==============================[//Includes]=================================[//Includes]
-#Include, lib\Gdip.ahk 			
-#Include, lib\read-ini.ahk	
-#Include, lib\JXON.ahk
-#Include, lib\Minerva-PowerToys.ahk
-#Include, lib\Minerva-Handlers.ahk
-#Include, lib\Minerva-Statistics.ahk
-
-					;[//NOTES]==============================[//NOTES]=================================[//NOTES] 
-					/*		
-
-					*/
-					;[//START]==============================[START]=================================[START]
-					;-------------------------------------------------Start gdi+
-					
-					Menu, MenuName, UseErrorLevel
+global timestring := ""
+;FormatTime, time, YYYYMMDDHH24MISS, MMDD-HHmm
+FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
+;MsgBox The specified date and time, when formatted, is %TimeString%.
 
 
-					   ;The following code sets up the Gui with a DropDownList with the original list of
-					   ;open windows. Remove or comment out this code for Menu only.
 
-					Gui,+AlwaysOnTop
-					Gui, Font, s12, Arial
-					Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
-					Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
-					Menu, MyMenuBar, Add, &File, :FileMenu
-					Gui, Menu, MyMenuBar
 
-ReadIni(settingsINI)
+
+#Include lib\Gdip.ahk
+;#Include d:/lib/((start)).ahk
+
+
+
+;/ unused clipstore
+;initialize clipboardstore class; is adding clipboard to a list 'onclipchange' aka. when the clipboard is updated. ACTIVATION KEY:  >>> f24& c <<<
+;clipStore := new ClipboardStore()
+;clipboard := "new Menu Item Entry"
+;//
+
+
+
+
+FindAmountItems()
+
+PrepareMenu(A_ScriptDir "\CustomMenuFiles")
+;PrepareMenu(A_ScriptDir "\singles")
+;RunOtherScripts(A_ScriptDir "\singles")
+
+;-------------------------------------------------Start gdi+
 If !pToken := Gdip_Startup()
 {
 	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
@@ -82,10 +105,10 @@ If !pToken := Gdip_Startup()
 }
 OnExit, Exit
 
-FindAmountItems()
-PrepareMenu(A_ScriptDir "\CustomMenuFiles")
-;PrepareMenu(A_ScriptDir "\singles")
-;RunOtherScripts(A_ScriptDir "\singles")
+Width  := A_ScreenWidth
+Height := A_ScreenHeight
+
+
 
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
@@ -222,7 +245,6 @@ run()
 return
 
 rshift & m::
-
 f24 & m::
 Gui, mygui:+Resize
 Gui, mygui:Add, Edit, w300 r10 vhotedit, Example text
@@ -232,16 +254,13 @@ return
 
 
 GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
-static hotpath := { 0 : ""
-	, 1 : a_scriptdir . "\notes"
-	, 2 : a_scriptdir . "\logs\notes" }
-	msgbox, % hotpath.2
+;static hotpath := a_scriptdir . "/notes"	;static hotpath := a_scriptdir
 	msgbox, % frontproject
 
 	SelectHotpath(hotpath)
     GuiControlGet, hotedit
     clipboard := hotedit
-    msgbox, % "cont to pass clipboard to notex(): `n" clipboard
+    msgbox, % "cont to pass clipboard to notex()"
     noteex(clipboard)
     gui, destroy
 }
@@ -436,7 +455,7 @@ return
 xbutton1 & b::
     SendMode Input
 
-    Send, `;[]==============================[]=================================[]
+    Send, `;==============================[]=================================[]
 return
 
 f13 & b::
@@ -1441,21 +1460,15 @@ Github(){
 	run, https://github.com/donovanzeanah/globalcoder
 }
 googler(){
-	static urls := { 0: ""
-	    , 1 : "https://www.google.com/search?hl=en&q="
-	    , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
-	    , 3 : "https://www.google.com/maps/search/"
-	    , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
-	    msgbox, % urls.1
-
    WinActivate, % callingwindow
+   val := getcaret()
    send, ^c
    if (clipboard = "")
-		{
-		   inputbox, googlequery
-		   clipboard := googlequery
-		}
-	runstring("www.google.com/search?q=" . clipboard)
+{
+   inputbox, googlequery
+   clipboard := googlequery
+}
+   runstring("www.google.com/search?q=" . clipboard)
    ;Run, www.google.com/search?q=%clipboard%
    WinWaitActive, ahk_exe chrome.exe
    send, !g
@@ -1697,6 +1710,8 @@ InitializeHotKeys(){
    ;Setup toggle-able hotkeys
 
    ;Can't disable mouse buttons as we need to check to see if we have clicked the ListBox window
+
+
    ; If we disable the number keys they never get to the input for some reason,
    ; so we need to keep them enabled as hotkeys
 
@@ -2227,8 +2242,6 @@ BuildTrayMenu(){
    Menu, Tray, DeleteAll
    Menu, Tray, NoStandard
    Menu, Tray, add, Settings, Configuration
-   Menu, Tray, add, filemenu, 
-   Menu, Tray, add, mymenubar, 
    Menu, Tray, add, Pause, PauseResumeScript
    IF (A_IsCompiled)
    {
@@ -2237,7 +2250,6 @@ BuildTrayMenu(){
       Menu, Tray, Standard
    }
    Menu, Tray, Default, Settings
-   ;Menu, Tray, Default, Settings
    ;Initialize Tray Icon
    Menu, Tray, Icon
 }

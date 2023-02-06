@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"key",
+				"KeyWait"
+			],
+			[
+				"keyw",
+				"KeyWait"
+			],
+			[
+				"a_",
+				"A_Index"
+			],
+			[
+				"Loop",
+				"Loop parse"
+			],
+			[
+				"msgb",
+				"MsgBox"
+			],
+			[
 				"go",
 				"Gosub"
 			],
@@ -232,29 +252,19 @@
 	"buffers":
 	[
 		{
-			"contents": ";how to use - Open up a new instance of paint select the brush or pen, then run the program\n; it should draw a square with a cross in the center of the drawing region\n\n#noenv\n#singleinstance,force\nsetbatchlines,-1\nsettitlematchmode,1\n\n#include ..\\ShinsImageScanClass.ahk  ;remove ..\\ if the class file is in the same directory\nscan := new ShinsImageScanClass(\"Untitled - Paint\")\nscan.AutoUpdate := 0  ;only want to update the buffer once then perform many scans\nscan.UseControlClick := 1\nscan.Update() ;update buffer\n\nregionX1 := 0  ;default the regions of the paint canvas\nregionY1 := 0 \nregionX2 := 0 \nregionY2 := 0 \n\n;attempt to find the paint canvas height; assumes white background\nx := 20\ny := scan.height\nwhile(y > 30) {\n\tif (!regionY2 and scan.PixelPosition(0xFFFFFFFF,x,y)) {\n\t\tregionY2 := y\n\t} else if (regionY2 and !regionY1 and !scan.PixelPosition(0xFFFFFFFF,x,y)) {\n\t\tregionY1 := y+1\n\t\tbreak\n\t}\n\ty--\n\tmsgbox % x \",\" y \"`n\" tohex(scan.getpixel(x,y))\n}\n\n\n;attempt to find the paint canvas width; assumes white background\nx := 0\ny := regionY1\nwhile(x < scan.width) {\n\tif (!regionX1 and scan.PixelPosition(0xFFFFFF,x,y)) {\n\t\tregionX1 := x\n\t} else if (regionX1 and !regionX2 and !scan.PixelPosition(0xFFFFFF,x,y)) {\n\t\tregionX2 := x-1\n\t\tbreak\n\t}\n\tx++\n}\n\n\n;attempt to draw a square with a cross using ControlClick (doesn't have to be active)\n;ControlClick seems a little wonky on paint if too close to the edge, so I had an 80 px buffer\nscan.ClickDrag(regionX1+80,regionY1+80,regionX2-80,regionY1+80) ;top\nscan.ClickDrag(regionX1+80,regionY1+80,regionX1+80,regionY2-80) ;left\nscan.ClickDrag(regionX2-80,regionY1+80,regionX2-80,regionY2-80) ;right\nscan.ClickDrag(regionX1+80,regionY2-80,regionX2-80,regionY2-80) ;bot\n\nscan.ClickDrag(regionX1+80,regionY1+80,regionX2-80,regionY2-80) ;cross1\nscan.ClickDrag(regionX1+80,regionY2-80,regionX2-80,regionY1+80) ;cross2\n\nexitapp\n",
-			"file": "/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/PaintExample.ahk",
-			"file_size": 1877,
-			"file_write_time": 133176883980000000,
+			"file": "/D/(github)-MAINS/csharp-design-patterns-2314072/Adapter/Program.cs",
 			"settings":
 			{
-				"buffer_size": 1876,
-				"line_ending": "Unix"
+				"buffer_size": 1131,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
-				[
-					4,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJIDAAAAAAAAkgMAAAAAAAABAAAAOw",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJMDAAAAAAAAkwMAAAAAAAAAAAAAAADwvw"
-				]
 			]
 		}
 	],
-	"build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
+	"build_system": "Packages/ZeanahCS.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -274,7 +284,7 @@
 			],
 			[
 				"Packages/AutoHotkey/AutoHotkey.sublime-build",
-				"Run"
+				"Default"
 			]
 		],
 		[
@@ -304,6 +314,34 @@
 		[
 			[
 				[
+					"Packages/CSZeanah.sublime-build",
+					""
+				],
+				[
+					"Packages/ZeanahCS.sublime-build",
+					""
+				],
+				[
+					"Packages/ZeanahCS.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/ZeanahCS.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
 					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
 					""
 				],
@@ -322,7 +360,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Run",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -330,16 +368,24 @@
 		"selected_items":
 		[
 			[
-				"a",
+				"autoho",
 				"AutoHotkey - Run"
 			],
 			[
-				"settings",
-				"Preferences: Package Control Settings"
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"auto",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"termin",
+				"Terminus: Open Default Shell in Tab (View)"
 			],
 			[
 				"",
-				"AutoHotkey v2 - runner"
+				"Build With: AutoHotkey"
 			],
 			[
 				"tern",
@@ -352,14 +398,6 @@
 			[
 				"terminus",
 				"Terminus: Open Default Shell in Tab (View)"
-			],
-			[
-				"termin",
-				"Terminus: List Shells"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"refres",
@@ -388,6 +426,10 @@
 			[
 				"syntaxa",
 				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
 			],
 			[
 				"preferences pack",
@@ -494,7 +536,7 @@
 	},
 	"console":
 	{
-		"height": 330.0,
+		"height": 164.0,
 		"history":
 		[
 			"sublime.log_commands(True)",
@@ -512,79 +554,103 @@
 	},
 	"expanded_folders":
 	[
-		"/D/globalcoder"
+		"/D/(github)-MAINS/csharp-design-patterns-2314072",
+		"/D/(github)-MAINS/csharp-design-patterns-2314072/Adapter"
 	],
 	"file_history":
 	[
-		"/D/globalcoder/globalcoderIfs.ahk",
-		"/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles-via-class.ahk",
-		"/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt-savefile.ahk",
-		"/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles.ahk",
-		"/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt.ahk",
-		"/D/globalcoder/gui-binded-to-class.ahk",
+		"/C/Users/donov/OneDrive/Desktop/Quick-AHKv2-Converter-1/src/Quick AHKv2 Converter.ahk",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_Quick-AHKv2-Converter-1.zip/src/Quick AHKv2 Converter.ahk",
+		"/C/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/Extensions/Microsoft/ConnectedServices/Configs/dependencyTypes/models/secrets/secrets.json",
+		"/C/Users/donov/AppData/Roaming/Microsoft/UserSecrets/aspnet-ContactWebEFCore6-0090AE31-94A8-496D-A320-A47AC4A04536/secrets.json",
+		"/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/Preferences File.ahk",
+		"/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/findfunc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/getwindows.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!GlobalCoder_Catch_All/globalcoder-captain.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/other-globalcoder.sublime-project",
+		"/C/Users/donov/AppData/Roaming/Sublime Text/Packages/User/AutoHotkey.sublime-settings",
+		"/G/((top))/.ahk/codehelper.ahk",
+		"/G/((top))/.ahk/clickmenu.ahk",
+		"/F/!dev stuff/IDE/sublime/User/Default (Windows).sublime-keymap",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/imenu.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/mvc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!implimentedlibs/3. OCR a monitor.ahk",
+		"/D/globalcoder/globalcoder-windows.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/calc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickLinks 1.1.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/PathCheck.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/IPFindMap.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyTwoDeep.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyLoop.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyArrays.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/capslock-multi.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkey.ahk",
 		"/D/globalcoder/vlc.ahk",
-		"/D/globalcoder/0_globalcoder.ahk",
-		"/D/globalcoder/Timer.ahk",
-		"/D/(github)/GlobalCoder/GlobalCoder-884732426860a0765b2927aa5c25549a63833b04 (1)/GlobalCoder-884732426860a0765b2927aa5c25549a63833b04/globalcoder.ahk.ini",
-		"/D/globalcoder/globalcoder_1menuwindow_snip.ahk",
-		"/D/globalcoder/globalcoder.ah2",
-		"/D/globalcoder/scratch/globalcoderv2.ah2",
-		"/d/lib/((start)-class&fn.ahk",
-		"/D/(github)/GlobalCoder/GlobalCoder/collection/!!GlobalCoder_Catch_All/.codehelper2.ahk",
-		"/D/(github)/GlobalCoder/GlobalCoder/collection/!!GlobalCoder_Catch_All/.codehelper.ahk",
-		"/D/(github)/GlobalCoder/GlobalCoder/collection/!!GlobalCoder_Catch_All/.codehelper (2).ahk",
-		"/D/globalcoder/0_globalcoder_runner.ahk",
-		"/D/globalcoder/globalcoder-misc.ahk",
-		"/D/globalcoder/Example7 - OpenGoogleMaps.ahk",
-		"/D/globalcoder/ffmpeg2.ahk",
-		"/D/globalcoder/baby.ah2",
-		"/D/globalcoder/autometric.ahk",
-		"/D/globalcoder/1_globalcoder_v2ref.ahk",
-		"/D/globalcoder/1_globalcoder_SQLiteBlob2.ahk",
-		"/D/globalcoder/1_globalcoder_SQLiteBlob.ahk",
-		"/D/globalcoder/1_globalcoder_ParseAHK.ahk",
-		"/D/globalcoder/1_globalcoder_ocrscreenshot.ahk",
-		"/D/globalcoder/1_globalcoder_ocr.ahk",
-		"/D/globalcoder/1_globalcoder_logTimer.ahk",
-		"/D/globalcoder/1_globalcoder_hotstrings.ahk",
-		"/D/globalcoder/0globalcoder.ahk",
-		"/D/globalcoder/0_globalcoderv2_backup_workingWARNINGOFF.ah2",
-		"/D/globalcoder/0_globalcoderv2.ah2",
-		"/D/globalcoder/0_globalcoder_windowMenu.ahk",
-		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/AutoHotkey.sublime-settings",
-		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/github/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - Tools & Docs/GlobalCoder.ahk",
-		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/AutoHotkeyv2/AutoHotkeyv2.sublime-settings",
-		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/SublimeSimpleSync.sublime-settings",
-		"/C/Users/dkzea/OneDrive/Desktop/History/!Folder_child_2_one_folder.ahk",
-		"/C/Users/dkzea/OneDrive/Desktop/History/!Folder_child_2_one_folder2.ahk",
-		"/C/Users/dkzea/OneDrive/Desktop/History/-5b6dcd71/ng9v.txt",
-		"/C/Users/dkzea/OneDrive/Desktop/History/d3204c0/entries.json",
-		"/C/Users/dkzea/OneDrive/Desktop/History/move/EUJg.ahk",
-		"/C/Users/dkzea/OneDrive/Desktop/History/-1a2f6096/entries.json",
-		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/5cf81ccf1979c625f471cf10ffd6bf4c/workspace.json",
-		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/f28247dfffde3d72009d4cc684e3eb2e/workspace.json",
-		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/ed9f812fe54707840a92eb453d07940a/workspace.json",
-		"/D/(Downloads)/ScreenBuffer-main/ScreenBuffer-main/ScreenBuffer.ahk",
-		"/D/(Downloads)/Load_Save_Treeview_ahk2-master/Load_Save_Treeview_ahk2-master/_TreeView_Save_Load.ahk",
-		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/ad94374acbbde41d261e7e5457e97c5a/workspace.json",
-		"/C/Users/dkzea/OneDrive/Desktop/workspaceStorage/99f3fffee2d2b29eb4f78a81d2758d45/workspace.json",
-		"/D/(Downloads)/WinClip_ahk2-master/WinClip_ahk2-master/__Example.ahk",
-		"/D/(Downloads)/MsgBox2_AHK-master/MsgBox2_AHK-master/AHK2/TheArkive_MsgBox2_Example.ahk",
-		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/IncrementalSaveText.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/FavoritesFolder.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickPrompt/QuickPrompt.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/menu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/webview.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/switch.ahk",
+		"/d/lib/webview2.ahk",
+		"/D/lib/MCL.ahk",
+		"/C/Users/dkzea/Downloads/PDFGen.ahk-master/PDFGen.ahk-master/Example.ahk",
+		"/D/lib/PDFGen.ahk",
+		"/C/Users/dkzea/Downloads/MinimizeToTrayMenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk2..xml",
+		"/C/Users/dkzea/OneDrive/Desktop/lemonlaunch/89d024f5e1c01f8fe3c1-69e1d972b803c3dc116350bd6b930cc6d1dbd2b3/LemonLaunchSettings.ini",
+		"/C/Users/dkzea/OneDrive/Desktop/last-menu-item.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/last-menu-item-forums.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahkleetcode.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Class_RichEdit-master/Class_RichEdit-master/Sources/RichEdit_sample.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/function-testing.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/search-everything.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-handlers-1-4examples.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/winrt.ahk-main/winrt.ahk-main/examples/regex-thqby.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/winrt.ahk-main/winrt.ahk-main/examples/PopupMenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/dropdown-choice-gui-test.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Class_RichEdit-master/Class_RichEdit-master/Sources/gpt-filemenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-ahk/Untitled.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/fib.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-handlers.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/shape.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/lemmon-runner.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/影子输入法v1.7.3/Yz.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk2_lib-master/ahk2_lib-master/test.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/gui-choose-hotkey.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/capslock-multi.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands3.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/scroll-giui2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/scroll-giui.ahk",
+		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/ComVar.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/general.ini",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - tools/Example3 - Resizable Tabs.ahk",
+		"/C/Users/dkzea/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/start.ahk",
+		"/D/lib/V2/examples/Webview2-example 4.ahk2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/[README].md",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/README.md",
+		"/D/lib/V2/examples/Webview2-example 3.ahk2",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/README.md",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/Gdip.Tutorial.11-Using.BRAs.to.perform.animations.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/settings.ini",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/gui.ahk",
+		"/Z/code/AHK/New folder (2)/readself.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/BRA.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/Gdip.Tutorial.12-Pixelate.a.bitmap.using.machine.code.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/Minerva4.ahk",
 		"/D/(github)/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/ShellLinkW/examples/example1.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/TaskbarList3/examples/example2.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/TaskbarList3/examples/example1.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/TaskbarList2/TaskbarList2.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/TaskbarList/examples/example1.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/ShellLinkA/examples/example1.ahk",
-		"/D/(Downloads)/GuiCtlExt_ahk2-master/GuiCtlExt_ahk2-master/README.md",
-		"/D/(Downloads)/RegExHotstring-master/RegExHotstring-master/README.md",
-		"/D/(Downloads)/RegExHotstring-master/RegExHotstring-master/demo.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/RichEditOLE/examples/example1.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/ShellItem/examples/example1.ahk",
-		"/J/mssa/collection/COM-Classes-FrameWork/CCFramework.ahk",
+		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/Recycle Bin/S-1-5-21-3956581196-2760772990-1477779809-1002/$IHDCG4S.ah2",
+		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/Recycle Bin/S-1-5-21-3956581196-2760772990-1477779809-1002/$IB1QYSI.ahk",
+		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/lib/extracttext.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/!xd2tx220_x64/com.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/!xd2tx220_x64/com2.ahk",
 		"/D/$RECYCLE.BIN/S-1-5-21-3956581196-2760772990-1477779809-1002/SQLiteDB_sample.ahk",
 		"/D/lib/.msOffice/Excel/Copy_rows_to_new_workbooks.ahk",
 		"/D/github/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - Tools & Docs/GlobalCoder - Copy.ahk",
@@ -620,34 +686,11 @@
 		"/D/github/GlobalCoder/GlobalCoder/!.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/CustomMenuFiles/9 - Showcase & Examples/pixelsearch_DLL.ahk",
 		"/d/lib/btt.ahk",
-		"/D/lib/Vis2.ahk",
-		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/OCR.ahk",
-		"/p/app/app/((start)-class&fn.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/inc/Project.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/.git/config",
-		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/1_ToDoList.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/.git/ORIG_HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/.git/HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/.git/hooks/push-to-checkout.sample",
-		"/D/github/GlobalCoder/GlobalCoder/.git/refs/heads/newbranch",
-		"/D/github/GlobalCoder/GlobalCoder/.git/refs/remotes/origin/HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/singles/globalcoder-captain.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder2.ahk",
-		"/P/.desktop/_Ahk_/ahk-zips/example.ahk",
-		"/P/App/App/json/json/tests/test-all.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/windowmenu.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/mainwindow.ahk",
-		"/D/lib/more libs/Splash-Gui/splashConsole.ahk",
-		"/D/lib/btt.ahk",
-		"/P/App/App/((start)-ifs.ahk",
-		"/P/App/app/btt.ahk",
-		"/D/lib/OCR.ahk",
-		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/1_globalcoder_duplicateline.ahk",
-		"/C/Program Files/AutoHotkey/Lib/Vis2.ahk"
+		"/D/lib/Vis2.ahk"
 	],
 	"find":
 	{
-		"height": 29.6
+		"height": 42.4
 	},
 	"find_in_files":
 	{
@@ -661,10 +704,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"alter",
-			"setup(",
-			"send",
-			"run("
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -688,33 +727,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/PaintExample.ahk",
+					"file": "/D/(github)-MAINS/csharp-design-patterns-2314072/Adapter/Program.cs",
 					"selected": true,
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1876,
+						"buffer_size": 1131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								233,
-								233
+								68,
+								68
 							]
 						],
 						"settings":
 						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "9f3129e6",
-							"lsp_uri": "file:///D:/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/PaintExample.ahk",
-							"spell_check": false,
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 8,
-							"tabs_extra_last_activated": 1673231923.95,
-							"tabs_extra_last_activated_sheet_index": 3,
-							"translate_tabs_to_spaces": false
+							"bs_sintax": "c#",
+							"buffer_scroll_name": "5745e997",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/csharp-design-patterns-2314072/Adapter/Program.cs",
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -772,14 +808,14 @@
 	},
 	"output.exec":
 	{
-		"height": 240.0
+		"height": 92.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
-	"project": "other-globalcoder.sublime-project",
+	"pinned_build_system": "",
+	"project": "(csharp-designPatterns).sublime-project",
 	"replace":
 	{
 		"height": 56.0
@@ -824,7 +860,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 317.0,
+	"side_bar_width": 290.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

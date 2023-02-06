@@ -255,9 +255,2703 @@
 			"file": "GlobalCoder.ahk",
 			"settings":
 			{
-				"buffer_size": 101934,
+				"buffer_size": 100632,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "/C/Users/donov/OneDrive/Desktop/openwsublime.bat",
+			"settings":
+			{
+				"buffer_size": 1241,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "/C/Users/donov/OneDrive/Desktop/openwsublim better - Copy.bat",
+			"settings":
+			{
+				"buffer_size": 469,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste_and_indent",
+					null,
+					"AgAAAAAAAAAAAAAA6AEAAAAAAAAAAAAA6AEAAAAAAADoAQAAAAAAAFkDAABXaW5kb3dzIFJlZ2lzdHJ5IEVkaXRvciBWZXJzaW9uIDUuMDAKCltIS0VZX0NMQVNTRVNfUk9PVFwqXHNoZWxsXEVkaXQgd2l0aCBTdWJsaW1lIFRleHRdCkA9IkVkaXQgd2l0aCAmU3VibGltZSBUZXh0IgoiSWNvbiI9IkM6XFxQcm9ncmFtIEZpbGVzXFxTdWJsaW1lIFRleHRcXHN1YmxpbWVfdGV4dC5leGUsMCIKIk11aVZlcmIiPSJFZGl0IHdpdGggU3VibGltZSBUZXh0IgoKW0hLRVlfQ0xBU1NFU19ST09UXCpcc2hlbGxcRWRpdCB3aXRoIFN1YmxpbWUgVGV4dFxjb21tYW5kXQpAPSJDOlxcUHJvZ3JhbSBGaWxlc1xcU3VibGltZSBUZXh0XFxzdWJsaW1lX3RleHQuZXhlIFwiJTFcIiIKCltIS0VZX0NMQVNTRVNfUk9PVFxEaXJlY3RvcnlcQmFja2dyb3VuZFxzaGVsbFxTdWJsaW1lXQpAPSJPcGVuIHdpdGggU3VibGltZSBUZXh0IgoiSWNvbiI9IkM6XFxQcm9ncmFtIEZpbGVzXFxTdWJsaW1lIFRleHRcXHN1YmxpbWVfdGV4dC5leGUsMCIKCltIS0VZX0NMQVNTRVNfUk9PVFxEaXJlY3RvcnlcQmFja2dyb3VuZFxzaGVsbFxTdWJsaW1lXGNvbW1hbmRdCkA9IlwiQzpcXFByb2dyYW0gRmlsZXNcXFN1YmxpbWUgVGV4dFxcc3VibGltZV90ZXh0LmV4ZVwiIFwiJVZcIiIKCltIS0VZX0NMQVNTRVNfUk9PVFxEaXJlY3Rvcnlcc2hlbGxcU3VibGltZV0KQD0iT3BlbiB3aXRoIFN1YmxpbWUgVGV4dCIKIkljb24iPSJDOlxcUHJvZ3JhbSBGaWxlc1xcU3VibGltZSBUZXh0XFxzdWJsaW1lX3RleHQuZXhlLDAiCgpbSEtFWV9DTEFTU0VTX1JPT1RcRGlyZWN0b3J5XHNoZWxsXFN1YmxpbWVcY29tbWFuZF0KQD0iXCJDOlxcUHJvZ3JhbSBGaWxlc1xcU3VibGltZSBUZXh0XFxzdWJsaW1lX3RleHQuZXhlXCIgXCIlMVwiIg",
+					"AQAAAAAAAAABAAAAWQMAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste_and_indent",
+					null,
+					"AgAAAEQAAAAAAAAAYQAAAAAAAAAAAAAAYQAAAAAAAABhAAAAAAAAACAAAABFbnRlciBTdWJsaW1lVGV4dCBJbnN0YWxsZWQgUGF0aA",
+					"AQAAAAAAAAABAAAARAAAAAAAAABkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					3,
+					"left_delete",
+					null,
+					"AwAAAGMAAAAAAAAAYwAAAAAAAAABAAAAIGIAAAAAAAAAYgAAAAAAAAABAAAAOmEAAAAAAAAAYQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAZAAAAAAAAABkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "\\subl"
+					},
+					"BQAAAGEAAAAAAAAAYgAAAAAAAAAAAAAAYgAAAAAAAABjAAAAAAAAAAAAAABjAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAZQAAAAAAAAAAAAAAZQAAAAAAAABmAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYQAAAAAAAABhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": ".exe"
+					},
+					"BAAAAGYAAAAAAAAAZwAAAAAAAAAAAAAAZwAAAAAAAABoAAAAAAAAAAAAAABoAAAAAAAAAGkAAAAAAAAAAAAAAGkAAAAAAAAAagAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZgAAAAAAAABmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": "e"
+					},
+					"AgAAAH0AAAAAAAAAfgAAAAAAAAAAAAAAfgAAAAAAAAB+AAAAAAAAABoAAABFbnRlciBDb250ZXh0IE1lbnUgVGV4dCA6IA",
+					"AQAAAAAAAAABAAAAfQAAAAAAAACXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"left_delete",
+					null,
+					"AQAAAH0AAAAAAAAAfQAAAAAAAAABAAAAZQ",
+					"AQAAAAAAAAABAAAAfgAAAAAAAAB+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "Edit"
+					},
+					"BAAAAH0AAAAAAAAAfgAAAAAAAAAAAAAAfgAAAAAAAAB/AAAAAAAAAAAAAAB/AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAgQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfQAAAAAAAAB9AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " w/"
+					},
+					"AwAAAIEAAAAAAAAAggAAAAAAAAAAAAAAggAAAAAAAACDAAAAAAAAAAAAAACDAAAAAAAAAIQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgQAAAAAAAACBAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": " Sublime"
+					},
+					"CAAAAIQAAAAAAAAAhQAAAAAAAAAAAAAAhQAAAAAAAACGAAAAAAAAAAAAAACGAAAAAAAAAIcAAAAAAAAAAAAAAIcAAAAAAAAAiAAAAAAAAAAAAAAAiAAAAAAAAACJAAAAAAAAAAAAAACJAAAAAAAAAIoAAAAAAAAAAAAAAIoAAAAAAAAAiwAAAAAAAAAAAAAAiwAAAAAAAACMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIIAAAAAAAAAggAAAAAAAAAKAAAAdy8gU3VibGltZYEAAAAAAAAAgQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAggAAAAAAAACMAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "GlobalCoder-cloned-settings.ahk",
+			"settings":
+			{
+				"buffer_size": 20879,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					21,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAM0LAAAAAAAAEAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQsAAAAAAADNCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "Global"
+					},
+					"BwAAAN8LAAAAAAAA4AsAAAAAAAAAAAAA4AsAAAAAAADgCwAAAAAAAAgAAABQcm9nTmFtZeALAAAAAAAA4QsAAAAAAAAAAAAA4QsAAAAAAADiCwAAAAAAAAAAAADiCwAAAAAAAOMLAAAAAAAAAAAAAOMLAAAAAAAA5AsAAAAAAAAAAAAA5AsAAAAAAADlCwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wsAAAAAAADfCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "Coder"
+					},
+					"BQAAAOULAAAAAAAA5gsAAAAAAAAAAAAA5gsAAAAAAADnCwAAAAAAAAAAAADnCwAAAAAAAOgLAAAAAAAAAAAAAOgLAAAAAAAA6QsAAAAAAAAAAAAA6QsAAAAAAADqCwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5QsAAAAAAADlCwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": "gc"
+					},
+					"AwAAAOwLAAAAAAAA7QsAAAAAAAAAAAAA7QsAAAAAAADtCwAAAAAAAAgAAABJbmlGaWxlW+0LAAAAAAAA7gsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AsAAAAAAAD0CwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAA4MAAAAAAAARAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADgwAAAAAAAAODAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAEUMAAAAAAAARgwAAAAAAAAAAAAARgwAAAAAAABHDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARQwAAAAAAABFDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAEcMAAAAAAAAjVEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwwAAAAAAABHDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAKEEAAAAAAAAogQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAoQQAAAAAAAChBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAM4LAAAAAAAAzwsAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgsAAAAAAADOCwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "lemmon-runner.ahk",
+			"settings":
+			{
+				"buffer_size": 2384,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n\n;"
+					},
+					"AwAAAK4AAAAAAAAArwAAAAAAAAAAAAAArwAAAAAAAACwAAAAAAAAAAAAAACwAAAAAAAAALEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArgAAAAAAAACuAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "loop"
+					},
+					"BAAAALEAAAAAAAAAsgAAAAAAAAAAAAAAsgAAAAAAAACzAAAAAAAAAAAAAACzAAAAAAAAALQAAAAAAAAAAAAAALQAAAAAAAAAtQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAsQAAAAAAAACxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": " all"
+					},
+					"BAAAALUAAAAAAAAAtgAAAAAAAAAAAAAAtgAAAAAAAAC3AAAAAAAAAAAAAAC3AAAAAAAAALgAAAAAAAAAAAAAALgAAAAAAAAAuQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtQAAAAAAAAC1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": " .ahk,"
+					},
+					"BgAAALkAAAAAAAAAugAAAAAAAAAAAAAAugAAAAAAAAC7AAAAAAAAAAAAAAC7AAAAAAAAALwAAAAAAAAAAAAAALwAAAAAAAAAvQAAAAAAAAAAAAAAvQAAAAAAAAC+AAAAAAAAAAAAAAC+AAAAAAAAAL8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQAAAAAAAAC5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": " if"
+					},
+					"AwAAAL8AAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADBAAAAAAAAAAAAAADBAAAAAAAAAMIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAAMIAAAAAAAAAwwAAAAAAAAAAAAAAwwAAAAAAAADEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgAAAAAAAADCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMMAAAAAAAAAwwAAAAAAAAABAAAAYQ",
+					"AQAAAAAAAAABAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "its"
+					},
+					"AwAAAMMAAAAAAAAAxAAAAAAAAAAAAAAAxAAAAAAAAADFAAAAAAAAAAAAAADFAAAAAAAAAMYAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwwAAAAAAAADDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": " anythi"
+					},
+					"BwAAAMYAAAAAAAAAxwAAAAAAAAAAAAAAxwAAAAAAAADIAAAAAAAAAAAAAADIAAAAAAAAAMkAAAAAAAAAAAAAAMkAAAAAAAAAygAAAAAAAAAAAAAAygAAAAAAAADLAAAAAAAAAAAAAADLAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAAzQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgAAAAAAAADGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "ng"
+					},
+					"AgAAAM0AAAAAAAAAzgAAAAAAAAAAAAAAzgAAAAAAAADPAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQAAAAAAAADNAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": " BUT"
+					},
+					"BAAAAM8AAAAAAAAA0AAAAAAAAAAAAAAA0AAAAAAAAADRAAAAAAAAAAAAAADRAAAAAAAAANIAAAAAAAAAAAAAANIAAAAAAAAA0wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": " Main"
+					},
+					"BQAAANMAAAAAAAAA1AAAAAAAAAAAAAAA1AAAAAAAAADVAAAAAAAAAAAAAADVAAAAAAAAANYAAAAAAAAAAAAAANYAAAAAAAAA1wAAAAAAAAAAAAAA1wAAAAAAAADYAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0wAAAAAAAADTAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "Window.ahk"
+					},
+					"CgAAANgAAAAAAAAA2QAAAAAAAAAAAAAA2QAAAAAAAADaAAAAAAAAAAAAAADaAAAAAAAAANsAAAAAAAAAAAAAANsAAAAAAAAA3AAAAAAAAAAAAAAA3AAAAAAAAADdAAAAAAAAAAAAAADdAAAAAAAAAN4AAAAAAAAAAAAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA3wAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAOEAAAAAAAAAAAAAAOEAAAAAAAAA4gAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2AAAAAAAAADYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAOIAAAAAAAAA4wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4gAAAAAAAADiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": " add"
+					},
+					"BAAAAOMAAAAAAAAA5AAAAAAAAAAAAAAA5AAAAAAAAADlAAAAAAAAAAAAAADlAAAAAAAAAOYAAAAAAAAAAAAAAOYAAAAAAAAA5wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4wAAAAAAAADjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": " it"
+					},
+					"AwAAAOcAAAAAAAAA6AAAAAAAAAAAAAAA6AAAAAAAAADpAAAAAAAAAAAAAADpAAAAAAAAAOoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAAOoAAAAAAAAA6wAAAAAAAAAAAAAA6wAAAAAAAADsAAAAAAAAAAAAAADsAAAAAAAAAO0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gAAAAAAAADqAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " gui"
+					},
+					"BAAAAO0AAAAAAAAA7gAAAAAAAAAAAAAA7gAAAAAAAADvAAAAAAAAAAAAAADvAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAAA8QAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7QAAAAAAAADtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "globalcoder"
+					},
+					"DAAAABoBAAAAAAAAGwEAAAAAAAAAAAAAGwEAAAAAAAAbAQAAAAAAAAsAAABNYWluIFdpbmRvdxsBAAAAAAAAHAEAAAAAAAAAAAAAHAEAAAAAAAAdAQAAAAAAAAAAAAAdAQAAAAAAAB4BAAAAAAAAAAAAAB4BAAAAAAAAHwEAAAAAAAAAAAAAHwEAAAAAAAAgAQAAAAAAAAAAAAAgAQAAAAAAACEBAAAAAAAAAAAAACEBAAAAAAAAIgEAAAAAAAAAAAAAIgEAAAAAAAAjAQAAAAAAAAAAAAAjAQAAAAAAACQBAAAAAAAAAAAAACQBAAAAAAAAJQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJQEAAAAAAAAaAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": ";Requires au\nLINK := \"G:\\((D))\\vid\\!CCAD8_ Custom- GitHub Training Session-20230109_153024-Meeting Recording.mp4\"\n\n\nvlc := new VLC()\n\n\nvlc.Open(link)\nvlc.Fullscreen()\n\n\n^p::\nWinActivate, vlc.Title\nvlc.Pause()\nreturn\n\n^right::\nvlc.SkipForward(5)\nreturn\n\n^v::\nvlc.IncreaseVolume(10)\nvlc.Mute()\nreturn\n\n\nclass VLC\n{\n    __New()\n    {\n        this.Process := \"vlc.exe\"\n        this.Title   := \"VideoLAN\"\n        this.Exe     := \"ahk_exe vlc.exe\"\n    }\n\n    Open(FilePath)\n    {\n        Run, % this.Process  , FilePath\n        WinWaitActive, % this.Title\n    }\n\n    Fullscreen()\n    {\n        WinActivate, % this.Title\n        Send, {F11}\n    }\n\n    Pause()\n    {\n       ; WinActivate, % this.Title\n        WinActivate, % this.exe\n        Send, {Space}\n    }\n\n    SkipForward(Seconds)\n    {\n        WinActivate, % this.Title\n        Loop, %Seconds%\n        {\n            Send, {Right}\n        }\n    }\n\n    IncreaseVolume(Percent)\n    {\n        WinActivate, % this.Title\n        Send, {Ctrl down}\n        Loop, %Percent%\n        {\n            Send, {Up}\n        }\n        Send, {Ctrl up}\n    }\n\n    Mute()\n    {\n        WinActivate, % this.Title\n        Send, {Ctrl down}\n        Send, {Down}\n        Send, {Ctrl up}\n    }\n}\n",
+			"file": "collection/!!GlobalCoder_Catch_All/vlc.ahk",
+			"file_size": 1305,
+			"file_write_time": 133200156313469614,
+			"settings":
+			{
+				"buffer_size": 1219,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAABYAAAAAAAAAFgAAAAAAAAABAAAARA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAABYAAAAAAAAAFwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"left_delete",
+					null,
+					"AQAAABYAAAAAAAAAFgAAAAAAAAABAAAAZw",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "G"
+					},
+					"AQAAABYAAAAAAAAAFwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "((D))"
+					},
+					"BQAAABkAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAHQAAAAAAAAAAAAAAHQAAAAAAAAAeAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"paste",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+							},
+							"x": 508.5,
+							"y": 67.7
+						}
+					},
+					"AQAAAA0AAAAAAAAAhAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAACIAAAAAAAAAMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": "\\"
+					},
+					"AQAAADAAAAAAAAAAMQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJMAAAAAAAAAkwAAAAAAAAB2AAAATElOSyA6PSAiRzpcKChEKSl2aWRcQ0NBRDhfIDIwNDg2LSBEZXZlbG9waW5nIEFTUC5ORVQgQ29yZSBNVkMgV2ViIEFwcGxpY2F0aW9ucy0yMDIyMTIyMF8xMDE2MTQtTWVldGluZyBSZWNvcmRpbmcubXA0Ig",
+					"AQAAAAAAAAABAAAACQEAAAAAAACTAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					67,
+					1,
+					"paste_and_indent",
+					null,
+					"AgAAABYAAAAAAAAAcgAAAAAAAAAAAAAAcgAAAAAAAAByAAAAAAAAAHsAAABHOlwoKEQpKXZpZFwuMTIxMy0wMTA1IG12Y1xDQ0FEOF8gMjA0ODYtIERldmVsb3BpbmcgQVNQLk5FVCBDb3JlIE1WQyBXZWIgQXBwbGljYXRpb25zLTIwMjIxMjIwXzEwMTYxNC1NZWV0aW5nIFJlY29yZGluZy5tcDQ",
+					"AQAAAAAAAAABAAAAFgAAAAAAAACRAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+					},
+					"AgAAAHEAAAAAAAAAcQAAAAAAAAABAAAAInEAAAAAAAAAcQAAAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAAcgAAAAAAAAByAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "\""
+					},
+					"AQAAAHEAAAAAAAAAcgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQAAAAAAAABxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					1,
+					"left_delete",
+					null,
+					"AQAAABUAAAAAAAAAFQAAAAAAAAABAAAAIg",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					83,
+					2,
+					"left_delete",
+					null,
+					"AgAAAC0BAAAAAAAALQEAAAAAAAABAAAACiwBAAAAAAAALAEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALgEAAAAAAAAuAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/H/folders-DKTP/AHK-Scripts-master/AHK-Scripts-master/@Saved/AHK.net Archive/~specter333/HID/SP _vlc_commands.ahk",
+			"settings":
+			{
+				"buffer_size": 2244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/G/((top))/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/o-z/VLCHTTP3.ahk",
+			"settings":
+			{
+				"buffer_size": 21555,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 2449,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 2399,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/filecomparer-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/filecomparer-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "filecomparer-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "CustomMenuFiles/5 - examples/filecomparer-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/G/((top))/ahkdls/Class_RichEdit-master/Class_RichEdit-master/Sources/gpt-filemenu.ahk",
+			"settings":
+			{
+				"buffer_size": 601,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/G/((top))/(start)/gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt-savefile.ahk",
+			"settings":
+			{
+				"buffer_size": 1308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "(dev)/Chat GPT3 Summary/GPT3 Summary.ahk",
+			"settings":
+			{
+				"buffer_size": 1687,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/donov/Downloads/Chat-GPT3-Summary/Chat GPT3 Summary/GPT3 Summary.ahk",
+			"settings":
+			{
+				"buffer_size": 1687,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/GPT3-AHK.ahk",
+			"settings":
+			{
+				"buffer_size": 8039,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles.ahk",
+			"settings":
+			{
+				"buffer_size": 992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles-via-class.ahk",
+			"settings":
+			{
+				"buffer_size": 1410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GPT3-AHK.ahk",
+			"settings":
+			{
+				"buffer_size": 8039,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK.ahk",
+			"settings":
+			{
+				"buffer_size": 4003,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK-testing.ahk",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "CustomMenuFiles/5 - examples/pathmanager-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 5925,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/pathmanager-gpt.ahk",
+			"settings":
+			{
+				"buffer_size": 5925,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK_v2new.ahk",
+			"settings":
+			{
+				"buffer_size": 5027,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/globalcoder-captain.ahk",
+			"settings":
+			{
+				"buffer_size": 4074,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/windowsmenu.ahk",
+			"settings":
+			{
+				"buffer_size": 4136,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collection/!!GlobalCoder_Catch_All/((start)-winmin.ahk",
+			"settings":
+			{
+				"buffer_size": 7760,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/menuclass.ahk",
+			"settings":
+			{
+				"buffer_size": 16519,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "(dev)/getwindows.ahk",
+			"settings":
+			{
+				"buffer_size": 4189,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "(dev)/getwindows-tryv2convert.ahk",
+			"settings":
+			{
+				"buffer_size": 4189,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/createwindow.ahk",
+			"settings":
+			{
+				"buffer_size": 1044,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/ZeanahAutoComplete.ahk",
+			"settings":
+			{
+				"buffer_size": 5805,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/(ahk-text-finder).ahk",
+			"settings":
+			{
+				"buffer_size": 689,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main)).ahk",
+			"settings":
+			{
+				"buffer_size": 2961,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main))2.ahk",
+			"settings":
+			{
+				"buffer_size": 6129,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main))3.ahk",
+			"settings":
+			{
+				"buffer_size": 5566,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "collection/!!GlobalCoder_Catch_All/.Captain.ahk",
+			"settings":
+			{
+				"buffer_size": 4253,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "shape.ahk",
+			"settings":
+			{
+				"buffer_size": 1875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "fileread-headers.ahk",
+			"settings":
+			{
+				"buffer_size": 2122,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAABcCAAAAAAAAGAIAAAAAAAAAAAAAGAIAAAAAAAAZAgAAAAAAAAAAAAAZAgAAAAAAABoCAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABcCAAAAAAAAFwIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "1::"
+					},
+					"AwAAABoCAAAAAAAAGwIAAAAAAAAAAAAAGwIAAAAAAAAcAgAAAAAAAAAAAAAcAgAAAAAAAB0CAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABoCAAAAAAAAGgIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "#include"
+					},
+					"CAAAABgCAAAAAAAAGQIAAAAAAAAAAAAAGQIAAAAAAAAaAgAAAAAAAAAAAAAaAgAAAAAAABsCAAAAAAAAAAAAABsCAAAAAAAAHAIAAAAAAAAAAAAAHAIAAAAAAAAdAgAAAAAAAAAAAAAdAgAAAAAAAB4CAAAAAAAAAAAAAB4CAAAAAAAAHwIAAAAAAAAAAAAAHwIAAAAAAAAgAgAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABgCAAAAAAAAGAIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " d:/lib"
+					},
+					"BwAAACACAAAAAAAAIQIAAAAAAAAAAAAAIQIAAAAAAAAiAgAAAAAAAAAAAAAiAgAAAAAAACMCAAAAAAAAAAAAACMCAAAAAAAAJAIAAAAAAAAAAAAAJAIAAAAAAAAlAgAAAAAAAAAAAAAlAgAAAAAAACYCAAAAAAAAAAAAACYCAAAAAAAAJwIAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACACAAAAAAAAIAIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "/acc.ahk"
+					},
+					"CAAAACcCAAAAAAAAKAIAAAAAAAAAAAAAKAIAAAAAAAApAgAAAAAAAAAAAAApAgAAAAAAACoCAAAAAAAAAAAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAAsAgAAAAAAAC0CAAAAAAAAAAAAAC0CAAAAAAAALgIAAAAAAAAAAAAALgIAAAAAAAAvAgAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACcCAAAAAAAAJwIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					14,
+					4,
+					"left_delete",
+					null,
+					"BAAAAC4CAAAAAAAALgIAAAAAAAABAAAAay0CAAAAAAAALQIAAAAAAAABAAAAaCwCAAAAAAAALAIAAAAAAAABAAAAYSsCAAAAAAAAKwIAAAAAAAABAAAALg",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAC8CAAAAAAAALwIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					15,
+					3,
+					"left_delete",
+					null,
+					"AwAAACoCAAAAAAAAKgIAAAAAAAABAAAAYykCAAAAAAAAKQIAAAAAAAABAAAAYygCAAAAAAAAKAIAAAAAAAABAAAAYQ",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACsCAAAAAAAAKwIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "_libflat"
+					},
+					"CAAAACgCAAAAAAAAKQIAAAAAAAAAAAAAKQIAAAAAAAAqAgAAAAAAAAAAAAAqAgAAAAAAACsCAAAAAAAAAAAAACsCAAAAAAAALAIAAAAAAAAAAAAALAIAAAAAAAAtAgAAAAAAAAAAAAAtAgAAAAAAAC4CAAAAAAAAAAAAAC4CAAAAAAAALwIAAAAAAAAAAAAALwIAAAAAAAAwAgAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACgCAAAAAAAAKAIAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAADACAAAAAAAAMQIAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADACAAAAAAAAMAIAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/C/Users/donov/OneDrive/Documents/fb-cursorstorage.ahk",
+			"settings":
+			{
+				"buffer_size": 682,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAggEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAIAAAAAAAAAAgAAAAAAAAABAAAAIgEAAAAAAAAAAQAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAAAAAADAAAA4oCi",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAACoAAAAAAAAAKgAAAAAAAAABAAAASQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AQAAACoAAAAAAAAAKwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAKgAAAAAAAAAqAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "\nr"
+					},
+					"AwAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABgAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "ecent"
+					},
+					"BQAAABgAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAaAAAAAAAAAAAAAAAaAAAAAAAAABsAAAAAAAAAAAAAABsAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAdAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAB0AAAAAAAAAHgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"left_delete",
+					null,
+					"AQAAAB0AAAAAAAAAHQAAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "PosX"
+					},
+					"BAAAAB0AAAAAAAAAHgAAAAAAAAAAAAAAHgAAAAAAAAAfAAAAAAAAAAAAAAAfAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "="
+					},
+					"AQAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAACIAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\nrecen"
+					},
+					"BwAAACQAAAAAAAAAJQAAAAAAAAAAAAAAJQAAAAAAAAAmAAAAAAAAAAAAAAAmAAAAAAAAACcAAAAAAAAAAAAAACcAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAApAAAAAAAAAAAAAAApAAAAAAAAACoAAAAAAAAAAAAAACoAAAAAAAAAKwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "tPosY"
+					},
+					"BQAAACsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAAtAAAAAAAAAC4AAAAAAAAAAAAAAC4AAAAAAAAALwAAAAAAAAAAAAAALwAAAAAAAAAwAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": ":="
+					},
+					"AgAAADAAAAAAAAAAMQAAAAAAAAAAAAAAMQAAAAAAAAAyAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMAAAAAAAAAAwAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAADIAAAAAAAAANAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMgAAAAAAAAAyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "\nre"
+					},
+					"BAAAADQAAAAAAAAANQAAAAAAAAAAAAAANQAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADcAAAAAAAAAAAAAADcAAAAAAAAAOAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": "cent"
+					},
+					"BAAAADgAAAAAAAAAOQAAAAAAAAAAAAAAOQAAAAAAAAA6AAAAAAAAAAAAAAA6AAAAAAAAADsAAAAAAAAAAAAAADsAAAAAAAAAPAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAOAAAAAAAAAA4AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "Window"
+					},
+					"BgAAADwAAAAAAAAAPQAAAAAAAAAAAAAAPQAAAAAAAAA+AAAAAAAAAAAAAAA+AAAAAAAAAD8AAAAAAAAAAAAAAD8AAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABBAAAAAAAAAAAAAABBAAAAAAAAAEIAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "Id"
+					},
+					"AgAAAEIAAAAAAAAAQwAAAAAAAAAAAAAAQwAAAAAAAABEAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAQgAAAAAAAABCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": ":="
+					},
+					"AgAAAEQAAAAAAAAARQAAAAAAAAAAAAAARQAAAAAAAABGAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAARAAAAAAAAABEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAAEYAAAAAAAAASAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAARgAAAAAAAABGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": ":="
+					},
+					"AgAAAF8AAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABhAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAXwAAAAAAAABfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGEAAAAAAAAAYgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAYQAAAAAAAABhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAHMAAAAAAAAAdAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcwAAAAAAAABzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"left_delete",
+					null,
+					"AwAAANsAAAAAAAAA2wAAAAAAAAABAAAAMbEAAAAAAAAAsQAAAAAAAAABAAAAMYcAAAAAAAAAhwAAAAAAAAABAAAASQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAADAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAAPC/sgAAAAAAAACyAAAAAAAAAAAAAAAAAPC/3AAAAAAAAADcAAAAAAAAAAAAAAAAYGBA"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AwAAANkAAAAAAAAA2gAAAAAAAAAAAAAAsAAAAAAAAACxAAAAAAAAAAAAAACHAAAAAAAAAIgAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAADAAAAhwAAAAAAAACHAAAAAAAAAAAAAAAAAPC/sAAAAAAAAACwAAAAAAAAAAAAAAAAAPC/2QAAAAAAAADZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"right_delete",
+					null,
+					"AwAAANwAAAAAAAAA3AAAAAAAAAABAAAAILIAAAAAAAAAsgAAAAAAAAABAAAAIIgAAAAAAAAAiAAAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAADAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAAPC/sgAAAAAAAACyAAAAAAAAAAAAAAAAAPC/3AAAAAAAAADcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOcAAAAAAAAA5wAAAAAAAAABAAAAbA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": "i"
+					},
+					"AQAAAOcAAAAAAAAA6AAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOcAAAAAAAAA5wAAAAAAAAABAAAAaQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA6AAAAAAAAADoAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "I"
+					},
+					"AQAAAOcAAAAAAAAA6AAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA5wAAAAAAAADnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPgAAAAAAAAA+AAAAAAAAAABAAAAQw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA+QAAAAAAAAD5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": "(\""
+					},
+					"AgAAAPgAAAAAAAAA+QAAAAAAAAAAAAAA+QAAAAAAAAD6AAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA+AAAAAAAAAD4AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"left_delete",
+					null,
+					"AQAAABIBAAAAAAAAEgEAAAAAAAABAAAAbA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAEwEAAAAAAAATAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AQAAABIBAAAAAAAAEwEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAEgEAAAAAAAASAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					2,
+					"left_delete",
+					null,
+					"AgAAACQBAAAAAAAAJAEAAAAAAAABAAAALSMBAAAAAAAAIwEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJQEAAAAAAAAlAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": "="
+					},
+					"AQAAACMBAAAAAAAAJAEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIwEAAAAAAAAjAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"left_delete",
+					null,
+					"AQAAADEBAAAAAAAAMQEAAAAAAAABAAAASQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMgEAAAAAAAAyAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AQAAADEBAAAAAAAAMgEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMQEAAAAAAAAxAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"right_delete",
+					null,
+					"AQAAADMBAAAAAAAAMwEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAMwEAAAAAAAAzAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"left_delete",
+					null,
+					"AQAAAD4BAAAAAAAAPgEAAAAAAAABAAAALQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPwEAAAAAAAA/AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"insert",
+					{
+						"characters": "b:="
+					},
+					"AwAAAD4BAAAAAAAAPwEAAAAAAAAAAAAAPwEAAAAAAABAAQAAAAAAAAAAAABAAQAAAAAAAEEBAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPgEAAAAAAAA+AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"left_delete",
+					null,
+					"AQAAALMBAAAAAAAAswEAAAAAAAABAAAAJw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAtAEAAAAAAAC0AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAALMBAAAAAAAAtAEAAAAAAAAAAAAAtAEAAAAAAAC1AQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAswEAAAAAAACzAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"paste",
+					null,
+					"AQAAALUBAAAAAAAAWAIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAtQEAAAAAAAC1AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPwBAAAAAAAA/AEAAAAAAAABAAAALg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA/QEAAAAAAAD9AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"insert",
+					{
+						"characters": "c:="
+					},
+					"AwAAAPwBAAAAAAAA/QEAAAAAAAAAAAAA/QEAAAAAAAD+AQAAAAAAAAAAAAD+AQAAAAAAAP8BAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA/AEAAAAAAAD8AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					88,
+					1,
+					"insert",
+					{
+						"characters": "curso"
+					},
+					"BQAAAP8BAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAABAgAAAAAAAAAAAAABAgAAAAAAAAICAAAAAAAAAAAAAAICAAAAAAAAAwIAAAAAAAAAAAAAAwIAAAAAAAAEAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA/wEAAAAAAAD/AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					89,
+					1,
+					"insert",
+					{
+						"characters": "rStora"
+					},
+					"BgAAAAQCAAAAAAAABQIAAAAAAAAAAAAABQIAAAAAAAAGAgAAAAAAAAAAAAAGAgAAAAAAAAcCAAAAAAAAAAAAAAcCAAAAAAAACAIAAAAAAAAAAAAACAIAAAAAAAAJAgAAAAAAAAAAAAAJAgAAAAAAAAoCAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABAIAAAAAAAAEAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"insert",
+					{
+						"characters": "ge1."
+					},
+					"BAAAAAoCAAAAAAAACwIAAAAAAAAAAAAACwIAAAAAAAAMAgAAAAAAAAAAAAAMAgAAAAAAAA0CAAAAAAAAAAAAAA0CAAAAAAAADgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACgIAAAAAAAAKAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					93,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOoBAAAAAAAA6gEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA6wEAAAAAAADrAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMYBAAAAAAAAxgEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAxwEAAAAAAADHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					99,
+					1,
+					"left_delete",
+					null,
+					"AQAAANIBAAAAAAAA0gEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA0wEAAAAAAADTAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					102,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAANUBAAAAAAAA1wEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA1QEAAAAAAADVAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					108,
+					1,
+					"left_delete",
+					null,
+					"AQAAABkCAAAAAAAAGQIAAAAAAAABAAAAbA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAGgIAAAAAAAAaAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					109,
+					1,
+					"insert",
+					{
+						"characters": "I"
+					},
+					"AQAAABkCAAAAAAAAGgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAGQIAAAAAAAAZAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHIBAAAAAAAAcgEAAAAAAAABAAAAbA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcwEAAAAAAABzAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					113,
+					1,
+					"insert",
+					{
+						"characters": "I"
+					},
+					"AQAAAHIBAAAAAAAAcwEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcgEAAAAAAAByAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					116,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOoAAAAAAAAA6gAAAAAAAAABAAAACg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA6wAAAAAAAADrAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					119,
+					2,
+					"left_delete",
+					null,
+					"AgAAAGQBAAAAAAAAZAEAAAAAAAABAAAALWMBAAAAAAAAYwEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAZQEAAAAAAABlAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					120,
+					1,
+					"insert",
+					{
+						"characters": ":="
+					},
+					"AgAAAGMBAAAAAAAAZAEAAAAAAAAAAAAAZAEAAAAAAABlAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAYwEAAAAAAABjAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFMBAAAAAAAAUwEAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAVAEAAAAAAABUAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					128,
+					1,
+					"insert",
+					{
+						"characters": "x%"
+					},
+					"AwAAAKQBAAAAAAAApQEAAAAAAAAAAAAApQEAAAAAAAClAQAAAAAAAAYAAABhaGtfaWSlAQAAAAAAAKYBAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApAEAAAAAAACqAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					1,
+					"insert",
+					{
+						"characters": "a%"
+					},
+					"AgAAAKYBAAAAAAAApwEAAAAAAAAAAAAApwEAAAAAAACoAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApgEAAAAAAACmAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					130,
+					1,
+					"insert",
+					{
+						"characters": " y"
+					},
+					"AgAAAKgBAAAAAAAAqQEAAAAAAAAAAAAAqQEAAAAAAACqAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqAEAAAAAAACoAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					131,
+					1,
+					"insert",
+					{
+						"characters": "%b"
+					},
+					"AgAAAKoBAAAAAAAAqwEAAAAAAAAAAAAAqwEAAAAAAACsAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqgEAAAAAAACqAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					132,
+					1,
+					"insert",
+					{
+						"characters": "%,"
+					},
+					"AgAAAKwBAAAAAAAArQEAAAAAAAAAAAAArQEAAAAAAACuAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAArAEAAAAAAACsAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					133,
+					1,
+					"insert",
+					{
+						"characters": " ahk"
+					},
+					"BAAAAK4BAAAAAAAArwEAAAAAAAAAAAAArwEAAAAAAACwAQAAAAAAAAAAAACwAQAAAAAAALEBAAAAAAAAAAAAALEBAAAAAAAAsgEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAArgEAAAAAAACuAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					134,
+					1,
+					"insert",
+					{
+						"characters": "_id"
+					},
+					"AwAAALIBAAAAAAAAswEAAAAAAAAAAAAAswEAAAAAAAC0AQAAAAAAAAAAAAC0AQAAAAAAALUBAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAsgEAAAAAAACyAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					135,
+					1,
+					"insert",
+					{
+						"characters": " %"
+					},
+					"AgAAALUBAAAAAAAAtgEAAAAAAAAAAAAAtgEAAAAAAAC3AQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAtQEAAAAAAAC1AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					136,
+					1,
+					"insert",
+					{
+						"characters": "c%"
+					},
+					"AgAAALcBAAAAAAAAuAEAAAAAAAAAAAAAuAEAAAAAAAC5AQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAtwEAAAAAAAC3AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					137,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALkBAAAAAAAAugEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAuQEAAAAAAAC5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					138,
+					1,
+					"left_delete",
+					null,
+					"AQAAALkBAAAAAAAAuQEAAAAAAAABAAAACg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAugEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					141,
+					1,
+					"left_delete",
+					null,
+					"AQAAAD4CAAAAAAAAPgIAAAAAAAADAAAA4oCi",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPwIAAAAAAAA/AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					142,
+					1,
+					"insert",
+					{
+						"characters": "\""
+					},
+					"AQAAAD4CAAAAAAAAPwIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPgIAAAAAAAA+AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					144,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEICAAAAAAAAQgIAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAQwIAAAAAAABDAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					145,
+					1,
+					"insert",
+					{
+						"characters": "_"
+					},
+					"AQAAAEICAAAAAAAAQwIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAQgIAAAAAAABCAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					147,
+					1,
+					"insert",
+					{
+						"characters": "\""
+					},
+					"AQAAAEUCAAAAAAAARgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAARQIAAAAAAABFAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					150,
+					1,
+					"insert",
+					{
+						"characters": "a"
+					},
+					"AQAAAFsBAAAAAAAAXAEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAWwEAAAAAAABbAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					151,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFsBAAAAAAAAWwEAAAAAAAABAAAAYQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAXAEAAAAAAABcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					160,
+					1,
+					"cut",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAABzAAAAQ2xhc3MgY3Vyc29yU3RvcmFnZSB7CglyZWNlbnRQb3NYPVtdCglyZWNlbnRQb3NZOj1bXQoJcmVjZW50V2luZG93SWQ6PVtdCmdsb2JhbCBjdXJzb3JTdG9yYWdlMSA6PSBuZXcgY3Vyc29yU3RvcmFnZQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAABzAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					162,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAICAAAAAAAAAgIAAAAAAAABAAAAIg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAwIAAAAAAAADAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					163,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAAICAAAAAAAAAwIAAAAAAAAAAAAAAwIAAAAAAAAEAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAgIAAAAAAAACAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"paste",
+					null,
+					"AQAAAAQCAAAAAAAAdwIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABAIAAAAAAAAEAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					169,
+					1,
+					"insert",
+					{
+						"characters": "\n}"
+					},
+					"BQAAAEwCAAAAAAAATQIAAAAAAAAAAAAATQIAAAAAAABOAgAAAAAAAAAAAABOAgAAAAAAAE8CAAAAAAAAAAAAAE0CAAAAAAAATQIAAAAAAAABAAAACU0CAAAAAAAATQIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAATAIAAAAAAABMAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					180,
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAACUCAAAAAAAAJgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJQIAAAAAAAAlAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					183,
+					1,
+					"insert",
+					{
+						"characters": "77777777"
+					},
+					"CAAAAAICAAAAAAAAAwIAAAAAAAAAAAAAAwIAAAAAAAAEAgAAAAAAAAAAAAAEAgAAAAAAAAUCAAAAAAAAAAAAAAUCAAAAAAAABgIAAAAAAAAAAAAABgIAAAAAAAAHAgAAAAAAAAAAAAAHAgAAAAAAAAgCAAAAAAAAAAAAAAgCAAAAAAAACQIAAAAAAAAAAAAACQIAAAAAAAAKAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAgIAAAAAAAACAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					184,
+					1,
+					"insert",
+					{
+						"characters": "7"
+					},
+					"AQAAAAoCAAAAAAAACwIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACgIAAAAAAAAKAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					185,
+					10,
+					"left_delete",
+					null,
+					"CgAAAAoCAAAAAAAACgIAAAAAAAABAAAANwkCAAAAAAAACQIAAAAAAAABAAAANwgCAAAAAAAACAIAAAAAAAABAAAANwcCAAAAAAAABwIAAAAAAAABAAAANwYCAAAAAAAABgIAAAAAAAABAAAANwUCAAAAAAAABQIAAAAAAAABAAAANwQCAAAAAAAABAIAAAAAAAABAAAANwMCAAAAAAAAAwIAAAAAAAABAAAANwICAAAAAAAAAgIAAAAAAAABAAAANwECAAAAAAAAAQIAAAAAAAABAAAAbg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACwIAAAAAAAALAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					186,
+					1,
+					"insert",
+					{
+						"characters": "n"
+					},
+					"AQAAAAECAAAAAAAAAgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAQIAAAAAAAABAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					189,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACUCAAAAAAAAJgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJQIAAAAAAAAlAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					194,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACgCAAAAAAAAKQIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAKAIAAAAAAAAoAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					197,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADcCAAAAAAAAOAIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAANwIAAAAAAAA3AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					200,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADoCAAAAAAAAOwIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAOgIAAAAAAAA6AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					203,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAE0CAAAAAAAATgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAATQIAAAAAAABNAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					206,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAFACAAAAAAAAUQIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAUAIAAAAAAABQAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					209,
+					1,
+					"insert",
+					{
+						"characters": "jh"
+					},
+					"AgAAACECAAAAAAAAIgIAAAAAAAAAAAAAIgIAAAAAAAAjAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIQIAAAAAAAAhAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					214,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAIsAAAAAAAAAjAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiwAAAAAAAACLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					224,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIsAAAAAAAAAiwAAAAAAAAABAAAAOw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAjAAAAAAAAACMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					227,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					228,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAALw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					229,
+					1,
+					"insert",
+					{
+						"characters": "#include"
+					},
+					"CAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAIAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					230,
+					1,
+					"insert",
+					{
+						"characters": " dK"
+					},
+					"AwAAAAgAAAAAAAAACQAAAAAAAAAAAAAACQAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAsAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					231,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAoAAAAAAAAACgAAAAAAAAABAAAASw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					232,
+					1,
+					"insert",
+					{
+						"characters": ":/lib"
+					},
+					"BQAAAAoAAAAAAAAACwAAAAAAAAAAAAAACwAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAA0AAAAAAAAAAAAAAA0AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAPAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					233,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAA8AAAAAAAAAEAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					234,
+					1,
+					"left_delete",
+					null,
+					"AQAAAA8AAAAAAAAADwAAAAAAAAABAAAALg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					235,
+					1,
+					"insert",
+					{
+						"characters": "/print.ah"
+					},
+					"CQAAAA8AAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAARAAAAAAAAABIAAAAAAAAAAAAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABgAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					236,
+					1,
+					"insert",
+					{
+						"characters": "k"
+					},
+					"AQAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					239,
+					1,
+					"insert",
+					{
+						"characters": "a"
+					},
+					"AQAAAB8AAAAAAAAAIAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHwAAAAAAAAAfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					240,
+					1,
+					"left_delete",
+					null,
+					"AQAAAB8AAAAAAAAAHwAAAAAAAAABAAAAYQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					247,
+					1,
+					"cut",
+					null,
+					"AQAAABsAAAAAAAAAGwAAAAAAAABLAQAAI2E6OgpjdXJzb3JTdG9yYWdlMS5yZWNlbnRQb3NYLnB1c2goQV9DYXJldFgpCmN1cnNvclN0b3JhZ2UxLnJlY2VudFBvc1kucHVzaChBX0NhcmV0WSkKY3Vyc29yU3RvcmFnZTEucmVjZW50V2luZG93SUQucHVzaChXaW5FeGlzdCgiQSIpKQpwcmludChjdXJzb3JzdG9yYWdlMSkKcmV0dXJuCiNiOjoKYTo9Y3Vyc29yU3RvcmFnZTEucmVjZW50UG9zWApiOj1yZWNlbnRQb3NZLnBvcCgpCmM6PWN1cnNvclN0b3JhZ2UxOj1yZWNlbnRXaW5kb3dJRC5wb3AoKQpXaW5BY3RpdmF0ZSwgJSAiYWhrX2lkICIgLiBjCkNvbnRyb2xDbGljaywgeCVhJSB5JWIlLCBhaGtfaWQgJWMlCnJldHVybg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAZgEAAAAAAAAbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					252,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAACUBAAAAAAAAJgEAAAAAAAAAAAAAJgEAAAAAAAAnAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJQEAAAAAAAAlAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					253,
+					1,
+					"paste",
+					null,
+					"AQAAACcBAAAAAAAAcgIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJwEAAAAAAAAnAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					260,
+					1,
+					"cut",
+					null,
+					"AQAAAHMCAAAAAAAAcwIAAAAAAAAqAAAAZ2xvYmFsIGN1cnNvclN0b3JhZ2UxIDo9IG5ldyBjdXJzb3JTdG9yYWdl",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcwIAAAAAAACdAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					263,
+					1,
+					"cut",
+					null,
+					"AQAAAB0AAAAAAAAAHQAAAAAAAACzAAAAYTo9Y3Vyc29yc3RvcmFnZWwucmVjZW50UG9zWC5wb3AoKQpiOj1jdXJzb3JTdG9yYWdlMS5yZWNlbnRQb3NZLnBvcCgpCmM6PWN1cnNvclN0b3JhZ2UxLnJlY2VudFdpbmRvd0lELnBvcCgpCldpbkFjdGl2YXRlLCAlICJhaGtfaWQiIC4gYwpDb250cm9sQ2xpY2ssIHglYSUgeSViJSwgYWhrX2lkICVjJQpyZXR1cm4",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHQAAAAAAAADQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					266,
+					1,
+					"insert",
+					{
+						"characters": "\n\n#c"
+					},
+					"BAAAAL8BAAAAAAAAwAEAAAAAAAAAAAAAwAEAAAAAAADBAQAAAAAAAAAAAADBAQAAAAAAAMIBAAAAAAAAAAAAAMIBAAAAAAAAwwEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvwEAAAAAAAC/AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					267,
+					1,
+					"insert",
+					{
+						"characters": "::"
+					},
+					"AgAAAMMBAAAAAAAAxAEAAAAAAAAAAAAAxAEAAAAAAADFAQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAwwEAAAAAAADDAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					268,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAMUBAAAAAAAAxgEAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAxQEAAAAAAADFAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					269,
+					1,
+					"paste",
+					null,
+					"AQAAAMYBAAAAAAAAeQIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAxgEAAAAAAADGAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					274,
+					1,
+					"paste",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+							},
+							"x": 302.5,
+							"y": 123.5
+						}
+					},
+					"AQAAAB0AAAAAAAAA0AAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					283,
+					1,
+					"paste",
+					null,
+					"AgAAABwAAAAAAAAARgAAAAAAAAAAAAAARgAAAAAAAABGAAAAAAAAALQAAAAKYTo9Y3Vyc29yc3RvcmFnZWwucmVjZW50UG9zWC5wb3AoKQpiOj1jdXJzb3JTdG9yYWdlMS5yZWNlbnRQb3NZLnBvcCgpCmM6PWN1cnNvclN0b3JhZ2UxLnJlY2VudFdpbmRvd0lELnBvcCgpCldpbkFjdGl2YXRlLCAlICJhaGtfaWQiIC4gYwpDb250cm9sQ2xpY2ssIHglYSUgeSViJSwgYWhrX2lkICVjJQpyZXR1cm4",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA0AAAAAAAAAAcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					288,
+					2,
+					"left_delete",
+					null,
+					"AgAAAGYAAAAAAAAAZgAAAAAAAAABAAAAaGUAAAAAAAAAZQAAAAAAAAABAAAAag",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAZwAAAAAAAABnAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					299,
+					1,
+					"insert",
+					{
+						"characters": "\nmsg"
+					},
+					"BAAAAJ8AAAAAAAAAoAAAAAAAAAAAAAAAoAAAAAAAAAChAAAAAAAAAAAAAAChAAAAAAAAAKIAAAAAAAAAAAAAAKIAAAAAAAAAowAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAnwAAAAAAAACfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					300,
+					1,
+					"insert",
+					{
+						"characters": "box"
+					},
+					"AwAAAKMAAAAAAAAApAAAAAAAAAAAAAAApAAAAAAAAAClAAAAAAAAAAAAAAClAAAAAAAAAKYAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAowAAAAAAAACjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					301,
+					1,
+					"insert",
+					{
+						"characters": " a"
+					},
+					"AgAAAKYAAAAAAAAApwAAAAAAAAAAAAAApwAAAAAAAACoAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApgAAAAAAAACmAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "CustomMenuFiles/3 - tools/Example3 - Resizable Tabs.ahk",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AQAAAEsAAAAAAAAAfwAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAEsAAAAAAAAASwAAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/D/(github)-MAINS/AddRequired/src/AddRequired.ahk",
+			"settings":
+			{
+				"buffer_size": 4441,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPMJAAAAAAAA8wkAAAAAAAABAAAAPA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPQJAAAAAAAA9AkAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "lib/"
+					},
+					"BAAAAPMJAAAAAAAA9AkAAAAAAAAAAAAA9AkAAAAAAAD1CQAAAAAAAAAAAAD1CQAAAAAAAPYJAAAAAAAAAAAAAPYJAAAAAAAA9wkAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPMJAAAAAAAA8wkAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					5,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPYJAAAAAAAA9gkAAAAAAAABAAAALw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPcJAAAAAAAA9wkAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "\\"
+					},
+					"AQAAAPYJAAAAAAAA9wkAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPYJAAAAAAAA9gkAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": ".ahk"
+					},
+					"BQAAAAMKAAAAAAAABAoAAAAAAAAAAAAABAoAAAAAAAAECgAAAAAAAA4AAABcU2NyaXB0T2JqZWN0PgQKAAAAAAAABQoAAAAAAAAAAAAABQoAAAAAAAAGCgAAAAAAAAAAAAAGCgAAAAAAAAcKAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAMKAAAAAAAAEQoAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAIKAAAAAAAAAgoAAAAAAAABAAAAdAEKAAAAAAAAAQoAAAAAAAABAAAAYwAKAAAAAAAAAAoAAAAAAAABAAAAZQ",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAMKAAAAAAAAAwoAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/D/(github)/ahkzeanah/AHKZeanah/((start)-gps.ahk",
+			"settings":
+			{
+				"buffer_size": 6688,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/AHK-v2-script-converter/QuickConvertorV2.ahk",
+			"settings":
+			{
+				"buffer_size": 34322,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/lib/V2/webview2.ahk",
+			"settings":
+			{
+				"buffer_size": 6340,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"cut",
+					null,
+					"AQAAALYAAAAAAAAAtgAAAAAAAAAVAQAAbWFpbiA6PSBndWkubmV3KCIrUmVzaXplIikKbWFpbi5PbkV2ZW50KCJDbG9zZSIsICJFeGl0QXBwIikKCm1haW4uU2hvdyhGb3JtYXQoInd7fSBoe30iLCBBX1NjcmVlbldpZHRoICogMC40LCBBX1NjcmVlbkhlaWdodCAqIDAuNikpCgo7IG5lZWQgdG8gaGF2ZSB0aGUgc2l6ZSBhbHNvIG90aGVyd2lzZSB3aGVuIHlvdSB1bi1tYXhpbWl6ZSBpdCB0aGUgd2luZG93IGhhcyB6ZXJvIGhlaWdodCBhbmQgd2lkdGgKd3YgOj0gV2ViVmlldy5uZXcobWFpbikKd3YuY3JlYXRlKCkKCnJldHVybg",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALYAAAAAAAAAywEAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAADYAAAAAAAAANgAAAAAAAAABAAAAOw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADcAAAAAAAAANwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "#"
+					},
+					"AQAAADQAAAAAAAAANQAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADQAAAAAAAAANAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AQAAADQAAAAAAAAANAAAAAAAAAABAAAAIw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADUAAAAAAAAANQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "\n#wa"
+					},
+					"BAAAADQAAAAAAAAANQAAAAAAAAAAAAAANQAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADcAAAAAAAAAAAAAADcAAAAAAAAAOAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADQAAAAAAAAANAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "rn"
+					},
+					"AgAAADgAAAAAAAAAOQAAAAAAAAAAAAAAOQAAAAAAAAA6AAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADgAAAAAAAAAOAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": ",all"
+					},
+					"BAAAADoAAAAAAAAAOwAAAAAAAAAAAAAAOwAAAAAAAAA8AAAAAAAAAAAAAAA8AAAAAAAAAD0AAAAAAAAAAAAAAD0AAAAAAAAAPgAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADoAAAAAAAAAOgAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " off"
+					},
+					"BAAAAD4AAAAAAAAAPwAAAAAAAAAAAAAAPwAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEEAAAAAAAAAAAAAAEEAAAAAAAAAQgAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD4AAAAAAAAAPgAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					19,
+					1,
+					"left_delete",
+					null,
+					"AQAAADoAAAAAAAAAOgAAAAAAAAABAAAALA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADsAAAAAAAAAOwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAD0AAAAAAAAAPgAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD0AAAAAAAAAPQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					32,
+					1,
+					"paste",
+					null,
+					"AgAAADUAAAAAAAAAaQAAAAAAAAAAAAAAaQAAAAAAAABpAAAAAAAAAA4AAAAjd2FybmFsbCwgb2ZmCg",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADUAAAAAAAAAQwAAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/D/lib/V2/webview2-cut.ahk",
+			"settings":
+			{
+				"buffer_size": 6566,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DamerauLevenshteinDistance.ahk",
+			"settings":
+			{
+				"buffer_size": 912,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/Damerau-Levenshtein-Distance_Fuzzy-searches.ahk",
+			"settings":
+			{
+				"buffer_size": 2108,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DataBaseADO.ahk",
+			"settings":
+			{
+				"buffer_size": 3718,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DataBaseFactory.ahk",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DataBaseSQLLite.ahk",
+			"settings":
+			{
+				"buffer_size": 9318,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DebugWindow.AHK",
+			"settings":
+			{
+				"buffer_size": 190,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/Debug.ahk",
+			"settings":
+			{
+				"buffer_size": 1848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DebugPrintArray (2).ahk",
+			"settings":
+			{
+				"buffer_size": 4289,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/Devices.ahk",
+			"settings":
+			{
+				"buffer_size": 5319,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/DictionaryDatabase.ahk",
+			"settings":
+			{
+				"buffer_size": 14346,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/Difference.ahk",
+			"settings":
+			{
+				"buffer_size": 1591,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/different_functions.ahk",
+			"settings":
+			{
+				"buffer_size": 3921,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/Display_get_Window_context (2).ahk",
+			"settings":
+			{
+				"buffer_size": 16057,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/(ahks)/(start)/lib/display_window.ahk",
+			"settings":
+			{
+				"buffer_size": 15976,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/G/((top))/.ahk/((start)-funct.ahk",
+			"settings":
+			{
+				"buffer_size": 2187,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "d:/lib/"
+					},
+					"CAAAAF0AAAAAAAAAXgAAAAAAAAAAAAAAXgAAAAAAAABeAAAAAAAAAA8AAABwOlxhcHBcYXBwXExpYlxeAAAAAAAAAF8AAAAAAAAAAAAAAF8AAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABhAAAAAAAAAAAAAABhAAAAAAAAAGIAAAAAAAAAAAAAAGIAAAAAAAAAYwAAAAAAAAAAAAAAYwAAAAAAAABkAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGwAAAAAAAAAXQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					24,
+					1,
+					"left_delete",
+					null,
+					"AQAAABgAAAAAAAAAGAAAAAAAAAABAAAAOw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABkAAAAAAAAAGQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAFMAAAAAAAAAVAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFMAAAAAAAAAUwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					38,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFQAAAAAAAAAVAAAAAAAAAABAAAAOw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFUAAAAAAAAAVQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					52,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAIQCAAAAAAAAhQIAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIQCAAAAAAAAhAIAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "/C/Users/donov/Downloads/Untitled.ahk",
+			"settings":
+			{
+				"buffer_size": 29562,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/d/lib/UIA_interface.ahk",
+			"settings":
+			{
+				"buffer_size": 38183,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAOs7AAAAAAAA7DsAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOs7AAAAAAAA6zsAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAMU7AAAAAAAAxjsAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAMU7AAAAAAAAxTsAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAAY8AAAAAAAABzwAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAY8AAAAAAAABjwAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAGk8AAAAAAAAajwAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGk8AAAAAAAAaTwAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAIY8AAAAAAAAhzwAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIY8AAAAAAAAhjwAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "AHK-edit-context-menu.ahk",
+			"settings":
+			{
+				"buffer_size": 639,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAZw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		},
 		{
 			"file": "!.ahk",
@@ -269,9 +2963,29 @@
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
 		[
 			[
 				[
@@ -325,6 +3039,14 @@
 		"selected_items":
 		[
 			[
+				"autoho",
+				"AutoHotkey - Run"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"auto",
 				"AutoHotkey v2 - runner"
 			],
@@ -347,10 +3069,6 @@
 			[
 				"terminus",
 				"Terminus: Open Default Shell in Tab (View)"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"refres",
@@ -507,10 +3225,25 @@
 	},
 	"expanded_folders":
 	[
-		"/D/(github)/GlobalCoder/gc/GlobalCoder"
+		"/D/(github)/GlobalCoder/gc/GlobalCoder",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)"
 	],
 	"file_history":
 	[
+		"/C/Users/donov/OneDrive/Desktop/Quick-AHKv2-Converter-1/src/Quick AHKv2 Converter.ahk",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_Quick-AHKv2-Converter-1.zip/src/Quick AHKv2 Converter.ahk",
+		"/C/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/Extensions/Microsoft/ConnectedServices/Configs/dependencyTypes/models/secrets/secrets.json",
+		"/C/Users/donov/AppData/Roaming/Microsoft/UserSecrets/aspnet-ContactWebEFCore6-0090AE31-94A8-496D-A320-A47AC4A04536/secrets.json",
+		"/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/Preferences File.ahk",
+		"/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/findfunc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/getwindows.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!GlobalCoder_Catch_All/globalcoder-captain.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/other-globalcoder.sublime-project",
+		"/C/Users/donov/AppData/Roaming/Sublime Text/Packages/User/AutoHotkey.sublime-settings",
+		"/G/((top))/.ahk/codehelper.ahk",
+		"/G/((top))/.ahk/clickmenu.ahk",
+		"/F/!dev stuff/IDE/sublime/User/Default (Windows).sublime-keymap",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/imenu.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/mvc.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!implimentedlibs/3. OCR a monitor.ahk",
 		"/D/globalcoder/globalcoder-windows.ahk",
@@ -624,25 +3357,11 @@
 		"/D/github/GlobalCoder/GlobalCoder/!.ahk",
 		"/D/github/GlobalCoder/GlobalCoder/CustomMenuFiles/9 - Showcase & Examples/pixelsearch_DLL.ahk",
 		"/d/lib/btt.ahk",
-		"/D/lib/Vis2.ahk",
-		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/OCR.ahk",
-		"/p/app/app/((start)-class&fn.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/singles/inc/Project.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/.git/config",
-		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/1_ToDoList.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/.git/ORIG_HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/.git/HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/.git/hooks/push-to-checkout.sample",
-		"/D/github/GlobalCoder/GlobalCoder/.git/refs/heads/newbranch",
-		"/D/github/GlobalCoder/GlobalCoder/.git/refs/remotes/origin/HEAD",
-		"/D/github/GlobalCoder/GlobalCoder/singles/globalcoder-captain.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder2.ahk",
-		"/P/.desktop/_Ahk_/ahk-zips/example.ahk",
-		"/P/App/App/json/json/tests/test-all.ahk"
+		"/D/lib/Vis2.ahk"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 42.4
 	},
 	"find_in_files":
 	{
@@ -680,35 +3399,110 @@
 				{
 					"buffer": 0,
 					"file": "GlobalCoder.ahk",
-					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 101934,
+						"buffer_size": 100632,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9780,
-								9780
+								97730,
+								80389
 							]
 						],
 						"settings":
 						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								}
+							],
 							"bs_sintax": "autohotkey2",
 							"buffer_scroll_name": "2aac11fa",
 							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
-							"spell_check": false,
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
+							"spell_check": true,
+							"syntax": "Packages/AutoHotkey2-master/Autohotkey2.tmLanguage",
 							"tab_size": 3,
 							"tabs_extra_last_activated": 1674661638.11,
 							"tabs_extra_last_activated_sheet_index": 0,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2897.0,
+						"translation.y": 59459.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/donov/OneDrive/Desktop/openwsublime.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "batch file",
+							"buffer_scroll_name": "42f09461",
+							"lsp_uri": "file:///C:/Users/donov/OneDrive/Desktop/openwsublime.bat",
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 26.4,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/donov/OneDrive/Desktop/openwsublim better - Copy.bat",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "batch file",
+							"buffer_scroll_name": "90bdbc12",
+							"lsp_uri": "file:///C:/Users/donov/OneDrive/Desktop/openwsublim%20better%20-%20Copy.bat",
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -716,7 +3510,2391 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
+					"file": "GlobalCoder-cloned-settings.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3023,
+								3023
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "fd75f905",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder-cloned-settings.ahk",
+							"open_with_edit": true,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1344.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lemmon-runner.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "b60d4de7",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/lemmon-runner.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "collection/!!GlobalCoder_Catch_All/vlc.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "a6bb938b",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/vlc.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 581.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/H/folders-DKTP/AHK-Scripts-master/AHK-Scripts-master/@Saved/AHK.net Archive/~specter333/HID/SP _vlc_commands.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "d9fc248e",
+							"lsp_uri": "file:///H:/folders-DKTP/AHK-Scripts-master/AHK-Scripts-master/%40Saved/AHK.net%20Archive/%7Especter333/HID/SP%20_vlc_commands.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/G/((top))/Program Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/o-z/VLCHTTP3.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "035ef1ff",
+							"lsp_uri": "file:///G:/%28%28top%29%29/Program%20Files/AutoHotkey/lib/.AHK-libs-and-classes-collection/libs/o-z/VLCHTTP3.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1065,
+								1065
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "724d5c9a",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/class%20MyTextEditor-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "CustomMenuFiles/5 - examples/class MyTextEditor-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e8e48682",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5%20-%20examples/class%20MyTextEditor-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/D/(github)-MAINS/GlobalCoder/filecomparer-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "78b05525",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/filecomparer-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/filecomparer-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "eeeeb078",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/filecomparer-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "filecomparer-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "8e7fffea",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/filecomparer-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "CustomMenuFiles/5 - examples/filecomparer-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "efed0990",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5%20-%20examples/filecomparer-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/G/((top))/ahkdls/Class_RichEdit-master/Class_RichEdit-master/Sources/gpt-filemenu.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e6f0187d",
+							"lsp_uri": "file:///G:/%28%28top%29%29/ahkdls/Class_RichEdit-master/Class_RichEdit-master/Sources/gpt-filemenu.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/G/((top))/(start)/gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "c881177b",
+							"lsp_uri": "file:///G:/%28%28top%29%29/%28start%29/gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt-savefile.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "95ee87d4",
+							"lsp_uri": "file:///D:/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt-savefile.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e668dd3e",
+							"lsp_uri": "file:///D:/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "(dev)/Chat GPT3 Summary/GPT3 Summary.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "da276c67",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/Chat%20GPT3%20Summary/GPT3%20Summary.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/D/(github)-MAINS/GlobalCoder/gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6a7e744d",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/C/Users/donov/Downloads/Chat-GPT3-Summary/Chat GPT3 Summary/GPT3 Summary.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5cab3412",
+							"lsp_uri": "file:///C:/Users/donov/Downloads/Chat-GPT3-Summary/Chat%20GPT3%20Summary/GPT3%20Summary.ahk",
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/D/(github)-MAINS/GlobalCoder/GPT3-AHK.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "fafd8ffa",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/GPT3-AHK.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "8ca516df",
+							"lsp_uri": "file:///D:/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/D/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles-via-class.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "22cc4d81",
+							"lsp_uri": "file:///D:/lib/ShinsImageScanClass-main/ShinsImageScanClass-main/Examples/gptfiles-via-class.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "877f5042",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "GPT3-AHK.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "963cfb6a",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GPT3-AHK.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "7d8f3668",
+							"lsp_uri": "file:///D:/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK-testing.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "cc12411f",
+							"lsp_uri": "file:///D:/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK-testing.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "CustomMenuFiles/5 - examples/pathmanager-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "730c9323",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/5%20-%20examples/pathmanager-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 454.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/pathmanager-gpt.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "8925c292",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/pathmanager-gpt.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/D/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK_v2new.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "950ca50f",
+							"lsp_uri": "file:///D:/working/GPT3-AHK-main/GPT3-AHK-main/GPT3-AHK_v2new.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/globalcoder-captain.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "b918cd7d",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/8/globalcoder-captain.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/windowsmenu.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "39bfdb77",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/8/windowsmenu.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "collection/!!GlobalCoder_Catch_All/((start)-winmin.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "bff94dd5",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/%28%28start%29-winmin.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/menuclass.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "8be9fb45",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/menuclass.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "(dev)/getwindows.ahk",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3129,
+								3129
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5b082c05",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/getwindows.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "(dev)/getwindows-tryv2convert.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4187,
+								4187
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "f9cd49da",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/getwindows-tryv2convert.ahk",
+							"open_with_edit": true,
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2024.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/createwindow.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "7ba23835",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/createwindow.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/ZeanahAutoComplete.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "31d54e23",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/8/ZeanahAutoComplete.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "/D/(github)-MAINS/GlobalCoder/CustomMenuFiles/5 - examples/8/(ahk-text-finder).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "fb55060c",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/CustomMenuFiles/5%20-%20examples/8/%28ahk-text-finder%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main)).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2961,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "2aac7f3d",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/%28%28to-add-to-main%29%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main))2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "f76e8ddf",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/%28%28to-add-to-main%29%292.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "collection/!!GlobalCoder_Catch_All/((to-add-to-main))3.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6a3b4ac4",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/%28%28to-add-to-main%29%293.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 41,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "collection/!!GlobalCoder_Catch_All/.Captain.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "3184b90f",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/.Captain.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "shape.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e647789e",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/shape.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "fileread-headers.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								561,
+								561
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "b0e3d8a8",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/fileread-headers.ahk",
+							"open_with_edit": true,
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "/C/Users/donov/OneDrive/Documents/fb-cursorstorage.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								470,
+								470
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								}
+							],
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "ee5e303c",
+							"lsp_uri": "file:///C:/Users/donov/OneDrive/Documents/fb-cursorstorage.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 70,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "CustomMenuFiles/3 - tools/Example3 - Resizable Tabs.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6a4aa3fc",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3%20-%20tools/Example3%20-%20Resizable%20Tabs.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 52,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "/D/(github)-MAINS/AddRequired/src/AddRequired.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2560,
+								2560
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "7e22d6ad",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/AddRequired/src/AddRequired.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 51,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "/D/(github)/ahkzeanah/AHKZeanah/((start)-gps.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "29010f94",
+							"lsp_uri": "file:///D:/%28github%29/ahkzeanah/AHKZeanah/%28%28start%29-gps.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 50,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "/D/(github)-MAINS/AHK-v2-script-converter/QuickConvertorV2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "62af69bd",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/AHK-v2-script-converter/QuickConvertorV2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "/D/lib/V2/webview2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								105
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5c61645c",
+							"lsp_uri": "file:///D:/lib/V2/webview2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "/D/lib/V2/webview2-cut.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "e5d58b00",
+							"lsp_uri": "file:///D:/lib/V2/webview2-cut.ahk",
+							"open_with_edit": true,
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 47,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "/F/(ahks)/(start)/lib/DamerauLevenshteinDistance.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "031e0ab9",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DamerauLevenshteinDistance.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 54,
+					"file": "/F/(ahks)/(start)/lib/Damerau-Levenshtein-Distance_Fuzzy-searches.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "582379b4",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/Damerau-Levenshtein-Distance_Fuzzy-searches.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 69,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 55,
+					"file": "/F/(ahks)/(start)/lib/DataBaseADO.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5a5d0da2",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DataBaseADO.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 68,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 56,
+					"file": "/F/(ahks)/(start)/lib/DataBaseFactory.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "d48c43cf",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DataBaseFactory.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 67,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 57,
+					"file": "/F/(ahks)/(start)/lib/DataBaseSQLLite.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "f1e5847f",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DataBaseSQLLite.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 66,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 58,
+					"file": "/F/(ahks)/(start)/lib/DebugWindow.AHK",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "379b6e6d",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DebugWindow.AHK",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 65,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 59,
+					"file": "/F/(ahks)/(start)/lib/Debug.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "d7db1b91",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/Debug.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 64,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 60,
+					"file": "/F/(ahks)/(start)/lib/DebugPrintArray (2).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "a7e84f38",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DebugPrintArray%20%282%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 63,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 61,
+					"file": "/F/(ahks)/(start)/lib/Devices.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "3f943438",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/Devices.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 62,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 62,
+					"file": "/F/(ahks)/(start)/lib/DictionaryDatabase.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "2e4805a0",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/DictionaryDatabase.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 61,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 63,
+					"file": "/F/(ahks)/(start)/lib/Difference.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5b70e8ac",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/Difference.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 60,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 64,
+					"file": "/F/(ahks)/(start)/lib/different_functions.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "67f6b3ac",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/different_functions.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 59,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 65,
+					"file": "/F/(ahks)/(start)/lib/Display_get_Window_context (2).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "373ba224",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/Display_get_Window_context%20%282%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 58,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 66,
+					"file": "/F/(ahks)/(start)/lib/display_window.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "dc52f486",
+							"lsp_uri": "file:///F:/%28ahks%29/%28start%29/lib/display_window.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 57,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 67,
+					"file": "/G/((top))/.ahk/((start)-funct.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								645
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "750358e5",
+							"lsp_uri": "file:///G:/%28%28top%29%29/.ahk/%28%28start%29-funct.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 54,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 68,
+					"file": "/C/Users/donov/Downloads/Untitled.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6cd3c826",
+							"lsp_uri": "file:///C:/Users/donov/Downloads/Untitled.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 53,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 69,
+					"file": "/d/lib/UIA_interface.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15495,
+								15495
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "cf511e20",
+							"lsp_uri": "file:///D:/lib/UIA_interface.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4783.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 55,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 70,
+					"file": "AHK-edit-context-menu.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6c5ba5a3",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/AHK-edit-context-menu.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 56,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 71,
 					"file": "!.ahk",
 					"semi_transient": false,
 					"settings":
@@ -748,7 +5926,7 @@
 						"translation.y": 13426.4,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 71,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -757,7 +5935,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 29.6
 	},
 	"input":
 	{
@@ -800,17 +5978,17 @@
 	},
 	"output.exec":
 	{
-		"height": 126.0
+		"height": 92.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/User/autohotkey1.sublime-build",
+	"pinned_build_system": "Packages/User/AutoHotkey2-master/Autohotkey2.sublime-build",
 	"project": "GC-Workspace.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -852,7 +6030,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 317.0,
+	"side_bar_width": 290.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

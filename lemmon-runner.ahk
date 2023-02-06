@@ -5,9 +5,11 @@ GuiRight := SizeRight - 147
 Button_Right := SizeRight - 147
 Button_Bottom := SizeBottom - 31
 Gui, 1: Color, cFFFFFF
+
+;loop all .ahk, if its anything BUT MainWindow.ahk, add it to gui
 Loop, *.ahk
 {
-   If (A_LoopFileName <> "Main Window.ahk")
+   If (A_LoopFileName <> "globalcoder.ahk")
    {
       A_IndexCount := A_Index
       If A_IndexCountMinus

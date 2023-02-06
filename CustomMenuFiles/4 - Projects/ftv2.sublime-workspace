@@ -1,0 +1,1199 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"key",
+				"KeyWait"
+			],
+			[
+				"keyw",
+				"KeyWait"
+			],
+			[
+				"a_",
+				"A_Index"
+			],
+			[
+				"Loop",
+				"Loop parse"
+			],
+			[
+				"msgb",
+				"MsgBox"
+			],
+			[
+				"go",
+				"Gosub"
+			],
+			[
+				"sys",
+				"SysGet"
+			],
+			[
+				"a_loo",
+				"A_LoopFileName"
+			],
+			[
+				"no",
+				"NoTrayIcon"
+			],
+			[
+				"work",
+				"SetWorkingDir"
+			],
+			[
+				"DE",
+				"Destroy"
+			],
+			[
+				"msg",
+				"MsgBox"
+			],
+			[
+				"got",
+				"Goto"
+			],
+			[
+				"file",
+				"FileAppend"
+			],
+			[
+				"close",
+				"Close()"
+			],
+			[
+				"gui",
+				"Gui"
+			],
+			[
+				"Guic",
+				"GuiEscape"
+			],
+			[
+				"guio",
+				"GuiClose"
+			],
+			[
+				"hide",
+				"HideGUI"
+			],
+			[
+				"ahk_",
+				"ahk_exe"
+			],
+			[
+				"setw",
+				"SetWorkingDir"
+			],
+			[
+				"a_this",
+				"A_ThisFunc"
+			],
+			[
+				"c",
+				"CustomMenuFiles"
+			],
+			[
+				"winwai",
+				"WinWaitActive"
+			],
+			[
+				"Input",
+				"InputBox"
+			],
+			[
+				"input",
+				"InputBox"
+			],
+			[
+				"stringre",
+				"StringReplace"
+			],
+			[
+				"a_pro",
+				"A_ProgramFiles"
+			],
+			[
+				"a_script",
+				"A_ScriptFullPath"
+			],
+			[
+				"regexr",
+				"RegExReplace()"
+			],
+			[
+				"FileCreate",
+				"FileCreateDir"
+			],
+			[
+				"exist",
+				"FileExist()"
+			],
+			[
+				"timesin",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_p",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_ho",
+				"A_PriorHotkey"
+			],
+			[
+				"fileappen",
+				"FileAppend"
+			],
+			[
+				"a_screen",
+				"A_ScreenHeight"
+			],
+			[
+				"a_scr",
+				"A_ScreenWidth"
+			],
+			[
+				"winget",
+				"WinGetTitle"
+			],
+			[
+				"Winget",
+				"WinGetTitle"
+			],
+			[
+				"setk",
+				"SetKeyDelay"
+			],
+			[
+				"a_pr",
+				"A_PriorHotkey"
+			],
+			[
+				"too",
+				"ToolTip"
+			],
+			[
+				"string",
+				"StringReplace"
+			],
+			[
+				"strre",
+				"StrReplace()"
+			],
+			[
+				"repl",
+				"StrReplace()"
+			],
+			[
+				"win",
+				"WinActivate"
+			],
+			[
+				"change",
+				"changeFirstName"
+			],
+			[
+				"rnd",
+				"Round()"
+			],
+			[
+				"str",
+				"StrSplit()"
+			],
+			[
+				"getke",
+				"GetKeyState()"
+			],
+			[
+				"br",
+				"Break"
+			],
+			[
+				"ifwi",
+				"IfWinActive"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
+				"caps",
+				"CapsLock"
+			],
+			[
+				"Sendi",
+				"SendInput"
+			],
+			[
+				"sen",
+				"SendMessage"
+			],
+			[
+				"retur",
+				"ReturnValue"
+			],
+			[
+				"sendmod",
+				"SendMode"
+			],
+			[
+				"contro",
+				"ControlList"
+			],
+			[
+				"inire",
+				"IniRead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example2.ahk",
+			"settings":
+			{
+				"buffer_size": 1326,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/FindText.ahk",
+			"settings":
+			{
+				"buffer_size": 115781,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example3.ahk",
+			"settings":
+			{
+				"buffer_size": 2410,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example4_ImageSearch.ahk",
+			"settings":
+			{
+				"buffer_size": 691,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example9_OCR1.ahk",
+			"settings":
+			{
+				"buffer_size": 492,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example10_OCR2.ahk",
+			"settings":
+			{
+				"buffer_size": 5014,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example11_BindWindow.ahk",
+			"settings":
+			{
+				"buffer_size": 477,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example12_ScreenshotFunctions.ahk",
+			"settings":
+			{
+				"buffer_size": 701,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/FindText-v2/Examples/Example1.ahk",
+			"redo_stack":
+			[
+				[
+					8,
+					1,
+					"",
+					null,
+					"AgAAAFsAAAAAAAAABgEAAAAAAAAAAAAABwEAAAAAAAAHAQAAAAAAAKsAAAB8PGF1dG8+KjE1OSQ0MC4wMDAwazAwMDAwMzAwMDAwMEEwMERWVW53N2xyNjM3MW5VQU1BQTYzMEZVa2trQVQ2MzMzMHJnTUFBQTFrRlVra2tEMzYzMzMwd0FBQUE2MnZrdmtrUXR0MXYxa1M4IiA7IEltYWdlIG9mIHRoZSAiYXV0byIgcGFydCBpbiAiYXV0b2hvdGtleS5jb20iLiBJZCBvZiB0aGUgaW0",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFwAAAAAAAAABwEAAAAAAAAAAAAAAADwvw"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 1633,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+				"Default"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"autoho",
+				"AutoHotkey - Run"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"auto",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"termin",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"",
+				"Build With: AutoHotkey"
+			],
+			[
+				"tern",
+				"Terminus: Close All"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"refres",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxfold ke",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"syntax",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"fold ",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxa",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"preferences pack",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"resouu",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"history",
+				"History: Revert Modification"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: SideBarTools Settings"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"viewer",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"white sp",
+				"Trim Trailing White Space"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"ahk",
+				"AutoHotkey - Run"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				"find ",
+				"Preferences: Search in Project Settings – Default"
+			],
+			[
+				"conda",
+				"Conda: List Packages"
+			],
+			[
+				"high",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"highl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"rename",
+				"Rename File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"gh repo clone hi5/Rufaydium-Webdriver"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/(github)-MAINS/FindText-v2",
+		"/D/(github)-MAINS/FindText-v2/Examples"
+	],
+	"file_history":
+	[
+		"/C/Users/donov/AppData/Roaming/Sublime Text/Packages/User/AutoHotkey.sublime-settings",
+		"/G/((top))/.ahk/codehelper.ahk",
+		"/G/((top))/.ahk/clickmenu.ahk",
+		"/F/!dev stuff/IDE/sublime/User/Default (Windows).sublime-keymap",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/imenu.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!scratch/mvc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/!!!implimentedlibs/3. OCR a monitor.ahk",
+		"/D/globalcoder/globalcoder-windows.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/calc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickLinks 1.1.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/PathCheck.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/IPFindMap.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyTwoDeep.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyLoop.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkeyArrays.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/capslock-multi.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/InstantHotkey.ahk",
+		"/D/globalcoder/vlc.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/IncrementalSaveText.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/FavoritesFolder.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/collection/1_jacks/QuickPrompt/QuickPrompt.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/menu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/webview.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/switch.ahk",
+		"/d/lib/webview2.ahk",
+		"/D/lib/MCL.ahk",
+		"/C/Users/dkzea/Downloads/PDFGen.ahk-master/PDFGen.ahk-master/Example.ahk",
+		"/D/lib/PDFGen.ahk",
+		"/C/Users/dkzea/Downloads/MinimizeToTrayMenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk2..xml",
+		"/C/Users/dkzea/OneDrive/Desktop/lemonlaunch/89d024f5e1c01f8fe3c1-69e1d972b803c3dc116350bd6b930cc6d1dbd2b3/LemonLaunchSettings.ini",
+		"/C/Users/dkzea/OneDrive/Desktop/last-menu-item.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/last-menu-item-forums.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahkleetcode.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Class_RichEdit-master/Class_RichEdit-master/Sources/RichEdit_sample.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/function-testing.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/search-everything.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-handlers-1-4examples.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/winrt.ahk-main/winrt.ahk-main/examples/regex-thqby.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/winrt.ahk-main/winrt.ahk-main/examples/PopupMenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/dropdown-choice-gui-test.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Class_RichEdit-master/Class_RichEdit-master/Sources/gpt-filemenu.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-ahk/Untitled.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/fib.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-handlers.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus-2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/path-menus.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/shape.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/lemmon-runner.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/影子输入法v1.7.3/Yz.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk2_lib-master/ahk2_lib-master/test.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/gui-choose-hotkey.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/capslock-multi.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands3.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/menu-tray-commands.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/scroll-giui2.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/scroll-giui.ahk",
+		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/ComVar.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/ahk-main/ahk-main/general.ini",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - tools/Example3 - Resizable Tabs.ahk",
+		"/C/Users/dkzea/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/start.ahk",
+		"/D/lib/V2/examples/Webview2-example 4.ahk2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/[README].md",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/README.md",
+		"/D/lib/V2/examples/Webview2-example 3.ahk2",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/README.md",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/Gdip.Tutorial.11-Using.BRAs.to.perform.animations.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/settings.ini",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/gui.ahk",
+		"/Z/code/AHK/New folder (2)/readself.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/BRA.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/Gdip-master/Gdip-master/Gdip.Tutorial.12-Pixelate.a.bitmap.using.machine.code.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/Minerva4.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
+		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/Recycle Bin/S-1-5-21-3956581196-2760772990-1477779809-1002/$IHDCG4S.ah2",
+		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/Recycle Bin/S-1-5-21-3956581196-2760772990-1477779809-1002/$IB1QYSI.ahk",
+		"/C/Users/dkzea/AppData/Roaming/Sublime Text/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/D/lib/extracttext.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/!xd2tx220_x64/com.ahk",
+		"/D/(github)/GlobalCoder/GlobalCoder/collection/!xd2tx220_x64/com2.ahk",
+		"/D/$RECYCLE.BIN/S-1-5-21-3956581196-2760772990-1477779809-1002/SQLiteDB_sample.ahk",
+		"/D/lib/.msOffice/Excel/Copy_rows_to_new_workbooks.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - Tools & Docs/GlobalCoder - Copy.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/GlobalCoder - Copy.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/collection/!!recov/GlobalCoder - Copy.ahk",
+		"/P/recovD/Data Recovery 2023-01-03 at 05.43.06/D/github/GlobalCoder/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/ffmpeg-desktop-rec.ahk",
+		"/J/ahks/a/(ext)/fb-code.ahk",
+		"/J/ahks/a/(ext)/inputbox-FB.ahk",
+		"/J/ahks/a/(ext)/gui_info-saved.ahk",
+		"/J/ahks/a/(ext)/class_list.ahk",
+		"/J/ahks/a/(ext)/class_counter.ahk",
+		"/C/Users/dkzea/OneDrive/Desktop/(Timer_counter).ahk",
+		"/J/ahks/a/(ext)/class_Collection.ahk",
+		"/J/ahks/a/(ext)/obj_from_list_strings.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/3 - Tools & Docs/GlobalCoder.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/GlobalCoder.ahk",
+		"/D/$RECYCLE.BIN/S-1-5-21-3956581196-2760772990-1477779809-1002/$I4HV29I.ahk",
+		"/D/$RECYCLE.BIN/S-1-5-21-3956581196-2760772990-1477779809-1002/$IPXH999.ahk",
+		"/D/$RECYCLE.BIN/S-1-5-21-3956581196-2760772990-1477779809-1002/$INHSSIM.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/Win32-API-Const_AHK_V2/inc/gui_extra_dirs.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/vKeyboard-master/lib/Hotkey/examples/example.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/vKeyboard-master/lib/Hotkey/class_Hotkey.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/VMR/examples/example.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/VMR/examples/hotkey_example.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/VMR/examples/ui_example.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/Websocket-Client/libs/CConsole.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/Win32-API-Const_AHK_V2/inc/header_parser.ahk",
+		"/D/github/GlobalCoder/gc/GlobalCoder/globalcoder.ahk.ini",
+		"/D/github/GlobalCoder/GlobalCoder/main/README.md",
+		"/D/github/GlobalCoder/GlobalCoder/globalcoder.ahk.ini",
+		"/D/github/GlobalCoder/GlobalCoder/.gitignore",
+		"/D/github/GlobalCoder/GlobalCoder/!.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/CustomMenuFiles/9 - Showcase & Examples/pixelsearch_DLL.ahk",
+		"/d/lib/btt.ahk",
+		"/D/lib/Vis2.ahk",
+		"/C/Users/dkzea/OneDrive/Documents/AutoHotkey/Lib/OCR.ahk",
+		"/p/app/app/((start)-class&fn.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/singles/inc/Project.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/.git/config",
+		"/D/github/GlobalCoder/GlobalCoder/singles/single_files/1_ToDoList.ahk",
+		"/D/github/GlobalCoder/GlobalCoder/.git/ORIG_HEAD",
+		"/D/github/GlobalCoder/GlobalCoder/.git/HEAD",
+		"/D/github/GlobalCoder/GlobalCoder/.git/hooks/push-to-checkout.sample",
+		"/D/github/GlobalCoder/GlobalCoder/.git/refs/heads/newbranch"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6598908f",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/(github)-MAINS/FindText-v2/FindText.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "faf46aab",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/FindText.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example3.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "1da0ff12",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example3.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example4_ImageSearch.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "fd9793eb",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example4_ImageSearch.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example9_OCR1.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "af166e65",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example9_OCR1.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example10_OCR2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "043ba311",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example10_OCR2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example11_BindWindow.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "c46efdd1",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example11_BindWindow.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example12_ScreenshotFunctions.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "0b7c44a1",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example12_ScreenshotFunctions.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/(github)-MAINS/FindText-v2/Examples/Example1.ahk",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								91
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "4303a60c",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/FindText-v2/Examples/Example1.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/ahkpkgcustom/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 234.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/AutoHotkey2-master/Autohotkey2.sublime-build",
+	"project": "ftv2.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"P:\\App\\App\\ws\\tools & WS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 300.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

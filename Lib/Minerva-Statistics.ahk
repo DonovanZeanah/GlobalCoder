@@ -1,7 +1,7 @@
 
 ; ---- Other Functions ----
 ; Amountfile is a .csv that the user can use to see how much info was saved. 
-AddAmountFile(FileName, WordCount)
+AddAmountFile2(FileName, WordCount)
 {
 	if General_CollectStatistics = 0
 		return
@@ -26,7 +26,7 @@ AddAmountFile(FileName, WordCount)
 }
 
 ; Gets the amount of words on the clipboard
-GetWordCount()
+GetWordCount2()
 {
 	if General_CollectStatistics = 0
 		return 0
