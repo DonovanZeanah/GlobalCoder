@@ -1,0 +1,46 @@
+Search for files only:
+
+file:
+
+Search for folders only:
+
+folder:
+
+Limit the search to a single folder:
+
+parent:c:\windows
+or:
+
+parent:"c:\program files"
+
+Find files larger than 1MB:
+
+size:>1mb
+
+Find files between 2MB and 10MB:
+
+size:>2mb..10mb
+
+Instantly find files that have changed today:
+
+dm:today
+
+Find files and folders modified this week:
+
+dm:thisweek
+dm:1/8/2014..31/8/2014
+or:
+
+dm:8/1/2014..8/31/2014
+
+Find folders in D:\music that do not contain an mp3 file:
+
+d:\music\ !child:mp3
+
+Find filenames with non-ASCII characters:
+
+regex:[^\x00-\x7f]
+
+Find filenames with no characters in the range a-z
+
+!regex:[a-z]

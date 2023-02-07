@@ -13,6 +13,7 @@ ClearAllVars(True)
 Menu_OldLearnCount := prefs_LearnCount
 ; initialize this to make sure the object exists
 Menu_ChangedPrefs := Object()
+
 ConstructGui()
 ; Call "HandleMessage" when script receives WM_SETCURSOR message
 OnMessage(g_WM_SETCURSOR, "HandleSettingsMessage")
@@ -44,10 +45,10 @@ ConstructGui()
    global g_ScriptTitle
    ; Must be global for colors to function, colors will not function if static
    global Menu_VisitForum
-   
+
    Menu_CaseCorrection=
    Menu_ArrowKeyMethodOptionsText=
-   
+
    MenuFontList:=Writer_enumFonts() ; see note at function for credit
 
    MenuGuiWidth=700
@@ -61,7 +62,7 @@ ConstructGui()
    MenuEditIndentY = 20
    MenuHelpIndentX = 30
    MenuHelpIndentY = 0
-	
+
    MenuRowHeight := (MenuGuiHeight - ((MenuGuiRows +1 ) * MenuSeparatorY ))/MenuGuiRows
 
    MenuTextMenuRowY := (MenuRowHeight - 6 ) / 3
@@ -90,22 +91,22 @@ ConstructGui()
    MenuGroup2of2BoxX := MenuGroup1BoxX + MenuTwoColGroupWidth + MenuSeparatorX
    MenuGroup2of2EditX := MenuGroup2of2BoxX + MenuEditIndentX
    MenuGroup2of2HelpX := MenuGroup2of2BoxX + MenuTwoColGroupWidth - MenuHelpIndentX
-   
+
    MenuGroup2of3BoxX := MenuGroup1BoxX + MenuThreeColGroupWidth + MenuSeparatorX
    MenuGroup2of3EditX := MenuGroup2of3BoxX + MenuEditIndentX
    MenuGroup2of3HelpX := MenuGroup2of3BoxX + MenuThreeColGroupWidth - MenuHelpIndentX
-	
+
    MenuGroup3of3BoxX := MenuGroup2of3BoxX + MenuThreeColGroupWidth + MenuSeparatorX
    MenuGroup3of3EditX := MenuGroup3of3BoxX + MenuEditIndentX
    MenuGroup3of3HelpX := MenuGroup3of3BoxX + MenuThreeColGroupWidth - MenuHelpIndentX
-	
+
    MenuRowY := MenuSeparatorY + 30
    MenuRowHelpY := MenuRowY - MenuHelpIndentY
    MenuRowEditY := MenuRowY + MenuEditIndentY
 
    Gui, MenuGui:Font, s8, Arial
 
-   Gui, MenuGui:Add, Tab2, x2 w%MenuTabWidth% h%MenuTabHeight%, General Settings|Wordlist Box|Programs|Advanced (Experts Only)|About && Help
+   Gui, MenuGui:Add, Tab2, x2 w%MenuTabWidth% h%MenuTabHeight%, General Settings|Wordlist Box|Programs|Advanced (Experts Only)|About && Help|GlobalCoder
 
    Gui, MenuGui:Tab, 1 ; General Settings
 
@@ -127,7 +128,7 @@ ConstructGui()
    Gui, MenuGui:Font, cGreen
    Gui, MenuGui:Add, Text, x%MenuGroup2of3HelpX% y%MenuRowHelpY% vhelpinfo_LearnLength gHelpMe, %MenuGuiHelpIcon%
    Gui, MenuGui:Font, cBlack
-   
+
 
    Gui, MenuGui:Add, GroupBox, x%MenuGroup3of3BoxX% y%MenuRowY% w%MenuThreeColGroupWidth% h%MenuRowHeight%, Add to wordlist after X times
    Menu_LearnCountOptions=|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
@@ -137,7 +138,7 @@ ConstructGui()
    Gui, MenuGui:Font, cGreen
    Gui, MenuGui:Add, Text, x%MenuGroup3of3HelpX% y%MenuRowHelpY% vhelpinfo_LearnCount gHelpMe, %MenuGuiHelpIcon%
    Gui, MenuGui:Font, cBlack
-   
+
 
    MenuRowY := MenuRowY + MenuRowHeight + MenuSeparatorY
    MenuRowHelpY := MenuRowY - MenuHelpIndentY
@@ -229,12 +230,12 @@ ConstructGui()
 	  Menu_SendMethodOptions .= A_LoopField "|"
 	  If (A_Index = Menu_SendCount)
 		 Menu_SendMethodOptions .= "|"
-   }   
+   }
    Gui, MenuGui:Add, DDL, x%MenuGroup3of3EditX% y%MenuRowEditY% w%MenuThreeColEditWidth% r5 vMenu_SendMethodC gEditValue altsubmit, %Menu_SendMethodOptions%
    Gui, MenuGui:Font, cGreen
    Gui, MenuGui:Add, Text, x%MenuGroup3of3HelpX% y%MenuRowHelpY% vhelpinfo_SendMethod gHelpMe, %MenuGuiHelpIcon%
    Gui, MenuGui:Font, cBlack
-   
+
 
    MenuRowY := MenuRowY + MenuRowHeight + MenuSeparatorY
    MenuRowHelpY := MenuRowY - MenuHelpIndentY
@@ -254,7 +255,7 @@ ConstructGui()
    Gui, MenuGui:Font, cBlack
 
 
-   Gui, MenuGui:Add, GroupBox, x%MenuGroup2of3BoxX% y%MenuRowY% w%MenuThreeColGroupWidth% h%MenuRowHeight% , Monitor mouse clicks 
+   Gui, MenuGui:Add, GroupBox, x%MenuGroup2of3BoxX% y%MenuRowY% w%MenuThreeColGroupWidth% h%MenuRowHeight% , Monitor mouse clicks
    Menu_DetectMouseClickMoveOptions=|On|Off|
    StringReplace,  Menu_DetectMouseClickMoveOptions, Menu_DetectMouseClickMoveOptions, |%prefs_DetectMouseClickMove%|,|%prefs_DetectMouseClickMove%||
    StringTrimLeft, Menu_DetectMouseClickMoveOptions, Menu_DetectMouseClickMoveOptions, 1
@@ -321,7 +322,7 @@ ConstructGui()
 	  If (Split1 = prefs_ArrowKeyMethod)
 	  {
 		 Menu_ArrowKeyMethodOptions .= "|"
-	  }   
+	  }
    }
 
    Gui, MenuGui:Add, DDL, x%MenuGroup1EditX% y%MenuRowEditY% w%MenuTwoColEditWidth% r5 vprefs_ArrowKeyMethod gEditValue altsubmit, %Menu_ArrowKeyMethodOptions%
@@ -444,7 +445,7 @@ ConstructGui()
    Gui, MenuGui:Font, cGreen
    Gui, MenuGui:Add, Text, x%MenuGroup1of1HelpX% y%MenuRowHelpY% vhelpinfo_IncludeProgramTitles gHelpMe, %MenuGuiHelpIcon%
    Gui, MenuGui:Font, cBlack
-   
+
    MenuRowY := MenuRowY + MenuRowHeight + MenuSeparatorY
    MenuRowHelpY := MenuRowY - MenuHelpIndentY
    MenuRowEditY := MenuRowY + MenuEditIndentY
@@ -596,11 +597,11 @@ Customizable features include (see also detailed description below)
    * List of characters which terminate a word.
    * List of characters which terminate a word and start a new word.
    * Number of times you must press a number hotkey to select the associated word (options are 1 and 2, 2 is buggy).
-   
+
 Unicode Support:
 Full support for UTF-8 character set.
    )
-   
+
    helpinfo_HelpText = %helpinfo_Intro%`r`n`r`n%helpinfo_FullHelpString%
 
    Loop, Parse, helpinfo_HelpText,`n, `r
@@ -620,7 +621,7 @@ Full support for UTF-8 character set.
    helpinfo_HelpText =
    helpinfo_Intro =
 
-   Gui, MenuGui:tab, 
+   Gui, MenuGui:tab,
 
    MenuRowY := MenuTabHeight+15
    MenuRowHelpY := MenuRowY - MenuHelpIndentY
@@ -640,12 +641,12 @@ Full support for UTF-8 character set.
       Gui, MenuGui:Font, cBlack normal
 
       Gui, MenuGui:Add, Text, xp+60 Yp, is free software, support forum at
-      Gui, MenuGui:Font, cGreen 
+      Gui, MenuGui:Font, cGreen
       ;the vMenu_VisitForum variable is necessary for the link highlighting
       Gui, MenuGui:Add, Text, x%MenuGroup2of2EditX% Yp+%MenuTextMenuRowY% vMenu_VisitForum gVisitForum, www.autohotkey.com (click here)
-      Gui, MenuGui:Font, cBlack 
+      Gui, MenuGui:Font, cBlack
    }
-   
+
    Gui, Menugui:+OwnDialogs
    Gui, MenuGui:Show, h%MenuGuiHeight% w%MenuGuiWidth%, %g_ScriptTitle% Settings
    Return
@@ -719,12 +720,12 @@ GetList(TitleType,GetExe){
             RunningList .= tmptitle "|"
       }
    }
-   
+
    GuiControlGet, MenuTitleList, MenuGui: , %Menu_TitleType%
-   
+
    MenuProcessHeight := 380
-	
-   Sort,RunningList, D| U	
+
+   Sort,RunningList, D| U
    Gui, ProcessList:+OwnerMenuGui
    Gui, MenuGui:+Disabled  ; disable main window
    Gui, ProcessList:Add, Text,x10 y10, Select program:
@@ -742,7 +743,7 @@ GetList(TitleType,GetExe){
    Gui, ProcessList:Add, ListBox, xp+100 yp w250 r10, %MenuTitleList%
    Gui, ProcessList:Add, Button, xp+260 yp gRemoveNew1 w40 , Del
    Gui, ProcessList:Add, Text, x10 yp+170, a) Select a program or window from the list or type a name in the`n%A_Space%%A_Space%%A_Space%%A_Space%%A_Space%'Edit' control (you may need to edit it further)`nb) Click ADD to add it to the list`nc) To remove a program/title, select an item from the 'current list' and`n%A_Space%%A_Space%%A_Space%%A_Space%click DEL.
-   Gui, ProcessList:Add, Button, x10 yp+90 w190 gSaveTitleList, Save 
+   Gui, ProcessList:Add, Button, x10 yp+90 w190 gSaveTitleList, Save
    Gui, ProcessList:Add, Button, xp+210 yp w190 gCancelTitle, Cancel
    Gui, ProcessList:Show, w420 h%MenuProcessHeight%, %g_ScriptTitle% Settings
    Return
@@ -778,13 +779,13 @@ RestoreDefaults(){
          ReturnValue := "Cancel"
       }
    }
-   
+
    if (ReturnValue == "Cancel")
    {
       ReadPreferences(,"RestorePreferences")
       return
    } else {
-      
+
       IfExist, %g_PrefsFile%
       {
          try {
@@ -796,11 +797,11 @@ RestoreDefaults(){
             return
          }
       }
-      
+
       ApplyChanges()
       MsgBox,,Restore Defaults, Defaults have been restored.
    }
-   
+
    return
 }
 
@@ -847,16 +848,16 @@ Save(){
    Menu_ChangedPrefs["prefs_SendMethod"] := prefs_SendMethod
    Gui, MenuGui:Submit
    prefs_ListBoxOpacity := Menu_ListBoxOpacityUpDown
-   
+
    IF (Menu_OldLearnCount < prefs_LearnCount )
-   {   
+   {
       MsgBox, 1, Save, Saving will increase the Learn Count value.`r`nWhen exiting %g_ScriptTitle%, this will permanently delete any words`r`nfrom the Learned Words which have been typed less times`r`nthan the new Learn Count. Continue?
       IfMsgBox, Cancel
       {
          ReturnValue := "Cancel"
       }
    }
-   
+
    If ( ReturnValue == "Cancel" )
    {
       ReadPreferences(,"RestorePreferences")
@@ -870,7 +871,7 @@ Save(){
 
 SaveSettings(){
    Global
-   
+
    Local Menu_PrefsToSave
    Local Split
    Local Split0
@@ -878,15 +879,15 @@ SaveSettings(){
 
    Local key
    Local value
-   
+
    Menu_PrefsToSave := Object()
-  
+
    Loop, parse, Menu_SendMethodOptionsCode, | ; get sendmethod
    {
       If (Menu_SendMethodC = A_Index)
          prefs_SendMethod:=A_LoopField
    }
-   
+
    prefs_DisabledAutoCompleteKeys=
    If (Menu_CtrlEnter = 0)
       prefs_DisabledAutoCompleteKeys .= "E"
@@ -912,14 +913,14 @@ SaveSettings(){
       If (prefs_ArrowKeyMethod = A_Index)
       {
          prefs_ArrowKeyMethod := Split1
-      }   
+      }
    }
 
    If (Menu_CaseCorrection = "on")
       prefs_NoBackSpace=Off
    Else If (Menu_CaseCorrection = "off")
       prefs_NoBackSpace=On
-   
+
    ; Determine list of preferences to save
    For key, value in Menu_ChangedPrefs
    {
@@ -939,10 +940,10 @@ ApplyChanges()
    InitializeHotKeys()
    DestroyListBox()
    InitializeListBox()
-   
+
    Return
 
-}   
+}
 
 EditValue:
 Menu_ValueChanged := true
@@ -971,14 +972,14 @@ HelpMe()
    MsgBox , 32 , %g_ScriptTitle% Help, %Menu_Help%
    return
 }
-   
+
 ; derived from work by shimanov, 2005
 ; http://www.autohotkey.com/forum/viewtopic.php?p=37696#37696
 HandleSettingsMessage( p_w, p_l, p_m, p_hw )
 {
    Global g_IDC_HELP, g_IMAGE_CURSOR, g_LR_SHARED, g_NULL, g_WM_SETCURSOR, g_WM_MOUSEMOVE, g_cursor_hand
    Static Help_Hover, h_cursor_help, URL_Hover, h_old_cursor, Old_GuiControl
-   
+
    ; pass in all blanks to clear flags
    if ((!p_w) && (!p_l) && (!p_m) && (!p_hw)) {
       Help_Hover =
@@ -986,7 +987,7 @@ HandleSettingsMessage( p_w, p_l, p_m, p_hw )
       h_old_cursor =
       Old_GuiControl =
    }
-   
+
    if ( p_m = g_WM_SETCURSOR )
    {
       if ( Help_Hover || URL_Hover)
@@ -998,27 +999,27 @@ HandleSettingsMessage( p_w, p_l, p_m, p_hw )
 	{
       if (Help_Hover || URL_Hover)
       {
-         
+
 			Gui, MenuGui:Font, cGreen     ;;; xyz
 			GuiControl, MenuGui:Font, %Old_GuiControl% ;;; xyz
       }
-      
+
       if ( SubStr(A_GuiControl, 1, 9) == "helpinfo_" )
 		{
 			if !(Help_Hover)
 			{
 				IF !(h_cursor_help)
 				{
-					h_cursor_help := DllCall( "LoadImage", "Ptr", g_NULL, "Uint", g_IDC_HELP , "Uint", g_IMAGE_CURSOR, "Int", g_NULL, "Int", g_NULL, "Uint", g_LR_SHARED ) 
+					h_cursor_help := DllCall( "LoadImage", "Ptr", g_NULL, "Uint", g_IDC_HELP , "Uint", g_IMAGE_CURSOR, "Int", g_NULL, "Int", g_NULL, "Uint", g_LR_SHARED )
 				}
 				old_cursor := DllCall( "SetCursor", "Uint", h_cursor_help )
 				Help_Hover = true
-				URL_Hover = 
+				URL_Hover =
 				Gui, MenuGui:Font, cBlue        ;;; xyz
 				GuiControl, MenuGui:Font, %A_GuiControl% ;;; xyz
 			}
 		} else if (A_GuiControl == "Menu_VisitForum")
-		{	
+		{
 			if !(URL_Hover)
 			{
 				old_cursor := DllCall( "SetCursor", "uint", g_cursor_hand )
@@ -1027,7 +1028,7 @@ HandleSettingsMessage( p_w, p_l, p_m, p_hw )
 				Gui, MenuGui:Font, cBlue        ;;; xyz
 				GuiControl, MenuGui:Font, %A_GuiControl% ;;; xyz
 			}
-				
+
 		} else if (Help_Hover || URL_Hover)
       {
 			DllCall( "SetCursor", "Uint", h_old_cursor )
@@ -1039,7 +1040,7 @@ HandleSettingsMessage( p_w, p_l, p_m, p_hw )
 		{
 			h_old_cursor := old_cursor
       }
-      
+
       Old_GuiControl := A_GuiControl
    }
 }
@@ -1061,7 +1062,7 @@ SaveTitleList()
 
    GuiControl, MenuGui:Text, %Menu_TitleType%, %MenuTitleList%
    Menu_ChangedPrefs[Menu_TitleType] := %Menu_TitleType%
-	
+
    return
 }
 
@@ -1081,7 +1082,7 @@ return
 ToEdit()
 {
    GuiControlGet, MenuOutputVar, ProcessList:,ComboBox1
-   GuiControl, ProcessList:, Edit1, 
+   GuiControl, ProcessList:, Edit1,
    GuiControl, ProcessList:, Edit1, %MenuOutputVar%
    ControlFocus, Edit1
    return
@@ -1102,25 +1103,25 @@ AddNew1()
    }
    GuiControlGet, MenuOutputVar, ProcessList:,Edit1
    ControlGet, MenuTitleList, List, , ListBox1
-   
+
    if (MenuExactMatch == 1)
    {
       MenuOutputVar := """" . MenuOutputVar . """"
    }
-   
+
    StringReplace, MenuTitleList, MenuTitleList, `n, |, All
    MenuTitleList := "|" . MenuTitleList . "|"
-   
+
    SearchString := "|" . MenuOutputVar . "|"
-   
+
    IfInString, MenuTitleList, |%MenuOutputVar%|
    {
       MsgBox, 16, , Duplicate entry.
       return
    }
-   
+
    GuiControl, ProcessList:, ListBox1, %MenuOutputVar%|
-   GuiControl, ProcessList:, Edit1, 
+   GuiControl, ProcessList:, Edit1,
    if (Menu_GetExe == 0)
    {
       GuiControl, ProcessList:, Button2, 0
@@ -1143,7 +1144,7 @@ RemoveNew1()
    StringTrimRight, MenuTitleList, MenuTitleList, 1
    GuiControl, ProcessList:, ListBox1, |
    GuiControl, ProcessList:, ListBox1, %MenuTitleList%
-   
+
    return
 }
 
@@ -1152,23 +1153,23 @@ Writer_enumFonts()
 {
    global g_NULL
    Writer_enumFontsProc(0, 0, 0, 0,"Clear")
-   hDC := DllCall("GetDC", "Uint", g_NULL) 
-   DllCall("EnumFonts", "Uint", hDC, "Uint", g_NULL, "Uint", RegisterCallback("Writer_enumFontsProc", "F"), "Uint", g_NULL) 
+   hDC := DllCall("GetDC", "Uint", g_NULL)
+   DllCall("EnumFonts", "Uint", hDC, "Uint", g_NULL, "Uint", RegisterCallback("Writer_enumFontsProc", "F"), "Uint", g_NULL)
    DllCall("ReleaseDC", "Uint", g_NULL, "Uint", hDC)
-	
+
    return Writer_enumFontsProc(0, 0, 0, 0, "ReturnS")
 }
 
 Writer_enumFontsProc(lplf, lptm, dwType, lpData, Action = 0)
 {
    static s
-   
+
    ifEqual, Action, Clear
    {
       s=
       return
    }
-	
+
    ifEqual, Action, ReturnS, return s
 
    s .= DllCall("MulDiv", "Int", lplf+28, "Int",1, "Int", 1, "str") "|"

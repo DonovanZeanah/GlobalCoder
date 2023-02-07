@@ -3,13 +3,13 @@
 ; ---- Handlers ----
 
 ; Case not known; try to open the file
-Handler_Default(PATH)
+Handler_Default2(PATH)
 {
 	Handler_LaunchProgram(PATH)
 }
 
 ; contents of .txt should be copied to clipboard and pasted. This is fast.
-Handler_txt(PATH)
+Handler_txt2(PATH)
 {
 	FileRead, Clipboard, %PATH%
 	
@@ -26,13 +26,13 @@ Handler_txt(PATH)
 }
 
 ; If program is executable, simply launch it
-Handler_LaunchProgram(FilePath)
+Handler_LaunchProgram2(FilePath)
 {
 	run, %FilePath%
 }
 
 ; .rtf files should be opened with a ComObject, that silently opens the file and copies the formatted text. Then paste
-Handler_COM(FilePath)
+Handler_COM2(FilePath)
 {
 	; Clears clipboard. Syntax looks werid, but it is right.
 	Clipboard :=                     
@@ -78,7 +78,7 @@ Handler_COM(FilePath)
 
 
 ; Attemps to start all other files in the specified path.
-RunOtherScripts(PATH)
+RunOtherScripts2(PATH)
 {
 	Loop, Files, %PATH%\* , F
 	{

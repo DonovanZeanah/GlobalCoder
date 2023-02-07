@@ -1,0 +1,145 @@
+git clone https://github.com/DonovanZeanah/GitTraining.git [renamedfoldername]
+git log
+git log --oneline
+touch info.txt
+
+
+*** Do not push to main when apart of a team ***
+
+
+
+
+
+
+how to add the remote at github from a local
+
+
+mit is free liscence 
+
+gnu general public liscence --
+
+creative commons -
+
+What is a common way that people break their git??? 
+
+
+[Donovan's Git Learning]
+
+git clone https://github.com/DonovanZeanah/GitTraining.git [renamedfoldername]
+git log
+git log --oneline
+touch info.txt
+git add info.txt, git add .
+git status
+git commit info.txt -m "added info file"
+git log --oneline
+git status
+git push
+git status 1
+git log --oneline
+git fetch
+git origin --v 
+
+--edited at local to make a disparity on purpose
+--local branch and origin master have diverged
+
+ git commit -am [add AND commit with a message(only works if already tracked)]
+
+ git merge --abort
+git status 
+git log --oneline
+
+---editted at github
+
+git commit -am "merge changes"
+git status
+git push
+
+-- a branch is just a bookmark on a specific commit 
+
+//get locally
+
+git fetch
+git branch
+git checkout feature-1
+git branch
+
+-editted locally on feature-1 branch
+
+//delete branch
+git branch -d feature-1
+git branch -D feature-1
+
+//created new branch locally, not tracked
+
+git checkout -b feature-1-fix
+
+--fixed locally on feature-1-fix branch
+
+<<<<<<< HEAD
+git status (not tracking to origin since created locally)
+
+*** 
+fatal: The current branch feature-1-fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature-1-fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+***
+
+//start tracking the local branch via remote branch **crucial**
+
+$ git push -u origin feature-1-fix 
+
+
+*** List all the branches available
+git branch -a git 
+
+--donovan modified the code
+--donovan modified the code
+
+
+=======
+>>>>>>> master
+
+git reflog expire --expire-unreachable=now --all
+
+Commit#1
+git commit 2
+git 3
+
+
+***from josh tutorial***
+git config --global --list| grep alias
+git checkout -b AliasWork
+git config --global alias.chkmain
+git config --global alias.chkmain 'checkout'
+git config --global -e 
+git config --global --get alias.chkmain
+
+*** remember **** :qa exits vim ****
+
+git log --oneline
+git log --oneline --graph --decorate
+>>>git lol ---> git config --global alias.onelinegraph 'log --oneline --graph --decorate'
+>>>git expureunreachablenow ---> git config --global alias.expireunreachablenow 'reflog expire --expire-unreachable=now --all'
+>>> git gcunreachable --->git config global alias.gcunreachable 'gc --prune=now' 
+
+>>> git chknewbr ----> git config --global alias.chknewbr '!sh -c "git checkout -b $1"'
+
+    ***
+    git config --global alias.setuplocalbr '!sh -c "git checkout main && git fetch origin && git pull origin main && git checkout $1 && git merge origin main
+    git config --global –get alias.setuploclbr"'
+                                                 ***
+
+*** open in editor***
+git config --global -e
+
+
+--change
+*git commit*
+git reset

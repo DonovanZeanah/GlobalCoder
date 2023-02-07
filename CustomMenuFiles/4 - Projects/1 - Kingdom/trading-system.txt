@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+
+class Trade
+{
+    public int Quantity { get; set; }
+    public double Price { get; set; }
+
+    public Trade(int quantity, double price)
+    {
+        Quantity = quantity;
+        Price = price;
+    }
+}
+
+class Order
+{
+    public int Id { get; set; }
+    public int Quantity { get; set; }
+    public double Price { get; set; }
+    public bool IsBuy { get; set; }
+    public bool IsFilled { get; set; }
+
+    public Order(int id, int quantity, double price, bool isBuy)
+    {
+        Id = id;
+        Quantity = quantity;
+        Price = price;
+        IsBuy = isBuy;
+        IsFilled = false;
+    }
+}
+
+class TradingSystem
+{
+    private List<Order> Orders { get; set; }
+    private int NextOrderId { get; set; }
+    private List<Trade> Trades { get; set; }
+
+    public TradingSystem()
+    {
+        Orders = new List<Order>();
+        NextOrderId = 1;
+        Trades = new List<Trade>();
+    }
+
+    public void PlaceOrder(int quantity, double price, bool isBuy)
+    {
+        var order = new Order(NextOrderId, quantity, price, isBuy);
+        Orders.Add(order);
+        NextOrderId++;
+        MatchOrders();
+    }
+
+    private void MatchOrders()
+    {
+        var buyOrders = Orders.FindAll(o => o.IsBuy && !o.IsFilled);
+        var sellOrders = Orders.FindAll(o => !o.IsBuy && !o.IsFilled);
+
+        foreach (var buyOrder in buyOrders)
+        {
+            foreach (var sellOrder in sellOrders)
+            {
+                if (buyOrder.Price >= sellOrder.Price)
+                {
+                    int quantity = Math.Min(buyOrder.Quantity, sellOrder.Quantity);
+                    double price = sellOrder.Price;
+                    Trades.Add(new Trade(quantity, price));
+
+                    buyOrder.Quantity -= quantity;
+                    sellOrder.Quantity -= quantity;
+
+                    if (buyOrder.Quantity == 0)
+                    {
+                        buyOrder.IsFilled = true;
+                    }
+
+                    if (sellOrder.Quantity == 0)
+                    {
+                        sellOrder.IsFilled = true;
+                    }
+                }
+            }
+        }
+    }
+}
