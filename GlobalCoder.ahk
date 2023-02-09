@@ -22,10 +22,11 @@ applicationname := "GlobalCoder"
 g_OSVersion := GetOSVersion()
 FileEncoding, UTF-8
 
-					;[//Includes]==============================[//Includes]=================================[//Includes]
+;[//Includes]==============================[//Includes]=================================[//Includes]
 
-#Include, lib\Gdip.ahk 			
-#Include, includes\read-ini.ahk	
+#Include, lib\((functions)).ahk
+;#Include, lib\Gdip.ahk
+#Include, includes\read-ini.ahk
 #Include, lib\JXON.ahk
 #Include, lib\Minerva-PowerToys.ahk
 #Include, lib\Minerva-Handlers.ahk
@@ -33,7 +34,7 @@ FileEncoding, UTF-8
 
 					;[GLOBALS]==============================[GLOBALS]=================================[GLOBALS]
 global ScriptName  := StrReplace(A_ScriptName, ".ahk")
-global Version     := "1.0"
+global Version     := "1.1"
 global GitHub      := "https://github.com/donovanzeanah/globalcoder"
 global FileCount   := 0
 global MyProgress  := 0
@@ -58,8 +59,8 @@ Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %timestring%
 
 
-					;[//NOTES]==============================[//NOTES]=================================[//NOTES] 
-					/*		
+					;[//NOTES]==============================[//NOTES]=================================[//NOTES]
+					/*
 
 					*/
 					;[//START]==============================[START]=================================[START]
@@ -83,7 +84,7 @@ TrayTip, GlobalCoder, Started %timestring%
 					MouseMovement_Number := 189
 					WordsPerTime_Number := 190
 
-					
+
 					Menu, MenuName, UseErrorLevel
 
 
@@ -249,7 +250,7 @@ notein() ;no input - default to frontproj
 return
 
 ^right::
-run()
+run(notepath)
 return
 
 rshift & m::
@@ -431,10 +432,10 @@ return
 
 }
 
-run(path := ""){
+runfp(path := ""){
   run, %frontproject%
 }
-chrome_name(){
+chrome_name2(){
     SetKeyDelay 100
 send,{f10}
 
@@ -446,7 +447,7 @@ send,{enter}
 return
 }
 
-chrome_group(){
+chrome_group2(){
 ;WinActivate, dkz
 WinWaitActive, dkz
 
@@ -498,7 +499,7 @@ send, !g
 answer := clipboard
 basedir := "c:\answer"
 
-createddir = %A_WorkingDir%\logs\questions\%answer%
+createddir = %A_WorkingDir%\logs\questions\%timestring% %answer%
 FileCreateDir, %A_WorkingDir%\logs\questions\%answer% ;
 FileCreateDir, %basedir%\%answer%
 frontdir = %testdir%\%answer%
@@ -510,8 +511,8 @@ fileappend, Q-%answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt 
 FileAppend, -%answer%__%time% `n, %A_WorkingDir%\logs\Q-google.txt ;--- update global log file11
 fileappend, -%answer%__%time% `n ,%file%
 fileappend, -%answer%__%time% `n ,%masterfile%
-;run %frontdir%
-;run, %file%
+run %frontdir%
+run, %file%
 return
 
 
@@ -533,48 +534,49 @@ return
 ;------------------------------------------------| MENU |------------------------------------------------#
 
 ;/ premaremenu(path) ; a main function for creating menu system using folder paths
-PrepareMenu(PATH){
+PrepareMenu(PATH)
+{
 
-;static custom1 := A_ScriptDir "\custom1"
-/*static urls := { 0: ""
-        , 1 : "https://www.google.com/search?hl=en&q="
-        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
-        , 3 : "https://www.google.com/maps/search/"
-        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
-        */
+	;static custom1 := A_ScriptDir "\custom1"
+	/*static urls := { 0: ""
+	        , 1 : "https://www.google.com/search?hl=en&q="
+	        , 2 : "https://www.google.com/search?site=imghp&tbm=isch&q="
+	        , 3 : "https://www.google.com/maps/search/"
+	        , 4 : "https://translate.google.com/?sl=auto&tl=en&text=" }
+	        */
 
-   ;global
+	   ;global
 
-	; GUI loading/progress bar
-	Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
-	Gui, add, Progress, w200 vMyProgress range1-%items%, 0	; Adding progressbar
-	Gui, show	  											; Displaying Progressbar
+		; GUI loading/progress bar
+		Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
+		Gui, add, Progress, w200 vMyProgress range1-%items%, 0	; Adding progressbar
+		Gui, show	  											; Displaying Progressbar
 
-	; Add Name, Icon and seperating line
-	Menu, %PATH%, Add, % "googler", googler ; Regular search ;googler								; Name
+		; Add Name, Icon and seperating line
+		Menu, %PATH%, Add, % "googler", googler ; Regular search ;googler								; Name
 
-	Menu, %PATH%, Add, 																			; seperating
+		Menu, %PATH%, Add, 																			; seperating
 
-	; Add all custom items using algorithm
-	LoopOverFolder(Path)
-   ;loopoverfolder(singles)
+		; Add all custom items using algorithm
+		LoopOverFolder(Path)
+	   ;loopoverfolder(singles)
 
-   Menu, %PATH%, Add,   ; seperater
-   Menu, %PATH%, Add, % ScriptName " vers. " Version, github ;googler                        ; Name
-   Menu, %PATH%, Add,                                                         ; seperating
+	   Menu, %PATH%, Add,   ; seperater
+	   Menu, %PATH%, Add, % ScriptName " vers. " Version, github ;googler                        ; Name
+	   Menu, %PATH%, Add,                                                         ; seperating
 
 
-	; Add Admin Panel
-	Sleep, 200
-	Menu, %PATH%, Add, 													; seperating line
-	Menu, %PATH%"\Admin", Add, &1 Restart, ReloadProgram				; Add Reload option
-	Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
-	Menu, %PATH%"\Admin", Add, &3 Go to Parent Folder, GoToRootFolder	; Open script folder
-	Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
-	Menu, %PATH%, Add, &0 Admin, :%PATH%"\Admin"						; Adds Admin section
+		; Add Admin Panel
+		Sleep, 200
+		Menu, %PATH%, Add, 													; seperating line
+		Menu, %PATH%"\Admin", Add, &1 Restart, ReloadProgram				; Add Reload option
+		Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
+		Menu, %PATH%"\Admin", Add, &3 Go to Parent Folder, GoToRootFolder	; Open script folder
+		Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
+		Menu, %PATH%, Add, &0 Admin, :%PATH%"\Admin"						; Adds Admin section
 
-	; Loadingbar GUI is no longer needed, remove it from memory
-	Gui, Destroy
+		; Loadingbar GUI is no longer needed, remove it from memory
+		Gui, Destroy
 }
 ;// end
 
@@ -683,7 +685,7 @@ return ;// end hotkey x
 ; MAIN MENU & the Children MENUs
 ;-------------------------
 
-; main menu 
+; main menu
 
 ^f24::
 Ctrl & RShift::
@@ -2267,8 +2269,8 @@ BuildTrayMenu(){
    Menu, Tray, DeleteAll
    Menu, Tray, NoStandard
    Menu, Tray, add, Settings, Configuration
-   Menu, Tray, add, filemenu, 
-   Menu, Tray, add, mymenubar, 
+   Menu, Tray, add, filemenu,
+   Menu, Tray, add, mymenubar,
    Menu, Tray, add, Pause, PauseResumeScript
    IF (A_IsCompiled)
    {
@@ -2600,7 +2602,7 @@ Return ;//
 
 
 ;/ guicontextmenu
-GuiContextMenu2:  ; Launched in response to a right-click or press of the Apps key.
+GuiContextMenu3:  ; Launched in response to a right-click or press of the Apps key.
 if A_GuiControl <> MyListView  ; Display the menu only for clicks inside the ListView.
     return
   LV_GetText(EditText, A_EventInfo)
@@ -3612,7 +3614,7 @@ replaceFile(File, Content)
 }
 Return
 */
-ini( filename = 0, updatemode = 0 )
+ini2( filename = 0, updatemode = 0 )
 ;
 ; updates From/To a whole .ini file
 ;
@@ -3653,7 +3655,7 @@ Local s, c, p, key, k, write
        if updatemode=1
        {
           write := %key%%k%
-          IniWrite, %write%, %filename%, %key%, %k%    
+          IniWrite, %write%, %filename%, %key%, %k%
        }
          }
       }
@@ -3661,3 +3663,58 @@ Local s, c, p, key, k, write
 }
 
 #Include, stats.ahk
+
+run(path)
+{
+
+    run % path
+    return
+}
+
+chrome_name(num:=0)
+{
+
+    SetKeyDelay, 100
+    ;MsgBox, % "1: `n " num++
+
+    if (num = 0)
+    {
+
+	    ;MsgBox, % "num: `n " num++
+
+	    ;MsgBox, % "0: num: " num
+	    send,{Alt 2}
+	    send,{space 2}
+	    send, l
+	    send, w
+	    send, % "dkz" . num
+	    send,{enter}
+	    return num
+    }
+    if (num = 1)
+    {
+		;MsgBox, % "0: num is : `n " num++
+		;num++
+		send,{Alt 2}
+		send,{space 2}
+		send, l
+		send, w
+		send, % "dkz" . num
+		send,{enter}
+		MsgBox, % "1:" sent dkz1
+		return num
+    }
+    if (num = 2)
+	{
+
+		;MsgBox, % "2: `n num is : " num
+		send,{Alt 2}
+		send,{space 2}
+		send, l
+		send, w
+		send, % "dkz" . num
+		send,{enter}
+		MsgBox, % "2:" sent dkz2
+		return
+	}
+}

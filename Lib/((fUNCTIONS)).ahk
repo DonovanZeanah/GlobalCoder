@@ -1,11 +1,11 @@
-#include d:/lib/gdip_all.ahk ;C:\Program Files\AutoHotkey\Lib\gdip_all.ahk
+;#include d:/lib/gdip_all.ahk ;C:\Program Files\AutoHotkey\Lib\gdip_all.ahk
 
 
 
 
 
-Menu, Tray, Icon , Shell32.dll, 14 , 1
-
+;Menu, Tray, Icon , Shell32.dll, 14 , 1
+/*
 :*:gindex::
         go("INDEX")
         return
@@ -29,109 +29,83 @@ Menu, Tray, Icon , Shell32.dll, 14 , 1
         return              
 :*:gincludes::
         go("INCLUDES") 
-        return
+        return*/
 
 
-go(string){
-SetKeyDelay, 50,
-MsgBox, % "0: `n " string
-rawstring := string
-clipboard := "x=[mid" . rawstring
-MsgBox, % "0: `n " rawstring
+go(string)
+{
+    SetKeyDelay, 50,
+    MsgBox, % "0: `n " string
+    rawstring := string
+    clipboard := "x=[mid" . rawstring
+    MsgBox, % "0: `n " rawstring
 
-send, ^f 
-send, {backspace}
-send, ^v
-send, {enter}
-clipboard := ""
-if string != index
-;send, {f3 2}
-send, ^+{left 10}
-prefix := "=["
-bracketstring := "" . rawstring . "]"
+    send, ^f 
+    send, {backspace}
+    send, ^v
+    send, {enter}
+    clipboard := ""
+    if string != index
+    ;send, {f3 2}
+    send, ^+{left 10}
+    prefix := "=["
+    bracketstring := "" . rawstring . "]"
 
-clipboard := "" prefix . "mid" . bracketstring
-send, ^v
-return
+    clipboard := "" prefix . "mid" . bracketstring
+    send, ^v
+    return
 }
 
+savepic()
+{
+    pToken := Gdip_Startup()
+    WinGet, hwnd, ID, A
+    pBitmap := Gdip_BitmapFromHWND(hwnd)
+    Gdip_SaveBitmapToFile(pBitmap, A_Desktop "\TestOutput.png")
+    Gdip_DisposeImage(pBitmap)
+    Gdip_Shutdown(pToken)
 
 
-
-
-
-savepic(){
-pToken := Gdip_Startup()
-WinGet, hwnd, ID, A
-pBitmap := Gdip_BitmapFromHWND(hwnd)
-Gdip_SaveBitmapToFile(pBitmap, A_Desktop "\TestOutput.png")
-Gdip_DisposeImage(pBitmap)
-Gdip_Shutdown(pToken)
-
-
-ToolTip, Timed ToolTip`nThis will be displayed for 5 seconds.
-SetTimer, RemoveToolTip, -1000
-return
+    ToolTip, Timed ToolTip`nThis will be displayed for 5 seconds.
+    SetTimer, RemoveToolTip, -1000
+    return
 }
 
-winset(){
-window := WinExist("A")
-msgbox % "window: " window
-return window
+winset()
+{
+    window := WinExist("A")
+    msgbox % "window: " window
+    return window
 }
 
-
-
-
-WinActivate(window){
-msgbox % "win: " window
-msgbox % "win: " window
-WinActivate,  %window%
-return
+WinActivate(window)
+{
+    msgbox % "win: " window
+    msgbox % "win: " window
+    WinActivate,  %window%
+    return
 }
-;================;================bb
+
+    ;================;================bb
 class chrome_class
 {
-;use it: example := new Chrome_group(2)
+        ;use it: example := new Chrome_group(2)
+        static count := 0
+    __new(num:=0)
+        {
+    
+        }
 
-    static count := 0
+    winset()
+        {
 
-  
+        }
+    winactivate()
+        {
 
-    __new(num:=0){
-
-    ;Gui +HwndMyGuiHwnd
-
-    ;gui, Show, noactivate
-    ;MsgBox, % "count: " this.count++ ;:= count++ "`n" . "focus window to change" ";;;" count
-    ;MsgBox, % "count: " this.count ;:= count++ "`n" . "focus window to change" ";;;" count
-
-
-    ;MsgBox, % "Start: `n inside of chrome_group class :" this.count . " `n parameter passed in: " num
-;     MsgBox, % "7: this.num:" this.num
-   ; this.num := num ; A := new chrome_group(2) ; A.num is 2.
-   ;  MsgBox, % "8: this.num := *num* : " this.num
-
-   if num = 2 
-
-   return this
-    }
-
-    winset(){
-
-    }
-    winactivate(){
-
-    }
-
-    /*
-    use:
-
-
-    */
-/*
-*/
+        }
 }
+   
 
 
 
@@ -168,6 +142,7 @@ class ManualArray1
             return obj[obj2[oParams.1]]
     }
 }
+
 class MyClassTestDefine
 {
     a := "A"
@@ -184,6 +159,7 @@ class MyClassTestDefine
         MsgBox, % "2 " this.a " " this.b.c " " this.d.e.f " " this.now " " g
     }
 }
+
 class ManualArray
 {
     obj:=[]
@@ -210,28 +186,32 @@ class ManualArray
             return this.obj[this.obj2[oParams.1]]
     }
 }
-class fileobj1{ 
-count := __enum
-;static count := 1++
-}
-class parsefile{
-fileobj := file
-}
+
+class fileobj1
+    { 
+    count := __enum
+    ;static count := 1++
+    }
+
+class parsefile
+    {
+    fileobj := file
+    }
 
 
 
-Class Window3{
-   __New(){
-   static num := new tmp
-;    Class Tmp{
-       A:=1++
-        Static B:=1++
-       
-   msgbox % num
-;}   
-}
+Class Window3
+{
+   __New()
+    {
+            static num := new tmp
+            A:=1++
+            Static B:=1++
+            msgbox % num
+    }
     
-    Get(){
+    Get()
+    {
         WingetTitle TitleVar, A ; Get title from Active window.
         This.Title:=TitleVar ; Set TitleVar to This.Title
         
@@ -239,19 +219,23 @@ Class Window3{
         This.ID:=IDVar ; Set IDVar to This.ID
     }
 
-    Activate(){ ;Activates window with Title - This.Title 
-        IfWinExist, % "ahk_id "This.ID
-            WinActivate % "ahk_id " This.ID
-        else
-            MsgBox % "There is no Window with ID: "This.ID
+    Activate()
+    { ;Activates window with Title - This.Title 
+            IfWinExist, % "ahk_id "This.ID
+                WinActivate % "ahk_id " This.ID
+            else
+                MsgBox % "There is no Window with ID: "This.ID
     }  
-    AnnounceWinProps(){ ;Create message box with title and ID
-    
-        MsgBox % "Title is: " This.Title "`n ID is: " This.ID
+
+    AnnounceWinProps()
+    { ;Create message box with title and ID
+        
+            MsgBox % "Title is: " This.Title "`n ID is: " This.ID
     }
 }
 
-Class log{
+Class log
+{
     Title:= "log" ;Variable Title
     
     Activate() ;Activates window with Title - This.Title
@@ -260,12 +244,12 @@ Class log{
             WinActivate 
         else
             MsgBox % "There is no Window: "This.Title "`nPleas Run Notepad!"
-
     }   
 }
 
 
-Class Window1{
+Class Window1
+{
     Title:= "Untitled - Notepad" ;Variable Title
     Activate() ;Activates window with Title - This.Title
     { 
@@ -273,7 +257,6 @@ Class Window1{
             WinActivate 
         else
             MsgBox % "There is no Window: "This.Title "`nPleas Run Notepad!"
-
     }   
 }
 
@@ -287,59 +270,9 @@ ArrayHasKey(Array, MultiDimKey*) {
     } return true
 }
 
-run(path){
 
-    run % path
-    return
-}
 
-chrome_name(num:=0){  
 
-SetKeyDelay, 100
-;MsgBox, % "1: `n " num++
-
-if (num = 0)
-{
-
-;MsgBox, % "num: `n " num++
-
-;MsgBox, % "0: num: " num
-send,{Alt 2}
-send,{space 2}
-send, l
-send, w
-send, % "dkz" . num
-send,{enter}
-return num
-}
-if (num = 1)
-{
-    ;MsgBox, % "0: num is : `n " num++
-;num++
-send,{Alt 2}
-send,{space 2}
-send, l
-send, w
-send, % "dkz" . num
-send,{enter}
-MsgBox, % "1:" sent dkz1
-return num
-
-}
-if (num = 2)
-{
-
-;MsgBox, % "2: `n num is : " num
-send,{Alt 2}
-send,{space 2}
-send, l
-send, w
-send, % "dkz" . num
-send,{enter}
-MsgBox, % "2:" sent dkz2
-return
-
-}
 
 /*
 send,{Alt 2}
@@ -350,113 +283,170 @@ send, dkz
 send,{enter}
 return
 */
-}
 
-chrome_group(num := 0){
-;MsgBox, % "Start: `n inside of chrome_group class : `n parameter passed in: " num
-this.num := num ; A := new chrome_group(2) ; A.num is 2.
-if (num = 0)
+chrome_group(num := 0)
 {
-static count := 0
-count++
-;MsgBox, % "0: count:" count
-WinActivate, ahk_exe chrome.exe
-chrome_name()
-sleep, 100
-send, !g
-sleep, 100
-MsgBox, % "1: chrome window is :"  dkz1 "`n "
-if IfMsgBox, yes 
-;Continue
+    ;MsgBox, % "Start: `n inside of chrome_group class : `n parameter passed in: " num
+    this.num := num ; A := new chrome_group(2) ; A.num is 2.
+    if (num = 0)
+    {
+        static count := 0
+        count++
+    }
+    ;MsgBox, % "0: count:" count
+    WinActivate, ahk_exe chrome.exe
+    chrome_name()
+    sleep, 100
+    send, !g
+    sleep, 100
+    MsgBox, % "1: chrome window is :"  dkz1 "`n "
+    if IfMsgBox, yes 
+    {
+        MsgBox, % "5: put a gotosub here that uses shinsimagescan class" 
+    }
+    else IfMsgBox, cancel 
+    {
+        MsgBox, % "4:" "canceled operation"
+        return
+    }
+    else if (num := 1)
+    {
+        WinActivate, dkz1 
+        WinWaitActive, dkz1
+        sleep, 100
+        send, !g
+        sleep, 100
+        MsgBox, % "1: chrome window is :"  dkz1
+        Goto, chrome_label
+        return
+    }
+    else if (num := 2)
+    {
+        send,{Alt 2}
+        send,{space 2}
+        send, l
+        send, w
+        send, dkz2
+        send,{enter}
+        MsgBox, % "2: chrome window is :" dkz2
+        return
+    }
+    chrome_label:
+
+        WinActivate, dkz
+        scan := new Shinsimagescanclass(dkz)
+        ;scan.pixelregion()
+        ;0xF6F6F6
+        ;DD4D11
+        if (scan.Pixel(0x8AB4F8,,x,y)) {
+            tooltip % "Found a pixel at " x "," y
+            mousemove,  x , y  
+            MouseClick, r, X, Y, 1, 
+        }
+
+        return
+    }
+
+/*chrome_group3(num := 0)
 {
-MsgBox, % "5: put a gotosub here that uses shinsimagescan class" 
-}
-else IfMsgBox, cancel 
-{
-MsgBox, % "4:" "canceled operation"
-return
-}
-else if (num := 1)
-{
-WinActivate, dkz1 
-WinWaitActive, dkz1
-sleep, 100
-send, !g
-sleep, 100
-MsgBox, % "1: chrome window is :"  dkz1
-Goto, chrome_label
-return
+    ;MsgBox, % "Start: `n inside of chrome_group class : `n parameter passed in: " num
+    this.num := num ; A := new chrome_group(2) ; A.num is 2.
+    if (num = 0)
+    {
+    static count := 0
+    count++
+    ;MsgBox, % "0: count:" count
+    WinActivate, ahk_exe chrome.exe
 
-}
-else if (num := 2)
-{
-send,{Alt 2}
-send,{space 2}
-send, l
-send, w
-send, dkz2
-send,{enter}
-MsgBox, % "2: chrome window is :" dkz2
-return
+    chrome_name()
+    sleep, 100
+    send, !g
+    sleep, 100
+    MsgBox, % "1: chrome window is :"  dkz1 "`n "
+    if IfMsgBox, yes 
+    ;Continue
+    {
+    MsgBox, % "5: put a gotosub here that uses shinsimagescan class" 
+    }
+    else IfMsgBox, cancel 
+    {
+    MsgBox, % "4:" "canceled operation"
+    return
+    }
+    else if (num := 1)
+    {
+    WinActivate, dkz1 
+    WinWaitActive, dkz1
+    sleep, 100
+    send, !g
+    sleep, 100
+    MsgBox, % "1: chrome window is :"  dkz1
+    Goto, chrome_label2
+    return
 
-}
+    }
+    else if (num := 2)
+    {
+    send,{Alt 2}
+    send,{space 2}
+    send, l
+    send, w
+    send, dkz2
+    send,{enter}
+    MsgBox, % "2: chrome window is :" dkz2
+    return
 
+    }
+    chrome_label2:
 
+    WinActivate, dkz
+    scan := new Shinsimagescanclass(dkz)
+    ;scan.pixelregion()
+    ;0xF6F6F6
+    ;DD4D11
+    if (scan.Pixel(0x8AB4F8,,x,y)) {
+        tooltip % "Found a pixel at " x "," y
+        mousemove,  x , y  
+        MouseClick, r, X, Y, 1, 
+    }
 
-chrome_label:
+    return
+    }
+}*/
+
+/*
+
+chrome_label3:
 
 WinActivate, dkz
 scan := new Shinsimagescanclass(dkz)
 ;scan.pixelregion()
 ;0xF6F6F6
 ;DD4D11
-if (scan.Pixel(0x8AB4F8,,x,y)) {
+if (scan.Pixel(0x8AB4F8,,x,y)) 
+{
     tooltip % "Found a pixel at " x "," y
     mousemove,  x , y  
     MouseClick, r, X, Y, 1, 
 }
 
-return
-
-;return
-
-/*WinActivate, dkz 
-WinWaitActive, dkz
-sleep, 100
-send, !g
-sleep, 100
-return
-*/
-}
+return*/
 
 
-
-
-    /*
-    use:
-
-
-    */
-/*
-*/
-
-}
-
-
-
-
-   
-ff_group(){
+ff_group()
+{
 WinActivate, dkz1 
 WinWaitActive, dkz1
 ;M("go")
 send, !g
+
+
 }
-return
 
 
 
-getlog(){
+getlog()
+{
   ;  Loop, Read, InputFile [, OutputFile]
 Loop, Read, A_ScriptDir\logs\q-google.txt , file
 for k,v in file
@@ -472,7 +462,8 @@ getwin() {
     if %uniq_id%
     FileAppend, %A_Tab%%time%%A_Tab%%uniq_id%%A_Tab%%win_proc%%A_Tab%%Title%`n, *%log%
 }
-timeSinceLastCall(id=1, reset=0){
+timeSinceLastCall(id=1, reset=0)
+{
    global t
    static arr:=array()
    if (reset=1)
@@ -485,22 +476,25 @@ timeSinceLastCall(id=1, reset=0){
    ;msgbox % "abs var:" abs
    return global abs(arr[id,1]-arr[id,0])
 }
-target(c){
+target(c)
+{
     send, !d
     send, ^a
     send, {delete}
 return
 }
-target2(){
+target2()
+{
 WinGet, hWnd, ID, A
 hCtl := ""
 if !hCtl ;check for treeview e.g. Win 7
 {
 ControlGet, hCtl, Hwnd, , SysTreeView321, ahk_id %hWnd%
 if hCtl
-Acc := Acc_Get("Object", "outline", 0, "ahk_id " hCtl)
-}
+;Acc := Acc_Get("Object", "outline", 0, "ahk_id " hCtl)
+
 msgbox % oAcc.accChildCount
+}
 Loop, % oAcc.accChildCount
 for %A_Index% in % oAcc.accChildCount
 {
@@ -515,7 +509,9 @@ break
 Loop, % oAcc.accChildCount
 return
 }
-fs(){
+
+fs()
+{
 app := "z:/"
 run explorer.exe 
 WinWaitActive ahk_exe explorer.exe  
@@ -531,15 +527,18 @@ ClipChanged(Type) {
     ToolTip  ; Turn off the tip.
     return
 }
-GetTime(){
+GetTime()
+{
     FormatTime, OutputVar
     MsgBox, The time is %OutputVar%
 }
-GetTime2(){
+GetTime2()
+{
     FormatTime, OutputVar
     Return OutputVar   ;value returned to calling variable
 }
-GetKeyHistoryText(){
+GetKeyHistoryText()
+{
     active_window := WinActive("A")
     dhw := A_DetectHiddenWindows
     DetectHiddenWindows, On
@@ -581,7 +580,8 @@ GetKeyHistoryText(){
     DetectHiddenWindows, %dhw%
     return text
 }
-Count(String, Needle, Type="", SubPattern=""){
+Count(String, Needle, Type="", SubPattern="")
+{
     Global
     Local f := 1, n := 0, Output := ""
     If (Type = "") {
@@ -596,7 +596,8 @@ Count(String, Needle, Type="", SubPattern=""){
         RegExReplace(String, Needle, "", n)
     Return n
 }
-ss(  ){
+ss(  )
+{
 ;global c = c++
 ;msgbox % c
 ;global c := c++
@@ -607,7 +608,8 @@ frontproject = P:/app/(((snips)))
 FilePath = %frontproject%\%rand%
 frontfile = %filepath%.png
 
-if FileExist( frontfile . ".png"){
+if FileExist( frontfile . ".png")
+{
     tooltip, it do, ,,1
 return global frontfile, global frontproject , global c := c + 1
 
@@ -634,7 +636,8 @@ return global frontfile, global frontproject , global c := c + 1
 
 
 } 
-p(){
+p()
+{
 
     send, !d
     ;send, ^a
@@ -643,7 +646,8 @@ p(){
     send, {enter}
     return
 }
-CenterImgSrchCoords(File, ByRef CoordX, ByRef CoordY){
+CenterImgSrchCoords(File, ByRef CoordX, ByRef CoordY)
+{
     static LoadedPic
     LastEL := ErrorLevel
     Gui, Pict:Add, Pic, vLoadedPic, % RegExReplace(File, "^(\*\w+\s)+")
@@ -653,7 +657,8 @@ CenterImgSrchCoords(File, ByRef CoordX, ByRef CoordY){
     CoordY += LoadedPicH // 2
     ErrorLevel := LastEL
 }
-goexplore(){
+goexplore()
+{
     WinActive("ahk_exe explorer.exe")
         WinWaitActive, ahk_exe explorer.exe
         WinActivate, ahk_exe explorer.exe
@@ -673,7 +678,8 @@ listFiles(Folder) { ; list the file directory incl. subdirs
             List .= A_LoopFileFullPath "`r`n"
     return List
 }
-searchahk(answer,outputdir){
+searchahk(answer,outputdir)
+{
 msgbox % outputdir
     SetWorkingDir, outputdir
    ; FileSelectFolder, Outputdir , *StartingFolder, , Prompt
@@ -681,29 +687,12 @@ msgbox % outputdir
     SetWorkingDir, outputdir
 msgbox,% findstring("%answer%", outputdir "/*.ahk")
 
-/*findstring(string, filepattern = "*.*", rec = 0, case = 0){
-    len := strlen(string)
-    if (len = 0)
-        return
-    loop,% filepattern, 0,% rec
-    {
-        fileread, x,% a_loopfilefullpath
-        if (pos := instr(x, string, case)){
-            positions .= a_loopfilefullpath "|" pos
-            while(pos := instr(x, string, case, pos+len))
-                positions .= "|" pos
-            positions .= "`n"
-        }
-    }
-    return, positions
-*/
 
-
-; edit: changed pattern to filepattern to reduce "confusion".
 return
 }
 
-findstring1(string, filepattern = "*.*", rec = 1, case = 0){
+findstring1(string, filepattern = "*.*", rec = 1, case = 0)
+{
     len := strlen(string)
     if (len = 0)
         return
@@ -718,8 +707,9 @@ findstring1(string, filepattern = "*.*", rec = 1, case = 0){
         }
     }
      return
-}
 
+}
+}
 
 ;/ [doc]
 
@@ -935,13 +925,15 @@ WatchFolder(Folder, UserFunc, SubTree := False, Watch := 0x03) {
 
 
 
-replaceFile(File, Content){
+replaceFile(File, Content)
+{
     FileDelete, %File%
     FileAppend, %Content%, %File%
 }
-Return
+
 ; .......
-findstring(string, filepattern = "*.*", rec = 0, case = 0){
+findstring(string, filepattern = "*.*", rec = 0, case = 0)
+{
     msgbox % filepattern
     msgbox %  "findstring: " outputdir
     len := strlen(string)
@@ -959,15 +951,18 @@ findstring(string, filepattern = "*.*", rec = 0, case = 0){
         }
     }
     return, positions
+
 }
 
-/*replaceFile(File, Content){
+/*replaceFile(File, Content)
+{
     FileDelete, %File%
     FileAppend, %Content%, %File%
 }
 */
 
-ini( filename = 0, updatemode = 0 ){
+ini( filename = 0, updatemode = 0 )
+{
 ;/
 ; updates From/To a whole .ini file
 ;
@@ -1015,7 +1010,8 @@ Local s, c, p, key, k, write
    }
 } ;//
 
-findHWND(controlNames,executableName){
+findHWND(controlNames,executableName)
+{
 
     WinGet, windowIds, List,% "ahk_exe " . executableName                       
     Loop, %windowIds%                                                   ; Note: ControlList gives a `n delimited string, and List gives a pseudo array.
@@ -1040,7 +1036,8 @@ Explorer_GetSelection(hwnd="") {
     return Trim(ToReturn,"`n")
 }
 
-m(x*){
+m(x*)
+{
     static Buttons:={YNC:"Yes,No,Cancel",YN:"Yes,No",OC:"OK,Cancel",ARI:"Abort,Retry,Ignore"}
     m:=New MsgBox(),Default:=1
     for a,b in x{
@@ -1059,13 +1056,16 @@ m(x*){
     if(Btn)
         m.SetButtons(Btn)
     return m.Show("Win",Default)
+
 }
 
-Obj2String(Obj,FullPath:=1,BottomBlank:=0){
+Obj2String(Obj,FullPath:=1,BottomBlank:=0)
+{
     static String,Blank
     if(FullPath=1)
         String:=FullPath:=Blank:=""
-    if(IsObject(Obj)&&!Obj.XML){
+    if(IsObject(Obj)&&!Obj.XML)
+    {
         for a,b in Obj{
             if(IsObject(b)&&b.OuterHtml)
                 String.=FullPath "." a " = " b.OuterHtml
@@ -1412,9 +1412,11 @@ Class MsgBox{
         this.Doc.GetElementById("Icon").Style.Height:=H-Height-Title
         this.Doc.GetElementById("Text").Style.Height:=H-Height-Title
     }
+
 }
 
-Distances(lat1,lon1,lat2,lon2){
+Distances(lat1,lon1,lat2,lon2)
+{
     Dist:={} ;Create object for storage
     static p:=0.017453292519943295 ;1 degree in radian
     Dist.Kilometers:=12742*ASin(Sqrt(0.5-Cos((lat2-lat1)*p)/2+Cos(lat1*p)*Cos(lat2*p)*(1-Cos((lon2-lon1)*p))/2)) ;Formula borrowed from Internet search
@@ -1426,62 +1428,71 @@ Distances(lat1,lon1,lat2,lon2){
 }
 
 
-front(filename,dir){
-;StringSplit, OutputArray, InputVar , Delimiters, OmitChars
+front(filename,dir)
+{
+    ;StringSplit, OutputArray, InputVar , Delimiters, OmitChars
 
-    InputBox, name, "name,path"
- random, ranVar, 1, 100000000
- msgbox % ranvar
- ranvar := StrSplit(ranvar, ",", %a_space% " `t")
+        InputBox, name, "name,path"
+     random, ranVar, 1, 100000000
+     msgbox % ranvar
+     ranvar := StrSplit(ranvar, ",", %a_space% " `t")
 
-TestString := "This is a test."
-StringSplit, word_array, TestString, %A_Space%, .  ; Omits periods.
-MsgBox, The 4th word is %word_array4%.
+    TestString := "This is a test."
+    StringSplit, word_array, TestString, %A_Space%, .  ; Omits periods.
+    MsgBox, The 4th word is %word_array4%.
 
-colors := "red,green,blue"
-for index, color in StrSplit(colors, ",")
-    MsgBox % "Color number " index " is " color
+    colors := "red,green,blue"
+    for index, color in StrSplit(colors, ",")
+        MsgBox % "Color number " index " is " color
 
-    return global frontfile, frontproject
+        return global frontfile, frontproject
 }
 
-getCode(Order) { ; to fill in the second parameter of Template
+getCode(Order) 
+{ ; to fill in the second parameter of Template
     return repeat(1, Order) "," repeat(2, Order) "," repeat(3, Order)
      . "," repeat(4, Order) "," repeat(5, Order) "," repeat(6, Order)
 }
 
-repeat(str, n) { ; return str repeated n*n times
+repeat(str, n)
+{  ;return str repeated n*n times
     Result := ""
     Loop, % n * n
         Result .= str
     return Result
 }
 
-fun(){
+fun()
+{
     global myfun
     myfun:=new fun()
 }
 
-class fun{
+class fun
+{
     __new(){
         return this
     }
     fun(){
         
     }
+
 }
 
-StrAppendEachLine(str, appendix){
+StrAppendEachLine(str, appendix)
+{
  
     return, RegExReplace(str, "m`n)^(.+?)(?<!" appendix ")$", "$1" appendix)
 }
-fileAppendEachLine(filename, appendix){
+fileAppendEachLine(filename, appendix)
+{
     hmm := FileOpen(filename, "r`n").read()
     FileOpen(filename, "w`n").write(RegExReplace(hmm, "m`n)^(.+?)(?<!" appendix ")$", "$1" appendix))
     return
 }
 
-z_stringreplace(string, find, rep ){
+z_stringreplace(string, find, rep )
+{
     MsgBox, % "0: `n " find rep
    ; StringReplace, r, s, - , ||| , All
     StringReplace, r, s, %find% , %rep% , All
@@ -1491,17 +1502,19 @@ return r
 
 
 
-removespace(ans){
+removespace(ans)
+{
 
-;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
-;Fronttext := clipboard
-NewStr := StrReplace(ans, A_Space, "_")
-;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
-clipboard := newstr
-return newStr 
+    ;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
+    ;Fronttext := clipboard
+    NewStr := StrReplace(ans, A_Space, "_")
+    ;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
+    clipboard := newstr
+    return newStr 
 }
 
-TrayIcon_GetInfo(sExeName := ""){
+TrayIcon_GetInfo(sExeName := "")
+{
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     oTrayIcon_GetInfo := {}
     For key, sTray in ["Shell_TrayWnd", "NotifyIconOverflowWindow"]
@@ -1572,7 +1585,8 @@ TrayIcon_GetInfo(sExeName := ""){
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_HIDEBUTTON message - http://goo.gl/oelsAa
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True){
+TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True)
+{
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     idxTB := TrayIcon_GetTrayBar()
@@ -1588,7 +1602,8 @@ TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True){
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_DELETEBUTTON message - http://goo.gl/L0pY4R
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Delete(idx, sTray := "Shell_TrayWnd"){
+TrayIcon_Delete(idx, sTray := "Shell_TrayWnd")
+{
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     idxTB := TrayIcon_GetTrayBar()
@@ -1602,7 +1617,8 @@ TrayIcon_Delete(idx, sTray := "Shell_TrayWnd"){
 ; Description ..: Remove a tray icon.
 ; Parameters ...: hWnd, uID.
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Remove(hWnd, uID){
+TrayIcon_Remove(hWnd, uID)
+{
         NumPut(VarSetCapacity(NID,(A_IsUnicode ? 2 : 1) * 384 + A_PtrSize * 5 + 40,0), NID)
         NumPut(hWnd , NID, (A_PtrSize == 4 ? 4 : 8 ))
         NumPut(uID  , NID, (A_PtrSize == 4 ? 8  : 16 ))
@@ -1617,7 +1633,8 @@ TrayIcon_Remove(hWnd, uID){
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_MOVEBUTTON message - http://goo.gl/1F6wPw
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd"){
+TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd")
+{
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     idxTB := TrayIcon_GetTrayBar()
@@ -1637,7 +1654,8 @@ TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd"){
 ; Info .........: NOTIFYICONDATA structure  - https://goo.gl/1Xuw5r
 ; ..............: Shell_NotifyIcon function - https://goo.gl/tTSSBM
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0){
+TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0)
+{
     d := A_DetectHiddenWindows
     DetectHiddenWindows, On
     ; WM_SETICON = 0x0080
@@ -1662,7 +1680,8 @@ TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0){
 ; Function .....: TrayIcon_GetTrayBar
 ; Description ..: Get the tray icon handle.
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd"){
+TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd")
+{
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     WinGet, ControlList, ControlList, ahk_class %Tray%
     RegExMatch(ControlList, "(?<=ToolbarWindow32)\d+(?!.*ToolbarWindow32)", nTB)
@@ -1685,7 +1704,8 @@ TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd"){
 ; Description ..: Get the index of tray's hot item.
 ; Info .........: TB_GETHOTITEM message - http://goo.gl/g70qO2
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_GetHotItem(){
+TrayIcon_GetHotItem()
+{
     idxTB := TrayIcon_GetTrayBar()
     SendMessage, 0x447, 0, 0, ToolbarWindow32%idxTB%, ahk_class Shell_TrayWnd ; TB_GETHOTITEM
     Return ErrorLevel << 32 >> 32
@@ -1700,7 +1720,8 @@ TrayIcon_GetHotItem(){
 ; ..............: index    - Index of tray icon to click if more than one match.
 ; ----------------------------------------------------------------------------------------------------------------------
 
-TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1){
+TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1)
+{
     DetectHiddenWindows, % (Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "On" :
     WM_MOUSEMOVE      = 0x0200
     WM_LBUTTONDOWN    = 0x0201
@@ -1728,78 +1749,99 @@ TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1){
     return
 }
 
-;==============================[]=================================[]
-
-lv(folder) {
+lv(folder) 
+{
     Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView2 AltSubmit, Name
-        Loop, Files, % folder "\*", D
-        {
-            LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
-            LV_ModifyCol()  ; Auto-size each column to fit its contents.
-            LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
-            FolderList .= A_LoopFileName . "`n"
-        }
+    Loop, Files, % folder "\*", D
+    {
+        LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
+        LV_ModifyCol()  ; Auto-size each column to fit its contents.
+        LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
+        FolderList .= A_LoopFileName . "`n"
+    }
     Gui, Show
     return 
 
-GuiContextMenu2:  ; Launched in response to a right-click or press of the Apps key.
-if (A_GuiControl != "MyListView2")  ; This check is optional. It displays the menu only for clicks inside the ListView.
+    GuiContextMenu2:  ; Launched in response to a right-click or press of the Apps key.
+        if (A_GuiControl != "MyListView2")  ; This check is optional. It displays the menu only for clicks inside the ListView.
+            return
+        ; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
+        ; because they provide correct coordinates even if the user pressed the Apps key:
+        Menu, MyContextMenu, Show, %A_GuiX%, %A_GuiY%
     return
-; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
-; because they provide correct coordinates even if the user pressed the Apps key:
-Menu, MyContextMenu, Show, %A_GuiX%, %A_GuiY%
-return
 
-MyListView2:
-if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the script can check.
-{
-    LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
-    LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
-    
-    Run %Dir%\%FileName%,, UseErrorLevel
-    ;Run %FileDir%\%FileName%,, UseErrorLevel
-    if ErrorLevel
-        MsgBox Could not open "%FileDir%\%FileName%".
-}
-return
-
-
+    MyListView2:
+        if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the script can check.
+        {
+            LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
+            LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
+            
+            Run %Dir%\%FileName%,, UseErrorLevel
+            ;Run %FileDir%\%FileName%,, UseErrorLevel
+            if ErrorLevel
+                MsgBox Could not open "%FileDir%\%FileName%".
+        }
+    return
 }
 
 
 ;==============================[]=================================[]
 
-sendword(){
+sendClipToWord()
+{
 
-send := clipboard . "`n"
-send := send . "`n"
-clipboard := send
-oWord := ComObjActive("Word.Application")
-oWord.Selection.PasteAndFormat(0)  ; Original Formatting
-send := ""
-clipboard := ""
+    send := clipboard . "`n"
+    send := send . "`n"
+    clipboard := send
+    oWord := ComObjActive("Word.Application")
+    oWord.Selection.PasteAndFormat(0)  ; Original Formatting
+    send := ""
+    clipboard := ""
 
-/*
-WinGet, firsthwnd, id, A
- sub := WinActive("A")
+    /*
+    WinGet, firsthwnd, id, A
+     sub := WinActive("A")
 
-WinActivate, ahk_exe WINWORD.EXE
-WinWaitActive, ahk_exe WINWORD.EXE
-;send, #5
-sleep, 100
-send, ^end
-send, {enter}
-send, ^v 
-sleep,100
-;send, %clipboard%
-send, {enter}
-sleep, 5000
-WinMinimize, A
+    WinActivate, ahk_exe WINWORD.EXE
+    WinWaitActive, ahk_exe WINWORD.EXE
+    ;send, #5
+    sleep, 100
+    send, ^end
+    send, {enter}
+    send, ^v 
+    sleep,100
+    ;send, %clipboard%
+    send, {enter}
+    sleep, 5000
+    WinMinimize, A
 
-WinWaitNotActive, ahk_exe WINWORD.EXE
-WinActivate, ahk_id %firsthwnd%
-WinActivate, ahk_id %sub%
-*/
-  }
-return
+    WinWaitNotActive, ahk_exe WINWORD.EXE
+    WinActivate, ahk_id %firsthwnd%
+    WinActivate, ahk_id %sub%
+    */
+
+    return
+}
 ;----Open the selected favorite
+
+/*findstring(string, filepattern = "*.*", rec = 0, case = 0)
+{
+    len := strlen(string)
+    if (len = 0)
+        return
+    loop,% filepattern, 0,% rec
+    {
+        fileread, x,% a_loopfilefullpath
+        if (pos := instr(x, string, case)){
+            positions .= a_loopfilefullpath "|" pos
+            while(pos := instr(x, string, case, pos+len))
+                positions .= "|" pos
+            positions .= "`n"
+        }
+    }
+    return, positions
+
+*/
+
+
+; edit: changed pattern to filepattern to reduce "confusion".
