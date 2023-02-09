@@ -23,31 +23,31 @@ f24 & Rctrl::
 
 # A little info on Autohotkey
 
-## Uses Windows/Microsofts [UI Automation/Accessibility Framework](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview) to populate tool menu at cursor/caret position.
-## Uses Edge's Webview2 for browser example.
-## Uses SQLite for Typing Aid, CSV for 'pasted-file' tracking, .INI for some settings & config. (all of this probably SHOULD be in one system/will be eventually, but I like to keep the references to each as learning examples.)
-## Autohotkey, by nature, impliments: 
+#### Uses Windows/Microsofts [UI Automation/Accessibility Framework](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview) to populate tool menu at cursor/caret position.
+#### Uses Edge's Webview2 for browser example.
+#### Uses SQLite for Typing Aid, CSV for 'pasted-file' tracking, .INI for some settings & config. (all of this probably SHOULD be in one system/will be eventually, but I like to keep the references to each as learning examples.)
+#### Autohotkey, by nature, impliments: 
 - Win32 API (GUIs, Controls, Menu-ing system, Window-ing system)
 - COM objects (MS Office impliments)
 - C++ and .dll call-ability
 
-### "If Windows is the earth, and google is the metal of a developer's sword...
+#### "If Windows is the earth, and google is the metal of a developer's sword...
 - Autohotkey has the potential to function as that swords hilt"
 
-# Some of the "swift-army-knife-like" features:
+### Some of the "swift-army-knife-like" features:
 
-### - [Research Functionality] 
+#### - [Research Functionality] 
 
 "Ghost Google" as I like to call it. An interface-less google search, with auto tab grouping via the [tab groups extension in chrome](https://chrome.google.com/webstore/detail/tab-groups-extension/nplimhmoanghlebhdiboeellhgmgommi). This minimizes the traditional, regular act of searching for chrome in taskbar, clicking it, focusing search bar, writing search query, clicking to search, grouping, etc... aka every google search is .1 sec away and is conducted atleast 5-10 sec. faster. Google is to a coder an axe to a lumberjack. Each swing of a main tool should be as powerful an efficient as it can get. and so it is.
 
 
 
-### - "Ghost Notes" 
+#### - "Ghost Notes" 
 
 Again, same concept. A 'UI-LESS' notetaker, allowing quick saving of snippets, commands, speaker notes, links, reference, etc.
 
 
-### - [Organizational Functionality] Quick-Shortcuts, Project Folders, and general folder management available anywhere, without need to navigate explorer.exe etc. 
+#### - [Organizational Functionality] Quick-Shortcuts, Project Folders, and general folder management available anywhere, without need to navigate explorer.exe etc. 
 
 
 
