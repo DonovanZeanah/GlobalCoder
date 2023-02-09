@@ -130,8 +130,9 @@ Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0
 EvaluateScriptPathAndTitle()
 SuspendOn()
 
-;Startup()
-Build_TrayMenu()
+Startup()
+msgbox returned
+;Build_TrayMenu()
 
 OnExit, SaveScript
 ;specifices this sub-routine to be called should/when script exits.
