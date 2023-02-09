@@ -33,9 +33,9 @@ setUpHotkey(hk, handler, settingPaths)
 ; Set-up key-bindings dynamically
 ; If key is bound previously, an error will be thrown
 ;
- ;hk := %header%_%settings%
- ;handler := function_name(){...}
- ;settingPaths := error message (e.g. settings.ini [Hotkeys]Shortcut)
+; hk := %header%_%settings%
+; handler := function_name(){...}
+; settingPaths := error message (e.g. settings.ini [Hotkeys]Shortcut)
 {
     if hk == ""
       return
@@ -43,6 +43,6 @@ setUpHotkey(hk, handler, settingPaths)
     Hotkey, %hk%, %handler%, UseErrorLevel
     if (ErrorLevel <> 0) {
         MsgBox, 16, Error, One or more keyboard shortcut settings have been defined incorrectly in the settings file: `n%settingPaths%. `n`nPlease read the README for instructions.
-       ; Exit
+        ;Exit
     }
 }

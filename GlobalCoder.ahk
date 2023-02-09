@@ -21,6 +21,15 @@ Gui, Font,, Verdana  ; Preferred font.
 applicationname := "GlobalCoder"
 g_OSVersion := GetOSVersion()
 FileEncoding, UTF-8
+
+					;[//Includes]==============================[//Includes]=================================[//Includes]
+#Include, lib\Gdip.ahk 			
+#Include, includes\read-ini.ahk	
+#Include, lib\JXON.ahk
+#Include, lib\Minerva-PowerToys.ahk
+#Include, lib\Minerva-Handlers.ahk
+#Include, lib\Minerva-Statistics.ahk
+
 					;[GLOBALS]==============================[GLOBALS]=================================[GLOBALS]
 global ScriptName  := StrReplace(A_ScriptName, ".ahk")
 global Version     := "1.0"
@@ -28,7 +37,7 @@ global GitHub      := "https://github.com/donovanzeanah/globalcoder"
 global FileCount   := 0
 global MyProgress  := 0
 global TotalWords  := 0
-global settingsINI := "settings.ini"
+global settingsINI := "globalcoder.ini"
 global ignoreFiles := ""
 
 global frontproject := "d:/(github)\globalcoder\gc\globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
@@ -46,13 +55,7 @@ FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
 global myGC := new gc()
 Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %timestring%
-					;[//Includes]==============================[//Includes]=================================[//Includes]
-#Include, lib\Gdip.ahk 			
-#Include, lib\read-ini.ahk	
-#Include, lib\JXON.ahk
-#Include, lib\Minerva-PowerToys.ahk
-#Include, lib\Minerva-Handlers.ahk
-#Include, lib\Minerva-Statistics.ahk
+
 
 					;[//NOTES]==============================[//NOTES]=================================[//NOTES] 
 					/*		
@@ -74,10 +77,8 @@ TrayTip, GlobalCoder, Started %timestring%
 					Menu, MyMenuBar, Add, &File, :FileMenu
 					Gui, Menu, MyMenuBar
 
-ReadIni(settingsINI)
-setUpHotkey(HotKeys_OpenMinervaMenu, "showMinervaMenu", "%settingsINI% [HotKeys]OpenMinervaMenu")
-setUpHotkey(HotKeys_ReloadProgram,   "ReloadProgram",   "%settingsINI% [HotKeys]ReloadProgram")
-ignoreFiles := General_IgnoreFiles
+
+
 If !pToken := Gdip_Startup()
 {
 	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
@@ -426,6 +427,7 @@ send, !g
 return
 }
 
+f13::send, ^{click}
 
 xbutton2 & 3::
  SendMode Input
@@ -654,18 +656,8 @@ return ;// end hotkey x
 ; MAIN MENU & the Children MENUs
 ;-------------------------
 
-; main menu
-~space & up::
-showGlobalcodermenu(){
-	WinGet, active_proc, ProcessName, A
-	Try{
-		Menu, %A_ScriptDir%\CustomMenuFiles, Check, %active_proc%
-	}
-	Menu, %A_ScriptDir%\CustomMenuFiles, show
-	Try{
-		Menu, %A_ScriptDir%\CustomMenuFiles, UnCheck, %active_proc%
-	}
-} 
+; main menu 
+
 ^f24::
 Ctrl & RShift::
 ;/
@@ -3552,3 +3544,89 @@ folderlooper(PATH){
 clipboard := "3de32882D!"
 send ^v
 return
+
+/* test section
+iniFile := SubStr( A_ScriptName, 1, -3 ) . "ini"
+iniContent =
+(
+[pos]
+[color=red]x =100[/color]
+y=300
+Z=450
+)
+replaceFile(iniFile, iniContent)
+
+ini(test)
+msgbox posx := %posx% , posy := %posy% , posz := %posz%
+;
+; Now we change the variables and write/update the ini
+;
+posx := posx * 2
+posy := posy * 2
+posz := posz * 2
+ini(test, 1)
+Msgbox Updated variables written...
+;
+; To confirm the INI is correctly updated, we read out the INI again
+;
+ini(test)
+msgbox UPDATED >>> posx := %posx% , posy := %posy% , posz := %posz%
+
+
+RETURN ; END OF Auto-execution section
+
+
+replaceFile(File, Content)
+{
+	FileDelete, %File%
+	FileAppend, %Content%, %File%
+}
+Return
+*/
+ini( filename = 0, updatemode = 0 )
+;
+; updates From/To a whole .ini file
+;
+; By default the update mode is set to 0 (Read)
+; and creates variables like this:
+; %Section%%Key% = %value%
+;
+; You don't have to state the updatemode when reading, just use
+;
+; update(filename)
+;
+; The function can be called to write back updated variables to
+; the .ini by setting the updatemode to 1, like this:
+;
+; update(filename, 1)
+;
+{
+Local s, c, p, key, k, write
+
+   if not filename
+      filename := SubStr( A_ScriptName, 1, -3 ) . "ini"
+
+   FileRead, s, %filename%
+
+   Loop, Parse, s, `n`r, %A_Space%%A_Tab%
+   {
+      c := SubStr(A_LoopField, 1, 1)
+      if (c="[")
+         key := SubStr(A_LoopField, 2, -1)
+      else if (c=";")
+         continue
+      else {
+         p := InStr(A_LoopField, "=")
+         if p {
+         k := SubStr(A_LoopField, 1, p-1)
+       if updatemode=0
+          %key%%k% := SubStr(A_LoopField, p+1)
+       if updatemode=1
+       {
+          write := %key%%k%
+          IniWrite, %write%, %filename%, %key%, %k%    
+       }
+         }
+      }
+   }
+}
