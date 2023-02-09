@@ -23,6 +23,7 @@ g_OSVersion := GetOSVersion()
 FileEncoding, UTF-8
 
 					;[//Includes]==============================[//Includes]=================================[//Includes]
+
 #Include, lib\Gdip.ahk 			
 #Include, includes\read-ini.ahk	
 #Include, lib\JXON.ahk
@@ -63,6 +64,25 @@ TrayTip, GlobalCoder, Started %timestring%
 					*/
 					;[//START]==============================[START]=================================[START]
 					;-------------------------------------------------Start gdi+
+					Ptr := A_PtrSize ? "Ptr" : "UInt"
+					SkipExitSub := True ;Disables save-on-exit until the Startup() function is finished
+					;As long as the above is set to True and the Startup() function is never executed the script
+					;will not execute any critical code and can sit in a pre-Startup() state forever.
+
+					Name := "GlobalCoder"
+					VersionNumber := 1.79
+					Package_FileVersion := 2.2
+					Pixel_FileVersion := 1.1
+					Save_FileVersion := 1.2
+					HD_FileVersion := 1.0
+
+					MouseMovement_IndexVersion := 1.36
+					Key_IndexVersion := 1.2
+					WordsTyped_IndexVersion := 1.25
+
+					MouseMovement_Number := 189
+					WordsPerTime_Number := 190
+
 					
 					Menu, MenuName, UseErrorLevel
 
@@ -109,7 +129,9 @@ Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0
 
 EvaluateScriptPathAndTitle()
 SuspendOn()
-BuildTrayMenu()
+
+Startup()
+;BuildTrayMenu()
 
 OnExit, SaveScript
 ;specifices this sub-routine to be called should/when script exits.
@@ -191,11 +213,15 @@ GetIncludedActiveWindow()
 MainLoop()
 
 
+;OnExit, ExitSub
 
+Return
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
 return
+
+
 
 #IfWinActive ahk_exe explorer.exe
 enter::+f10
@@ -465,7 +491,7 @@ f24 & Space:: ;-----------------------------------------------------------------
 InputBox, ans
 Run, www.google.com/search?q=%ans%
 chrome_group()
-;send, !g
+send, !g
 ;removespace(ans) ;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
 
 answer := clipboard
@@ -2234,6 +2260,8 @@ SuspendOff(){
 ;------------------------------------------------------------------------
 
 BuildTrayMenu(){
+	;Prevents hotkeys from being fired before everything is configured correctly
+	Critical, On
 
    Menu, Tray, DeleteAll
    Menu, Tray, NoStandard
@@ -3630,3 +3658,5 @@ Local s, c, p, key, k, write
       }
    }
 }
+
+#Include, stats.ahk
