@@ -26,7 +26,7 @@ FileEncoding, UTF-8
 
 #Include, lib\((functions)).ahk
 ;#Include, lib\Gdip.ahk
-#Include, includes\read-ini.ahk
+#Include, lib\read-ini.ahk
 #Include, lib\JXON.ahk
 #Include, lib\Minerva-PowerToys.ahk
 #Include, lib\Minerva-Handlers.ahk
@@ -109,8 +109,8 @@ OnExit, Exit
 
 FindAmountItems()
 PrepareMenu(A_ScriptDir "\CustomMenuFiles")
-;PrepareMenu(A_ScriptDir "\singles")
-;RunOtherScripts(A_ScriptDir "\singles")
+PrepareMenu(A_ScriptDir "\singles")
+RunOtherScripts(A_ScriptDir "\singles")
 
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
@@ -132,7 +132,7 @@ EvaluateScriptPathAndTitle()
 SuspendOn()
 
 Startup()
-msgbox returned
+;msgbox returned
 ;Build_TrayMenu()
 
 OnExit, SaveScript
@@ -492,25 +492,9 @@ return
 f24 & Space:: ;------------------------------------------------------------------
 InputBox, ans
 Run, www.google.com/search?q=%ans%
-chrome_group()
+crm := chrome_group()
 send, !g
-;removespace(ans) ;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
 
-answer := clipboard
-basedir := "c:\answer"
-
-createddir = %A_WorkingDir%\logs\questions\%timestring% %answer%
-FileCreateDir, %A_WorkingDir%\logs\questions\%answer% ;
-FileCreateDir, %basedir%\%answer%
-frontdir = %testdir%\%answer%
-fileappend, %answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-- make text inside folder
-frontdir = c:\answer\%answer%
-file = %frontdir%\Q.txt
-Masterfile = %basedir%\Q-Master.txt
-fileappend, Q-%answer%__%time% `n, %A_WorkingDir%\logs\questions\%answer%\Q.txt ;-- make text inside folder
-FileAppend, -%answer%__%time% `n, %A_WorkingDir%\logs\Q-google.txt ;--- update global log file11
-fileappend, -%answer%__%time% `n ,%file%
-fileappend, -%answer%__%time% `n ,%masterfile%
 run %frontdir%
 run, %file%
 return
@@ -3571,10 +3555,7 @@ folderlooper(PATH){
 	}
 }
 
-#numpad1::
-clipboard := "3de32882D!"
-send ^v
-return
+
 
 /* test section
 iniFile := SubStr( A_ScriptName, 1, -3 ) . "ini"

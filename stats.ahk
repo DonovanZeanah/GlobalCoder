@@ -322,6 +322,7 @@ Startup()
     SkipExitSub := False ;Enables save-on-exit if applicable
     
     Critical, Off
+    return
 }
 
 Record_KeyPress(_Key)
