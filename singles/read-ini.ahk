@@ -1,4 +1,4 @@
-﻿
+﻿3
 ; https://autohotkey.com/board/topic/33506-read-ini-file-in-one-go/
 
 ReadIni( filename := 0 )

@@ -258,10 +258,7 @@
 				"buffer_size": 1131,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "Packages/ZeanahCS.sublime-build",
@@ -360,7 +357,7 @@
 			]
 		]
 	],
-	"build_varint": "Run",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -748,6 +745,7 @@
 							"bs_sintax": "c#",
 							"buffer_scroll_name": "5745e997",
 							"lsp_uri": "file:///D:/%28github%29-MAINS/csharp-design-patterns-2314072/Adapter/Program.cs",
+							"spell_check": false,
 							"syntax": "Packages/C#/C#.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -765,7 +763,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.6
+		"height": 31.2
 	},
 	"input":
 	{
@@ -818,7 +816,7 @@
 	"project": "(csharp-designPatterns).sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 59.2
 	},
 	"save_all_on_build": true,
 	"select_file":

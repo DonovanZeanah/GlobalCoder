@@ -112,7 +112,7 @@ Return
 Gui, Show, W300 H40, Window List
 Return
 
-MenuChoice:
+1:
 ProcessID := StrSplit(A_ThisMenuItem,"|")
 WinActivate, % "ahk_id " ProcessID[2]
 

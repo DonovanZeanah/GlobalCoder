@@ -1,1 +1,0 @@
-The links class should be for links I actually have a chance of remembering by name, so I can more easily open them / send them, but when I consistently need to actually open the links file to either send it *or* open it, I might as well just have a markdown file for those

@@ -41,7 +41,6 @@ global MyProgress  := 0
 global TotalWords  := 0
 global settingsINI := "globalcoder.ini"
 global ignoreFiles := ""
-
 global frontproject := "d:/(github)\globalcoder\gc\globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
 global rootfolder := "d:/(github)\globalcoder\gc\globalcoder"
 global projectname := "GlobalCoder"
@@ -59,44 +58,45 @@ Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %timestring%
 
 
-					;[//NOTES]==============================[//NOTES]=================================[//NOTES]
-					/*
+;[//NOTES]==============================[//NOTES]=================================[//NOTES]
+/*
+   
 
-					*/
-					;[//START]==============================[START]=================================[START]
-					;-------------------------------------------------Start gdi+
-					Ptr := A_PtrSize ? "Ptr" : "UInt"
-					SkipExitSub := True ;Disables save-on-exit until the Startup() function is finished
-					;As long as the above is set to True and the Startup() function is never executed the script
-					;will not execute any critical code and can sit in a pre-Startup() state forever.
+*/
+;[//START]==============================[START]=================================[START]
+;-------------------------------------------------Start gdi+
+Ptr := A_PtrSize ? "Ptr" : "UInt"
+SkipExitSub := True ;Disables save-on-exit until the Startup() function is finished
+;As long as the above is set to True and the Startup() function is never executed the script
+;will not execute any critical code and can sit in a pre-Startup() state forever.
 
-					Name := "GlobalCoder"
-					VersionNumber := 1.79
-					Package_FileVersion := 2.2
-					Pixel_FileVersion := 1.1
-					Save_FileVersion := 1.2
-					HD_FileVersion := 1.0
+Name := "GlobalCoder"
+VersionNumber := 1.79
+Package_FileVersion := 2.2
+Pixel_FileVersion := 1.1
+Save_FileVersion := 1.2
+HD_FileVersion := 1.0
 
-					MouseMovement_IndexVersion := 1.36
-					Key_IndexVersion := 1.2
-					WordsTyped_IndexVersion := 1.25
+MouseMovement_IndexVersion := 1.36
+Key_IndexVersion := 1.2
+WordsTyped_IndexVersion := 1.25
 
-					MouseMovement_Number := 189
-					WordsPerTime_Number := 190
-
-
-					Menu, MenuName, UseErrorLevel
+MouseMovement_Number := 189
+WordsPerTime_Number := 190
 
 
-					   ;The following code sets up the Gui with a DropDownList with the original list of
-					   ;open windows. Remove or comment out this code for Menu only.
+Menu, MenuName, UseErrorLevel
 
-					Gui,+AlwaysOnTop
-					Gui, Font, s12, Arial
-					Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
-					Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
-					Menu, MyMenuBar, Add, &File, :FileMenu
-					Gui, Menu, MyMenuBar
+
+   ;The following code sets up the Gui with a DropDownList with the original list of
+   ;open windows. Remove or comment out this code for Menu only.
+
+Gui,+AlwaysOnTop
+Gui, Font, s12, Arial
+Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
+Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
+Menu, MyMenuBar, Add, &File, :FileMenu
+Gui, Menu, MyMenuBar
 
 
 
@@ -110,7 +110,7 @@ OnExit, Exit
 FindAmountItems()
 PrepareMenu(A_ScriptDir "\CustomMenuFiles")
 PrepareMenu(A_ScriptDir "\singles")
-RunOtherScripts(A_ScriptDir "\singles")
+;RunOtherScripts(A_ScriptDir "\singles")
 
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
@@ -537,7 +537,7 @@ PrepareMenu(PATH)
 		Gui, show	  											; Displaying Progressbar
 
 		; Add Name, Icon and seperating line
-		Menu, %PATH%, Add, % "googler", googler ; Regular search ;googler								; Name
+		Menu, %PATH%, Add, % "g&oogler", googler ; Regular search ;googler								; Name
 
 		Menu, %PATH%, Add, 																			; seperating
 
@@ -546,16 +546,16 @@ PrepareMenu(PATH)
 	   ;loopoverfolder(singles)
 
 	   Menu, %PATH%, Add,   ; seperater
-	   Menu, %PATH%, Add, % ScriptName " vers. " Version, github ;googler                        ; Name
+	   Menu, %PATH%, Add, % "&" ScriptName " vers. " Version, github ;googler                        ; Name
 	   Menu, %PATH%, Add,                                                         ; seperating
 
 
 		; Add Admin Panel
 		Sleep, 200
 		Menu, %PATH%, Add, 													; seperating line
-		Menu, %PATH%"\Admin", Add, &1 Restart, ReloadProgram				; Add Reload option
+		Menu, %PATH%"\Admin", Add, &3 Restart, ReloadProgram				; Add Reload option
 		Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
-		Menu, %PATH%"\Admin", Add, &3 Go to Parent Folder, GoToRootFolder	; Open script folder
+		Menu, %PATH%"\Admin", Add, &1 Go to Parent Folder, GoToRootFolder	; Open script folder
 		Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
 		Menu, %PATH%, Add, &0 Admin, :%PATH%"\Admin"						; Adds Admin section
 
@@ -760,7 +760,10 @@ switch checkvar
 return
 ;// omnibox 3-selection menu w/ 4 direction switch
 
-
+f16::f7
+#numpad1::
+msgbox test
+return
 
 
 ;hotkey to add reference notes via edit

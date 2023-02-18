@@ -287,33 +287,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "collection/1_globalcoder/0_globalcoder_windowMenu.ahk",
-			"settings":
-			{
-				"buffer_size": 4086,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "collection/!!GlobalCoder_Catch_All/.codehelper.ahk",
-			"settings":
-			{
-				"buffer_size": 6893,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "collection/!!GlobalCoder_Catch_All/.codehelper (2).ahk",
-			"settings":
-			{
-				"buffer_size": 7140,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/AutoHotkey/AutoHotkey.sublime-build",
 	"build_system_choices":
@@ -582,9 +555,13 @@
 	},
 	"expanded_folders":
 	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/4 - Projects"
 	],
 	"file_history":
 	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/4 - Projects/collection/!!GlobalCoder_Catch_All/.codehelper.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/4 - Projects/collection/!!GlobalCoder_Catch_All/.codehelper (2).ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/4 - Projects/collection/1_globalcoder/0_globalcoder_windowMenu.ahk",
 		"/D/(github)/GlobalCoder/gc/GlobalCoder/capslock-multi.ahk",
 		"/D/working/globalcoder-shinsoverlay-example.ahk",
 		"/D/(github)/GlobalCoder/GlobalCoder/collection/1_myminerva/Minerva-updated/Minerva-main/Minerva4.ahk",
@@ -709,14 +686,11 @@
 		"/D/github/GlobalCoder/gc/GlobalCoder/collection/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/more libs/Win32-API-Const_AHK_V2/inc/header_parser.ahk",
 		"/D/github/GlobalCoder/gc/GlobalCoder/globalcoder.ahk.ini",
 		"/D/github/GlobalCoder/GlobalCoder/main/README.md",
-		"/D/github/GlobalCoder/GlobalCoder/globalcoder.ahk.ini",
-		"/D/github/GlobalCoder/GlobalCoder/.gitignore",
-		"/D/github/GlobalCoder/GlobalCoder/!.ahk",
-		"/D/github/GlobalCoder/GlobalCoder/CustomMenuFiles/9 - Showcase & Examples/pixelsearch_DLL.ahk"
+		"/D/github/GlobalCoder/GlobalCoder/globalcoder.ahk.ini"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 27.2
 	},
 	"find_in_files":
 	{
@@ -765,126 +739,12 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "collection/1_globalcoder/0_globalcoder_windowMenu.ahk",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4086,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "0e9bcdd3",
-							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/1_globalcoder/0_globalcoder_windowMenu.ahk",
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 8,
-							"tabs_extra_last_activated": 1674184951.79,
-							"tabs_extra_last_activated_sheet_index": 4,
-							"tabs_extra_moving":
-							[
-								8,
-								0
-							],
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1611.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "collection/!!GlobalCoder_Catch_All/.codehelper.ahk",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5313,
-								5579
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "cd3b3b96",
-							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/.codehelper.ahk",
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1674169001.06,
-							"tabs_extra_last_activated_sheet_index": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2454.4,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "collection/!!GlobalCoder_Catch_All/.codehelper (2).ahk",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5827,
-								6679
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "autohotkey2",
-							"buffer_scroll_name": "9db3cd0a",
-							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/collection/%21%21GlobalCoder_Catch_All/.codehelper%20%282%29.ahk",
-							"syntax": "Packages/User/Autohotkey2.sublime-syntax",
-							"tab_size": 2,
-							"tabs_extra_last_activated": 1674168475.52,
-							"tabs_extra_last_activated_sheet_index": 5,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3871.2,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 27.2
 	},
 	"input":
 	{
@@ -949,7 +809,7 @@
 	"project": "GC-Workspace.sublime-project",
 	"replace":
 	{
-		"height": 44.8
+		"height": 51.2
 	},
 	"save_all_on_build": true,
 	"select_file":
