@@ -924,7 +924,7 @@ replaceFile(File, Content)
 }
 
 ; .......
-findstring(string, filepattern = "*.*", rec = 0, case = 0)
+findstringold(string, filepattern = "*.*", rec = 0, case = 0)
 {
     msgbox % filepattern
     msgbox %  "findstring: " outputdir

@@ -1,0 +1,10 @@
+//One way to create multiple migration sets is to use one DbContext type per provider.
+//Specify the context type when adding new migrations.
+//Add-Migration InitialCreate -Context BlogContext -OutputDir Migrations\SqlServerMigrations
+//Add-Migration InitialCreate -Context SqliteBlogContext -OutputDir Migrations\SqliteMigrations
+
+class SqliteBlogContext : BlogContext
+{
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseSqlite("Data Source=my.db");
+}

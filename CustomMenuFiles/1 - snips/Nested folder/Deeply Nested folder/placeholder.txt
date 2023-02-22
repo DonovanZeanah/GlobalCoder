@@ -1,1 +1,0 @@
-This is an item that lived in a deeply nested folder

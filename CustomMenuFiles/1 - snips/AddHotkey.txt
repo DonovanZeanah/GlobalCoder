@@ -1,6 +1,0 @@
-; Hotkey x
-x::
-;/ code
-
-return
-;// end hotkey x

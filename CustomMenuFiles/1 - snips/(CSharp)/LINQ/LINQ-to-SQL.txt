@@ -1,0 +1,22 @@
+var postsWithViews = await context.Posts.Where(post => post.Metadata!.Views > 3000)
+    .AsNoTracking()
+    .Select(
+        post => new
+        {
+            post.Author!.Name,
+            post.Metadata!.Views,
+            Searches = post.Metadata.TopSearches,
+            Commits = post.Metadata.Updates
+        })
+    .ToListAsync();
+//EF7 translates this query into the following SQL:
+/*
+SELECT [a].[Name],
+       CAST(JSON_VALUE([p].[Metadata],'$.Views') AS int),
+       JSON_QUERY([p].[Metadata],'$.TopSearches'),
+       [p].[Id],
+       JSON_QUERY([p].[Metadata],'$.Updates')
+FROM [Posts] AS [p]
+LEFT JOIN [Authors] AS [a] ON [p].[AuthorId] = [a].[Id]
+WHERE CAST(JSON_VALUE([p].[Metadata],'$.Views') AS int) > 3000
+*/

@@ -25,7 +25,7 @@ FileEncoding, UTF-8
 ;[//Includes]==============================[//Includes]=================================[//Includes]
 
 #Include, lib\((functions)).ahk
-;#Include, lib\Gdip.ahk
+#Include, lib\Gdipall.ahk
 #Include, lib\read-ini.ahk
 #Include, lib\JXON.ahk
 #Include, lib\Minerva-PowerToys.ahk
@@ -105,7 +105,7 @@ If !pToken := Gdip_Startup()
 	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
 	ExitApp
 }
-OnExit, Exit
+;OnExit, Exit
 
 FindAmountItems()
 PrepareMenu(A_ScriptDir "\CustomMenuFiles")
@@ -221,8 +221,31 @@ Return
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
-return
 
+^+e::
+    editor_open_folder() {
+        WinGetTitle, path, A
+        if RegExMatch(path, "\*?\K(.*)\\[^\\]+(?= [-*] )", path)
+            if (FileExist(path) && A_ThisHotkey = "^+e")
+                Run explorer.exe /select`,"%path%"
+            else
+                Run explorer.exe "%path1%"
+    }
+
+showfile(fileFullPath){
+
+    static MyEdit
+    Gui, Add, Edit, R20 vMyEdit
+    FileRead, FileContents, % fillFullPath
+    Gui, show 
+    GuiControl,, MyEdit, %FileContents%
+}
+
+f24 & s::
+hotpath := "D:\(github)\GlobalCoder\gc\GlobalCoder\CustomMenuFiles\(Dev)\headeer.txt.txt"
+showfile(hotpath)
+msgbox, % "hotpath: `n" hotpath
+return
 
 
 #IfWinActive ahk_exe explorer.exe
@@ -270,7 +293,7 @@ static hotpath := { 0 : ""
 	;msgbox, % hotpath.2
 	;msgbox, % frontproject
 
-	SelectHotpath(hotpath.2)
+	SelectHotPath(hotpath.2)
     GuiControlGet, hotedit
     clipboard := hotedit
     msgbox, % "cont to pass clipboard to notex(): `n" clipboard
@@ -278,8 +301,19 @@ static hotpath := { 0 : ""
     notein(hotpath.2)
     gui, destroy
 }
+f24 & f::
+findstring()
+return
 
-
+return
+f13 & f::
+GetCaret(x,y,,h)
+MouseClick, Left, % X, % Y "- 5", 3
+send ^c
+noteex(clipboard, notepath "functions.txt")
+run(notepath "functions.txt")
+run, notepath "functions.txt"
+return
 
 newsubject(path := ""){
   if (path = "")
@@ -297,6 +331,7 @@ newsubject(path := ""){
   ;fileappend,"init", % frontproject "\note.txt"
   return frontproject
  } ; should add new folder and set to frontproj
+
 
 
 selectsubject(path := ""){
@@ -343,6 +378,7 @@ count := 0
 			  	file := hotepath . "/" . ++count fname ;g. ".txt"
 			  }
 	  }
+      msgbox, % "d: " data
 MsgBox, % "appending file: `n" file
 fileappend, `n %clipboard% , % file
   return
@@ -400,16 +436,17 @@ return hotpath
 
 
 }
-selecthotpath(path){
+SelectHotPath(path)
+{
   if (path = "")
   {
-  hotpath := a_scriptdir . "/notes/"
+  path := a_scriptdir . "/notes/"
   return
   }
 
 
   Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gHotFileView, Name
-  Loop, % notepath . "/"* , 2 ; 2 = folders only
+  Loop, % path . "/"* , 2 ; 2 = folders only
   LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
   LV_ModifyCol()  ; Auto-size each column to fit its contents.
   LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
@@ -545,19 +582,24 @@ PrepareMenu(PATH)
 		LoopOverFolder(Path)
 	   ;loopoverfolder(singles)
 
-	   Menu, %PATH%, Add,   ; seperater
-	   Menu, %PATH%, Add, % "&" ScriptName " vers. " Version, github ;googler                        ; Name
-	   Menu, %PATH%, Add,                                                         ; seperating
+	                                                       ; seperating
 
 
 		; Add Admin Panel
 		Sleep, 200
-		Menu, %PATH%, Add, 													; seperating line
+		Menu, %PATH%, Add,
+        menu, %path%"\new", Add, &n test, ReloadProgram 													; seperating line
 		Menu, %PATH%"\Admin", Add, &3 Restart, ReloadProgram				; Add Reload option
 		Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
 		Menu, %PATH%"\Admin", Add, &1 Go to Parent Folder, GoToRootFolder	; Open script folder
 		Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
-		Menu, %PATH%, Add, &0 Admin, :%PATH%"\Admin"						; Adds Admin section
+		
+        ;bottom sec
+        Menu, %PATH%, Add, &1 Admin, :%PATH%"\Admin"						; Adds Admin section
+        Menu, %PATH%, Add, &2 New, :%PATH%"\New" 
+        Menu, %PATH%, Add,   ; seperater
+        Menu, %PATH%, Add, % "&" ScriptName " vers. " Version, github ;googler                        ; Name
+        Menu, %PATH%, Add,                           ; Adds Admin section
 
 		; Loadingbar GUI is no longer needed, remove it from memory
 		Gui, Destroy
@@ -838,6 +880,9 @@ $^+Delete::
 DeleteSelectedWordFromList()
 Return
 
+^!+y::
+alterclipboard(clipboard, ";" ,"{")
+return
 ;----------------------------------------------| quickmenu FUNCTIONS |---------------------------------------------;
 
 CtrlEvent(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
@@ -3701,4 +3746,1323 @@ chrome_name(num:=0)
 		MsgBox, % "2:" sent dkz2
 		return
 	}
+}
+
+listFolder(folder) {
+    Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListViewListFolder AltSubmit, Name
+        Loop, Files, % folder "\*", D
+        {
+            LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
+            LV_ModifyCol()  ; Auto-size each column to fit its contents.
+            LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
+            FolderList .= A_LoopFileName . "`n"
+        }
+    Gui, Show
+    return 
+
+GuiContextMenuListFolder:  ; Launched in response to a right-click or press of the Apps key.
+if (A_GuiControl != "MyListViewlistFolder")  ; This check is optional. It displays the menu only for clicks inside the ListView.
+    return
+; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
+; because they provide correct coordinates even if the user pressed the Apps key:
+Menu, MyContextMenu, Show, %A_GuiX%, %A_GuiY%
+return
+
+MyListViewListFolder:
+if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the script can check.
+{
+    LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
+    LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
+    Run %Dir%\%FileName%,, UseErrorLevel
+    ;Run %FileDir%\%FileName%,, UseErrorLevel
+    if ErrorLevel
+        MsgBox % "Could not open " %FileDir% "\" %FileName%
+}
+return
+}
+
+;strsplit()
+ ;Separates a sentence into an array of words and reports the fourth word.
+
+
+
+
+;-----------------------
+
+
+
+
+
+
+;--------------------
+
+;
+;======================================================//regexer
+
+validatepath(path :=""){
+    static counter := ++1
+if (path = ""){
+path := frontproject
+file1 := frontproject . "\" counter . ".txt"
+FileAppend, % counter, % file1
+}
+
+dir_folder := path
+f1:= ;"C:\test\testsub" ; \testsub.txt"
+SplitPath,f1,name, dir, ext, name_no_ext, drive
+stringmid,c,f1,2,2
+if (c=":\") and (ext!="")
+  msgbox,%f1%`nIt's a file
+  else
+  msgbox, % "its a dir" dir . "\" name "--ext:" ext "--drive:" drive
+return
+}
+
+writefile(input := "", dir_path:="",switch:=0){
+static enum := 0
+    if (input = ""){
+  inputbox, text, Note,Write Note:,,300,100
+    }
+    
+
+    if (switch =1){
+        FileSelectFolder, dir_path, , 3
+        if dir_path =
+    MsgBox, You didn't select a folder.
+else
+    MsgBox, You selected folder "%dir_path%".
+
+dir_path := RegExReplace(dir_path, "\\$")  ; Removes the trailing backslash, if present.
+
+    }
+
+
+    if (dir_path =""){
+        dir_path := frontproject
+    } else
+    {
+        frontproject := dir_path
+    }
+
+    text := input
+  ;fileappend, %current% - %text%\`n, % dir_path . current ".txt"
+
+  frontfile := frontproject . "writtenfile" ++enum ".txt"
+  fileappend, %text%\`n, % frontfile ;dir_path . current ".txt"
+  run(frontproject)
+  msgbox, % frontfile
+return frontfile
+}
+front2(filename,dir){
+;StringSplit, OutputArray, InputVar , Delimiters, OmitChars
+
+    InputBox, name, "name,path"
+ random, ranVar, 1, 100000000
+ msgbox % ranvar
+ ranvar := StrSplit(ranvar, ",", %a_space% " `t")
+
+TestString := "This is a test."
+StringSplit, word_array, TestString, %A_Space%, .  ; Omits periods.
+MsgBox, The 4th word is %word_array4%.
+
+colors := "red,green,blue"
+for index, color in StrSplit(colors, ",")
+    MsgBox % "Color number " index " is " color
+
+    return global frontfile, frontproject
+}
+
+getCode2(Order) { ; to fill in the second parameter of Template
+    return repeat(1, Order) "," repeat(2, Order) "," repeat(3, Order)
+     . "," repeat(4, Order) "," repeat(5, Order) "," repeat(6, Order)
+}
+
+repeat2(str, n) { ; return str repeated n*n times
+    Result := ""
+    Loop, % n * n
+        Result .= str
+    return Result
+}
+
+/*fun(){
+    global myfun
+    myfun:=new fun()
+}
+
+class fun{
+    __new(){
+        return this
+    }
+    fun(){
+        
+    }
+}
+*/
+/*StrAppendEachLine(str, appendix){
+ 
+    return, RegExReplace(str, "m`n)^(.+?)(?<!" appendix ")$", "$1" appendix)
+}*/
+fileAppendEachLine(filename, appendix){
+    hmm := FileOpen(filename, "r`n").read()
+    FileOpen(filename, "w`n").write(RegExReplace(hmm, "m`n)^(.+?)(?<!" appendix ")$", "$1" appendix))
+    return
+}
+z_
+z_stringreplace(string, find, rep ){
+    MsgBox, % "0: `n " find rep
+   ; StringReplace, r, s, - , ||| , All
+    StringReplace, r, s, %find% , %rep% , All
+return r
+}
+
+
+
+;[ahk]
+removespace(ans){
+
+;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
+;Fronttext := clipboard
+NewStr := StrReplace(ans, A_Space, "_")
+;ReplacedStr := StrReplace(Haystack, Needle , ReplaceText, OutputVarCount, Limit)
+clipboard := newstr
+return newStr 
+}
+
+
+chrome_group2(num := 0){
+if (num = 0)
+{
+static count := ++0
+}
+WinActivate, ahk_exe chrome.exe
+WinWaitActive, ahk_exe chrome.exe
+sleep, 200
+sendevent, !g
+return
+}
+
+
+
+chrome_label:
+WinActivate, dkz
+scan := new Shinsimagescanclass(dkz)
+;scan.pixelregion()
+;0xF6F6F6
+;DD4D11
+if (scan.Pixel(0x8AB4F8,,x,y)) {
+    tooltip % "Found a pixel at " x "," y
+    mousemove,  x , y  
+    MouseClick, r, X, Y, 1, 
+}
+return
+
+
+
+
+   
+ff_group(){
+WinActivate, dkz1 
+WinWaitActive, dkz1
+;M("go")
+send, !g
+}
+return
+
+
+
+getlog(){
+  ;  Loop, Read, InputFile [, OutputFile]
+Loop, Read, A_ScriptDir\logs\q-google.txt , file
+for k,v in file
+msgbox % A_Index is A_LoopField
+}
+getwin() {
+    global log
+    FormatTime, time, , MMdd-HH-mm
+    WinGetActiveTitle, Title
+    WinGet, win_proc, ProcessName, A
+    WinGet, uniq_id, ID, A
+    ; ASCII 30 octal 036 Record Separator
+    if %uniq_id%
+    FileAppend, %A_Tab%%time%%A_Tab%%uniq_id%%A_Tab%%win_proc%%A_Tab%%Title%`n, *%log%
+}
+timeSinceLastCall(id=1, reset=0){
+   global t
+   static arr:=array()
+   if (reset=1)
+   {
+      ((id=0) ? arr:=[] : (arr[id, 0]:=arr[id, 1]:="", arr[id, 2]:=0))
+      return
+   }
+   arr[id, 2]:=!arr[id, 2]
+   arr[id, arr[id, 2]]:=A_TickCount  
+   ;msgbox % "abs var:" abs
+   return global abs(arr[id,1]-arr[id,0])
+}
+target(c){
+    send, !d
+    send, ^a
+    send, {delete}
+return
+}
+target2(){
+WinGet, hWnd, ID, A
+hCtl := ""
+if !hCtl ;check for treeview e.g. Win 7
+{
+ControlGet, hCtl, Hwnd, , SysTreeView321, ahk_id %hWnd%
+if hCtl
+Acc := Acc_Get("Object", "outline", 0, "ahk_id " hCtl)
+}
+msgbox % oAcc.accChildCount
+Loop, % oAcc.accChildCount
+for %A_Index% in % oAcc.accChildCount
+{
+    MsgBox, 4,, Control #%A_Index% is "%A_LoopField%". Continue?
+    IfMsgBox, No
+        break
+}
+Loop, % oAcc.accChildCount
+if (oAcc.accName(A_Index) = "Desktop")
+if (1, oAcc.accDoDefaultAction(A_Index))
+break
+Loop, % oAcc.accChildCount
+return
+}
+fs(){
+app := "z:/"
+run explorer.exe 
+WinWaitActive ahk_exe explorer.exe  
+send, {f4} 
+send, ^a
+send, %app%
+send, {enter}
+return
+}
+
+GetTime(){
+    FormatTime, OutputVar
+    MsgBox, The time is %OutputVar%
+}
+GetTime2(){
+    FormatTime, OutputVar
+    Return OutputVar   ;value returned to calling variable
+}
+GetKeyHistoryText(){
+    active_window := WinActive("A")
+    dhw := A_DetectHiddenWindows
+    DetectHiddenWindows, On
+    Process, Exist
+    hwnd := WinExist("ahk_class AutoHotkey ahk_pid " . ErrorLevel)
+    was_active  := (hwnd=active_window)
+    was_visible := was_active || DllCall("IsWindowVisible", "UInt", hwnd)
+    if (!was_active)
+    {   ; There seems to be no way to prevent KeyHistory from activating the window,
+        ; so block user input to prevent accidental somethings.
+        BlockInput, On
+        if (!was_visible) {
+            ; Seemed to work on XP, but not Vista:
+            ;WinGetPos, x, y         ; remember position
+            ;WinMove, -10000, -10000 ; should hopefully keep it out of the way...
+            ; Works, but shows an empty frame on Vista:
+            ;WinSet, Region, W0 H0 0-0
+            
+            WinGet, was_tp, Transparent
+            WinSet, Transparent, 0
+        }
+    }
+    KeyHistory
+    ; Get the variable list text.
+    ControlGetText, text, Edit1
+    if (!was_active)
+    {   ; un-block input
+        BlockInput, Off
+        if (!was_visible) {
+            WinHide             ; restore invisibility
+            ;WinMove, %x%, %y%   ; restore position
+            ;WinSet, Region
+            WinSet, Transparent, % (was_tp="") ? "OFF" : was_tp
+        }
+    
+        ; Focus isn't always restored to the previously active window, so do this.
+        WinActivate, ahk_id %active_window%
+    }
+    DetectHiddenWindows, %dhw%
+    return text
+}
+Count(String, Needle, Type="", SubPattern=""){
+    Global
+    Local f := 1, n := 0, Output := ""
+    If (Type = "") {
+        StringReplace, String, String, %Needle%, , UseErrorLevel
+        n := ErrorLevel
+    } Else If Type {
+
+            WinSet, Transparent, % (was_tp="") ? "OFF" : wa        While (f := RegExMatch(String, Needle, Output, f + StrLen(Output)))
+            n += 1, %Type%%n% := Output%SubPattern%
+        %Type% := n
+    } Else
+        RegExReplace(String, Needle, "", n)
+    Return n
+}
+ss(  ){
+;global c = c++
+;msgbox % c
+;global c := c++
+random, rand, 1,10000000000
+;FileSelectFile, OutputVar [, Options, RootDir[\DefaultFilename], Prompt, Filter]
+;global c := c + 1
+frontproject = P:/app/(((snips)))
+FilePath = %frontproject%\%rand%
+frontfile = %filepath%.png
+
+if FileExist( frontfile . ".png"){
+    tooltip, it do, ,,1
+return global frontfile, global frontproject , global c := c + 1
+
+}
+
+tooltip, created, ,,1, 1000
+  SplitPath, FilePath, FileName,, FileExt, FileNameNoExt
+if (FileExt != "png")   ; Appends the .png file extension if it is not already present 
+  FilePath .= ".png", FileName .= ".png"
+WinWaitClose, Save Screenshot
+Sleep, 200
+pToken := Gdip_Startup()
+pBitmap := Gdip_BitmapFromScreen("0|0|" A_ScreenWidth "|" A_ScreenHeight)
+Gdip_SaveBitmapToFile(pBitmap, FilePath)
+Gdip_DisposeImage(pBitmap)
+Gdip_Shutdown(pToken)
+;msgbox % saved to filepath
+msgbox % frontproject "-" frontfile . "frontproject - frontfiles"
+;msgbox % c
+return global frontfile, global frontproject , global c := c + 1
+
+
+    
+
+
+} 
+p(){
+
+    send, !d
+    ;send, ^a
+    ;send, {del}
+    send, p:
+    send, {enter}
+    return
+}
+CenterImgSrchCoords(File, ByRef CoordX, ByRef CoordY){
+    static LoadedPic
+    LastEL := ErrorLevel
+    Gui, Pict:Add, Pic, vLoadedPic, % RegExReplace(File, "^(\*\w+\s)+")
+    GuiControlGet, LoadedPic, Pict:Pos
+    Gui, Pict:Destroy
+    CoordX += LoadedPicW // 2
+    CoordY += LoadedPicH // 2
+    ErrorLevel := LastEL
+}
+goexplore(){
+    WinActive("ahk_exe explorer.exe")
+        WinWaitActive, ahk_exe explorer.exe
+        WinActivate, ahk_exe explorer.exe
+        send, !d
+        send, ^a 
+        send, {delete}
+        send, %frontproject%
+}
+listFiles(Folder) { ; list the file directory incl. subdirs
+    List := ""
+    Loop, Files, %Folder%\*.*, R
+        if (A_LoopFileExt = "lnk") {
+            ; replace lnk-files with paths to linked target
+            FileGetShortCut, %A_LoopFileLongPath%, linkedTarget
+            List .= linkedTarget "`r`n"
+        } else
+            List .= A_LoopFileFullPath "`r`n"
+    return List
+}
+searchahk(answer,outputdir){
+msgbox % outputdir
+    SetWorkingDir, outputdir
+   ; FileSelectFolder, Outputdir , *StartingFolder, , Prompt
+    msgbox % outputdir
+    SetWorkingDir, outputdir
+msgbox,% findstring("%answer%", outputdir "/*.ahk")
+
+/*findstring(string, filepattern = "*.*", rec = 0, case = 0){
+    len := strlen(string)
+    if (len = 0)
+        return
+    loop,% filepattern, 0,% rec
+    {
+        fileread, x,% a_loopfilefullpath
+        if (pos := instr(x, string, case)){
+            positions .= a_loopfilefullpath "|" pos
+            while(pos := instr(x, string, case, pos+len))
+                positions .= "|" pos
+            positions .= "`n"
+        }
+    }
+    return, positions
+*/
+
+
+; edit: changed pattern to filepattern to reduce "confusion".
+return
+
+findstring2(string, filepattern = "*.*", rec = 0, case = 0){
+    msgbox % filepattern
+    msgbox %  "findstring: " outputdir
+    len := strlen(string)
+    if (len = 0)
+        return
+    loop,% filepattern, 0,% rec
+    {
+        msgbox % a_loopfilefullpath
+        fileread, x,% a_loopfilefullpath
+        if (pos := instr(x, string, case)){
+            positions .= a_loopfilefullpath "|" pos
+            while(pos := instr(x, string, case, pos+len))
+                positions .= "|" pos
+            positions .= "`n"
+        }
+    }
+    return, positions
+}
+
+findstring(rec := "RFD"){
+
+    inputbox, string, string,,
+    inputbox, inp, folderpath,,, % "d:\(github)\globalcoder\gc\globalcoder"
+
+    msgbox, % "about to search: `n" filepattern " `n for: " string
+    filepattern := folderpath . "/" . filepattern
+    len := strlen(string)
+    if (len = 0)
+        return
+        
+    loop, files, % filepattern,% rec
+    {
+        fileread, x,% a_loopfilefullpath
+        if (pos := instr(x, string, case)){
+            positions .= a_loopfilefullpath "|" pos
+            while(pos := instr(x, string, case, pos+len))
+                positions .= "|" pos
+            positions .= "`n"
+        }
+    }
+     return
+}
+;===//functions====================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+;===//=============================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+;===//=============================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+;===//=============================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+;===//=============================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+;===//=============================================================================[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]
+
+;regexer
+
+;RegExMatch(haystack, needle [, outputvar, startingpos)
+;RegExReplaceh(haystack, needle, replacement, outputvarcount,limit,starting pos)
+
+alterclipboard2(string, ReplaceWith := "", ToReplace*){
+    outvar := ""
+    oldstring := clipboard
+    if replacewith := ""
+        replacewith := a_space
+    if clipboard = ""
+        clipboard := string
+
+    x := RegExMatch(clipboard, "O){", outvar)
+    Msgbox, % "0: `n result:" x "-" OutVar
+
+    y := RegExReplace(clipboard, "O){",";___", "outvar",-1, 1)
+    clipboard := y
+    MsgBox, % "1: `n replaced result: " y 
+}
+
+; want to pass in O){ , O)}, etc
+alterClipboard(ReplaceWith := "", ToReplace*) {
+    oldstring := clip := clipboard
+    if ReplaceWith = ""
+        ReplaceWith := A_Space
+
+    for _, v in ToReplace {
+        clip := StrReplace(clip, v, ReplaceWith)
+    }
+    clipboard := clip
+}
+
+
+
+
+RemoveComments(Line){
+  If !(Pos := InStr(Trim(Line), ";"))
+    Return Line             ; no quote character in this line
+
+  If (Pos = 1)
+    Return                  ; whole line is pure comment
+
+  ;remove comments (first clean line of quotes strings)
+  If (Pos := RegExMatch(RemoveQuotedStrings(Line), "\s+;.*$"))
+    Line := SubStr(Line, 1, Pos - 1)
+
+  Return Line
+}
+
+RemoveQuotedStrings(Line){
+  ;the concept how to remove quoted strings was taken from CoCo's ListClasses script (line 77; http://ahkscript.org/boards/viewtopic.php?p=43349#p42793)
+  ;replace quoted strings with dots and dashes to keep length of line constant, and that other character positions do not change
+  static q := Chr(34)       ; quote character
+
+  ;Replace quoted literal strings             1) replace two consecutive quotes with dots
+  CleanLine := StrReplace(Line, q . q, "..")
+
+  Pos := 1                                 ;  2) replace ungreedy strings in quotes with dashes
+  Needle := q . ".*?" . q
+  While Pos := RegExMatch(CleanLine, Needle, QuotedString, Pos){
+    ReplaceString =
+    Loop, % StrLen(QuotedString)
+       ReplaceString .= "-"
+    CleanLine := RegExReplace(CleanLine, Needle, ReplaceString, Count, 1, Pos)
+  }
+  Return CleanLine
+}
+
+; This is called any time any of the edit boxes on the RegExMatch tab are changed.
+UpdateMatch:
+    Gui Submit, NoHide
+    
+    if not IsInteger(mStartPos) {
+        mStartPos := 1
+        Gui Font, cRed 
+        GuiControl Font, mStartPos
+    }else {
+        Gui Font, cDefault
+        GuiControl Font, mStartPos
+    }
+    
+    ;when needle is broken in several lines comments are stripped off every line and lines with text are concatenated
+    LineArray := StrSplit(mNeedle, "`n", "`r")
+    If (LineArray.MaxIndex() > 1) {
+      tmp =
+      For i, Line in LineArray
+        If (CleanLine := RemoveComments(Trim(Line)))
+          tmp .= CleanLine
+      mNeedle := tmp
+    }
+    ; Set Needle to return an object ( O maybe set even twice)
+    mNeedle := RegExReplace(mNeedle, "^(\w*)\)", "O$1)", cnt)
+    if (! cnt) {
+        mNeedle := "O)" mNeedle
+    }
+
+    If mLF
+      mNeedle := "`n" mNeedle
+    If mCR
+      mNeedle := "`r" mNeedle
+    If mAnyCRLF
+      mNeedle := "`a" mNeedle    
+
+    Match =
+    FoundPos := RegExMatch(mHaystack, mNeedle, Match, mStartPos)
+    if (ErrLvl := ErrorLevel) {
+        Gui Font, cRed 
+        GuiControl Font, mNeedle
+        ResultText := "FoundPos: " FoundPos "`n" 
+                    . "ErrorLevel: `n" ErrLvl "`n`n"
+                    . "Needle: `n""" mNeedle """`n`n"
+    }else {
+        Gui Font, cDefault
+        GuiControl Font, mNeedle
+        ResultText := "FoundPos: " FoundPos "`n"
+        ResultText .= "Match: " Match.Value() "`n"
+                   . "Needle: `n""" mNeedle """`n`n"
+        Loop % Match.Count() {
+            ResultText .= "Match["
+            ResultText .= (Match.Name[A_Index] = "") 
+                        ? A_Index 
+                        :  Match.Name[A_Index] 
+            ResultText .= "]: " Match[A_Index] "`n"
+                       
+        }
+    }
+    
+    GuiControl, , mResult, %ResultText%
+return
+
+; This is called any time any of the edit boxes on the RegExReplace tab are changed.
+UpdateReplace:
+    Gui Submit, NoHide
+    
+    If not IsInteger(rStartPos) {
+        rStartPos := 1
+        Gui Font, cRed 
+        GuiControl Font, rStartPos
+    }Else {
+        Gui Font, cDefault
+        GuiControl Font, rStartPos
+    }
+    
+    If not IsInteger(rLimit) {
+        rLimit := -1
+        Gui Font, cRed 
+        GuiControl Font, rLimit
+    }Else {
+        Gui Font, cDefault
+        GuiControl Font, rLimit
+    }
+    
+    ;when needle is broken in several lines comments are stripped off every line and lines with text are concatenated
+    LineArray := StrSplit(rNeedle, "`n", "`r")
+    If (LineArray.MaxIndex() > 1) {
+      tmp =
+      For i, Line in LineArray
+        If (CleanLine := RemoveComments(Trim(Line)))
+          tmp .= CleanLine
+      rNeedle := tmp
+    }
+
+    If rLF
+      rNeedle := "`n" rNeedle
+    If rCR
+      rNeedle := "`r" rNeedle
+    If rAnyCRLF
+      rNeedle := "`a" rNeedle    
+    
+    NewStr := RegExReplace(rHaystack, rNeedle, rReplacement, rCount, rLimit, rStartPos)
+    If (ErrLvl := ErrorLevel) {
+        Gui Font, cRed 
+        GuiControl Font, rNeedle
+        ResultText := "Count: " rCount "`n" 
+                    . "ErrorLevel: `n" ErrLvl "`n`n"
+                    . "Needle: `n""" rNeedle """`n`n"
+    }Else {
+        Gui Font, cDefault
+        GuiControl Font, rNeedle
+        ResultText := "Count: " rCount "`n" 
+                    . "NewStr: `n" NewStr
+    }
+    
+    GuiControl, , rResult, %ResultText%
+return
+
+MakeGui:
+    Gui, +ReSize +MinSize
+    Gui Font, s10, Consolas
+    Gui Add, Tab2, r25 w430 vTabSelection, RegExMatch|RegExReplace
+    
+    Gui Tab, RegExMatch
+        Gui Add, Text, , Text to be searched:
+        Gui Add, Edit, r10 w400 vmHaystack gUpdateMatch
+        Gui Add, Text, Section vmTxtRegEx, Regular Expression:  Option
+        Gui Add, Checkbox, x+2 vmLF gUpdateMatch, ``n
+        Gui Add, Checkbox, x+2 vmCR gUpdateMatch, ``r
+        Gui Add, Checkbox, x+2 vmAnyCRLF gUpdateMatch, ``a
+        Gui Add, Edit, xs r5 w305 vmNeedle gUpdateMatch
+        Gui Add, Text, x+15 ys vmTxtStart, Start: (1)
+        Gui Add, Edit, r1 w75 vmStartPos gUpdateMatch, 1
+        Gui Add, Text, xs vmTxtResult, Results:
+        Gui Add, Edit, r14 w400 +readonly -TabStop vmResult
+        
+    Gui Tab, RegExReplace
+        Gui Add, Text, , Text to be searched:
+        Gui Add, Edit, r10 w400 vrHaystack gUpdateReplace, 
+        Gui Add, Text, Section vrTxtRegEx, Regular Expression:  Option
+        Gui Add, Checkbox, x+2 vrLF gUpdateReplace, ``n
+        Gui Add, Checkbox, x+2 vrCR gUpdateReplace, ``r
+        Gui Add, Checkbox, x+2 vrAnyCRLF gUpdateReplace, ``a
+        Gui Add, Edit, xs r5 w305 vrNeedle gUpdateReplace, 
+        Gui Add, Text, vrTxtReplace, Replacement Text:
+        Gui Add, Edit, r2 w305 vrReplacement gUpdatereplace,
+        Gui Add, Text,  vrTxtResult, Results:
+        Gui Add, Edit, r10 w400 +readonly -TabStop vrResult
+        Gui Add, Text, ys xs+320 Section vrTxtStart, Start: (1)
+        Gui Add, Edit, r1 w75 vrStartPos gUpdateReplace, 1
+        Gui Add, Text, xs y+15 vrTxtLimit, Limit: (-1)
+        Gui Add, Edit, r1 w75 vrLimit gUpdateReplace, -1
+return
+
+/*IsInteger(str) {
+    if str is integer
+        return true
+    else
+        return false
+}*/
+
+GuiSize(GuiHwnd, EventInfo, Width, Height){
+  AutoXYWH("wh", "TabSelection")
+  AutoXYWH("wh0.333", "mHaystack", "rHaystack")
+  AutoXYWH("y0.3333", "mTxtRegEx", "rTxtRegEx", "mLF", "mCR", "mAnyCRLF", "rLF", "rCR", "rAnyCRLF")
+  AutoXYWH("xy0.3333", "mTxtStart", "rTxtStart", "mStartPos", "rStartPos", "rTxtLimit", "rLimit", "", "")
+  AutoXYWH("y0.3333wh0.333", "mNeedle", "")
+  AutoXYWH("y0.6666", "mTxtResult", "rTxtResult")
+  AutoXYWH("y0.6666wh0.333", "mResult", "rResult")
+  
+  AutoXYWH("y0.3333wh0.166", "rNeedle")
+  AutoXYWH("y0.5wh0.166", "rReplacement")
+  AutoXYWH("y0.5", "rTxtReplace", "")
+}
+
+AutoXYWH(DimSize, cList*){   ;https://www.autohotkey.com/boards/viewtopic.php?t=1079
+  Static cInfo := {}
+
+  If (DimSize = "reset")
+    Return cInfo := {}
+
+  For i, ctrl in cList {
+    ctrlID := A_Gui ":" ctrl
+    If !cInfo.hasKey(ctrlID) {
+      ix := iy := iw := ih := 0 
+      GuiControlGet i, %A_Gui%: Pos, %ctrl%
+      MMD := InStr(DimSize, "*") ? "MoveDraw" : "Move"
+      fx := fy := fw := fh := 0
+      For i, dim in (a := StrSplit(RegExReplace(DimSize, "i)[^xywh]"))) 
+        If !RegExMatch(DimSize, "i)" . dim . "\s*\K[\d.-]+", f%dim%)
+          f%dim% := 1
+
+      If (InStr(DimSize, "t")) {
+        GuiControlGet hWnd, %A_Gui%: hWnd, %ctrl%
+        hParentWnd := DllCall("GetParent", "Ptr", hWnd, "Ptr")
+        VarSetCapacity(RECT, 16, 0)
+        DllCall("GetWindowRect", "Ptr", hParentWnd, "Ptr", &RECT)
+        DllCall("MapWindowPoints", "Ptr", 0, "Ptr", DllCall("GetParent", "Ptr", hParentWnd, "Ptr"), "Ptr", &RECT, "UInt", 1)
+        ix := ix - NumGet(RECT, 0, "Int")
+        iy := iy - NumGet(RECT, 4, "Int")
+      }
+
+      cInfo[ctrlID] := {x:ix, fx:fx, y:iy, fy:fy, w:iw, fw:fw, h:ih, fh:fh, gw:A_GuiWidth, gh:A_GuiHeight, a:a, m:MMD}
+    } Else {
+      dgx := dgw := A_GuiWidth - cInfo[ctrlID].gw, dgy := dgh := A_GuiHeight - cInfo[ctrlID].gh
+      Options := ""
+      For i, dim in cInfo[ctrlID]["a"]
+        Options .= dim (dg%dim% * cInfo[ctrlID]["f" . dim] + cInfo[ctrlID][dim]) A_Space
+      GuiControl, % A_Gui ":" cInfo[ctrlID].m, % ctrl, % Options
+} } }
+
+;---------------------------------------------------------------------
+; .captain
+;------------------------------------------------------------------------------
+captainHOTKEY:
+MouseGetPos,mx,my,mwin,mctrl
+SendMessage,0x84,,(my<<16)|mx,,ahk_id %mwin% ;WM_NCHITTEST=0x84
+If ErrorLevel=2 ;HTCAPTION
+GoSub, captainCHANGE
+ ; Menu,menu,Show 
+Return
+
+
+MENU:
+;Menu,menu,Add,&Copy caption,COPY
+Menu,menu,Add,C&hange caption,captainCHANGE
+Return
+
+
+COPY:
+WinGetTitle,title,ahk_id %mwin%
+Clipboard:=title
+TOOLTIP("Caption copied: " title)
+Return
+
+
+captainCHANGE:
+WinGetTitle,title,ahk_id %mwin%
+InputBox,newtitle,%applicationname%,New title:,,,,,,,,%title%
+If ErrorLevel=0
+  If (newtitle<>title)
+  {
+    WinSetTitle,ahk_id %mwin%,,%newtitle%
+    ids:=ids . mwin ","
+    title_%mwin%:=newtitle
+    SetTimer,UPDATE,-1000
+  }  
+Return
+
+UPDATE:
+Loop,Parse,ids,`,
+{
+  IfWinNotExist,ahk_id %A_LoopField%
+  {
+    StringReplace,ids,ids,% A_LoopField ",",
+    title_%A_LoopField%=
+    Continue
+  }
+  WinGetTitle,ctitle,ahk_id %A_LoopField%
+  If (ctitle<>title_%A_LoopField%)
+    WinSetTitle,ahk_id %A_LoopField%,,% title_%A_LoopField%
+}
+SetTimer,UPDATE,-1000
+Return
+
+
+TOOLTIP(tip)
+{
+  ToolTip,%tip%
+  SetTimer,TOOLTIPOFF,-3000
+}
+
+TOOLTIPOFF:
+ToolTip,
+Return
+
+
+TRAYMENU:
+Menu,Tray,NoStandard
+Menu,Tray,Add,%applicationname%,SETTINGS
+Menu,Tray,Add,
+Menu,Tray,Add,&Settings...,SETTINGS
+Menu,Tray,Add,&About...,ABOUT
+Menu,Tray,Add,E&xit,EXIT
+Menu,Tray,Default,%applicationname%
+Menu,Tray,Tip,%applicationname%
+Return
+
+configure(){
+; Ini is created in folder specified to be the home location
+     
+ini := ""
+ini=
+(
+    [globalcoder]
+iniroot=value
+key2=value
+key3=value
+key4=value
+key5=value
+key6=value
+key7=value
+[counter]
+appruns=1
+key2=value
+key3=value
+captainhotkey=mButton 
+)
+inputbox, rootfolder ,, "Enter a complete path as root folder `n Right arrow to accept auto-suggest" ,,,,,,,, D:/code/test
+if (!FileExist(rootfolder))
+fileCreateDir, %rootfolder% 
+
+
+rootpath = %rootfolder%
+FileAppend,%ini%,%rootfolder%\%applicationname%.ini
+IniWrite, %rootfolder% `;rootfolder, %rootfolder%, Settings, key1
+IniWrite, %rootfolder% `;rootfolder, %rootfolder%\%applicationname%.ini, settings, iniroot
+MsgBox, % "0: `n " rootfolder
+fileCreateDir, %rootfolder% 
+  
+IniWrite, %rootfolder%/references `;references, %A_ScriptFullPath%, settings, key2
+IniWrite, %rootfolder%/references `;references, %rootfolder%\%applicationname%.ini, settings, key2
+IfnotExist, %rootfolder%/notes
+FileCreateDir, %rootfolder%/references
+
+IniWrite, %rootfolder%/notes `;notes, %A_ScriptFullPath%, settings, key3
+IniWrite, %rootfolder%/notes `;notes, %rootfolder%\%applicationname%.ini, settings, key3
+IfnotExist, %rootfolder%/notes
+FileCreateDir, %rootfolder%/notes
+_referencedir = %rootfolder%/references
+_notesdir = %rootfolder%/references
+
+;run(_referencedir)
+inputbox,outvar, "lang ex: csharp,ahk" ,,,,,,,, autohotkey
+IniWrite,%outvar%, %A_ScriptFullPath%, settings, lang
+IniWrite, %outvar%, %rootfolder%\%applicationname%.ini, settings, lang
+IniWrite, 1, %A_ScriptFullPath%, counter, key1
+IniWrite, 1, %rootfolder%\%applicationname%.ini, counter, key1
+
+MsgBox, % "0: `n will copy globalcoder to rootpath?: `n" rootpath "-"A_ScriptFullPath
+;FileCopyDir, Source, Dest 
+FileCopy, %A_ScriptFullPath%, %rootpath%
+
+run(rootpath) 
+
+
+
+;run(_referencedir)
+ExitApp
+return
+}
+/*
+IniWrite,Tim,%A_desktop%\example.ini,Member1,Name
+IniWrite,%AgeOfTim%,%A_desktop%\example.ini,Member1,Age
+IniWrite,blue,%A_desktop%\example.ini,Member1,EyeColour
+
+IniWrite,Tom,%A_desktop%\example.ini,Member2,Name
+IniWrite,Age,%A_desktop%\example.ini,Member2,Age
+IniWrite,green,%A_desktop%\example.ini,Member2,EyeColour
+
+IniRead,Name,%A_desktop%\example.ini,Member1,Name ; You can use the same name as the output & key name
+IniRead,Age,%A_desktop%\example.ini,Member1,Age
+IniRead,EyeColour,%A_desktop%\example.ini,Member1,EyeColour
+
+IniRead,Name2,%A_desktop%\example.ini,Member2,Name
+IniRead,Age2,%A_desktop%\example.ini,Member2,Age
+IniRead,EyeColour2,%A_desktop%\example.ini,Member2,EyeColour
+
+MsgBox % "Member1: " Name
+             . "His age: " Age
+             . "His eye colour: " eyecolour
+             . "Member2: " Name2
+             . "His age: " Age2
+             . "His eye colour: " eyecolour2
+;IniDelete,%A_desktop%\example.ini,Member1
+;IniDelete,%A_desktop%\exmaple.ini,Member2 ; ini is now emptey
+
+
+  ;send, inputbox,, root folder? ,,,,,,,, d:/code
+  ;send, inputbox,, primary ide? ,,,,,,,, autofill-prompt"
+  ;send, inputbox,, message ,,,,,,,, autofill-prompt"
+  ;send, inputbox,, message ,,,,,,,, autofill-prompt"
+  ;send, inputbox,, message ,,,,,,,, autofill-prompt"
+
+
+
+    ;MsgBox, % " ^1 means ctrl + 1 will activate the key block `n i.e press ^1 to start setup of c# project" 
+    ;MsgBox, % " ^esc  auto-reloads/'aborts' current thread "
+    return
+}
+*/
+
+
+INIREAD:
+IfNotExist,%applicationname%.ini
+{
+  ini=
+(
+[Settings]
+iniroot=value
+key2=value
+key3=value
+key4=value
+key5=value
+key6=value
+key7=value
+[counter]
+appruns=1
+key2=value
+key3=value
+captainhotkey=mButton 
+; Ini is created in folder where first ran
+)
+
+; Ini is created in folder specified to be the home location
+;configure()
+  return
+}
+
+IniRead,iniroot, %rootfolder%\%applicationname%.ini, Settings, iniroot
+IniRead,appruns, %applicationname%.ini, Counter
+IniRead,captainhotkey,%applicationname%.ini,Counter,captainhotkey
+
+
+;IniWrite, %ini%, A_ScriptFullPath, SelfSettings, Key
+;MsgBox, % "0: `n selfsettings: `n " ini
+if (iniroot = "value"){
+;configure()
+MsgBox, % "0: `n will copy globalcoder to rootpath?: `n" roopath
+if ErrorLevel exitapp
+FileCopy, A_ScriptFullPath, rootpath ,
+run(rootpath) 
+}
+return
+
+;iff all is norm - load ini vars here
+
+
+
+;IniRead, OutputVar, Filename, Section, Key [, Default]
+;Hotkey, KeyName [, Label, Options]
+;Hotkey,%captainhotkey%,captainHOTKEY,On
+;MsgBox, % "0: `n " captainhotkey " on`n val: " captainhotkey
+/*
+[SelfSettings]
+key=value
+
+*/
+
+SETTINGS:
+Hotkey,%hotkey%,HOTKEY,Off
+Gui,Destroy
+FileRead,ini,%applicationname%.ini
+Gui,Font,Courier New
+Gui,Add,Edit,Vnewini -Wrap W400,%ini%
+Gui,Font
+Gui,Add,Button,GSETTINGSOK Default W75,&OK
+Gui,Add,Button,GSETTINGSCANCEL x+5 W75,&Cancel
+Gui,Show,%applicationname% Settings
+Return
+
+
+SETTINGSOK:
+Gui,Submit
+FileDelete,%applicationname%.ini
+FileAppend,%newini%,%applicationname%.ini
+Gosub,INIREAD
+Return
+
+
+GuiEscape:
+GuiClose:
+
+SETTINGSCANCEL:
+Gui,Destroy
+;Hotkey,%hotkey%,HOTKEY,On
+Return
+
+
+
+
+
+ABOUT:
+Gui,99:Destroy
+Gui,99:Margin,20,20
+Gui,99:Add,Picture,xm Icon1,%applicationname%.exe
+Gui,99:Font,Bold
+Gui,99:Add,Text,x+10 yp+10,%applicationname% v1.2
+Gui,99:Font
+Gui,99:Add,Text,y+10,Copy and change a window's title
+Gui,99:Add,Text,y+5,- Use the middle mousebutton on a window's caption
+Gui,99:Add,Text,y+5,- Change hotkey using Settings in the tray menu
+
+Gui,99:Add,Picture,xm y+20 Icon5,%applicationname%.exe
+Gui,99:Font,Bold
+Gui,99:Add,Text,x+10 yp+10,1 Hour Software by Skrommel
+Gui,99:Font
+Gui,99:Add,Text,y+10,For more tools, information and donations, please visit 
+Gui,99:Font,CBlue Underline
+Gui,99:Add,Text,y+5 G1HOURSOFTWARE,www.1HourSoftware.com
+Gui,99:Font
+
+Gui,99:Add,Picture,xm y+20 Icon7,%applicationname%.exe
+Gui,99:Font,Bold
+Gui,99:Add,Text,x+10 yp+10,DonationCoder
+Gui,99:Font
+Gui,99:Add,Text,y+10,Please support the contributors at
+Gui,99:Font,CBlue Underline
+Gui,99:Add,Text,y+5 GDONATIONCODER,www.DonationCoder.com
+Gui,99:Font
+
+Gui,99:Add,Picture,xm y+20 Icon6,%applicationname%.exe
+Gui,99:Font,Bold
+Gui,99:Add,Text,x+10 yp+10,AutoHotkey
+Gui,99:Font
+Gui,99:Add,Text,y+10,This tool was made using the powerful
+Gui,99:Font,CBlue Underline
+Gui,99:Add,Text,y+5 GAUTOHOTKEY,www.AutoHotkey.com
+Gui,99:Font
+
+Gui,99:+AlwaysOnTop
+Gui,99:Show,,%applicationname% About
+hCurs:=DllCall("LoadCursor","UInt",NULL,"Int",32649,"UInt") ;IDC_HAND
+OnMessage(0x200,"WM_MOUSEMOVE") 
+Return
+
+1HOURSOFTWARE:
+  Run,http://www.1hoursoftware.com,,UseErrorLevel
+Return
+
+DONATIONCODER:
+  Run,http://www.donationcoder.com,,UseErrorLevel
+Return
+
+AUTOHOTKEY:
+  Run,http://www.autohotkey.com,,UseErrorLevel
+Return
+
+99GuiClose:
+  Gui,99:Destroy
+  OnMessage(0x200,"")
+  DllCall("DestroyCursor","Uint",hCur)
+Return
+
+
+
+WM_MOUSEMOVE(wParam,lParam)
+{
+  Global hCurs
+  MouseGetPos,,,,ctrl
+  If ctrl in Static9,Static13,Static17
+    DllCall("SetCursor","UInt",hCurs)
+  Return
+}
+
+
+
+
+
+
+
+;;;-------- classses
+
+class tool{
+;__new(Item, ppath:="")
+;check() 
+;givevalues(x := "") 
+;readfile(ath := "")
+;showfile(data := "")
+;savetofile()
+;total()
+
+static tooltotal := 1
+static frontproject := "c:\tester"
+
+    __New(Item,type,ppath := "", unit := "",price:= "",stock:= 0,source:= ""){
+        tool.tooltotal++
+
+        items := this.items := {}
+        item := this.item 
+        ppath := this.ppath 
+        unit := this.unit 
+        Price := this.price 
+        stock := this.stock 
+        source := this.source
+
+        if (ppath){
+            this.ppath := A_Desktop . "\" . ppath . ".txt"
+            this.frontproject := this.ppath
+        } else {
+            this.ppath :=  A_Desktop . "\project.txt"
+            this.frontproject := this.ppath
+        }
+
+        tool.frontproject := this.frontproject
+        
+
+        if !FileExist(this.ppath){
+            FileAppend, % "`n" item "," DateTime,  this.ppath
+            ;MsgBox, % "5: `n didnt exist, created: " this.ppath "`n appended: " item 
+        }
+        ;MsgBox, % "0: `n  already existed"
+        if (item = "screwdriver"){
+            this.timetounscrew := 7.5
+        } else if(item = "powerdriver"){
+            this.timeToUnscrew := 5 
+            ;MsgBox, % "0: `n passed in a powerdriver: " this.timetoUnscrew
+        }
+
+        ;static price :=
+        ;return timeToUnscrew
+    }
+
+     addItems(param_x := 0) {
+        this.stock += param_x
+    }
+    check(){
+        MsgBox, % "10: `n tool.frontproject: " tool.frontproject . "10: `n this.frontproject: " this.frontproject . "10: `n frontproject: " frontproject . "2: `n " this.timeToUnscrew " seconds"
+        return 
+    }
+
+    givevalues(item, x := 0){
+       ; item := this.item := {}
+       if (this.HasKey(item) == false){
+
+       ;if (!IsObject(this.item)) {
+        this.items.push(item) := {}
+        this.item := item := {"name": item, "quantity": x}
+        msgbox % this.item.quantity " " item.name "'s added!" this.item.name
+
+        for k,v in this.item 
+        msgbox % k ":" v
+        return this.item
+        }
+        
+
+
+        if (this.item.quantity != "")
+         {
+        msgbox, % this.item.quantity " " this.item.name "'s `n exist, so add to it"
+
+           this.item.quantity +=  x
+           ; this.item.quantity := this.item + x 
+            msgbox, % this.item.quantity "`n object existed"
+            return this.item ;.quantity
+        }
+
+        tool.frontproject := this.frontproject
+        ;msgbox % item
+      
+        item.quantity := x 
+        msgbox, % item.quantity "`n object didnt exist yet"
+
+        return this.item
+    }
+
+    
+    readfile(path := ""){
+        tool.frontproject := this.frontproject
+
+        if this.ppath != "" or fileexist(A_Desktop . this.ppath)
+        {
+            MsgBox, % "9: `n " this.frontproject
+          MsgBox, % "0: `n " this.ppath
+            this.frontproject := "c:\test"
+            ;this.filepath := "C:\Users\dkzea\OneDrive\Desktop" . path
+            this.filepath := path
+            FileRead, Contents, % "C:\Users\dkzea\OneDrive\Desktop" . path ;A_Desktop "/Test.txt"
+            StringReplace, Contents, Contents, `r,, All ; makes sure only `n separates the lines
+            aFile := {}
+           
+            Loop, Parse, contents , `n
+                {
+                temp_arr := StrSplit(a_loopfield, ",") ;StrSplit(String, [Delimiters, OmitChars])
+                afile[temp_arr [1]] := temp_arr[2] ;whatever temp_arr[1] is, becomes the key for afile i.e, afile[notepadLine1] := notepadLine2
+                afile.path := "C:\Users\dkzea\OneDrive\Desktop" . path
+                }
+            return aFile
+                }
+            else 
+                {
+            MsgBox, % "0: `n it didn't read the file, path inside object method trip.readfile() is: " path 
+            , "`n maybe it already exists"
+            return
+                }
+            }
+
+    showfile(data := "item"){
+        tool.frontproject := this.frontproject
+
+        for k,v in %data%
+        {
+        MsgBox, % "4: `n " k "-" v
+        eachvalue .= v
+        total += v 
+        }
+        Gui,+AlwaysOnTop ;Sets the Gui as forward priority in the window hierarchy.
+        Gui, Color, 000000 ;Sets the Gui color to black
+        Gui, +Delimiterspace
+        Gui, Add, DropDownList,, %total%
+        Gui, Add, DropDownList,, %eachvalue%
+        Gui, Add, Button, x5 y370 w290 gSaveExit, Save and Exit
+        Gui, Show
+
+        saveexit:
+        msgbox % "press ok to exit"
+
+        return
+        return total
+        }
+    savetofile(data,ppath := ""){
+
+        tool.frontproject := this.frontproject
+        FileAppend,  % "`n" data . "," . DateTime  , % this.ppath
+
+        MsgBox, % "0: `n " data
+        MsgBox, % "0: `n " this.ppath
+        MsgBox, % "6: `n " this.filepath
+      
+
+        return
+        }
+    total(){
+            tool.frontproject := this.frontproject
+
+            for k,v in data
+        {
+            MsgBox, % "4: `n " k "-" v
+            eachvalue .= v
+            total += v 
+key3=testvalue
+        }
+        return
+        }
+
 }
