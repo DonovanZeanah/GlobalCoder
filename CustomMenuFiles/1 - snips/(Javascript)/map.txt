@@ -1,0 +1,10 @@
+let numbers = [1,2,3];
+let doubleNumbers =[];
+
+let doubled = numbers.map(number => {
+	return number * 2;
+})
+
+let redBulls = [
+	{flavor: "cranberry:, radius: 1, height:4 },
+	{flavor: "coconut:, radius: 1, height:7 },

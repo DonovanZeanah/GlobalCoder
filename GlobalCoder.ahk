@@ -222,6 +222,171 @@ Return
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
 
+settingsrecent:
+vOutput := "", CSIDL_RECENT := 8
+VarSetCapacity(vDirRecent, 260*2, 0)
+DllCall("shell32\SHGetFolderPath", Ptr,0, Int,8, Ptr,0, UInt,0, Str,vDirRecent)
+VarSetCapacity(vOutput, 100000*2)
+Loop, Files, % vDirRecent "\*.lnk", F
+        {
+        vPath := A_LoopFileFullPath
+        FileGetShortcut, % vPath, vTarget
+        vAttrib := FileExist(vTarget)
+        if InStr(vAttrib, "D") || !vAttrib
+                continue
+        vOutput .= A_LoopFileTimeModified "`t" vTarget "`n"
+        }
+Sort, vOutput, R
+vOutput := RegExReplace(vOutput, "(?<=^|`n)\d{14}`t")
+gui, font, s12
+gui, margin, 0, 0
+gui, -caption
+gui, add, listview, w400 r10 -hdr gMyLV, flnm|fllpth
+gui, add, button, w0 h0 hidden default, OK
+for x,y in strsplit(vOutput,"`n", "`r")
+        {
+        splitpath,y,z   
+        lv_add("",z,y)
+        } until (x = 20)                                                                                                                        ; 20 most recent "recents"
+LV_ModifyCol(1,380)
+LV_ModifyCol(2,0)
+gui, show
+return
+
+f24 & `::
+GlobalMode := !GlobalMode
+
+MsgBox, % "`n GlobalMode Status " globalmode
+return
+
+
+
+
+#IfWinActive ahk_exe explorer.exe
+:*:gcd::
+routine(){
+clipboard := "d:/(github)/globalcoder/gc/globalcoder"
+send, !d
+send, ^v
+return
+}
+^enter::+f10
+#if
+
+#if (globalmode := 1) 
+{
+
+^left::
+!enter::
+selectsubject()
+return
+
+^down::
+newsubject()
+msgbox, % "" frontproject
+return
+
+^2::
+inputbox, ans
+noteex(ans, frontproject)
+return
+
+f24 & n::
+notein() ;no input - default to frontproj
+return
+
+^right::
+run(notepath)
+return
+
+
+:*:gtest::
+gtest(){
+
+for k,v in g {
+MsgBox, % "0: `n " v
+}
+
+;InputBox, answer , Is anybody out there?, What is your name?, , , , , , , , Your Name
+;MsgBox % "Your name " ((answer < "georgf") ? ("is stupid.") : ( ((answer < "normap") ? ("ROCKsORZ!") : ( ((answer < "tog") ? ("is totally wimpy.") : ("is nothing special."))))))
+}
+return
+
+
+backspaceAg(gcomment)
+{
+
+    WordLength := strlen(gcomment)
+    send, {backspace WordLength}
+}
+
+;g commands send the hotstrings into one function that reroute it based on editor then save
+; the 'input' as a g.editer.session object which basically acts as a timeline 
+:*:todo:: ; I could have one 
+:*:gcomwrap::
+:*:gcomm::
+WinGet,Process,ProcessName,A
+
+Switch Process
+{
+
+  Case "sublime_text.exe":
+    CommentBlock:="' *************************************************************************`n"
+    . "' Autho:`n"
+    . "' Creation date:`n"
+    . "' Description:`n"
+    . "' ***************************************************************************`n"
+  Case "devenv.exe":
+    CommentBlock:="//# ===========================================================================`n"
+    . "//# Author:`n"
+    . "//# Creation date:`n"
+    . "//# Description:`n"
+    . "//# ===========================================================================`n"
+    Case "Code.exe":
+    CommentBlock:="Rem ======================================================================`n"
+    . "Rem Author:`n"
+    . "Rem Creation date:`n"
+    . "Rem Description:`n"
+    . "Rem ======================================================================`n"
+  Case "scite.exe":
+    CommentBlock:="; ===========================================================================`n"
+    . "; Author:`n"
+    . "; Creation date:`n"
+    . "; Description:`n"
+    . "; ===========================================================================`n"
+  Case "ssms.exe":
+    CommentBlock:="-- ===========================================================================`n"
+    . "-- Author:`n"
+    . "-- Creation date:`n"
+    . "-- Description:`n"
+    . "-- ===========================================================================`n"
+  Default:
+    MsgBox,4144,Error,Active window is not a supported program
+    Return
+}
+
+;sendclipboard(CommentBlock,)
+
+return
+
+sendclipboard(string := "", bool := "1")
+{
+        if (bool = 1){
+             clipboard := string 
+                send, ^v 
+                return   
+        
+send, ^c 
+send, ^v
+return 
+}
+}
+}
+#if
+
+
+
+
 ^+e::
     editor_open_folder() {
         WinGetTitle, path, A
@@ -248,33 +413,7 @@ msgbox, % "hotpath: `n" hotpath
 return
 
 
-#IfWinActive ahk_exe explorer.exe
-enter::+f10
-#if
 
-
-^left::
-!enter::
-selectsubject()
-return
-
-^down::
-newsubject()
-msgbox, % "" frontproject
-return
-
-^2::
-inputbox, ans
-noteex(ans, frontproject)
-return
-
-f24 & n::
-notein() ;no input - default to frontproj
-return
-
-^right::
-run(notepath)
-return
 
 rshift & m::
 
@@ -2300,6 +2439,8 @@ BuildTrayMenu(){
 
    Menu, Tray, DeleteAll
    Menu, Tray, NoStandard
+   Menu,Tray,Add, Recent Files, settingsrecent
+
    Menu, Tray, add, Settings, Configuration
    Menu, Tray, add, filemenu,
    Menu, Tray, add, mymenubar,
@@ -4609,6 +4750,8 @@ Return
 
 TRAYMENU:
 Menu,Tray,NoStandard
+Menu,Tray,Add, Recent Files, settingsrecent
+
 Menu,Tray,Add,%applicationname%,SETTINGS
 Menu,Tray,Add,
 Menu,Tray,Add,&Settings...,SETTINGS

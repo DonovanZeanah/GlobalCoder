@@ -27,7 +27,7 @@ OnKeyDown: Retrieves or sets the function object which is called when a notifica
 OnKeyUp: Retrieves or sets the function object which is called when a notification-enabled key is released.
 
 Option Properties:
-BackspaceIsUndo: Controls whether Backspace removes the most recently pressed character from the end of the Input buffer.
+BackspaceIsUndo: Controls whether Backspace removfsses the most recently pressed character from the end of the Input buffer.
 CaseSensitive: Controls whether MatchList is case sensitive.
 FindAnywhere: Controls whether each match can be a substring of the input text.
 MinSendLevel: Retrieves or sets the minimum send level of input to collect.

@@ -1,0 +1,5 @@
+let numbers = [1,2,3];
+let doubleNumbers =[];
+for(let i = 0;i < numbers.length; i++){
+	doubleNumbers.push(numbers[i] * 2);
+}

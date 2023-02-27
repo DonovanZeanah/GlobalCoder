@@ -1,0 +1,22 @@
+IF OBJECT_ID('Users', 'U') IS NULL
+BEGIN
+    CREATE TABLE [Users] (
+        [Id] nvarchar(450) NOT NULL,
+        [UserName] nvarchar(max) NULL,
+        CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+    );
+END
+
+IF OBJECT_ID('Reviewers', 'U') IS NULL
+BEGIN
+    CREATE TABLE [Reviewers] (
+        [Id] int NOT NULL IDENTITY,
+        [Name] nvarchar(max) NOT NULL,
+        [AppUserId] nvarchar(450) NULL,
+        [FirstName] nvarchar(max) NOT NULL,
+        [LastName] nvarchar(max) NOT NULL,
+        [ReviewId] int NULL,
+        CONSTRAINT [PK_Reviewers] PRIMARY KEY ([Id]),
+        CONSTRAINT [FK_Reviewers_Users_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [Users] ([Id])
+    );
+END

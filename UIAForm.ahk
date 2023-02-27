@@ -22,16 +22,16 @@
 	}
 
 	elements := Map(
-		'full(\s+)?name'                                                  , '',
-		'user(\s+)?name'                                                  , 'My_username',
-		'(post(al)?|zip)(\s+)?(code|zone)?'                               , 'e',
-		'(re-enter|confirm)\s+e-?mail'                                    , '',
-		'((re-enter|confirm)\s+)?password'                                , 'sword123',
-		'city'                                                            , 'e',
-		'((tele)?(phone|fono)|mobile|cellulare|contact\s+(no\.?|number))' , 'ber',
-		'street\s+address|indirizzo'                                      , 'ress',
-		'company|organi(s|z)ation'                                        , 'e',
-		'(your\s+)?e-?mail(\s+address)?'                                  , '',
+		'full(\s+)?name'                                                  , 'Donovan Zeanah',
+		'user(\s+)?name'                                                  , 'donovan.zeanah@outlook.com',
+		'(post(al)?|zip)(\s+)?(code|zone)?'                               , '35475',
+		'(re-enter|confirm)\s+e-?mail'                                    , 'donovan.Zeanah@outlook.com',
+		'((re-enter|confirm)\s+)?password'                                , '3de32882D!',
+		'city'                                                            , 'Northport',
+		'((tele)?(phone|fono)|mobile|cellulare|contact\s+(no\.?|number))' , '2057991734',
+		'street\s+address|indirizzo'                                      , '17038 finnell rd',
+		'company|organi(s|z)ation'                                        , '',
+		'(your\s+)?e-?mail(\s+address)?'                                  , 'donovan.Zeanah@outlook.com',
 	)
 
 	for regex,value in elements
