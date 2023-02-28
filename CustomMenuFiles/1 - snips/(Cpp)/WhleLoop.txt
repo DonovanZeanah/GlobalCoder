@@ -1,0 +1,23 @@
+while (cap.isOpened()) {
+
+						auto start = getTickCount();
+						cap.read(img);
+						imgGpu.upload(img);
+
+
+						cuda::cvtColor(imgGpu, imgGpu, COLOR_BGR2GRAY);
+
+
+				imgGpu.download(img);
+
+				auto end = getTickCount();
+				auto totalTime = (end - start) / getTickFrequency();
+				auto fps = 1 / totalTime;
+
+				putText(img, "FPS: " + to_string(int(fps)), Point(10, 30), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 0, 120), 2, 8, false);
+
+				//imshow("img", img);
+				imshow("Image", img);
+				if (waitKey(1) == 'q') {
+						break;
+				}
