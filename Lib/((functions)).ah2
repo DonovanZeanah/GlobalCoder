@@ -85,7 +85,6 @@ savepic()
     ToolTip("Timed ToolTip`nThis will be displayed for 5 seconds.")
     SetTimer(RemoveToolTip,-1000)
     return
-
 }
 
 winset()
@@ -104,8 +103,7 @@ WinActivate(window)
 }
 
     ;================;================bb
-class chrome_class
-{
+class chrome_class{
         ;use it: example := new Chrome_group(2)
         static count := 0
     __new(num:=0)
@@ -130,7 +128,7 @@ RemoveToolTip:
 ToolTip
 return
 
-class ManualArray1
+/*class ManualArray1
 {
     __Call(vFunc, oParams*)
     {
@@ -159,6 +157,7 @@ class ManualArray1
             return obj[obj2[oParams.1]]
     }
 }
+*/
 
 class MyClassTestDefine
 {
@@ -177,7 +176,7 @@ class MyClassTestDefine
     }
 }
 
-class ManualArray
+/*class ManualArray
 {
     obj:=[]
     obj2:=[]
@@ -203,6 +202,7 @@ class ManualArray
             return this.obj[this.obj2[oParams.1]]
     }
 }
+*/
 
 class fileobj1
     {
@@ -217,7 +217,7 @@ class parsefile
 
 
 
-Class Window3
+/*Class Window3
 {
    __New()
     {
@@ -250,8 +250,9 @@ Class Window3
             MsgBox("Title is: " This.Title "`n ID is: " This.ID)
     }
 }
+*/
 
-Class log
+/*Class log
 {
     Title:= "log" ;Variable Title
 
@@ -260,10 +261,11 @@ Class log
         if WinExist(This.Title)
             WinActivate()
         else
-            MsgBox("There is no Window: "This.Title "`nPleas Run Notepad!")
+            MsgBox("There is no Window:" . This.Title )
     }
 }
 
+*/
 
 Class Window1
 {
@@ -271,9 +273,9 @@ Class Window1
     Activate() ;Activates window with Title - This.Title
     {
         if WinExist(This.Title)
-            WinActivate()
+            WinActivate(This.Title)
         else
-            MsgBox("There is no Window: "This.Title "`nPleas Run Notepad!")
+            MsgBox("There is no Window: " . This.Title )
     }
 }
 
@@ -463,8 +465,9 @@ Loop Read, "A_ScriptDir\logs\q-google.txt", "file"
 for k,v in file
 MsgBox(A_Index is A_LoopField)
 }
-getwin() {
-    global log
+getwin(v) {
+    ;global 
+    ;log
     time := FormatTime(, "MMdd-HH-mm")
     Title := WinGetTitle("A")
     win_proc := WinGetProcessName("A")
@@ -475,7 +478,8 @@ getwin() {
 }
 timeSinceLastCall(id:=1, reset:=0)
 {
-   global t
+   ;global
+    t
    static arr:=array()
    if (reset=1)
    {
@@ -485,7 +489,9 @@ timeSinceLastCall(id:=1, reset:=0)
    arr[id, 2]:=!arr[id, 2]
    arr[id, arr[id, 2]]:=A_TickCount
    ;msgbox % "abs var:" abs
-   return global abs(arr[id,1]-arr[id,0])
+   return 
+   ;global
+    abs(arr[id,1]-arr[id,0])
 }
 target(c)
 {
@@ -557,7 +563,7 @@ GetKeyHistoryText()
     active_window := WinActive("A")
     dhw := A_DetectHiddenWindows
     DetectHiddenWindows(true)
-    ErrorLevel := ProcessExist()
+    ErrorLevel := ProcessExist("A")
     hwnd := WinExist("ahk_class AutoHotkey ahk_pid " . ErrorLevel)
     was_active  := (hwnd=active_window)
     was_visible := was_active || DllCall("IsWindowVisible", "UInt", hwnd)
@@ -595,9 +601,9 @@ GetKeyHistoryText()
     DetectHiddenWindows(dhw)
     return text
 }
-Count(String, Needle, Type:="", SubPattern:="")
+/*Count(String, Needle, Type:="", SubPattern:="")
 {
-    Global
+    ;Global
     Local f := 1, n := 0, Output := ""
     If (Type = "") {
         ; StrReplace() is not case sensitive
@@ -614,6 +620,7 @@ Count(String, Needle, Type:="", SubPattern:="")
         RegExReplace(String, Needle, "", &n)
     Return n
 }
+*/
 ss(  )
 {
 ;global c = c++
@@ -629,11 +636,12 @@ frontfile := filepath . ".png"
 if FileExist( frontfile . ".png")
 {
     ToolTip("it do", , , 1)
-return global frontfile
+return 
+;global frontfile
 
 }
 
-ToolTip("created", , , 1, 1000)
+ToolTip("created", , 1, 1000)
   SplitPath(FilePath, &FileName, , &FileExt, &FileNameNoExt)
 if (FileExt != "png")   ; Appends the .png file extension if it is not already present
   FilePath .= ".png", FileName .= ".png"
@@ -647,7 +655,7 @@ Gdip_Shutdown(pToken)
 ;msgbox % saved to filepath
 MsgBox(frontproject "-" frontfile . "frontproject - frontfiles")
 ;msgbox % c
-return global frontfile
+return ;global frontfile
 
 
 
@@ -710,7 +718,7 @@ MsgBox(findstring("%answer%", outputdir "/*.ahk"))
 return
 }
 
-findstring1(string, filepattern := "*.*", rec := "FDR")
+/*findstring1(string, filepattern := "*.*", rec := "FDR")
 {
     len := strlen(string)
     if (len = 0)
@@ -728,6 +736,7 @@ findstring1(string, filepattern := "*.*", rec := "FDR")
      return
 
 }
+*/
 
 
 ;/ [doc]
@@ -951,7 +960,7 @@ replaceFile(File, Content)
 }
 
 ; .......
-findstring(string, filepattern := "*.*", rec := "RFD")
+/*findstring(string, filepattern := "*.*", rec := "RFD")
 {
     MsgBox(filepattern)
     MsgBox( "findstring: " outputdir)
@@ -972,6 +981,7 @@ findstring(string, filepattern := "*.*", rec := "RFD")
     return positions
 
 }
+*/
 
 /*replaceFile(File, Content)
 {
@@ -1480,7 +1490,8 @@ front(filename,dir)
     for index, color in StrSplit(colors, ",")
         MsgBox("Color number " index " is " color)
 
-        return global frontfile
+        return 
+        ;global frontfile
 }
 
 getCode(Order)
@@ -1498,7 +1509,8 @@ repeat(str, n)
 
 fun()
 {
-    global myfun
+    
+    ;global myfun
     myfun:=new fun()
 }
 
@@ -1550,7 +1562,7 @@ removespace(ans)
     return newStr
 }
 
-TrayIcon_GetInfo(sExeName := "")
+/*TrayIcon_GetInfo(sExeName := "")
 {
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
     oTrayIcon_GetInfo := {}
@@ -1613,6 +1625,7 @@ TrayIcon_GetInfo(sExeName := "")
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
     Return oTrayIcon_GetInfo
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Hide
@@ -1622,7 +1635,7 @@ TrayIcon_GetInfo(sExeName := "")
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_HIDEBUTTON message - http://goo.gl/oelsAa
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True)
+/*TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True)
 {
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
@@ -1631,6 +1644,7 @@ TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True)
     ErrorLevel := SendMessage(0x1A, 0, 0, , "ahk_class " sTray)
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Delete
@@ -1639,7 +1653,7 @@ TrayIcon_Hide(IDcmd, sTray := "Shell_TrayWnd", bHide:=True)
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_DELETEBUTTON message - http://goo.gl/L0pY4R
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Delete(idx, sTray := "Shell_TrayWnd")
+/*TrayIcon_Delete(idx, sTray := "Shell_TrayWnd")
 {
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
@@ -1648,19 +1662,21 @@ TrayIcon_Delete(idx, sTray := "Shell_TrayWnd")
     ErrorLevel := SendMessage(0x1A, 0, 0, , "ahk_class " sTray)
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Remove
 ; Description ..: Remove a tray icon.
 ; Parameters ...: hWnd, uID.
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Remove(hWnd, uID)
+/*TrayIcon_Remove(hWnd, uID)
 {
         NumPut("UPtr", NID := Buffer((1 ? 2 : 1) * 384 + A_PtrSize * 5 + 40, 0), NID) ; V1toV2: if 'NID' is a UTF-16 string, use 'VarSetStrCapacity(&NID, (A_IsUnicode ? 2 : 1) * 384 + A_PtrSize * 5 + 40)'
         NumPut((A_PtrSize == 4 ? 4 : 8 ), hWnd, NID)
         NumPut((A_PtrSize == 4 ? 8  : 16 ), uID, NID)
         Return DllCall("shell32\Shell_NotifyIcon", "Uint", 0x2, "Uint", NID)
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Move
@@ -1670,7 +1686,7 @@ TrayIcon_Remove(hWnd, uID)
 ; ..............: sTray - 1 or Shell_TrayWnd || 0 or NotifyIconOverflowWindow.
 ; Info .........: TB_MOVEBUTTON message - http://goo.gl/1F6wPw
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd")
+/*TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd")
 {
     (sTray == 0 ? sTray := "NotifyIconOverflowWindow" : sTray == 1 ? sTray := "Shell_TrayWnd" : )
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
@@ -1678,6 +1694,7 @@ TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd")
     ErrorLevel := SendMessage(0x452, idxOld, idxNew, "ToolbarWindow32" idxTB, "ahk_class " sTray) ; TB_MOVEBUTTON
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Set
@@ -1691,7 +1708,7 @@ TrayIcon_Move(idxOld, idxNew, sTray := "Shell_TrayWnd")
 ; Info .........: NOTIFYICONDATA structure  - https://goo.gl/1Xuw5r
 ; ..............: Shell_NotifyIcon function - https://goo.gl/tTSSBM
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0)
+/*TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0)
 {
     d := A_DetectHiddenWindows
     DetectHiddenWindows(true)
@@ -1712,12 +1729,13 @@ TrayIcon_Set(hWnd, uId, hIcon, hIconSmall:=0, hIconBig:=0)
     ; NIM_MODIFY := 0x1
     Return DllCall("Shell32.dll\Shell_NotifyIcon", "UInt", 0x1, "Ptr", NID)
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_GetTrayBar
 ; Description ..: Get the tray icon handle.
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd")
+/*TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd")
 {
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
     oControlList := WinGetControls("ahk_class " Tray,,,)
@@ -1739,18 +1757,20 @@ TrayIcon_GetTrayBar(Tray:="Shell_TrayWnd")
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
     Return idxTB
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_GetHotItem
 ; Description ..: Get the index of tray's hot item.
 ; Info .........: TB_GETHOTITEM message - http://goo.gl/g70qO2
 ; ----------------------------------------------------------------------------------------------------------------------
-TrayIcon_GetHotItem()
+/*TrayIcon_GetHotItem()
 {
     idxTB := TrayIcon_GetTrayBar()
     ErrorLevel := SendMessage(0x447, 0, 0, "ToolbarWindow32" idxTB, "ahk_class Shell_TrayWnd") ; TB_GETHOTITEM
     Return ErrorLevel << 32 >> 32
 }
+*/
 
 ; ----------------------------------------------------------------------------------------------------------------------
 ; Function .....: TrayIcon_Button
@@ -1761,7 +1781,7 @@ TrayIcon_GetHotItem()
 ; ..............: index    - Index of tray icon to click if more than one match.
 ; ----------------------------------------------------------------------------------------------------------------------
 
-TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1)
+/*TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1)
 {
     DetectHiddenWindows((Setting_A_DetectHiddenWindows := A_DetectHiddenWindows) ? "true" :)
     WM_MOUSEMOVE := "0x0200"
@@ -1789,6 +1809,7 @@ TrayIcon_Button(sExeName, sButton := "L", bDouble := false, index := 1)
     DetectHiddenWindows(Setting_A_DetectHiddenWindows)
     return
 }
+*/
 
 lv(folder)
 {
@@ -1821,7 +1842,7 @@ lv(folder)
             FileDir := ogcListViewName.GetText(A_EventInfo)  ; Get the text of the second field.
 
             {   ErrorLevel := "ERROR"
-               Try ErrorLevel := Run(Dir "\" FileName, , "", )
+               Try ErrorLevel := Run(Dir "\" FileName  "" )
             }
             ;Run %FileDir%\%FileName%,, UseErrorLevel
             if ErrorLevel

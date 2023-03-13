@@ -11329,7 +11329,7 @@ Return
     }
 Return
 
-*~J::
+/**~J::
     If (!KS50010){
         If (LShift_S Or RShift_S Or CapsLock_S)
             KP(100010)
@@ -11338,6 +11338,7 @@ Return
         KS50010 := 1
     }
 Return
+*/
 
 *~K::
     If (!KS50011){
@@ -11611,7 +11612,7 @@ Return
 *~G Up::KS50007 := 0
 *~H Up::KS50008 := 0
 *~I Up::KS50009 := 0
-*~J Up::KS50010 := 0
+;*~J Up::KS50010 := 0
 *~K Up::KS50011 := 0
 *~L Up::KS50012 := 0
 *~M Up::KS50013 := 0

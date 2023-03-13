@@ -33,6 +33,7 @@ FileEncoding, UTF-8
 #Include, lib\Minerva-Statistics.ahk
 
 					;[GLOBALS]==============================[GLOBALS]=================================[GLOBALS]
+global GCshowing := false
 global ScriptName  := StrReplace(A_ScriptName, ".ahk")
 global Version     := "1.1"
 global GitHub      := "https://github.com/donovanzeanah/globalcoder"
@@ -52,6 +53,9 @@ global rootpath := a_scriptdir
 global hotpath := a_scriptdir . "\CustomMenuFiles"
 global notepath := a_scriptdir . "\logs\notes"
 global timestring := ""
+global g_hotpath := a_scriptdir . "\logs\"
+global g_Qpath := a_scriptdir . "\logs\questions"
+global g_Apath := a_scriptdir . "\logs\questions\answers"
 FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
 global myGC := new gc()
 Menu, Tray, Icon , Shell32.dll, 14 , 1
@@ -130,22 +134,12 @@ Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0
 
 EvaluateScriptPathAndTitle()
 SuspendOn()
-
 Startup()
-;msgbox returned
-;Build_TrayMenu()
-
-OnExit, SaveScript
-;specifices this sub-routine to be called should/when script exits.
-
-;Change the setup performance speed
+OnExit, SaveScript ;specifices this sub-routine to be called should/when script exits.
 SetBatchLines, 20ms
+ReadPreferences() ;read in the preferences file
+SetTitleMatchMode, 2 ;set windows constants
 
-;read in the preferences file
-ReadPreferences()
-
-SetTitleMatchMode, 2
-;set windows constants
 g_EVENT_SYSTEM_FOREGROUND := 0x0003
 g_EVENT_SYSTEM_SCROLLINGSTART := 0x0012
 g_EVENT_SYSTEM_SCROLLINGEND := 0x0013
@@ -173,7 +167,7 @@ g_WM_MOUSEMOVE := 0x200
 g_WM_SETCURSOR := 0x20
 
 ;setup code
-g_DpiScalingFactor := A_ScreenDPI/96
+g_DpiScalingFactor := A_ScreenDPI/96 
 g_Helper_Id =
 g_HelperManual =
 g_DelimiterChar := Chr(2)
@@ -259,7 +253,13 @@ GlobalMode := !GlobalMode
 MsgBox, % "`n GlobalMode Status " globalmode
 return
 
-
+:*:gcd::
+routinegcpath(){
+send, !d
+clipboard := "d:/(github)/globalcoder/gc/globalcoder"
+send, ^v
+return
+}
 
 
 #IfWinActive ahk_exe explorer.exe
@@ -320,61 +320,114 @@ backspaceAg(gcomment)
     send, {backspace WordLength}
 }
 
+ ;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;======================================================================
+;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;======================================================================
+;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;======================================================================
+ ;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;======================================================================
+ ;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;======================================================================
+ ;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment:
+;====================================================================== 
+;======================================================================
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment: 
+;======================================================================
+
+:*:gcomb::
+commentblock := " /* `n"
+. "`n"
+. "*/"
+sendclipboard(CommentBlock)
+sleep, 500
+send, {esc}
+send, {up}
+
+return
+
+
 ;g commands send the hotstrings into one function that reroute it based on editor then save
 ; the 'input' as a g.editer.session object which basically acts as a timeline 
-:*:todo:: ; I could have one 
-:*:gcomwrap::
+:*:gtodo:: 
+:*:g`;::
 :*:gcomm::
 WinGet,Process,ProcessName,A
-
 Switch Process
 {
 
   Case "sublime_text.exe":
-    CommentBlock:="' *************************************************************************`n"
-    . "' Autho:`n"
-    . "' Creation date:`n"
-    . "' Description:`n"
+    CommentBlock := " `;*************************************************************************`n"
+    . ";Author: Donovan Zeanah `n"
+    . ";Purpose: Code Comment `n"
+    . ";Comment:`n"
     . "' ***************************************************************************`n"
   Case "devenv.exe":
-    CommentBlock:="//# ===========================================================================`n"
-    . "//# Author:`n"
-    . "//# Creation date:`n"
-    . "//# Description:`n"
+    CommentBlock := " //# ===========================================================================`n"
+    . "//Author: Donovan Zeanah `n"
+    . "//Purpose: Code Comment `n"
+    . "//Comment:`n"
     . "//# ===========================================================================`n"
     Case "Code.exe":
-    CommentBlock:="Rem ======================================================================`n"
-    . "Rem Author:`n"
-    . "Rem Creation date:`n"
-    . "Rem Description:`n"
-    . "Rem ======================================================================`n"
+    CommentBlock := "`;======================================================================`n"
+    . "`;Author: Donovan Zeanah `n"
+    . "`;Purpose: Code Comment `n"
+    . "`;Comment:`n"
+    . "`;======================================================================`n"
   Case "scite.exe":
-    CommentBlock:="; ===========================================================================`n"
-    . "; Author:`n"
-    . "; Creation date:`n"
-    . "; Description:`n"
-    . "; ===========================================================================`n"
+    CommentBlock:=" `;===========================================================================`n"
+    . "`;Author: Donovan Zeanah `n"
+    . "`;Purpose: Code Comment `n"
+    . "`;Comment:`n"
+    . "`; ===========================================================================`n"
   Case "ssms.exe":
     CommentBlock:="-- ===========================================================================`n"
-    . "-- Author:`n"
-    . "-- Creation date:`n"
-    . "-- Description:`n"
-    . "-- ===========================================================================`n"
+    . "`;Author: Donovan Zeanah `n"
+    . "`;Purpose: Code Comment `n"
+    . "`;Comment:`n"
+    . "`; ===========================================================================`n"
   Default:
     MsgBox,4144,Error,Active window is not a supported program
     Return
 }
 
-;sendclipboard(CommentBlock,)
+
+sendclipboard(CommentBlock)
+sleep, 500
+send, {esc}
+send, {up 2}
+send, {end}
+send, {space}
 
 return
 
 sendclipboard(string := "", bool := "1")
 {
         if (bool = 1){
-             clipboard := string 
-                send, ^v 
-                return   
+            clipboard := string 
+            send, ^v 
+            return   
         
 send, ^c 
 send, ^v
@@ -389,25 +442,20 @@ return
 
 ^+e::
     editor_open_folder() {
-        WinGetTitle, path, A
-        if RegExMatch(path, "\*?\K(.*)\\[^\\]+(?= [-*] )", path)
-            if (FileExist(path) && A_ThisHotkey = "^+e")
-                Run explorer.exe /select`,"%path%"
-            else
-                Run explorer.exe "%path1%"
+        run sublime_text.exe %A_ScriptFullPath% ;"scratch\globalcoderv2.ah2" ;;"%A_ScriptFullPath%" run, d:/
+       ;WinGetTitle, path, A
+        ;if RegExMatch(path, "\*?\K(.*)\\[^\\]+(?= [-*] )", path)
+            ;if (FileExist(path) && A_ThisHotkey = "^+e")
+               ; Run explorer.exe /select`,"%path%"
+           ; else
+               ; Run explorer.exe "%path1%"
+               return
     }
 
-showfile(fileFullPath){
 
-    static MyEdit
-    Gui, Add, Edit, R20 vMyEdit
-    FileRead, FileContents, % fillFullPath
-    Gui, show 
-    GuiControl,, MyEdit, %FileContents%
-}
 
 f24 & s::
-hotpath := "D:\(github)\GlobalCoder\gc\GlobalCoder\CustomMenuFiles\(Dev)\headeer.txt.txt"
+hotpath := "D:\(github)\GlobalCoder\gc\GlobalCoder\CustomMenuFiles\(Dev)\header.txt.txt"
 showfile(hotpath)
 msgbox, % "hotpath: `n" hotpath
 return
@@ -429,17 +477,24 @@ GoButton1(CtrlHwnd:=0, GuiEvent:="", EventInfo:="", ErrLvl:="") {
 static hotpath := { 0 : ""
 	, 1 : a_scriptdir . "\notes"
 	, 2 : a_scriptdir . "\logs\notes" }
+   msgbox, % g_hotpath
 	;msgbox, % hotpath.2
 	;msgbox, % frontproject
+   ;for k, dir in hotpath
+      ;msgbox, % "k: " k " dir: " dir
+   
+	;SelectHotPath(hotpath.2)
+   GuiControlGet, hotedit
+   clipboard := hotedit
+      Gui, mygui:Destroy 
 
-	SelectHotPath(hotpath.2)
-    GuiControlGet, hotedit
-    clipboard := hotedit
-    msgbox, % "cont to pass clipboard to notex(): `n" clipboard
-    noteex(clipboard, hotpath.2)
-    notein(hotpath.2)
-    gui, destroy
+   selectsubject()
+   msgbox, % "cont to pass clipboard to notex(): `n" clipboard
+   noteex(clipboard, g_hotpath)
+   ;mnoteex(clipboard, hotpath.2)
+   notein(hotpath.2)
 }
+
 f24 & f::
 findstring()
 return
@@ -474,10 +529,12 @@ newsubject(path := ""){
 
 
 selectsubject(path := ""){
-  if (path = "")
-  path := notepath
-  msgbox, % ": " path
 
+  if (!path)
+  {
+   g_hotpath := ""
+      path := notepath
+  }
   Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gMyListView3, Name
   Loop, % path . "\* " , 2 ; 2 = folders only
   LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
@@ -487,7 +544,9 @@ selectsubject(path := ""){
 
 Gui, Show
 
-
+  while (g_hotpath = "")
+  {
+  
   MyListView3:
     if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
     {
@@ -498,28 +557,42 @@ Gui, Show
             msgbox, % frontproject
 
     GuiControl,, Folder, %frontproject%
-
+        g_hotpath := frontproject
+      break
+    }
+    }
+    
     gui, destroy
+    g_hotpath := frontproject
+    MsgBox, % "path: `n" g_hotpath
+ return g_hotpath   
+    }
 
-} ;selecting a subj should return notepaath + chosen folder
-return frontproject
-}
+
 
 ;path is frontproject
 ;note external
 noteex(data,hotpath){
-count := 0
+count := 0 ;tracks files having same name and incrimenting them if so using count var.
+
+frontproject := hotpath
+
  inputbox, fname	, "Enter filename w/ Extension:"
-  if (fileexist(file := hotpath . "/" fname ))
+  if (fileexist(file := hotpath . "\" fname ))
 	  {
 		  while ( FileExist(file))
 			  {
-			  	file := hotepath . "/" . ++count fname ;g. ".txt"
+			  	file := hotpath . "\" . ++count fname ;g. ".txt"
 			  }
 	  }
-      msgbox, % "d: " data
-MsgBox, % "appending file: `n" file
-fileappend, `n %clipboard% , % file
+   frontproject := file
+   ;msgbox, % "data: `n" data m
+   MsgBox, % "appending file: `n" data . "`n to: `n " . frontproject ;"\notes.txt"
+   ;MsgBox, % "appending file: `n" file . "`n to: `n " . frontproject "\notes.txt"
+   fileappend, % "-" timestring "`:" "`n" . data . ";"    , % frontproject ;"\notes.txt"
+   runfp()
+   ;run, % frontproject
+;fileappend, `n %clipboard% , % file
   return
 }
 
@@ -529,8 +602,17 @@ notein(path := ""){
   if (path = "")
   path := frontproject
 
+    InputBox, fname, filename w/ ext. :, "enter a filename"
+
+  if (fileexist(file := path . "\" fname ))
+	  {
+		  while ( FileExist(file))
+			  {
+			  	file := hotpath . "\" . ++count fname ;g. ".txt"
+			  }
+	  }
+
   ;inputbox, ProjName,, " Name your Project: `n this is the SLN file created. " ,,,,,,,,SLN_
-  InputBox, note,, % frontproject - "new note:"
   fileappend, %  note . " - " . timestring "`n"  , % frontproject "\notes.txt"
   return
 }
@@ -575,40 +657,38 @@ return hotpath
 
 
 }
-SelectHotPath(path)
+SelectHotPath(path := "")
 {
   if (path = "")
   {
   path := a_scriptdir . "/notes/"
   return
   }
-
-
   Gui, Add, ListView, background000000 cFFFFFF -Hdr r20 w200 h200 gHotFileView, Name
   Loop, % path . "/"* , 2 ; 2 = folders only
   LV_Add("", A_LoopFileName, A_LoopFileSizeKB)
   LV_ModifyCol()  ; Auto-size each column to fit its contents.
   LV_ModifyCol(2, "Integer")  ; For sorting purposes, indicate that column 2 is an integer.
   FolderList .= A_LoopFileName . "`n"
-
-Gui, Show
+   Gui, Show
 
 
   HotFileView:
-    if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
-    {
+   if A_GuiEvent = DoubleClick  ; There are many other possible values the script can check.
+   {
       LV_GetText(FileName, A_EventInfo, 1) ; Get the text of the first field.
       LV_GetText(FileDir, A_EventInfo, 2)  ; Get the text of the second field.
     hotpath := hotpath . "/" . filename
     GuiControl,, Folder, %hotpath%
+    msgbox, % hotpath
     gui, destroy
 
-}
+   }
 return
 
 }
 
-runfp(path := ""){
+runfp2(path := ""){
   run, %frontproject%
 }
 chrome_name2(){
@@ -664,11 +744,16 @@ f24 & g::
 
 chrome_name()
 
+:*:pyear::&as_qdr=y1
+
 return
 f24 & Space:: ;------------------------------------------------------------------
+
+query := "&as_qdr=y1"
 InputBox, ans
-Run, www.google.com/search?q=%ans%
+Run, www.google.com/search?q=%ans%%query%  
 crm := chrome_group()
+WinWait, dkz, dkz, 3,  
 send, !g
 
 run %frontdir%
@@ -797,7 +882,8 @@ LoopOverFolder(PATH){
 
 		; Then add it as item to menu
 		SplitPath, element, name, dir, ext, name_no_ext, drive
-		Menu, %dir%, Add, %name%, :%element%
+		Menu, %dir%, Add, &%name%, :%element%
+        ;Menu, MenuName, Cmd [, P3, P4, P5]
 
 		; Iterate loading GUI progress
 		FoundItem("Folder")
@@ -855,6 +941,7 @@ return ;// end hotkey x
 ^f24::
 Ctrl & RShift::
 ;/
+
 callingwindow := winactive("A")
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
@@ -885,8 +972,79 @@ Menu, MyMenu, Show, % X, % Y + H
 ;gui, menu, mymenu
 return
 ;//
+ShowCapMenu:
+    GCshowing := true
+    Menu, test, Show
 
-;-------------------------- end quick menu
+return
+CapsLockMenu(){
+    Menu, MyMenu, Add, Menu Item 1(googler), GoMenuHandler1
+    Menu, MyMenu, Add, Menu Item 2, GoMenuHandler1
+    Menu, MyMenu, Add, Menu Item 3, GoMenuHandler1
+    Menu, MyMenu, Show, % X, % Y + H
+    Menu, test, Add, 1
+    Menu, test, Add, 2
+    Menu, test, Add, 3
+    GoSub ShowCapMenu
+    return
+}
+xbutton2 & f::
+gcshowing := false
+return
+
+Capfunction(){
+    static myedit
+
+    MsgBox, % "Capfunction"
+    Gui, add, edit, vmyedit w200 h50,
+    Gui, add, button, gcapbutton w200 h50,
+    gui,show
+    KeyWait, q
+    ;KeyWait, esc
+    ;gui Submit
+    ;msgbox, % myedit
+    ;Send % item := A_ThisLabel 
+    return myedit
+}
+
+
+capbutton:
+    GuiControl, ,myedit
+    msgbox, % myedit 
+    gui submit
+    msgbox, % myedit 
+return
+
+$CapsLock::
+    KeyWait CapsLock, T0.25
+        if ErrorLevel
+        {
+            callingwindow := winactive("A")
+            CoordMode Menu, Screen
+            GetCaret(X, Y,, H)
+            CapsLockMenu()
+        }
+        else
+        {
+            KeyWait CapsLock, D T0.25
+            if ErrorLevel
+            {
+                MsgBox, % "damn"
+            }
+            else
+            {
+                MsgBox, % "dang"
+            }
+        }
+    KeyWait CapsLock
+
+return
+
+
+#If, GCshowing := true
+;j::down 
+return
+#if
 
 ;------ clipboard menu
 f24 & c:: clipStore.ShowMenu()
@@ -1358,7 +1516,14 @@ HideTrayTip() {
     }
 }
 
+showfile(fileFullPath){
 
+    static MyEdit
+    Gui, Add, Edit, R20 vMyEdit
+    FileRead, FileContents, % fillFullPath
+    Gui, show 
+    GuiControl,, MyEdit, %FileContents%
+}
 
 ;==============================[]=================================[]
 global GC_Subjects := {}
@@ -3837,7 +4002,15 @@ Local s, c, p, key, k, write
 run(path)
 {
 
+
     run % path
+    return
+}
+runfp()
+{
+   
+   MsgBox, % "running..: `n" frontproject
+    run % frontproject
     return
 }
 
@@ -5203,7 +5376,7 @@ static frontproject := "c:\tester"
             MsgBox, % "4: `n " k "-" v
             eachvalue .= v
             total += v 
-key3=testvalue
+            key3=testvalue
         }
         return
         }

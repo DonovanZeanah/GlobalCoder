@@ -35,7 +35,7 @@ Handler_LaunchProgram2(FilePath)
 Handler_COM2(FilePath)
 {
 	; Clears clipboard. Syntax looks werid, but it is right.
-	A_Clipboard :=                     
+	;A_Clipboard :=                     
 	; Sleep, 200
 	
 	try{
@@ -78,7 +78,7 @@ Handler_COM2(FilePath)
 ; Attemps to start all other files in the specified path.
 RunOtherScripts2(PATH)
 {
-	Loop Files, PATH "\*", "F"
+	Loop Files, "PATH `"\*`"", "`"F`""
 	{
 		;~ MsgBox, % "Including:`n" A_LoopFilePath
 		Run(A_LoopFilePath)

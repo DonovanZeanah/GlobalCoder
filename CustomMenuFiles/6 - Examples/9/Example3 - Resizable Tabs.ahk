@@ -1,8 +1,8 @@
 ﻿;#Requires AutoHotkey v2.0-beta
 
 #Include d:/lib/v2/WebView2.ahk
-#Include WebView2.ahk
-k
+;#Include WebView2.ahk
+
 main := Gui("+Resize"), main.MarginX := main.MarginY := 0
 main.OnEvent("Close", _exit_)
 main.OnEvent('Size', gui_size)

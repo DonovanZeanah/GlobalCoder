@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -177,7 +177,7 @@ MsgBox %s% ;0,10000000000,20000000000,30000000000,40000000000,60000000000,700000
 
 
 
-SetFormat Integer, HEX
+;SetFormat Integer, HEX
 
 MsgBox % x:=dllcall(&NextGray32, "uint", 8, "cdecl uint") ; 0x18
 MsgBox % x:=dllcall(&NextGray32, "uint", x, "cdecl uint") ; 0x19

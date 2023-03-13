@@ -7,14 +7,14 @@
 	is_arr := { (tree): 1 }
 	next := q . "{[01234567890-tfn"
 	pos := 0
-	while ( (ch := SubStr(src, (++pos)<1 ? (++pos)-1 : (++pos), 1)) != "" )
+	while ( (ch := SubStr(src, ((++pos)<1 ? (++pos)-1 : (++pos))<1 ? ((++pos)<1 ? (++pos)-1 : (++pos))-1 : ((++pos)<1 ? (++pos)-1 : (++pos)), 1)) != "" )
 	{
 		if InStr(" `t`n`r", ch)
 			continue
 		if !InStr(next, ch, true)
 		{
 			ln := ObjLength(StrSplit(SubStr(src, 1, pos), "`n"))
-			col := pos - InStr(src, "`n", , (-(StrLen(src)-pos+1))<1 ? (-(StrLen(src)-pos+1))-1 : (-(StrLen(src)-pos+1)))
+			col := pos - InStr(src, "`n", , ((-(StrLen(src)-pos+1))<1 ? (-(StrLen(src)-pos+1))-1 : (-(StrLen(src)-pos+1)))<1 ? ((-(StrLen(src)-pos+1))<1 ? (-(StrLen(src)-pos+1))-1 : (-(StrLen(src)-pos+1)))-1 : ((-(StrLen(src)-pos+1))<1 ? (-(StrLen(src)-pos+1))-1 : (-(StrLen(src)-pos+1))))
 
 			msg := Format("{}: line {} col {} (char {})"			,   (next == "")      ? ["Extra data", ch := SubStr(src, pos)][1]
 			  : (next == "'")     ? "Unterminated string starting at"
@@ -24,7 +24,7 @@
 			  : (next == q . "}") ? "Expecting object key enclosed in double quotes or object closing '}'"
 			  : (next == ",}")    ? "Expecting ',' delimiter or object closing '}'"
 			  : (next == ",]")    ? "Expecting ',' delimiter or array closing ']'"
-			  : [ "Expecting JSON value(string, number, [true, false, null], object or array)"			    , ch := SubStr(src, (pos)<1 ? (pos)-1 : (pos), (SubStr(src, (pos)<1 ? (pos)-1 : (pos))~="[\]\},\s]|$")-1) ][1]			, ln, col, pos)
+			  : [ "Expecting JSON value(string, number, [true, false, null], object or array)"			    , ch := SubStr(src, ((pos)<1 ? (pos)-1 : (pos))<1 ? ((pos)<1 ? (pos)-1 : (pos))-1 : ((pos)<1 ? (pos)-1 : (pos)), (SubStr(src, ((pos)<1 ? (pos)-1 : (pos))<1 ? ((pos)<1 ? (pos)-1 : (pos))-1 : ((pos)<1 ? (pos)-1 : (pos)))~="[\]\},\s]|$")-1) ][1]			, ln, col, pos)
 
 			throw Exception(msg, -1, ch)
 		}
@@ -58,11 +58,11 @@
 			if (ch == q) ; string
 			{
 				i := pos
-				while i := InStr(src, q, , (i+1)<1 ? (i+1)-1 : (i+1))
+				while i := InStr(src, q, , ((i+1)<1 ? (i+1)-1 : (i+1))<1 ? ((i+1)<1 ? (i+1)-1 : (i+1))-1 : ((i+1)<1 ? (i+1)-1 : (i+1)))
 				{
-					val := StrReplace(SubStr(src, (pos+1)<1 ? (pos+1)-1 : (pos+1), i-pos-1), "\\", "\u005C")
+					val := StrReplace(SubStr(src, ((pos+1)<1 ? (pos+1)-1 : (pos+1))<1 ? ((pos+1)<1 ? (pos+1)-1 : (pos+1))-1 : ((pos+1)<1 ? (pos+1)-1 : (pos+1)), i-pos-1), "\\", "\u005C")
 					static end := VerCompare(A_AhkVersion, "2")<0 ? 0 : -1
-					if (SubStr(val, (end)<1 ? (end)-1 : (end)) != "\")
+					if (SubStr(val, ((end)<1 ? (end)-1 : (end))<1 ? ((end)<1 ? (end)-1 : (end))-1 : ((end)<1 ? (end)-1 : (end))) != "\")
 						break
 				}
 				if !i ? (pos--, next := "'") : 0
@@ -73,15 +73,15 @@
 				  val := StrReplace(val, "\/", "/")				, val := StrReplace(val, "\" . q, q)				, val := StrReplace(val, "\b", "`b")				, val := StrReplace(val, "\f", "`f")				, val := StrReplace(val, "\n", "`n")				, val := StrReplace(val, "\r", "`r")				, val := StrReplace(val, "\t", "`t")
 
 				i := 0
-				while i := InStr(val, "\", , (i+1)<1 ? (i+1)-1 : (i+1))
+				while i := InStr(val, "\", , ((i+1)<1 ? (i+1)-1 : (i+1))<1 ? ((i+1)<1 ? (i+1)-1 : (i+1))-1 : ((i+1)<1 ? (i+1)-1 : (i+1)))
 				{
-					if (SubStr(val, (i+1)<1 ? (i+1)-1 : (i+1), 1) != "u") ? (pos -= StrLen(SubStr(val, (i)<1 ? (i)-1 : (i))), next := "\") : 0
+					if (SubStr(val, ((i+1)<1 ? (i+1)-1 : (i+1))<1 ? ((i+1)<1 ? (i+1)-1 : (i+1))-1 : ((i+1)<1 ? (i+1)-1 : (i+1)), 1) != "u") ? (pos -= StrLen(SubStr(val, ((i)<1 ? (i)-1 : (i))<1 ? ((i)<1 ? (i)-1 : (i))-1 : ((i)<1 ? (i)-1 : (i)))), next := "\") : 0
 						continue 2
 
 					; \uXXXX - JSON unicode escape sequence
-					xxxx := Abs("0x" . SubStr(val, (i+2)<1 ? (i+2)-1 : (i+2), 4))
+					xxxx := Abs("0x" . SubStr(val, ((i+2)<1 ? (i+2)-1 : (i+2))<1 ? ((i+2)<1 ? (i+2)-1 : (i+2))-1 : ((i+2)<1 ? (i+2)-1 : (i+2)), 4))
 					if (1 || xxxx < 0x100)
-						val := SubStr(val, 1, i-1) . Chr(xxxx) . SubStr(val, (i+6)<1 ? (i+6)-1 : (i+6))
+						val := SubStr(val, 1, i-1) . Chr(xxxx) . SubStr(val, ((i+6)<1 ? (i+6)-1 : (i+6))<1 ? ((i+6)<1 ? (i+6)-1 : (i+6))-1 : ((i+6)<1 ? (i+6)-1 : (i+6)))
 				}
 
 				if is_key
@@ -93,7 +93,7 @@
 
 			else ; number | true | false | null
 			{
-				val := SubStr(src, (pos)<1 ? (pos)-1 : (pos), i := RegExMatch(src, "[\]\},\s]|$", , (pos)<1 ? (pos)-1 : (pos))-pos)
+				val := SubStr(src, ((pos)<1 ? (pos)-1 : (pos))<1 ? ((pos)<1 ? (pos)-1 : (pos))-1 : ((pos)<1 ? (pos)-1 : (pos)), i := RegExMatch(src, "[\]\},\s]|$", , ((pos)<1 ? (pos)-1 : (pos))<1 ? ((pos)<1 ? (pos)-1 : (pos))-1 : ((pos)<1 ? (pos)-1 : (pos)))-pos)
 			
 			; For numerical values, numerify integers and keep floats as is.
 			; I'm not yet sure if I should numerify floats in v2.0-a ...
@@ -152,11 +152,11 @@ Jxon_Dump(obj, indent:="", lvl:=1)
 			if (indent < 0)
 				throw Exception("Indent parameter must be a postive integer.", -1, indent)
 			spaces := indent, indent := ""
-			Loop spaces
+			Loop "spaces"
 				indent .= " "
 		}
 		indt := ""
-		Loop indent ? lvl : 0
+		Loop "indent ? lvl : 0"
 			indt .= indent
 
 		lvl += 1, out := "" ; Make #Warn happy
@@ -174,7 +174,7 @@ Jxon_Dump(obj, indent:="", lvl:=1)
 		{
 			out := Trim(out, ",`n" . indent)
 			if (indent != "")
-				out := "`n" . indt . out . "`n" . SubStr(indt, (StrLen(indent)+1)<1 ? (StrLen(indent)+1)-1 : (StrLen(indent)+1))
+				out := "`n" . indt . out . "`n" . SubStr(indt, ((StrLen(indent)+1)<1 ? (StrLen(indent)+1)-1 : (StrLen(indent)+1))<1 ? ((StrLen(indent)+1)<1 ? (StrLen(indent)+1)-1 : (StrLen(indent)+1))-1 : ((StrLen(indent)+1)<1 ? (StrLen(indent)+1)-1 : (StrLen(indent)+1)))
 		}
 		
 		return is_array ? "[" . out . "]" : "{" . out . "}"
@@ -190,7 +190,7 @@ Jxon_Dump(obj, indent:="", lvl:=1)
 		  obj := StrReplace(obj, "\", "\\")		, obj := StrReplace(obj, "/", "\/")		, obj := StrReplace(obj, q, "\" . q)		, obj := StrReplace(obj, "`b", "\b")		, obj := StrReplace(obj, "`f", "\f")		, obj := StrReplace(obj, "`n", "\n")		, obj := StrReplace(obj, "`r", "\r")		, obj := StrReplace(obj, "`t", "\t")
 
 		static needle := (VerCompare(A_AhkVersion, "2")<0 ? "O)" : "") . "[^\x20-\x7e]"
-		while RegExMatch(obj, needle, &m)
+		while RegExMatch(obj, needle, &&m)
 			obj := StrReplace(obj, m[0], Format("\u{:04X}", Ord(m[0])))
 	}
 	

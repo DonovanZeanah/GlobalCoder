@@ -1,3 +1,6 @@
+
+#warn all, off
+
 ;Seldom Changing Directives
 #Requires Autohotkey v2.0-beta.1+ ;.34.03+
 Persistent
@@ -15,6 +18,15 @@ SetKeyDelay(50)
 CoordMode("Caret", "Screen")
 CoordMode("Mouse", "Screen")
 Suspend(true)
+#Include "lib\((functions)).ah2"
+;#Include, lib\Gdip.ahk
+#Include "lib\read-ini.ah2"
+;#Include "lib\JXON.ah2"
+#Include "lib\Minerva-PowerToys.ah2"
+#Include "lib\Minerva-Handlers.ah2"
+#Include "lib\Minerva-Statistics.ah2"
+!1::
+{
 myGui := Gui()
 myGui.OnEvent("Size", GuiSize)
 myGui.SetFont("Q4", "MS Sans Serif") ;opts-> (c)olor (s)ize (w)eight (Q)uality
@@ -24,219 +36,177 @@ applicationname := "GlobalCoder"
 g_OSVersion := GetOSVersion()
 FileEncoding("UTF-8")
 
-;[//Includes]==============================[//Includes]=================================[//Includes]
++
 
-#Include "lib\((functions)).ah2"
-;#Include, lib\Gdip.ahk
-#Include "lib\read-ini.ah2"
-#Include "lib\JXON.ah2"
-#Include "lib\Minerva-PowerToys.ah2"
-#Include "lib\Minerva-Handlers.ah2"
-#Include "lib\Minerva-Statistics.ah2"
+    Ptr := A_PtrSize ? "Ptr" : "UInt"
+    SkipExitSub := True ;Disables save-on-exit until the Startup() function is finished
+    ;As long as the above is set to True and the Startup() function is never executed the script
+    ;will not execute any critical code and can sit in a pre-Startup() state forever.
 
-                    ;[GLOBALS]==============================[GLOBALS]=================================[GLOBALS]
-/*
-global ScriptName  := StrReplace(A_ScriptName, ".ahk")
-global Version     := "1.1"
-global GitHub      := "https://github.com/donovanzeanah/globalcoder"
-global FileCount   := 0
-global MyProgress  := 0
-global TotalWords  := 0
-global settingsINI := "globalcoder.ini"
-global ignoreFiles := ""
-global frontproject := "d:/(github)\globalcoder\gc\globalcoder" ; super-global ( exist inside and outside of functions/methods ) holds path of last folder selected.
-global rootfolder := "d:/(github)\globalcoder\gc\globalcoder"
-global projectname := "GlobalCoder"
-global items      := 0
-global MyProgress := 0
-Global TotalWords := 0
-global callingwindow := ""
-global rootpath := a_scriptdir
-global hotpath := a_scriptdir . "\CustomMenuFiles"
-global notepath := a_scriptdir . "\logs\notes"
-global timestring := ""
-TimeString := FormatTime(20050423220133, "MM d-HHmmss tt")
-global myGC := new gc()
-Tray:= A_TrayMenu
-Tray.Icon("Shell32.dll", "14", "1")
-TrayTip("GlobalCoder", "Started " timestring)
+    Name := "GlobalCoder"
+    VersionNumber := 1.79
+    Package_FileVersion := 2.2
+    Pixel_FileVersion := 1.1
+    Save_FileVersion := 1.2
+    HD_FileVersion := 1.0
 
-*/
+    MouseMovement_IndexVersion := 1.36
+    Key_IndexVersion := 1.2
+    WordsTyped_IndexVersion := 1.25
 
-;[//NOTES]==============================[//NOTES]=================================[//NOTES]
-/*
-   
-
-*/
-;[//START]==============================[START]=================================[START]
-;-------------------------------------------------Start gdi+
-Ptr := A_PtrSize ? "Ptr" : "UInt"
-SkipExitSub := True ;Disables save-on-exit until the Startup() function is finished
-;As long as the above is set to True and the Startup() function is never executed the script
-;will not execute any critical code and can sit in a pre-Startup() state forever.
-
-Name := "GlobalCoder"
-VersionNumber := 1.79
-Package_FileVersion := 2.2
-Pixel_FileVersion := 1.1
-Save_FileVersion := 1.2
-HD_FileVersion := 1.0
-
-MouseMovement_IndexVersion := 1.36
-Key_IndexVersion := 1.2
-WordsTyped_IndexVersion := 1.25
-
-MouseMovement_Number := 189
-WordsPerTime_Number := 190
+    MouseMovement_Number := 189
+    WordsPerTime_Number := 190
 
 
-MenuName := Menu()
-MenuName.UseErrorLevel()
+    MenuName := Menu()
+    MenuName.UseErrorLevel()
 
 
-   ;The following code sets up the Gui with a DropDownList with the original list of
-   ;open windows. Remove or comment out this code for Menu only.
+       ;The following code sets up the Gui with a DropDownList with the original list of
+       ;open windows. Remove or comment out this code for Menu only.
 
-myGui.Opt("+AlwaysOnTop")
-myGui.SetFont("s12", "Arial")
-ogcDropDownListWindowMove := myGui.Add("DropDownList", "w275 vWindowMove  Sort Choose1")
-ogcDropDownListWindowMove.OnEvent("Change", PosChoice.Bind("Change")) ; ,Pick a Window||
-FileMenu := Menu()
-FileMenu.Add("&Rescan`tCtrl+R", GuiReset)
-MyMenuBar := Menu()
-MyMenuBar.Add("&File", FileMenu)
-myGui.MenuBar := MyMenuBar
+    myGui.Opt("+AlwaysOnTop")
+    myGui.SetFont("s12", "Arial")
+    ogcDropDownListWindowMove := myGui.Add("DropDownList", "w275 vWindowMove  Sort Choose1")
+    ogcDropDownListWindowMove.OnEvent("Change", PosChoice.Bind("Change")) ; ,Pick a Window||
+    FileMenu := Menu()
+    FileMenu.Add("&Rescan`tCtrl+R", GuiReset)
+    MyMenuBar := Menu()
+    MyMenuBar.Add("&File", FileMenu)
+    myGui.MenuBar := MyMenuBar
 
 
 
-If !pToken := Gdip_Startup()
-{
-    MsgBox("Gdiplus failed to start. Please ensure you have gdiplus on your system", "gdiplus error!", 48)
-    ExitApp()
+    If !pToken := Gdip_Startup()
+    {
+        MsgBox("Gdiplus failed to start. Please ensure you have gdiplus on your system", "gdiplus error!", 48)
+        ExitApp()
+    }
+    OnExit(Exit, )
+
+    FindAmountItems()
+    PrepareMenu(A_ScriptDir "\CustomMenuFiles")
+    PrepareMenu(A_ScriptDir "\singles")
+    RunOtherScripts(A_ScriptDir "\singles")
+
+    hwnd1 := WinExist()                         ; Get a handle to this window we have created in order to update it later
+    hbm   := CreateDIBSection(Width, Height)    ; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
+    hdc   := CreateCompatibleDC()               ; Get a device context compatible with the screen
+    obm   := SelectObject(hdc, hbm)             ; Select the bitmap into the device context
+    G     := Gdip_GraphicsFromHDC(hdc)          ; Get a pointer to the graphics of the bitmap, for use with drawing functions
+    Gdip_SetSmoothingMode(G, 4)                 ; Set the smoothing mode to antialias = 4 to make shapes appear smother (only used for vector drawing and filling)
+
+    pBrush  := Gdip_BrushCreateSolid(0x80C7C7C7) ; Create a slightly transparent gray brush to draw rectagle with
+    Gdip_FillRectangle(G, pBrush, 0, 0, A_ScreenWidth, A_ScreenHeight)
+    pBitmap := Gdip_CreateBitmapFromFile("includes\graphics\globe.png")
+    Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0, 0, Width, Height)
+
+
+    ;========= Typing Setup
+    ;disable hotkeys until setup is complete
+
+    EvaluateScriptPathAndTitle()
+    SuspendOn()
+
+    Startup()
+    ;msgbox returned
+    ;Build_TrayMenu()
+
+    OnExit(SaveScript, )
+    ;specifices this sub-routine to be called should/when script exits.
+
+    ;Change the setup performance speed
+    ; REMOVED: SetBatchLines, 20ms
+
+    ;read in the preferences file
+    ReadPreferences()
+
+    SetTitleMatchMode(2)
+    ;set windows constants
+    g_EVENT_SYSTEM_FOREGROUND := 0x0003
+    g_EVENT_SYSTEM_SCROLLINGSTART := 0x0012
+    g_EVENT_SYSTEM_SCROLLINGEND := 0x0013
+    g_GCLP_HCURSOR := -12
+    g_IDC_HAND := 32649
+    g_IDC_HELP := 32651
+    g_IMAGE_CURSOR := 2
+    g_LR_SHARED := 0x8000
+    g_NormalizationKD := 0x6
+    g_NULL := 0
+    g_Process_DPI_Unaware := 0
+    g_Process_System_DPI_Aware  := 1
+    g_Process_Per_Monitor_DPI_Aware := 2
+    g_PROCESS_QUERY_INFORMATION := 0x0400
+    g_PROCESS_QUERY_LIMITED_INFORMATION := 0x1000
+    g_SB_VERT := 0x1
+    g_SIF_POS := 0x4
+    g_SM_CMONITORS := 80
+    g_SM_CXVSCROLL := 2
+    g_SM_CXFOCUSBORDER := 83
+    g_WINEVENT_SKIPOWNPROCESS := 0x0002
+    g_WM_LBUTTONUP := 0x202
+    g_WM_LBUTTONDBLCLK := 0x203
+    g_WM_MOUSEMOVE := 0x200
+    g_WM_SETCURSOR := 0x20
+
+    ;setup code
+    g_DpiScalingFactor := A_ScreenDPI/96
+    g_Helper_Id := ""
+    g_HelperManual := ""
+    g_DelimiterChar := Chr(2)
+    g_cursor_hand := DllCall("LoadImage", "Ptr", g_NULL, "Uint", g_IDC_HAND, "Uint", g_IMAGE_CURSOR, "int", g_NULL, "int", g_NULL, "Uint", g_LR_SHARED)
+    if (A_PtrSize == 8) {
+       g_SetClassLongFunction := "SetClassLongPtr"
+    } else {
+       g_SetClassLongFunction := "SetClassLong"
+    }
+    g_PID := DllCall("GetCurrentProcessId")
+    ; REMOVED: AutoTrim, Off
+
+    InitializeListBox()
+    BlockInput("Send")
+    InitializeHotKeys()
+    DisableKeyboardHotKeys()
+
+
+    ReadWordList() ;Read in the WordList
+
+    g_WinChangedCallback := CallbackCreate(WinChanged)
+    g_ListBoxScrollCallback := CallbackCreate(ListBoxScroll)
+
+    if !(g_WinChangedCallback)
+    {
+       MsgBox("Failed to register callback function")
+       ExitApp()
+    }
+
+    if !(g_ListBoxScrollCallback)
+    {
+       MsgBox("Failed to register ListBox Scroll callback function")
+       ExitApp()
+    }
+
+    ;Find the ID of the window we are using
+    GetIncludedActiveWindow()
+
+    MainLoop()
+
+
+    ;OnExit, ExitSub
+
+    Return
 }
-OnExit(Exit, )
-
-FindAmountItems()
-PrepareMenu(A_ScriptDir "\CustomMenuFiles")
-PrepareMenu(A_ScriptDir "\singles")
-RunOtherScripts(A_ScriptDir "\singles")
-
-hwnd1 := WinExist()                         ; Get a handle to this window we have created in order to update it later
-hbm   := CreateDIBSection(Width, Height)    ; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
-hdc   := CreateCompatibleDC()               ; Get a device context compatible with the screen
-obm   := SelectObject(hdc, hbm)             ; Select the bitmap into the device context
-G     := Gdip_GraphicsFromHDC(hdc)          ; Get a pointer to the graphics of the bitmap, for use with drawing functions
-Gdip_SetSmoothingMode(G, 4)                 ; Set the smoothing mode to antialias = 4 to make shapes appear smother (only used for vector drawing and filling)
-
-pBrush  := Gdip_BrushCreateSolid(0x80C7C7C7) ; Create a slightly transparent gray brush to draw rectagle with
-Gdip_FillRectangle(G, pBrush, 0, 0, A_ScreenWidth, A_ScreenHeight)
-pBitmap := Gdip_CreateBitmapFromFile("includes\graphics\globe.png")
-Gdip_DrawImage(G, pBitmap, A_ScreenWidth/2, A_ScreenHeight, Width/2, Height/2, 0, 0, Width, Height)
-
-
-;========= Typing Setup
-;disable hotkeys until setup is complete
-
-EvaluateScriptPathAndTitle()
-SuspendOn()
-
-Startup()
-;msgbox returned
-;Build_TrayMenu()
-
-OnExit(SaveScript, )
-;specifices this sub-routine to be called should/when script exits.
-
-;Change the setup performance speed
-; REMOVED: SetBatchLines, 20ms
-
-;read in the preferences file
-ReadPreferences()
-
-SetTitleMatchMode(2)
-;set windows constants
-g_EVENT_SYSTEM_FOREGROUND := 0x0003
-g_EVENT_SYSTEM_SCROLLINGSTART := 0x0012
-g_EVENT_SYSTEM_SCROLLINGEND := 0x0013
-g_GCLP_HCURSOR := -12
-g_IDC_HAND := 32649
-g_IDC_HELP := 32651
-g_IMAGE_CURSOR := 2
-g_LR_SHARED := 0x8000
-g_NormalizationKD := 0x6
-g_NULL := 0
-g_Process_DPI_Unaware := 0
-g_Process_System_DPI_Aware  := 1
-g_Process_Per_Monitor_DPI_Aware := 2
-g_PROCESS_QUERY_INFORMATION := 0x0400
-g_PROCESS_QUERY_LIMITED_INFORMATION := 0x1000
-g_SB_VERT := 0x1
-g_SIF_POS := 0x4
-g_SM_CMONITORS := 80
-g_SM_CXVSCROLL := 2
-g_SM_CXFOCUSBORDER := 83
-g_WINEVENT_SKIPOWNPROCESS := 0x0002
-g_WM_LBUTTONUP := 0x202
-g_WM_LBUTTONDBLCLK := 0x203
-g_WM_MOUSEMOVE := 0x200
-g_WM_SETCURSOR := 0x20
-
-;setup code
-g_DpiScalingFactor := A_ScreenDPI/96
-g_Helper_Id := ""
-g_HelperManual := ""
-g_DelimiterChar := Chr(2)
-g_cursor_hand := DllCall("LoadImage", "Ptr", g_NULL, "Uint", g_IDC_HAND, "Uint", g_IMAGE_CURSOR, "int", g_NULL, "int", g_NULL, "Uint", g_LR_SHARED)
-if (A_PtrSize == 8) {
-   g_SetClassLongFunction := "SetClassLongPtr"
-} else {
-   g_SetClassLongFunction := "SetClassLong"
-}
-g_PID := DllCall("GetCurrentProcessId")
-; REMOVED: AutoTrim, Off
-
-InitializeListBox()
-BlockInput("Send")
-InitializeHotKeys()
-DisableKeyboardHotKeys()
-
-
-ReadWordList() ;Read in the WordList
-
-g_WinChangedCallback := CallbackCreate(WinChanged)
-g_ListBoxScrollCallback := CallbackCreate(ListBoxScroll)
-
-if !(g_WinChangedCallback)
-{
-   MsgBox("Failed to register callback function")
-   ExitApp()
-}
-
-if !(g_ListBoxScrollCallback)
-{
-   MsgBox("Failed to register ListBox Scroll callback function")
-   ExitApp()
-}
-
-;Find the ID of the window we are using
-GetIncludedActiveWindow()
-
-MainLoop()
-
-
-;OnExit, ExitSub
-
-Return
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
-return
+;return
 
 
 
-#HotIf WinActive("ahk_exe explorer.exe", )
+
+/*#HotIf WinActive("ahk_exe explorer.exe", )
 enter::+f10
-#HotIf
+#HotIf*/
 
 
 ^left::
@@ -417,7 +387,7 @@ if (A_GuiEvent = "DoubleClick")  ; There are many other possible values the scri
     FileDir := ogcListViewName.GetText(A_EventInfo)  ; Get the text of the second field.
 
     {   ErrorLevel := "ERROR"
-       Try ErrorLevel := Run(Dir "\" FileName, , "", )
+       Try ErrorLevel := Run(Dir "\" FileName "" )
     }
     hotpath := dir
     MsgBox(hotpath)
@@ -584,29 +554,29 @@ PrepareMenu(PATH)
         mygui.show()                                                ; Displaying Progressbar
 
         ; Add Name, Icon and seperating line
-        %PATH% := Menu()
-        %PATH%.Add("googler", googler) ; Regular search ;googler                                ; Name
+        PATH := Menu()
+        PATH.Add("googler", googler) ; Regular search ;googler                                ; Name
 
-        %PATH%.Add("")                                                                          ; seperating
+        PATH.Add("")                                                                          ; seperating
 
         ; Add all custom items using algorithm
         LoopOverFolder(Path)
        ;loopoverfolder(singles)
 
-       %PATH%.Add("")   ; seperater
-       %PATH%.Add(ScriptName " vers. " Version, github) ;googler                        ; Name
-       %PATH%.Add("")                                                         ; seperating
+       PATH.Add("")   ; seperater
+       PATH.Add(ScriptName " vers. " Version, github) ;googler                        ; Name
+       PATH.Add("")                                                         ; seperating
 
 
         ; Add Admin Panel
         Sleep(200)
-        %PATH%.Add("")                                                  ; seperating line
-        %PATH%"\Admin" := Menu()
-        %PATH%"\Admin".Add("&1 Restart", ReloadProgram)             ; Add Reload option
-        %PATH%"\Admin".Add("&2 Exit", ExitApp)                          ; Add Exit option
-        %PATH%"\Admin".Add("&3 Go to Parent Folder", GoToRootFolder)    ; Open script folder
-        %PATH%"\Admin".Add("&4 Add Custom Item", GoToCustomFolder)      ; Open custom folder
-        %PATH%.Add("&0 Admin", %PATH%"\Admin")                      ; Adds Admin section
+        PATH.Add("")                                                  ; seperating line
+        PATH.Add := Menu()
+        PATH  "\Admin".Add("&1 Restart", ReloadProgram)             ; Add Reload option
+        PATH  "\Admin".Add("&2 Exit", ExitApp)                          ; Add Exit option
+        PATH  "\Admin".Add("&3 Go to Parent Folder", GoToRootFolder)    ; Open script folder
+        PATH  "\Admin".Add("&4 Add Custom Item", GoToCustomFolder)      ; Open custom folder
+        PATH.Add("&0 Admin", PATH "\Admin")                      ; Adds Admin section
 
         ; Loadingbar GUI is no longer needed, remove it from memory
         mygui.Destroy()
@@ -807,25 +777,25 @@ MsgBox(omniinput)
 omniinput := SubStr(omniinput, (1)+1)
 MsgBox(checkvar "-" omniinput)
 A_Clipboard := omniinput
-switch checkvar
+/*switch checkvar
 {
-   case "g":
+   ;case "g":
    A_Clipboard := omniinput
    runstring("www.google.com/search?q=" . A_Clipboard)
    ErrorLevel := WinWaitActive("ahk_exe chrome.exe") , ErrorLevel := ErrorLevel = 0 ? 1 : 0
    Send("!g")
    return
-   case "f":
+   ;case "f":
    MsgBox("return")
    return
-   case "c":
+   ;case "c":
    MsgBox("return")
    return
-   case "m":
+   ;case "m":
    MsgBox("return")
    return
    ;filesearch(frontfolder)
-}
+}*/
 return
 ;// omnibox 3-selection menu w/ 4 direction switch
 } ; V1toV2: Added Bracket before hotkey or Hotstring
@@ -938,7 +908,8 @@ return
 ;----------------------------------------------| FUNCTIONS |---------------------------------------------;
 
 MainLoop(){
-   global g_TerminatingEndKeys
+   ;global 
+   g_TerminatingEndKeys
    Loop
    {
 
@@ -968,18 +939,30 @@ MainLoop(){
 
 
 ProcessKey(InputChar,EndKey){
-   global g_Active_Id
-   global g_Helper_Id
-   global g_IgnoreSend
-   global g_LastInput_Id
-   global g_OldCaretX
-   global g_OldCaretY
-   global g_TerminatingCharactersParsed
-   global g_Word
-   global prefs_DetectMouseClickMove
-   global prefs_EndWordCharacters
-   global prefs_ForceNewWordCharacters
-   global prefs_Length
+   ;global 
+   g_Active_Id
+   ;global 
+   g_Helper_Id
+   ;global 
+   g_IgnoreSend
+   ;global 
+   g_LastInput_Id
+   ;global 
+   g_OldCaretX
+   ;global 
+   g_OldCaretY
+   ;global 
+   g_TerminatingCharactersParsed
+   ;global 
+   g_Word
+   ;global 
+   prefs_DetectMouseClickMove
+   ;global 
+   prefs_EndWordCharacters
+   ;global 
+   prefs_ForceNewWordCharacters
+   ;global 
+   prefs_Length
 
    if (g_IgnoreSend = 1)
    {
@@ -1118,18 +1101,18 @@ RecomputeMatchesTimer()
 
 RecomputeMatches(){
    ; This function will take the given word, and will recompile the list of matches and redisplay the wordlist.
-   global g_MatchTotal
-   global g_SingleMatch
-   global g_SingleMatchDescription
-   global g_SingleMatchReplacement
-   global g_Word
-   global g_WordListDB
-   global prefs_ArrowKeyMethod
-   global prefs_LearnMode
-   global prefs_ListBoxRows
-   global prefs_NoBackSpace
-   global prefs_ShowLearnedFirst
-   global prefs_SuppressMatchingWord
+   ;global g_MatchTotal
+   ;global g_SingleMatch
+   ;global g_SingleMatchDescription
+   ;global g_SingleMatchReplacement
+   ;global g_Word
+   ;global g_WordListDB
+   ;global prefs_ArrowKeyMethod
+   ;global prefs_LearnMode
+   ;global prefs_ListBoxRows
+   ;global prefs_NoBackSpace
+   ;global prefs_ShowLearnedFirst
+   ;global prefs_SuppressMatchingWord
 
    SavePriorMatchPosition()
 
@@ -1270,7 +1253,8 @@ HideTrayTip() {
 
 
 ;==============================[]=================================[]
-global GC_Subjects := {}
+;global
+ GC_Subjects := {}
 ;GC_Subjects.containers := {}
 GC_Subjects.folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
 GC_Subjects.Keywords := { 1 : "test", 2 : "code", 3 : "git"}
@@ -1506,7 +1490,8 @@ AddAmountFile(FileName, WordCount){
 
 ; Gets the amount of words on the clipboard
 GetWordCount(){
-    Global TotalWords := 0
+    ;Global 
+    TotalWords := 0
     Loop Parse, A_Clipboard, A_Space
     {
         TotalWords := A_Index
@@ -1523,7 +1508,7 @@ FindAmountItems(){
 
 ; Iterate step of the GUI process bar by one
 FoundItem(WhatWasFound){
-    global
+    ;global
     ogcMyProgress.Value += 1
 
     ; Comment in for Debug
@@ -1739,12 +1724,18 @@ GetCaret(&X:="", &Y:="", &W:="", &H:="") {
 }
 CheckForCaretMove(MouseButtonClick, UpdatePosition := false){
    ;/
-   global g_LastInput_Id
-   global g_MouseWin_Id
-   global g_OldCaretX
-   global g_OldCaretY
-   global g_Word
-   global prefs_DetectMouseClickMove
+   ;global 
+   g_LastInput_Id
+   ;global 
+   g_MouseWin_Id
+   ;global 
+   g_OldCaretX
+   ;global 
+   g_OldCaretY
+   ;global 
+   g_Word
+   ;global 
+   prefs_DetectMouseClickMove
 
    ;If we aren't using the DetectMouseClickMoveScheme, skip out
    if (prefs_DetectMouseClickMove != "On")
@@ -1798,11 +1789,16 @@ CheckForCaretMove(MouseButtonClick, UpdatePosition := false){
 
 InitializeHotKeys(){
    ;/
-   global g_DelimiterChar
-   global g_EnabledKeyboardHotKeys
-   global prefs_ArrowKeyMethod
-   global prefs_DisabledAutoCompleteKeys
-   global prefs_LearnMode
+   ;global 
+   g_DelimiterChar
+   ;global 
+   g_EnabledKeyboardHotKeys
+   ;global 
+   prefs_ArrowKeyMethod
+   ;global 
+   prefs_DisabledAutoCompleteKeys
+   ;global 
+   prefs_LearnMode
 
    g_EnabledKeyboardHotKeys := ""
 
@@ -1866,8 +1862,10 @@ InitializeHotKeys(){
 } ;//
 
 EnableKeyboardHotKeys(){
-   global g_DelimiterChar
-   global g_EnabledKeyboardHotKeys
+   ;global 
+   g_DelimiterChar
+   ;global 
+   g_EnabledKeyboardHotKeys
    Loop Parse, g_EnabledKeyboardHotKeys, g_DelimiterChar
    {
       Hotkey(A_LoopField, "On")
@@ -1876,8 +1874,10 @@ EnableKeyboardHotKeys(){
 }
 
 DisableKeyboardHotKeys(){
-   global g_DelimiterChar
-   global g_EnabledKeyboardHotKeys
+   ;global 
+   g_DelimiterChar
+   ;global 
+   g_EnabledKeyboardHotKeys
    Loop Parse, g_EnabledKeyboardHotKeys, g_DelimiterChar
    {
       Hotkey(A_LoopField, "Off")
@@ -1888,14 +1888,22 @@ DisableKeyboardHotKeys(){
 ;/ checkword(key)
 ; If hotkey was pressed, check wether there's a match going on and send it, otherwise send the number(s) typed
 CheckWord(Key){
-   global g_ListBox_Id
-   global g_Match
-   global g_MatchStart
-   global g_NumKeyMethod
-   global g_SingleMatch
-   global g_Word
-   global prefs_ListBoxRows
-   global prefs_NumPresses
+   ;global 
+   g_ListBox_Id
+   ;global 
+   g_Match
+   ;global 
+   g_MatchStart
+   ;global 
+   g_NumKeyMethod
+   ;global 
+   g_SingleMatch
+   ;global 
+   g_Word
+   ;global 
+   prefs_ListBoxRows
+   ;global 
+   prefs_NumPresses
 
    Key := SubStr(Key, -1*(1)) ;Grab just the number pushed, trim off the "$"
 
@@ -2030,17 +2038,28 @@ CheckWord(Key){
 ;------------------------------------------------------------------------
 ;If a hotkey related to the up/down arrows was pressed
 EvaluateUpDown(Key){
-   global g_ListBox_Id
-   global g_Match
-   global g_MatchPos
-   global g_MatchStart
-   global g_MatchTotal
-   global g_OriginalMatchStart
-   global g_SingleMatch
-   global g_Word
-   global prefs_ArrowKeyMethod
-   global prefs_DisabledAutoCompleteKeys
-   global prefs_ListBoxRows
+   ;global 
+   g_ListBox_Id
+   ;global 
+   g_Match
+   ;global 
+   g_MatchPos
+   ;global 
+   g_MatchStart
+   ;global 
+   g_MatchTotal
+   ;global 
+   g_OriginalMatchStart
+   ;global 
+   g_SingleMatch
+   ;global 
+   g_Word
+   ;global 
+   prefs_ArrowKeyMethod
+   ;global 
+   prefs_DisabledAutoCompleteKeys
+   ;global 
+   prefs_ListBoxRows
 
    if (prefs_ArrowKeyMethod = "Off")
    {
@@ -2111,7 +2130,7 @@ EvaluateUpDown(Key){
 
       if (KeyTest == "L") {
          ;when hitting LButton, we've already handled this condition
-      } else       if (prefs_DisabledAutoCompleteKeys ~= "i)(" RegExReplace(RegExReplace(KeyTest,"[\\\.\*\?\+\[\{\|\(\)\^\$]","\$0"),"\s*,\s*","|") ")")
+      } else       if (prefs_DisabledAutoCompleteKeys ~= "i)(" RegExReplace(RegExReplace(KeyTest, "[\\\.\*\?\+\[\{\|\(\)\^\$]", "\$0"), "\s*,\s*", "|") ")")
       {
          SendKey(Key)
          Return
@@ -2145,7 +2164,7 @@ EvaluateUpDown(Key){
          g_MatchPos := g_MatchTotal
       } else       if (StrCompare(g_MatchPos, g_MatchStart) < 0)
       {
-         g_MatchStart --
+         g_MatchStart-- 
       }
    } else    if (Key = "$Down")
    {
@@ -2156,7 +2175,7 @@ EvaluateUpDown(Key){
          g_MatchPos := "1"
       } Else If ( g_MatchPos > ( g_MatchStart + (prefs_ListBoxRows - 1) ) )
       {
-         g_MatchStart ++
+         g_MatchStart++
       }
    } else    if (Key = "$PgUp")
    {
@@ -2212,8 +2231,10 @@ EvaluateUpDown(Key){
 ;------------------------------------------------------------------------
 
 ReturnLineWrong(){
-   global g_OldCaretY
-   global prefs_DetectMouseClickMove
+   ;global 
+   g_OldCaretY
+   ;global 
+   prefs_DetectMouseClickMove
    ; Return false if we are using DetectMouseClickMove
    if (prefs_DetectMouseClickMove = "On")
    {
@@ -2237,8 +2258,10 @@ AddSelectedWordToList(){
    A_Clipboard := ClipboardSave
 }
 DeleteSelectedWordFromList(){
-   global g_MatchPos
-   global g_SingleMatch
+   ;global 
+   g_MatchPos
+   ;global 
+   g_SingleMatch
 
    if !(g_SingleMatch[g_MatchPos] = "") ;only continue if g_SingleMatch is not empty
    {
@@ -2251,7 +2274,8 @@ DeleteSelectedWordFromList(){
 ;------------------------------------------------------------------------
 EvaluateScriptPathAndTitle(){
    ;relaunches to 64 bit or sets script title
-   global g_ScriptTitle
+   ;global 
+   g_ScriptTitle
 
    SplitPath(A_ScriptName, , , &ScriptExtension, &ScriptNoExtension)
 
@@ -2266,14 +2290,14 @@ EvaluateScriptPathAndTitle(){
 
             if FileExist(ScriptPath64)
             {
-               Run(ScriptPath64, A_WorkingDir)
+               Run( A_WorkingDir)
                ExitApp()
             }
          }
       }
    }
 
-   if (SubStr(ScriptNoExtension, (StrLen(ScriptNoExtension)-1)<1 ? (StrLen(ScriptNoExtension)-1)-1 : (StrLen(ScriptNoExtension)-1), 2) == "64" )
+   if (SubStr(ScriptNoExtension, ((StrLen(ScriptNoExtension)-1)<1 ? (StrLen(ScriptNoExtension)-1)-1 : (StrLen(ScriptNoExtension)-1))<1 ? ((StrLen(ScriptNoExtension)-1)<1 ? (StrLen(ScriptNoExtension)-1)-1 : (StrLen(ScriptNoExtension)-1))-1 : ((StrLen(ScriptNoExtension)-1)<1 ? (StrLen(ScriptNoExtension)-1)-1 : (StrLen(ScriptNoExtension)-1)), 2) == "64" )
    {
       g_ScriptTitle := SubStr(ScriptNoExtension, 1, -1*(2))
    } else {
@@ -2290,7 +2314,7 @@ EvaluateScriptPathAndTitle(){
 
 ;------------------------------------------------------------------------
 
-InactivateAll(){
+/*InactivateAll(){
    ;Force unload of Keyboard Hook and WinEventHook
    ih := InputHook(), ih.Start(), ih.Wait(),  := ih.Input
    SuspendOn()
@@ -2331,7 +2355,7 @@ SuspendOff(){
           ;  Menu, tray, Icon, %A_ScriptFullPath%,1,1
 
    }
-}
+}*/
 ;------------------------------------------------------------------------
 
 BuildTrayMenu(){
@@ -2359,7 +2383,7 @@ BuildTrayMenu(){
 
 ; This is to blank all vars related to matches, ListBox and (optionally) word
 ClearAllVars(ClearWord){
-   global
+   ;global
    CloseListBox()
    if (ClearWord = 1)
    {
@@ -2455,9 +2479,12 @@ GetOSVersion(){
 }
 ;------------------------------------------------------------------------
 MaybeCoInitializeEx(){
-   global g_NULL
-   global g_ScrollEventHook
-   global g_WinChangedEventHook
+   ;global 
+   g_NULL
+   ;global 
+   g_ScrollEventHook
+   ;global 
+   g_WinChangedEventHook
 
    if (!g_WinChangedEventHook && !g_ScrollEventHook)
    {
@@ -2466,8 +2493,10 @@ MaybeCoInitializeEx(){
 }
 
 MaybeCoUninitialize(){
-   global g_WinChangedEventHook
-   global g_ScrollEventHook
+   ;global 
+   g_WinChangedEventHook
+   ;global 
+   g_ScrollEventHook
    if (!g_WinChangedEventHook && !g_ScrollEventHook)
    {
       DllCall("CoUninitialize")
@@ -2494,7 +2523,7 @@ MenuEventHandler(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
     FilePath := A_ThisMenu "\" A_ThisMenuItem
 
     ; Run item with appropriate handler
-    Switch FileExtension
+    /*Switch FileExtension
     {
         case "rtf" : Handler_RTF(FilePath)
         case "bat" : Handler_LaunchProgram(FilePath)
@@ -2504,7 +2533,7 @@ MenuEventHandler(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
         case "ahn" : Handler_Note(FilePath)
 
         Default: Handler_Default(FilePath)
-    }
+    }*/
 
     ; Clear the graphics and update thw window
     Gdip_GraphicsClear(G)                                 ;This sets the entire area of the graphics to 'transparent'
@@ -2576,23 +2605,22 @@ FileMenu.Add("&Rescan`tCtrl+R", GuiReset)
 MyMenuBar.Add("&File", FileMenu)
 mygui.MenuBar := MyMenuBar
 
-GuiReset()
+;GuiReset(mygui)
 
 Return
 
  ;// end autoexecute_windowsmenu()
 
 ;/ ALL Windows Menu Labels & Functions
-ShellMessage( wParam,lParam ) {
+/*ShellMessage( wParam,lParam ) {
    If ( wParam = 1 ) ; or ( wParam = 2 )  HSHELL_WINDOWCREATED := 1
    {
       GuiReset()
    }
-}
+}*/
 
 ; Subroutine scans open windows and creates a list for both the menu and Gui DropDownList.
 GuiReset(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
-
 { ; V1toV2: Added bracket
 oOpenWindow := WinGetList(,,,)
 aOpenWindow := Array()
@@ -2810,7 +2838,8 @@ SetColor() {
 ; I only changed WM_NOTIFY( p_w, p_l, p_m ) for this app
 
 LV_ColorInitiate(Gui_Number:=1, Control:=""){ ; initiate listview color change procedure
-  global hw_LV_ColorChange
+  ;global 
+  hw_LV_ColorChange
   if (Control = "")
     Control:= "SysListView321"()
   %Gui_Number% := Gui()
@@ -2821,7 +2850,7 @@ LV_ColorInitiate(Gui_Number:=1, Control:=""){ ; initiate listview color change p
 }
 
 LV_ColorChange(Index:="", TextColor:="", BackColor:="") { ; change specific line's color or reset all lines
-  global
+  ;global
   if (Index = "")
     Loop ogcListViewName.GetCount()
       LV_ColorChange(A_Index)
@@ -2854,7 +2883,7 @@ WM_NOTIFY( p_w, p_l, p_m ){
     }
 }
 
-DecodeInteger( p_type, p_address, p_offset, p_hex:=true ){
+/*DecodeInteger( p_type, p_address, p_offset, p_hex:=true ){
 ; REMOVED:   old_FormatInteger := A_FormatInteger
   if (p_hex = "1, SetFormat, Integer, hex")
 ; REMOVED:   else SetFormat, Integer, dec
@@ -2873,7 +2902,7 @@ EncodeInteger( p_value, p_size, p_address, p_offset )
     DllCall("RtlFillMemory", "uint", p_address+p_offset+A_Index-1, "uint", 1, "uchar", p_value >> ( 8*( A_Index-1 ) ))
 }
 ;// end of todo functions
-
+*/
 ;=========================== Typing
 Configuration(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 { ; V1toV2: Added bracket
@@ -3091,7 +3120,7 @@ ExitApp()
 ;//
 } ; V1toV2: Added bracket before function
 
-IniSettingsEditor(ProgName,IniFile,OwnedBy := 0,DisableGui := 0) {
+/*IniSettingsEditor(ProgName,IniFile,OwnedBy := 0,DisableGui := 0) {
     ;/ start
     static pos
 
@@ -3287,7 +3316,7 @@ IniSettingsEditor(ProgName,IniFile,OwnedBy := 0,DisableGui := 0) {
                 SB.SetText("")
 
             ;change GUI content if tree selection changed
-            If (CurrID <> LastID) {
+            If (CurrID > LastID) {
                 ;remove custom options from last control
                 Loop Parse, InvertedOptions, "A_Space"
                     
@@ -3523,7 +3552,7 @@ else      If (Typ = "Exe"){
 ;==============================[]=================================[]
 } ; V1toV2: Added bracket before function
 } ; V1toV2: Added bracket before function
-} ; V1toV2: Added bracket before function
+}*/ ; V1toV2: Added bracket before function
 
 
 GuiIniSettingsEditorAnchor(ctrl, a, draw := false) { ; v3.2 by Titan (shortened)
@@ -3603,7 +3632,7 @@ class ClipboardStore {
 #Include "lib\Window.ah2"
 #Include "lib\Wordlist.ah2"
 #Include "lib\DBA.ah2"
-#Include "lib\_Struct.ah2"
+;#Include "lib\_Struct.ah2"
 
 
 menulooper(PATH){
@@ -3787,7 +3816,7 @@ Local s, c, p, key, k, write
    }
 }
 
-#Include "stats.ahk"
+;#Include "stats.ahk"
 
 run(path)
 {
@@ -3842,4 +3871,5 @@ chrome_name(num:=0)
         MsgBox("2:" sent dkz2)
         return
     }
+    return
 }
