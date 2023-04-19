@@ -1,0 +1,1 @@
+for /f %i in (non-essential-files.txt) do del %i /F /S /Q

@@ -1,0 +1,5 @@
+// c derivitive for loop
+const char string[] {"string"};
+	 for (auto* p = string[]; *p; ++p){
+		printf("ix is: %d\n", *p);
+	 }

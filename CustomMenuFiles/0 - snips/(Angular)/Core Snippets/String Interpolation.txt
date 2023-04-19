@@ -1,0 +1,13 @@
+
+
+title: string ;
+numberOne: number = 1;
+numberTwo: number = 2;
+
+//html
+/*
+{{ title }}
+{{ numberOne + numberTwo }}
+{{ togglePokemon ? "isPokemon": "isNotPokemon" }}
+*/
+

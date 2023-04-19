@@ -1,0 +1,29 @@
+#region ===[ Private Members ]=============================================================
+
+//code private readonly IConfiguration _configuration;
+
+#endregion
+
+#region ===[ Properties ]=============================================================
+
+//code private readonly IConfiguration _configuration;
+
+#endregion
+
+#region ===[ Constructors ]=============================================================
+
+//code private readonly IConfiguration _configuration;
+
+#endregion
+
+#region ===[ Methods ]=============================================================
+
+//code private readonly IConfiguration _configuration;
+
+#endregion
+
+#region ===[ Notes ]=============================================================
+/*
+
+*/
+#endregion

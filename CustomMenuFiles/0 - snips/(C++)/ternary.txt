@@ -1,0 +1,1 @@
+auto s = x > y ? "yes":"no";

@@ -1,0 +1,3 @@
+for (const auto& e : array){
+		printf("e is: %d\n", e);
+	}

@@ -1,0 +1,3 @@
+void func(int i, const char* s){
+	cout << "func" << std::endl;
+}

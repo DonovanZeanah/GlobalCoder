@@ -1,0 +1,7 @@
+@page "/blank"
+
+<h3>BlankComponent</h3>
+
+@code {
+
+}

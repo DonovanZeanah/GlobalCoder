@@ -1,0 +1,47 @@
+<h3>Search Bar</h3>
+
+@* Auto-update filter on input text vice clicking to update
+<div>
+    Search:
+    <input type="text" @bind-value="_filter" @oninput="HandleSearch" />
+    <button @onclick="HandleClick">Search</button>
+</div>
+<br/>
+*@
+
+<div>
+    Search:
+    <input type="text" @bind-value="filter"/>
+    <button @onclick="HandleSearch">Search</button>
+@*<button @onclick="@(() => HandleClick())">Click me!</button>
+*@
+</div>
+
+<br />
+@*(for testing) putting filter directly into the view*@
+@filter
+
+@code {
+/*
+//<button @onclick="MethodName"> <-binds to-> private void HandleSearch()
+Need to wrap the method in a lambda expression that creates an event handler delegate: <button @onclick="@(() => HandleClick())">Click me!</button>
+
+//HandleSearch() - 'Event Handler'
+//
+_filter - 'state' data
+//Bind filter to inputbox via data-binding. @bind-value="filter"
+
+// import the namespace into _imports.razor, as this file will be in 'controls/parentComponent' folder
+
+
+*/
+// Inputbox data
+    private string filter;
+
+// Event handler
+
+    private void HandleSearch()
+    {
+        Console.WriteLine("SearchBar_Component.HandleSearch");
+    }
+}

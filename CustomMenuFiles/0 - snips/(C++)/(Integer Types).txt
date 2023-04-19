@@ -1,0 +1,12 @@
+//Signed & Unsigned Versions
+//==========================================
+
+
+//char - ~8bits
+
+	// signed unless modified with unsigned keyword
+
+//short int - ~16bits
+//int - ~32bits
+//long int - ~32 or 64bits
+//long long int - ~32/64

@@ -1,0 +1,2 @@
+Kingdom/ClientApp/**/*.angular* 
+# tells any file or folder with name .angular to be ignored

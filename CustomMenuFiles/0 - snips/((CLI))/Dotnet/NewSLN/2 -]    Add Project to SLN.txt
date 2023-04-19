@@ -1,0 +1,1 @@
+dotnet sln add todo-app/todo-app.csproj

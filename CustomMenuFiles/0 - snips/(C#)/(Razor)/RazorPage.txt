@@ -1,0 +1,14 @@
+@page "/mercedes"
+
+@inject ISearchMercedes SearchMercedes
+
+<h3>SearchMercedesComponent</h3>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Console.WriteLine("SearchMercedesComponent.OnInitialized");
+    }
+
+}

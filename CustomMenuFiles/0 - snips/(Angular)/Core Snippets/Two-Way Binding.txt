@@ -1,0 +1,14 @@
+// [()] - "Banana Box" - () is the 'up' binding (two-way)
+
+/*
+1. Sets properties in your code-behind
+2. Listens for a DOM element Change
+*/
+
+favoriteAnimal: string="tamarin";
+// ngModel is instantiated along with the page (at page startup) that
+// & ngModel handles the data bindings to/from
+
+ /* 
+<input [(ngModel)]="favoriteAnimal" />
+*/

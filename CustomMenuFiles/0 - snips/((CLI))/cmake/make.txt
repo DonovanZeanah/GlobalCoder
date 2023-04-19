@@ -1,0 +1,1 @@
+"C:\Program Files\CMake\bin\cmake.exe" --build "D:\OpenCV\build10" --target INSTALL --config Release

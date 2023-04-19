@@ -1,0 +1,1 @@
+dotnet sln remove todo-app/todo-app.csproj

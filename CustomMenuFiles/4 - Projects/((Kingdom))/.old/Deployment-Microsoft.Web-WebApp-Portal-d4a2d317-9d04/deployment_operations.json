@@ -1,0 +1,36 @@
+[
+  {
+    "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-d4a2d317-9d04/operations/2628F11C1B08AE3A",
+    "operationId": "2628F11C1B08AE3A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-03-17T11:20:59.3911717Z",
+      "duration": "PT7.1140031S",
+      "trackingId": "d8bcdbfb-c9bb-47a2-9a62-8a775552839b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Web/serverfarms/ASP-MyKd-87ae",
+        "resourceType": "Microsoft.Web/serverfarms",
+        "resourceName": "ASP-MyKd-87ae"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-d4a2d317-9d04/operations/B79B660B79B68D17",
+    "operationId": "B79B660B79B68D17",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2023-03-17T11:21:08.5696459Z",
+      "duration": "PT16.2924773S",
+      "trackingId": "07b5fc3f-a287-4573-9c05-90b69bbab645",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Resources/deployments/newWorkspaceTemplate",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "newWorkspaceTemplate"
+      }
+    }
+  }
+]

@@ -4,7 +4,7 @@ InputBox, folder, , folder path no ending'/',, , , , , Font, Timeout, d:\(github
 InputBox, inp, , string to search,, , , , , Font, Timeout, Default
 inputbox, rec ,, (F)iles(D)irs(R)ecurse Options,, ,,,, F
 
-class querybuilder(){
+class querybuilder{
     static folder := {}
     static String := {}
     static options := {}

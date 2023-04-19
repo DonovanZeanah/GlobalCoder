@@ -1,0 +1,4 @@
+// c derivitive for loop
+for (int ix = 0; ix < 5; ix++){
+		printf("ix is: %d\n", array[ix]);
+	 }

@@ -1,0 +1,8 @@
+if (x<y)
+	{
+		cout << "x is less than y" << std::endl;
+	}
+	else
+	{
+		cout << "x is greater than or equal to y" << std::endl;
+	}

@@ -1,0 +1,1 @@
+dotnet new sln -n mysolution && dotnet new console -o ConsoleTesting && dotnet new classlib -o Models && dotnet new classlib -o DbContext && dotnet sln mysolution.sln add myapp\myapp.csproj ** dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs && dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs 

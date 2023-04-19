@@ -50,18 +50,46 @@ global MyProgress := 0
 Global TotalWords := 0
 global callingwindow := ""
 global rootpath := a_scriptdir
+;;=====================================================pg down
 global hotpath := a_scriptdir . "\CustomMenuFiles"
 global notepath := a_scriptdir . "\logs\notes"
 global timestring := ""
 global g_hotpath := a_scriptdir . "\logs\"
 global g_Qpath := a_scriptdir . "\logs\questions"
 global g_Apath := a_scriptdir . "\logs\questions\answers"
+global MenuIsActive := 0
+
 FormatTime, TimeString, 20050423220133,MM d-HHmmss tt
 global myGC := new gc()
 Menu, Tray, Icon , Shell32.dll, 14 , 1
 TrayTip, GlobalCoder, Started %timestring%
 
+global GC_Subjects := {}
+;GC_Subjects.containers := {}
+GC_Subjects.folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
+GC_Subjects.Keywords := { 1 : "test", 2 : "code", 3 : "git"}
+GC_Subjects.path := { 1 : "%a_scriptdir%/notes/test", 2 : "%a_scriptdir%/notes/code", 3 : "%a_scriptdir%/notes/git"}
 
+class GC
+{
+    ;/[class] class subject{ } ;//
+    static propogationString := ";/[class] class subject{ } `;// "
+    static propogationStringNoSpace := "`n;/[class]`nclass subject{`n}`n;//`n"
+
+        ;/[class]
+         class subjects{
+
+                static folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
+            } ;//
+                ;/[class]
+         class paths{
+
+            } ;//
+                ;/[class]
+         class keywords{
+
+            } ;//
+}
 ;[//NOTES]==============================[//NOTES]=================================[//NOTES]
 /*
    
@@ -91,30 +119,8 @@ WordsPerTime_Number := 190
 
 Menu, MenuName, UseErrorLevel
 
-FindAmountItems()
-PrepareMenu(A_ScriptDir "\CustomMenuFiles")
-PrepareMenu(A_ScriptDir "\singles")
-   ;The following code sets up the Gui with a DropDownList with the original list of
-   ;open windows. Remove or comment out this code for Menu only.
 
-Gui,+AlwaysOnTop
-Gui, Font, s12, Arial
-Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
-Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
-Menu, MyMenuBar, Add, &File, :FileMenu
-Gui, Menu, MyMenuBar
-
-
-
-If !pToken := Gdip_Startup()
-{
-	MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
-	ExitApp
-}
-;OnExit, Exit
-
-
-;RunOtherScripts(A_ScriptDir "\singles")
+;;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
 
 hwnd1 := WinExist() 						; Get a handle to this window we have created in order to update it later
 hbm   := CreateDIBSection(Width, Height) 	; Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
@@ -165,7 +171,7 @@ g_WM_LBUTTONUP := 0x202
 g_WM_LBUTTONDBLCLK := 0x203
 g_WM_MOUSEMOVE := 0x200
 g_WM_SETCURSOR := 0x20
-
+;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
 ;setup code
 g_DpiScalingFactor := A_ScreenDPI/96 
 g_Helper_Id =
@@ -180,10 +186,11 @@ if (A_PtrSize == 8) {
 g_PID := DllCall("GetCurrentProcessId")
 AutoTrim, Off
 
+loadminerva()
 InitializeListBox()
 BlockInput, Send
 InitializeHotKeys()
-DisableKeyboardHotKeys()
+;DisableKeyboardHotKeys()
 
 
 ReadWordList() ;Read in the WordList
@@ -213,16 +220,121 @@ MainLoop()
 ;OnExit, ExitSub
 
 Return
+
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
 
 
+loadminerva(){
+    FindAmountItems()
+    PrepareMenu(A_ScriptDir "\CustomMenuFiles")
+    PrepareMenu(A_ScriptDir "\singles")
+
+    Gui,+AlwaysOnTop
+    Gui, Font, s12, Arial
+    Gui, Add, DropDownList, w275 vWindowMove gPosChoice Sort Choose1 ; ,Pick a Window||
+    Menu, FileMenu, Add, &Rescan`tCtrl+R, GuiReset
+    Menu, MyMenuBar, Add, &File, :FileMenu
+    Gui, Menu, MyMenuBar
+
+       ;The following code sets up the Gui with a DropDownList with the original list of
+       ;open windows. Remove or comment out this code for Menu only.
+
+    If !pToken := Gdip_Startup()
+    {
+        MsgBox, 48, gdiplus error!, Gdiplus failed to start. Please ensure you have gdiplus on your system
+        ExitApp
+    }
+    ;OnExit, Exit
+    msgbox, % "Minerv Loaded"
+    return
+    ;RunOtherScripts(A_ScriptDir "\singles")
+}
+
+;x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=[]=x=x=x=x=x=x=x=x=x=x=x=x=xx=x=x=x=x=x=x=x=[]x=[]
 ;Menu, Tray, Icon, % A_WinDir "\system32\netshell.dll", 86 ; Shows a world icon in the system tray
 
+/*~^!::     ;gesture hotkey, i imagine most would use a mousekey for gestures,ctrl is simply an example suitable for testing as i've got radial menu running...
+    GetMouseGesture(True)
+    While GetKeyState(LTrim(A_ThisHotkey,"~")){
+        ToolTip % MG := GetMouseGesture()
+        Sleep 150
+    }
+    ;left <= 20% of screen width, right >= 80% of screen width, top <= 20% of screen height, bottom >= 80% of screen height
+    MQ := SubStr(MouseQuadrant(20,80,20,80),1,1)    ;take only the first letter of the quadrant,for simplified function names...
+    IsFunc(MG "_" MQ) ? %MG%_%MQ%() : (IsFunc(MG) ? %MG%() : "")    ;example allows creation of gestures by defining functions that comprise U,D,R,L as function name,with no upper limit on the extent of the gesture,i.e UDUDUDUDL for ex.
+    ToolTip
+    GetMouseGesture(True)
+Return
+*/
 
 
+UDL(){
+    MsgBox % "Function Run,if no function was defined for specific quadrant. Or Quadrant Has No Assigned Function.`n`n CurrentQuadrant:`n`t" MouseQuadrant(20,80,20,80)
+}
+
+UDL_T(){    ;function defined gesture example for example below
+    MsgBox Gesture On Top
+}
+
+UDL_L(){    ;function defined gesture example for example below
+    MsgBox Gesture To The LEFT
+}
+
+UDL_R(){    ;function defined gesture example for example below
+    MsgBox Gesture To The Right
+}
+
+
+;returns if screen is on top,bottom,center,left,right area of screen given the defined scope in percent of each area...see example.
+/*
+                    Top
+    ___________________________________
+    L   |                       |   R
+    E   |                       |   y
+    F   |       C E N T E R     |   T
+    T   |                       |
+    ____|_______________________|______
+                    Bottom
+*/
+;defined scopes are in 'percent',i.e left scope means anything below defined % is designated left,right scope is anything above defined %...
+MouseQuadrant(leftScope,rightScope,topScope,bottomScope,coordMode:="screen"){   ;coordMode should either be 'window' or 'screen'
+    CoordMode, Mouse, % coordMode
+    MouseGetPos, mX, mY, mHwnd, mCtrl
+    WinGetPos, wX, wY, wW, hH, A
+    
+    If (mX <= leftScope/100*(coordMode = "screen" ? A_ScreenWidth : wW) && mY >= topScope/100*(coordMode = "screen" ? A_ScreenHeight : hH) && mY <= bottomScope/100*(coordMode = "screen" ? A_ScreenHeight : hH))
+        Return "LEFT"
+    Else If (mX >= rightScope/100*(coordMode = "screen" ? A_ScreenWidth : wW) && mY >= topScope/100*(coordMode = "screen" ? A_ScreenHeight : hH) && mY <= bottomScope/100*(coordMode = "screen" ? A_ScreenHeight : hH))
+        Return "RIGHT"
+    Else If (mY <= topScope/100*(coordMode = "screen" ? A_ScreenHeight : hH))
+        Return "TOP"
+    Else If (mY >= bottomScope/100*(coordMode = "screen" ? A_ScreenHeight : hH))
+        Return "BOTTOM"
+    Else
+        Return "CENTER"
+    
+}
+
+
+GetMouseGesture(reset := false){
+    Static
+    mousegetpos,xpos2, ypos2
+    dx:=xpos2-xpos1,dy:=ypos1-ypos2
+    ,( abs(dy) >= abs(dx) ? (dy > 0 ? (track:="u") : (track:="d")) : (dx > 0 ? (track:="r") : (track:="l")) )   ;track is up or down, left or right
+    ,abs(dy)<4 and abs(dx)<4 ? (track := "") : ""   ;not tracking at all if no significant change in x or y
+    ,xpos1:=xpos2,ypos1:=ypos2
+    ,track<>SubStr(gesture, 0, 1) ? (gesture := gesture . track) : ""   ;ignore track if not changing since previous track
+    ,gesture := reset ? "" : gesture
+    Return gesture
+}
+
+;[]==============================[]=================================[]
+
+f24 & e:: run, %A_ScriptDir%
 ^+!u::
+msgbox, % "username" a_username
 ModernBrowsers := "ApplicationFrameWindow,Chrome_WidgetWin_0,Chrome_WidgetWin_1,Maxthon3Cls_MainFrm,MozillaWindowClass,Slimjet_WidgetWin_1"
 LegacyBrowsers := "IEFrame,OperaWindowClass"
 
@@ -384,6 +496,7 @@ GlobalMode := !GlobalMode
 MsgBox, % "`n GlobalMode Status " globalmode
 return
 
+
 :*:gcd::
 routinegcpath(){
 send, !d
@@ -510,6 +623,13 @@ send, {up}
 return
 
 
+ ;*************************************************************************
+;Author: Donovan Zeanah 
+;Purpose: Code Comment 
+;Comment: 
+;' ***************************************************************************
+
+
 ;g commands send the hotstrings into one function that reroute it based on editor then save
 ; the 'input' as a g.editer.session object which basically acts as a timeline 
 :*:gtodo:: 
@@ -524,7 +644,7 @@ Switch Process
     . ";Author: Donovan Zeanah `n"
     . ";Purpose: Code Comment `n"
     . ";Comment:`n"
-    . "' ***************************************************************************`n"
+    . "; ***************************************************************************`n"
   Case "devenv.exe":
     CommentBlock := " //# ===========================================================================`n"
     . "//Author: Donovan Zeanah `n"
@@ -668,7 +788,6 @@ newsubject(path := ""){
   ;fileappend,"init", % frontproject "\note.txt"
   return frontproject
  } ; should add new folder and set to frontproj
-
 
 
 selectsubject(path := ""){
@@ -884,8 +1003,21 @@ return
 
 xbutton2 & n::
 f24 & g::
+chrome_group3()
+;chrome_name()
+return
 
-chrome_name()
+chrome_group3(num := 0){
+if (num = 0)
+{
+static count := ++0
+}
+WinActivate, ahk_exe chrome.exe
+WinWaitActive, ahk_exe chrome.exe
+sleep, 200
+sendevent, !g
+return
+}
 
 :*:pyear::&as_qdr=y1
 
@@ -1078,10 +1210,73 @@ return ;// end hotkey x
 
 ; MAIN MENU & the Children MENUs
 ;-------------------------
+; Hotkey to show the menu
+
+; Initialize the global variable to indicate if the menu is active.
+
+; Hotkey to show the menu
+^F24::
+Ctrl & RShift::
+    callingwindow := WinActive("A")
+    CoordMode Menu, Screen
+    GetCaret(X, Y,, H)
+
+;createtransparentwindow()
+    Menu, %A_ScriptDir%\CustomMenuFiles, show , % X, % Y + H
+return
+
+; Label for when the menu is shown
+/*MenuShow:
+    ; Set the variable to indicate that the menu is active.
+    MenuIsActive := 1
+return*/
+
+; Label for when an item in the menu is selected
+/*MenuSelect:
+    ; Set the variable to indicate that the menu is not active.
+    MenuIsActive := 0
+return*/
+
+; Context-sensitive hotkeys based on menu status
+#If MenuIsActive
+
+#if
+; Define the hotkeys for when the menu is active.
+; Replace 'Key1' and 'Key2' with the actual keys you want to use.
+
+    ; Your code for when the menu is active goes here.
+
+/*^F24::
+Ctrl & RShift::
+    callingwindow := WinActive("A")
+    CoordMode Menu, Screen
+    GetCaret(X, Y,, H)
+    
+    ; Create a transparent window to receive focus when the menu is shown
+    CreateTransparentWindow()
+    
+    Menu, %A_ScriptDir%\CustomMenuFiles, show , % X, % Y + H
+return
+*/
+
+CreateTransparentWindow() {
+    ; Create a transparent window with the WS_EX_TOOLWINDOW style to prevent it from appearing in the taskbar
+    Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow +E0x20
+    Gui, Color, FFFFFF, FFFFFF
+    Gui, Show, x-10000 y-10000, FocusWindow
+    WinSet, Transparent, 255, FocusWindow
+}
+
+; Label for when the menu is dismissed
+MenuClose:
+    ; Close the transparent window
+    Gui, Destroy
+return
 
 ; main menu
-
-^f24::
+; f24 & rshift
+; rctrl & rshift
+/*^f24::
 Ctrl & RShift::
 ;/
 
@@ -1092,6 +1287,7 @@ GetCaret(X, Y,, H)
 Menu, %A_ScriptDir%\CustomMenuFiles, show , % X, % Y + H
 return
 ;// endregion
+*/
 
 f24 & f1::
 f24 & 1::
@@ -1104,7 +1300,7 @@ return
 ;--------------------------- END Main Menu Family
 
 ; quick menu / google, etc...
-f24 & ralt::
+/*f24 & ralt::
 ;/
 CoordMode Menu, Screen
 GetCaret(X, Y,, H)
@@ -1114,6 +1310,7 @@ Menu, MyMenu, Add, Menu Item 3, GoMenuHandler1
 Menu, MyMenu, Show, % X, % Y + H
 ;gui, menu, mymenu
 return
+*/
 ;//
 ShowCapMenu:
     GCshowing := true
@@ -1670,32 +1867,7 @@ showfile(fileFullPath){
 }
 
 ;==============================[]=================================[]
-global GC_Subjects := {}
-;GC_Subjects.containers := {}
-GC_Subjects.folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
-GC_Subjects.Keywords := { 1 : "test", 2 : "code", 3 : "git"}
-GC_Subjects.path := { 1 : "%a_scriptdir%/notes/test", 2 : "%a_scriptdir%/notes/code", 3 : "%a_scriptdir%/notes/git"}
 
-class GC
-{
-	;/[class] class subject{ } ;//
-	static propogationString := ";/[class] class subject{ } `;// "
-	static propogationStringNoSpace := "`n;/[class]`nclass subject{`n}`n;//`n"
-
-		;/[class]
-		 class subjects{
-
-		 		static folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir . "/notes/code", git : A_ScriptDir . "/notes/git"}
-		 	} ;//
-		 		;/[class]
-		 class paths{
-
-		 	} ;//
-		 		;/[class]
-		 class keywords{
-
-		 	} ;//
-}
 ;==============================[---- Menu Handler Functions for switch cases ----]=================================[]
 ; ---- Menu Handler Functions for switch cases ----
 
@@ -1730,7 +1902,7 @@ Handler_note(PATH){
 	;StrSplit(String, [Delimiters, OmitChars])
 	readfile := strsplit(readfile, "`n", "`r")
 
-msgbox, % "0: "  readfile.MaxIndex()
+    msgbox, % "0: "  readfile.MaxIndex()
 
 
 	report := readfile[1]
@@ -1886,6 +2058,8 @@ director(report, path, rec = 1, case = 0){
 ; ---- Other Functions ----
 ; Amountfile is a .csv that the user can use to see how much info was saved.
 AddAmountFile(FileName, WordCount){
+
+    local initialFile := "logs/AmountUsed.csv"
 	; Average Typing speed is 40 wpm pr. https://www.typingpal.com/en/typing-test
 	MinutesSaved := WordCount / 40
 
@@ -1894,14 +2068,14 @@ AddAmountFile(FileName, WordCount){
 
 	; Check if file already exists. All other times than the very first run, it will exist.
 	; If if not, create it and append, otherwise just append
-	if FileExist("logs/AmountUsed.csv")
+	if FileExist(initialFile)
 	{
-		FileAppend, %CurrentDateTime%`,%FileName%`,%WordCount%`,%MinutesSaved%`n, %A_ScriptDir%\AmountUsed.csv
+		FileAppend, %CurrentDateTime%`,%FileName%`,%WordCount%`,%MinutesSaved%`n, %A_ScriptDir%\logs\AmountUsed.csv
 	}
 	else
 	{
 		FileAppend, Date`,Text`,Word Count`,Minutes Saved`n, %A_ScriptDir%\AmountUsed.csv
-		FileAppend, %CurrentDateTime%`,%FileName%`,%WordCount%`,%MinutesSaved%`n, %A_ScriptDir%\AmountUsed.csv
+		FileAppend, %CurrentDateTime%`,%FileName%`,%WordCount%`,%MinutesSaved%`n, %A_ScriptDir%\logs\AmountUsed.csv
 	}
 }
 
@@ -4141,7 +4315,7 @@ Local s, c, p, key, k, write
    }
 }
 
-#Include, stats.ahk
+#Include lib\stats.ahk
 
 run(path)
 {
@@ -4689,13 +4863,18 @@ findstring2(string, filepattern = "*.*", rec = 0, case = 0){
     return, positions
 }
 
-findstring(rec := "RFD"){
+findstring(rec := "")
+{
+    if !rec
+  rec := "RFD"
+    
 
     inputbox, string, string,,
     inputbox, inp, folderpath,,, % "d:\(github)\globalcoder\gc\globalcoder"
 
-    msgbox, % "about to search: `n" filepattern " `n for: " string
     filepattern := folderpath . "/" . filepattern
+    msgbox, % "about to search: `n" inp " `n for: " string " rec mode:" rec
+
     len := strlen(string)
     if (len = 0)
         return

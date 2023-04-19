@@ -1,0 +1,2 @@
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln add [-h|--help]

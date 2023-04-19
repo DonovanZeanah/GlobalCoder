@@ -1,0 +1,47 @@
+{
+"AutoHotkey2.AutoLibInclude": "Local",
+"AutoHotkey2.SymbolFoldingFromOpenBrace": true,
+"terminal.integrated.defaultProfile.windows": "Git Bash",
+"files.eol": "\n",
+"editor.unfoldOnClickAfterEndOfLine": true,
+"editor.rulers": [
+	{"color": "#00c732","column": 80},
+	{"color": "#e0a500","column": 120},
+	{"color": "#ff0000","column": 160},
+],
+"workbench.iconTheme": "material-icon-theme",
+"editor.insertSpaces": false,
+"editor.autoIndent": "brackets",
+"editor.mouseWheelZoom": true,
+"editor.wordWrap": "on",
+"[ahk]": {
+	"files.encoding": "utf8bom"
+},
+"[ahk2]": {
+	"files.encoding": "utf8bom"
+},
+"AutoHotkey2.FormatOptions": {
+	"one_true_brace": "0",
+	"preserve_newlines": true
+},
+"files.associations": {
+	"*.ahk": "ahk2"
+},
+"editor.renderLineHighlight": "all",
+"editor.renderLineHighlightOnlyWhenFocus": true,
+"insertnum.formatstr": "%d",
+"insertnum.start": 1,
+"insertnum.step": 1,
+"AutoHotkey2.ActionWhenV1IsDetected": "SwitchToV1",
+"color-highlight.markerType": "foreground",
+"color-highlight.markRuler": false,
+"color-highlight.matchRgbWithNoFunction": true,
+"color-highlight.matchWords": true,
+"editor.suggest.localityBonus": true,
+"indentRainbow.colorOnWhiteSpaceOnly": true,
+"cmake.configureOnOpen": true,
+"[python]": {
+	"editor.formatOnType": true
+},
+"git.autofetch": true,
+"git.enableSmartCommit": true

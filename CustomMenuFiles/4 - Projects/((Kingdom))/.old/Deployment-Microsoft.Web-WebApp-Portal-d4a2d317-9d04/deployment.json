@@ -1,0 +1,188 @@
+{
+  "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-d4a2d317-9d04",
+  "name": "Microsoft.Web-WebApp-Portal-d4a2d317-9d04",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourcegroups/MyKd/providers/Microsoft.Web/sites/MyKd",
+    "marketplaceItemId": "Microsoft.WebSite",
+    "provisioningHash": "customize-post-provisioning-steps-webapp-deployment"
+  },
+  "properties": {
+    "templateHash": "16434226533962682936",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "5c96f086-5467-43b5-b45e-f23b77b5b80e"
+      },
+      "name": {
+        "type": "String",
+        "value": "MyKd"
+      },
+      "location": {
+        "type": "String",
+        "value": "East US"
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-MyKd-87ae"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "MyKd"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "ftpsState": {
+        "type": "String",
+        "value": "FtpsOnly"
+      },
+      "sku": {
+        "type": "String",
+        "value": "Free"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "F1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "currentStack": {
+        "type": "String",
+        "value": "dotnet"
+      },
+      "phpVersion": {
+        "type": "String",
+        "value": "OFF"
+      },
+      "netFrameworkVersion": {
+        "type": "String",
+        "value": "v6.0"
+      },
+      "repoUrl": {
+        "type": "String",
+        "value": "https://github.com/DonovanZeanah/Kingdom"
+      },
+      "branch": {
+        "type": "String",
+        "value": "master"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2023-03-17T11:21:08.5221024Z",
+    "duration": "PT17.0415867S",
+    "correlationId": "f0e60b7e-7941-47d2-8c50-2f8290cb0c24",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "sites/sourcecontrols",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "microsoft.insights",
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/microsoft.insights/components/MyKd",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "MyKd"
+          },
+          {
+            "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Web/serverfarms/ASP-MyKd-87ae",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-MyKd-87ae"
+          },
+          {
+            "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/microsoft.insights/components/MyKd",
+            "resourceType": "microsoft.insights/components",
+            "resourceName": "MyKd",
+            "apiVersion": "2015-05-01"
+          }
+        ],
+        "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Web/sites/MyKd",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "MyKd"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Web/Sites/MyKd",
+            "resourceType": "Microsoft.Web/Sites",
+            "resourceName": "MyKd"
+          }
+        ],
+        "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/Microsoft.Web/sites/MyKd/sourcecontrols/web",
+        "resourceType": "Microsoft.Web/sites/sourcecontrols",
+        "resourceName": "MyKd/web"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.Resources/deployments/newWorkspaceTemplate",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "newWorkspaceTemplate"
+          }
+        ],
+        "id": "/subscriptions/5c96f086-5467-43b5-b45e-f23b77b5b80e/resourceGroups/MyKd/providers/microsoft.insights/components/MyKd",
+        "resourceType": "microsoft.insights/components",
+        "resourceName": "MyKd"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

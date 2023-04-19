@@ -1,0 +1,59 @@
+//int ; -2,147,483,648 - 2,147,483,648 ;
+//unsigned int ; 0 - 4,294,967,295 ;
+
+//Primitives
+/*
+integer types
+floating-point types
+boolean type
+
+// Arrays - int x[5] {1,2,3,4,5}; - Continuous Sequential set of same type objects. Base of c-string and the c++ STL container class 
+// C-Strings - char s[] {"this is a string"}; primitive string (c-string) & 'treated-as-string'
+// struct x { int a; float b; char c[25]; } - sequential set of objects of various types
+
+//Class x {
+	int a; float b; char c[25];
+	public:
+		int getvalue() const;
+		void setvalue( int v );
+	};
+
+//Class written like Structure
+	struct x {
+		int getvalue() const;
+		void setvalue(int v);
+		private:
+			int a;
+			float b;
+			char c[25];
+	};
+
+//Union - Container of overlapping objects
+ALLOWS A SINGLE CONTAINER TO HOLD OBJECTS OF DIFFERENT TYPES AT THE SAME TIME //
+	union x {
+		int a;
+		float b;
+		char c[25];
+
+	};
+
+// Enum
+	enum Color {red, green, blue};
+	Color x = green;
+
+// Void
+	void func() {
+		// represents as abscence of value
+	}
+
+// Pointer
+	int x {42};
+	int* px = &x;
+	cout << printf("x is {}\n", *px);
+
+
+// Reference - 'like' a pointer, but w diff semantics
+	int x {42};
+	int& rx = x;
+	cout << printf("x is {}\n", rx);
+*/

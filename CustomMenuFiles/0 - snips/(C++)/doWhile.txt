@@ -1,0 +1,8 @@
+
+	int array[] {1,2,3,4,5};
+	int i{0};
+
+do {
+		cout << i << std::endl;
+		i++;
+	} while (i < 5);

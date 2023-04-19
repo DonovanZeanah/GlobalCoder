@@ -1,0 +1,7 @@
+// app.component.ts
+interface Pokemon {
+  id: number;
+  name: string;
+  type: string;
+  isCool?: boolean;
+}

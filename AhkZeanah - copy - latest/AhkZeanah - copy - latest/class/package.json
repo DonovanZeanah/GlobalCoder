@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "biga": "^1.1.10",
+    "biga.ahk": "^0.54.1",
+    "graphicsearch.ahk": "^0.4.0",
+    "json.ahk": "^0.1.0",
+    "string-similarity.ahk": "^1.3.2",
+    "stringc.ahk": "^0.2.0"
+  }
+}

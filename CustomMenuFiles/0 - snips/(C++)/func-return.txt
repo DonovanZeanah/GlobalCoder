@@ -1,0 +1,4 @@
+int func(int i, const char* s){
+	cout << "func" << std::endl;
+	return i * 2;
+}

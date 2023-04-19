@@ -1,0 +1,7 @@
+//app.component.ts
+imgSrc: string = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png";
+
+//app.component.html
+// dont forget alt="" IAccessibility tag
+<img [src]="imgSrc" alt="Pokemon Bulbasaur" />
+

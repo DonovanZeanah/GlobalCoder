@@ -1,0 +1,1047 @@
+<style>
+html {
+    background-color: var(--background);
+    margin: 16px;
+}
+body {
+    color: var(--foreground);
+    font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+li { margin: 2px; }
+li ul {
+    margin: 2px 0 4px;
+}
+ul.topic {
+    margin-top: 0;
+    padding-left: 1.5rem;
+}
+ul.topic ul {
+    margin: 0.2em 0;
+}
+
+h1 {
+    color: color(var(--foreground) l(- 10%));
+    font-size: 2.0rem;
+    margin: 0;
+}
+html.dark h1 {
+    color: color(var(--foreground) l(+ 10%));
+}
+h2 {
+    color: color(var(--foreground) a(0.9));
+    font-size: 1.4rem;
+    margin: 1em 0 0.1em 0;
+}
+a {
+    color: var(--bluish);
+}
+article { display: block; }
+.release-date, .forum-link {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: color(var(--foreground) a(0.7));
+}
+tt {
+    font-size: 0.9em;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding: 0 4px;
+}
+html.dark tt {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+</style>
+
+<h1>Stable Channel</h1>
+
+<article class="current">
+<h2>Build 2083</h2>
+<div class="release-date">6 February 2023</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Automatically fetch with the new <tt>auto_fetch</tt> preference</li>
+    <li>Files tab: Added support for multi-select</li>
+    <li>Locations tab: Branches with invalid tracking information are now faded</li>
+    <li>Added preference for ordering commit graph by author date</li>
+    <li>Search: Selects the current search query when opening search page</li>
+    <li>Custom commands now support selectors anywhere in an argument</li>
+    <li>Added <tt>expand_untracked_files_by_default</tt> preference</li>
+    <li>Added re-run button to failed commands in the command history</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Windows and Mac: Updated bundled Git to 2.39.1 (addresses CVE-2022-41903 and CVE-2022-23521)</li>
+    <li>Mac and Linux: Fixed large Git LFS diffs failing to load</li>
+    <li>Mac: Fixed Sublime Merge crashing when child processes crash</li>
+    <li>Fixed git filters hanging on Windows</li>
+    <li>Fixed crash when creating tags on certain commits</li>
+    <li>Fixed incorrect count in branch "ahead" indicator tooltips</li>
+    <li>Fixed syntax highlighting performance issue due to backtracking</li>
+    <li>Fixed modified commit messages being discarded when continuing cherry-pick</li>
+    <li>Fixed memory leak when searching with certain terms</li>
+    <li>Fixed HEAD indictator not updating when initializing submodules</li>
+    <li>Fixed some Git commands failing on branches called <tt>stash</tt></li>
+    <li>Fixed "Resolve" conflict buttons not handling file deletions</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2079</h2>
+<div class="release-date">14 November 2022</div>
+<ul>
+    <li>Added <tt>Open Submodule</tt> to command palette</li>
+    <li>Added <tt>Copy Tag Name</tt> to tag context menu</li>
+    <li>Added support for <tt>GIT_CONFIG_SYSTEM</tt> and <tt>GIT_CONFIG_GLOBAL</tt> environment variables</li>
+    <li>Improved unsafe repository detection</li>
+    <li>Added license date to about window</li>
+    <li>Fixed hunk header expansion selecting text beneath header</li>
+    <li>Fixed bug that disabled commit message editing</li>
+    <li>Fixed commit message loss when stashing in certain situations</li>
+    <li>Fixed commit edits failing when submodule changes are detected</li>
+    <li>Fixed signature verification failing for ssh signatures</li>
+    <li>Fixed crash when opening context menu below table of contents</li>
+    <li>Mac: Fixed license being removed due to mac address changing</li>
+    <li>Mac: Miscellaneous Ventura fixes</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2077</h2>
+<div class="release-date">22 August 2022</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Patches: Easily create and apply patches using the commit and file
+    context menus. Apply patches using the application menu or command palette.</li>
+    <li>Stash: Added support for <tt>--staged</tt> flag</li>
+    <li>Diffs: Added/Deleted files are now always displayed as inline diffs</li>
+    <li>Commit Graph: Added <tt>commit_graph_author_date</tt> preference</li>
+    <li>Added <tt>Create Branch from Remote Branch</tt> back to command palette</li>
+    <li>Added <tt>Open Containing Folder</tt> to the command palette</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Fixed <tt>open_in_editor</tt> command waiting</li>
+    <li>Update dialog now displays license validity information</li>
+    <li>Updated pull/push keybindings to remove conflicts with OS keybindings</li>
+    <li>Fixed table of contents files missing cherry pick and revert menu items</li>
+    <li>Fixed signature verification and commit editing failing on repositories with detached working directories</li>
+    <li>Fixed <tt>edit_commit_contents</tt> failing on commits with no grandparents</li>
+    <li>Fixed <tt>navigate_to_tag</tt> failing to find tags</li>
+    <li>Command history layout state now persists</li>
+    <li>Fixed empty condensed branch annotations appearing</li>
+    <li>Fixed file mode changes disappearing when all hunks are staged</li>
+    <li>Fixed crash when staging certain files with file mode changes</li>
+    <li>Improved commit message syntax highlighting</li>
+    <li>Tweaked theming for headers in dark theme</li>
+    <li>Various performance fixes</li>
+    <li>Mac: Fixed double clicking on title bar not zooming</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2074</h2>
+<div class="release-date">9 June 2022</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Application: Added dialog to mark unsafe repositories as safe</li>
+    <li>Tags: Added tags to checkout command</li>
+    <li>Search: <tt>file</tt> and <tt>path</tt> queries now support absolute paths and Windows-style paths</li>
+    <li>Files List: Added context menu for commit files</li>
+    <li>Revert: Added warning when checking out a branch when a revert is in progress</li>
+    <li>Various syntax highlighting improvements</li>
+    <li>Added <tt>ruler_style</tt> setting</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Submodules: Fixed submodule diffs showing outdated hashes</li>
+    <li>Files List: Fixed discard filtered files ignoring the filter</li>
+    <li>Files List: Fixed files list filter applying to commit dialog context menus</li>
+    <li>Navigation: Fixed tab-navigation focusing on hidden dialogs</li>
+    <li>Filters: Fixed certain filters causing the application to hang</li>
+    <li>Commit Message: Removed extra padding in commit message input</li>
+    <li>Mac: Fixed bundled Git compatibility</li>
+    <li>Mac: Fixed context menu input focus bug</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2071</h2>
+<div class="release-date">25 April 2022</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Files List: Stage filtered files using the file section context menus</li>
+    <li>Improved interface for staging/unstaging large changesets</li>
+    <li>Commit List: Added keyboard support for opening context menus</li>
+    <li>Branches: Combined all checkout commands into a single command</li>
+    <li>Branches: Added ability to unset upstreams</li>
+    <li>Search: Added auto-matching for quotes</li>
+    <li>Submodules: Added support for non-absorbed submodules</li>
+    <li>Create Tag: Added warning when tag name is invalid</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Fixed scroll position being lost when dropping a commit</li>
+    <li>Fixed scroll tracking when staging large files</li>
+    <li>Fixed commit message container layout issues</li>
+    <li>Fixed hunk container layout issue for large hunks</li>
+    <li>Fixed OpenGL rendering issue related to the wrong context being active</li>
+    <li>Fixed shadow related OpenGL rendering bug</li>
+    <li>Fixed potential for corrupted menu items in commit message history</li>
+    <li>Fixed back button not working in file history</li>
+    <li>Syntax Highlighting: Fixed crash caused by starting a branch point at the end of a line</li>
+    <li>Windows and Mac: Updated bundled Git to 2.35.3 (addresses CVE-2022-24765 and CVE-2022-24767)</li>
+    <li>Mac: Fixed <tt>Ctrl+Mouse1</tt> not opening commit graph context menus</li>
+    <li>Mac: Added work around for broken modal loops</li>
+    <li>Linux: Follow system scroll bar overlay setting</li>
+    <li>Linux: Fixed various issues caused by the C locale</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2068</h2>
+<div class="release-date">21 December 2021</div>
+<h3>New Features and Improvements</h3>
+<ul>
+    <li>Search: Quickly write queries with auto-complete suggestions</li>
+    <li>Improved OpenGL rendering performance by automatically batching together controls</li>
+    <li>Fetch / Pull Command: Added ability to fetch tags</li>
+    <li>Merge Command: Merge unrelated histories using the <tt>allow-unrelated-histories</tt> flag</li>
+    <li>Set Upstream Command: Indicate the current upstream in the list of remote branches</li>
+    <li>Commit Details: Added context menus to commit metadata items</li>
+    <li>Commit Dialog: Stage submodule changes using <tt>Enter</tt></li>
+    <li>Commit Messages: Added support for <tt>strip</tt> and <tt>default</tt> modes of <tt>commit.cleanup</tt></li>
+    <li>Commit Messages: Warn when commit message only contains comments</li>
+    <li>Context Variables: Access the in-progress commit message via the <tt>commit_message</tt> variable</li>
+    <li>Settings: Highlight missing signatures and public keys as errors with <tt>signature_error_highlighting</tt></li>
+    <li>Settings: Added <tt>draw_unicode_bidi</tt> setting, which is enabled by default</li>
+    <li>Recent Repositories: Added <tt>Clear missing</tt> menu item</li>
+    <li>Recent Repositories: Prompt to remove from list when opening non-existent repositories</li>
+    <li>Clone Page: Added tooltips to clone page inputs</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+<li>Commit Editing: Fixed author information being updated</li>
+<li>Fixed lines with whitespace preceding comment characters being treated as comments</li>
+<li>Fixed light changelog displaying when dark theme is enabled</li>
+<li>Fixed crash when selecting previous commit messages containing certain UTF-8 sequences</li>
+<li>Fixed issue with rebase branch preview</li>
+<li>Fixed data corruption potentially occurring if a crash happens while saving the session</li>
+<li>Fixed crash when filtering table of contents</li>
+<li>Windows: Fixed crash when OpenGL initialization fails</li>
+<li>Mac and Windows: Fixed command line / terminal not taking focus after waiting</li>
+<li>Mac: Fixed <tt>Window > Merge All Windows</tt> merging minimized windows</li>
+<li>Mac: Fixed native tabs restoration resulting in odd behavior</li>
+<li>Linux: Added missing libcurl dependency for package managers</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2063</h2>
+<div class="release-date">26 Oct 2021</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Search by branch using the <tt>branch:</tt> operator or via the branch context menus</li>
+    <li>Stage hunks and individual lines on untracked files</li>
+    <li>Navigate to commit references in commit messages using the context menu</li>
+    <li>Add comment and commit highlighting to commit messages</li>
+    <li>Added new update dialog that shows versions, license status and links to the changelog</li>
+    <li>Added indicators to repository tabs with uncommitted changes</li>
+    <li>Added context menus for uncommitted file tabs</li>
+    <li>Updated repository tabs to show the full repository path in a tooltip</li>
+    <li>Updated file tabs to show the relative path in a tooltip</li>
+    <li>Improved the authentication dialog for GitHub users</li>
+    <li>Improved hardware acceleration performance when rendering white space</li>
+    <li>Improved the <tt>update_remote_url</tt> command to populate with the current URL</li>
+    <li>Various syntax definition updates</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Fixed <tt>gpg</tt> hanging on certain systems</li>
+    <li>Fixed the incorrect menu showing for staged files</li>
+    <li>Fixed diff selections not rendering correctly when <tt>line_padding</tt> is set</li>
+    <li>Windows: Fixed slow window creation when using OpenGL</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2059</h2>
+<div class="release-date">23 July 2021</div>
+<h3>New Features and Improvements</h3>
+<ul class="topic">
+    <li>Cherry Pick multiple commits via the commit graph and context menu</li>
+    <li>Cherry Pick: added support for the<tt>-x</tt> flag</li>
+    <li>Revert multiple commits via the commit graph and context menu</li>
+    <li>Set commit templates via the Git config variable <tt>commit.template</tt> (see <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-committemplate">here</a> for more info)</li>
+    <li>Hardware Acceleration: multiple performance improvements</li>
+    <li>Double click remote branches to create local branches in the Locations bar</li>
+    <li>Added <tt>Copy Repository Path</tt> to action menu</li>
+    <li>Added <tt>Update remote URL</tt> and <tt>Copy remote URL</tt> to remote context menu</li>
+    <li>Focus on the checked out branch using <tt>Ctrl+8</tt> (<tt>Cmd+8</tt> for MacOS)</li>
+    <li>Open recent commit messages using <tt>Ctrl+;</tt> (<tt>Cmd+;</tt> for MacOS)</li>
+    <li>Add Remote: name input is now validated</li>
+    <li>Updated "Pull" button to perform a fetch when in a detached HEAD state</li>
+    <li>Mac and Linux: open Quick Switch Repository via <tt>Ctrl+Alt+P</tt>/<tt>Cmd+Ctrl+P</tt></li>
+    <li>Tweaked how the <tt>Push</tt> command is displayed in the command palette</li>
+    <li>Safe mode shortcuts can be disabled by creating a file in the data directory called <tt>.Disable Safe Mode Shortcut</tt></li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Fixed cherry picks failing when the parent folder doesn't exist</li>
+    <li>Restored missing Continue button when a cherry pick has been paused</li>
+    <li>Restored missing commit button when unmerged files are present</li>
+    <li>Fixed up/down behavior in command palette</li>
+    <li>Fixed image diffs failing to load Git LFS images</li>
+    <li>Fixed default input focus for the files list</li>
+    <li>Fixed Sublime Merge opening a new window via Sublime Text integrations</li>
+    <li>Fixed crash when closing window</li>
+    <li>Disabled discard command for staged files</li>
+    <li>Windows: fixed globs not being expanded sometimes</li>
+    <li>Linux: Improved cancel/ok dialog ordering consistency</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2056</h2>
+<div class="release-date">17 May 2021</div>
+<ul>
+    <li>Add <tt>$commit_message</tt> context variable for historical commits</li>
+    <li>Fix memory leak on Windows</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2054</h2>
+<div class="release-date">4 May 2021</div>
+<ul>
+    <li>Mac releases now include native Apple Silicon binaries</li>
+    <li>Easily filter through large filesets using the new files filter</li>
+    <li>Cherry pick hunks using the … button on hunks</li>
+    <li>Moving the caret in diffs now scrolls the viewport</li>
+    <li>Added the <tt>chain</tt> command, which accepts a list of commands to run in its "commands" argument - useful for chaining Git commands together</li>
+    <li>Improved default selection behavior for switch repository</li>
+    <li>Commit message history: ensure entries are unique</li>
+    <li>Added support for <tt>Scroll Bar.sublime-mousemap</tt> to customize scrollbar interaction</li>
+    <li>Added "Report a Bug" entry in the Help menu</li>
+    <li>Linux: use native file dialogs, allowing use of the KDE dialogs</li>
+    <li>Windows: fixed clone dialog not pre-filling</li>
+    <li>Fixed gpg signature verification hanging</li>
+    <li>Fixed stale commit messages displaying when editing commit contents</li>
+    <li>Fixed memory issue when rebasing</li>
+    <li>Fixed command status popups not disappearing</li>
+</ul>
+</article>
+
+<article>
+    <h2>Build 2050</h2>
+<div class="release-date">12 March 2021</div>
+<ul>
+    <li>Allow command palette navigation with Tab / Shift + Tab</li>
+    <li>Fixed newlines appearing in the commit message history</li>
+    <li>Fixed blame tooltips not updating in certain circumstances</li>
+    <li>Fixed crash when staging files with certain file encodings</li>
+    <li>Windows and Mac: updated bundled Git to 2.30.2 (addresses CVE-2021-21300)</li>
+    <li>Windows: fixed clean and smudge filters hanging on certain files</li>
+    <li>Linux: improved application menu theming</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2047</h2>
+<div class="release-date">23 February 2021</div>
+<h3>New Features</h3>
+<ul class="topic">
+    <li>Location bar: find branches easily with the new filter bar</li>
+    <li>Location bar: ahead / behind indicators can now be clicked to push / pull</li>
+    <li>Location bar: branch folders now have context menus</li>
+    <li>Tags: added command to checkout tags</li>
+    <li>Tags: added command to delete remote tags</li>
+    <li>Stashes: added command to delete all stashes (<tt>git stash clear</tt>)</li>
+    <li>Push: added <tt>--no-verify</tt> option</li>
+    <li>Remote branches: added command to checkout corresponding local branch</li>
+    <li>Custom commands: select remotes with the new <tt>select_remote</tt> selector</li>
+    <li>Added <tt>resize_window</tt> command</li>
+    <li>Added commit message tooltip to each parent in the parents section of a commit</li>
+</ul>
+
+<h3>Improvements</h3>
+<ul class="topic">
+    <li>Windows: upgraded the application title bar</li>
+    <li>Linux: upgraded the application title bar on Gnome</li>
+    <li>Image diffs: PSD, TGA, PPM, and PGM files now display a rich diff</li>
+    <li>Blame: significant loading time improvements</li>
+    <li>Commit graph: simplified context menus</li>
+    <li>Improved indentation detection</li>
+    <li>Switch Repository dialog: open new tabs via Ctrl key (Cmd for MacOS)</li>
+    <li>Updated Ctrl+R/Cmd+R to run navigate_to_branch command</li>
+    <li>Updated refresh command keybinding to Ctrl+Shift+H/Cmd+Shift+H</li>
+    <li>Updated diff titles to elide when space is limited</li>
+    <li>Updated theming of the files list</li>
+    <li>Added various syntax highlighting improvements</li>
+    <li>Detached HEAD state is now more explicit</li>
+    <li>Remember which workspace each window is in by default (controlled via the setting <tt>remember_workspace</tt>)</li>
+    <li>Parent folders of the currently checked out branch are now highlighted in the location bar</li>
+    <li>Navigation commands: a warning is displayed when exiting the merge tool</li>
+    <li>Askpass dialog now supports fingerprint input</li>
+    <li>Askpass dialog now detects keypad Enter</li>
+    <li>Added <tt>themed_title_bar</tt> setting</li>
+    <li>Menu files: added submenu IDs</li>
+    <li>Interactive rebase: the break flag is now supported</li>
+    <li>Mac: improved OpenGL rendering performance</li>
+    <li>Windows and Mac: Updated bundled Git to 2.29.2</li>
+    <li>Linux: added various performance optimisations</li>
+</ul>
+
+<h3>Fixes</h3>
+<ul class="topic">
+    <li>Editing commits now signs the edited commits</li>
+    <li>Added back missing progress bar for long-running commands</li>
+    <li>Fixed newly cloned repositories not loading preferences</li>
+    <li>Previous commit messages are now saved per-repository</li>
+    <li>Fixed incorrect context menus displaying in location bar</li>
+    <li>Improved compatibility on filesystems with large timestamp imprecision</li>
+    <li>Fixed inability to revert files if their parent directory does not exist</li>
+    <li>Fixed crash when closing the preferences page</li>
+    <li>Fixed empty selections being rendered as a line</li>
+    <li>Fixed window positions not restoring correctly in certain situations</li>
+    <li>Mac: <tt>smerge</tt> now correctly restores window positions</li>
+    <li>Mac: updated icon to follow macOS 11 style</li>
+    <li>Mac: added a workaround for Apple M1 OpenGL graphics driver bug that caused text to be rendered incorrectly</li>
+    <li>Mac: fixed bug in batching of large Git commands</li>
+    <li>Mac: added workaround for the command line helper when app translocation is in effect</li>
+    <li>Windows: added a workaround for Intel OpenGL graphics driver bug that caused black bars at the top of some windows</li>
+    <li>Windows: fixed glyph rendering bugs</li>
+    <li>Windows: fixed flashing when using OpenGL and resizing a window</li>
+    <li>Windows: fixed bug in subpixel antialiasing</li>
+    <li>Linux and Mac: fixed clean and smudge filters hanging on certain files</li>
+    <li>Linux: fixed bug with the caret not moving after performing a text drag</li>
+    <li>Linux: fixed freezing on KDE Plasma</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2038</h2>
+<div class="release-date">30 October 2020</div>
+<h3>New Features and Improvements 💎</h3>
+<ul class="topic">
+    <li>Added commit graph theming improvements - branch colors now match graph edge colors</li>
+    <li>Updated custom git commands to support launching editor</li>
+    <li>Updated custom git commands to allow for selecting branches and other refs - see <a href="https://www.sublimemerge.com/docs/custom_commands">the docs</a> for details</li>
+    <li>Improved commit dialog scroll tracking</li>
+    <li>Added <tt>navigate_to_stash</tt> command</li>
+    <li>Added <i>Drop Stash…</i> to the command palette</li>
+    <li>Tweaked merge algorithm to merge nearby conflicts</li>
+    <li>Updated clone page to trim leading and trailing whitespace</li>
+    <li>Updated <tt>create_branch</tt>/<tt>rename_branch</tt> command to convert whitespace to hyphens</li>
+    <li>Improved lexer performance</li>
+</ul>
+
+<h3>Preferences 🎚️</h3>
+<ul class="topic">
+    <li>Added <tt>editor_wait_args</tt> to preferences</li>
+    <li>Added preference set <tt>GIT_SSH</tt> env var <em>(useful for overriding the default SSH client)</em></li>
+    <li>Updated preference categories</li>
+</ul>
+
+
+<h3>Git ⚙️</h3>
+<ul class="topic">
+    <li>Updated image diff file size limit</li>
+    <li>Fixed bug were commits only reachable by tags were not visible</li>
+    <li>Fixed edge case bug when staging single lines</li>
+    <li>Fixed revert hunk displaying success message in some failure cases</li>
+    <li>Fixed bug where some Scalar pack files weren't loaded</li>
+    <li>Windows: fixed bug with git config path resolution</li>
+</ul>
+
+<h3>Miscellaneous Fixes 🐞</h3>
+<ul class="topic">
+    <li>Fixed incorrect ordering of commit dialog tabs</li>
+    <li>Fixed <tt>smerge</tt> not preserving session information in some situations</li>
+    <li>Fixed session loading bug with multiple repository tabs</li>
+    <li>Fixed bug with Korean IME</li>
+    <li>Fixed commit summary sizing bug</li>
+    <li>Fixed inability to scroll to the end of the commit dialog in some circumstances</li>
+    <li>Fixed invalid initialize submodule menu item</li>
+    <li>Renamed <i>Show Branch…</i> to <i>Show Hidden Branch…</i></li>
+    <li>Fixed edge-case in <tt>delete_remote</tt> command</li>
+    <li>Fixed theme reloading twice</li>
+    <li>Fixed clone page not receiving input focus by default</li>
+    <li>OpenGL: fixed rendering issue due to AMD driver bug on Windows</li>
+    <li>OpenGL: fixed blurry checkboxes</li>
+    <li>OpenGL: improved bold rendering with bugged intel drivers</li>
+    <li>Syntax Definitions: fixed infinite loop bug</li>
+    <li>Syntax Definitions: renamed TypeScript to TSX, and added a new vanilla TypeScript syntax</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2032</h2>
+<div class="release-date">25 August 2020</div>
+<h3>New Features and Improvements 💎</h3>
+<ul class="topic">
+    <li>Added full file diffs - click the toggle button in the hunk header to toggle between individual changes and the full file</li>
+    <li>Added Git LFS image diff support</li>
+    <li>Improved performance when loading image diffs</li>
+    <li>Added history dropdown to the search page</li>
+    <li>Added tab selector to the repository tab bar</li>
+    <li>Improved <tt>--set-upstream</tt> behavior</li>
+    <li>Linux: added touch event handling</li>
+</ul>
+
+<h3>Rendering 🎨</h3>
+<ul class="topic">
+    <li>Fixed an OpenGL text rendering issue</li>
+    <li>OpenGL: fixed glyph corruption due to an AMD driver bug on Windows</li>
+    <li>Mac: fixed rendering bug</li>
+</ul>
+
+<h3>Diffs 📃</h3>
+<ul class="topic">
+    <li>Fixed clean filters not applying to modified files</li>
+    <li>Fixed context dragger not displaying for some diffs</li>
+    <li>Fixed scrolling behavior regression in commit dialog</li>
+    <li>Windows: fixed directory junctions being marked as untracked</li>
+    <li>Fixed line-based operations failing occasionally</li>
+</ul>
+
+<h3>Miscellaneous Fixes 🐞</h3>
+<ul class="topic">
+    <li>Updated <tt>show_all_refs</tt> to display when any refs are hidden</li>
+    <li>Fixed incorrect context menu behavior when the underlying controls are updated</li>
+    <li>Fixed signed tags failing when no tag message is supplied</li>
+    <li>Fixed custom themes not loading into askpass dialogs</li>
+    <li>Fixed input focus handling in commit dialog</li>
+    <li>Improved scrolling behavior in preferences page</li>
+    <li>Windows: fixed crash on Windows due to IME</li>
+    <li>Windows: fixed clone page not automatically populating source URL</li>
+    <li>Windows: fixed bug in <tt>open_dir_in_sublime_text</tt></li>
+    <li>Mac: added support for editor arguments in preferences</li>
+    <li>Windows: fixed crash when window edge overlaps with faded text</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2027</h2>
+<div class="release-date">28 July 2020</div>
+<ul>
+    <li>Fixed high memory usage associated with image diffs</li>
+    <li>Windows: fixed <tt>open_dir_in_sublime_text</tt> sometimes missing on Windows</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2025</h2>
+<div class="release-date">22 Jul 2020</div>
+
+<h3>New Features and Improvements 💎</h3>
+<ul class="topic">
+    <li>Added image diffs</li>
+    <li>Added <i>Revert Hunk</i></li>
+    <li>Added <tt>rename_remote</tt> command</li>
+    <li>Added <tt>--set-upstream</tt> option to <tt>push</tt> menu</li>
+    <li>Added always_show_command_status preference</li>
+    <li>Commit Signatures: added GPG4Win support</li>
+    <li>Search: added <tt>tree</tt> operator, which matches commits with the given tree hash</li>
+    <li>Improved merge algorithm for merge tool</li>
+    <li>Improved <tt>gitflow finish</tt> support</li>
+    <li>Added drag-drop support to welcome page</li>
+</ul>
+
+<h3>Rendering 🎨</h3>
+<ul class="topic">
+    <li>Fixed several OpenGL related rendering issues</li>
+    <li>Color Schemes: Fixed text background drawing over underlines</li>
+</ul>
+
+<h3>Syntax Definitions 📝</h3>
+<ul class="topic">
+     <li>Added out of the box support for TypeScript and JSX, with thanks to <a href="https://github.com/Thom1729">Thomas Smith</a></li>
+    <li>Added "extends" keyword in .sublime-syntax</li>
+    <li>Added "version: 2" in .sublime-syntax to fix edge cases while retaining backwards compatibility</li>
+    <li>Added lazy loading of external "embed" actions</li>
+    <li>Reduced cache size on disk</li>
+    <li>Prevent infinite include loops via with_prototype</li>
+    <li>Improved matching performance and memory usage</li>
+    <li>Added "hidden_extensions" in .sublime-syntax</li>
+    <li>Allow combining "pop" with "push"/"set"/"embed"/"branch"</li>
+    <li>Fixed a number of scope related bugs</li>
+    <li>Fixed some regex capture related bugs</li>
+</ul>
+
+<h3>Input Handling ⌨️</h3>
+<ul class="topic">
+    <li>Added forward and back navigation to mousemap</li>
+    <li>Mac: Fixed ctrl+mouse1 not matching the behavior of mouse2</li>
+    <li>Windows: Fixed IME bugs</li>
+</ul>
+
+<h3>Miscellaneous Fixes 🐞</h3>
+<ul class="topic">
+    <li>Windows: safe mode is now activated via shift+alt</li>
+    <li>Search: fixed typographical error</li>
+    <li>Fixed git command output scrolling when output overflows dialog</li>
+    <li>Fixed freeze when switching tabs while command palette is open</li>
+    <li>Fixed some symlinks being incorrectly marked as modified on Windows</li>
+    <li>Session is now saved when application is notified of system shutdown</li>
+    <li>Improved contrast between selected and unselected repository tabs</li>
+    <li>Fixed minor file tab theming bugs</li>
+    <li>Fixed crash when <tt>core.ignorecase</tt> is enabled</li>
+    <li>Fixed crash when navigating to a commit message while rebasing</li>
+    <li>Location Bar: fixed incorrect branch count with nested branches</li>
+    <li>Files Bar: fixed selection regression in tree view</li>
+    <li>Fixed selection bug in command palette</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 2020</h2>
+<div class="release-date">26 May 2020</div>
+
+<h3>General</h3>
+<ul class="topic">
+    <li>New UI, including repository tabs</li>
+    <li>GPU Rendering</li>
+    <li>UI: Reworked Commit Dialog</li>
+    <li>UI: Added repository tabs, to have multiple repositories open in a single window</li>
+    <li>UI: Added file tabs when viewing the contents of a commit</li>
+    <li>Implement commit signature creation and validation</li>
+    <li>Added a lines changed indicator to commits</li>
+    <li>Added command history, available from the <i>Show Git Output</i> icon in the tool bar</li>
+    <li>Added commit message history, available from the dropdown arrow in the commit message box</li>
+    <li>Added support for non-overlay scrollbars in diffs</li>
+    <li>Added Resolve Ours / Resolve Theirs dropdown to unmerged files</li>
+    <li>URLs in commit messages and git output can be opened via the context menu</li>
+    <li>Left and Right keys can be used to expand/collapse merge commits</li>
+    <li>Added <i>Navigate/Go to Child</i></li>
+    <li>Stash commands no longer supply <tt>-q</tt> by default, to work around a bug in Git 2.24</li>
+    <li>Checking out a hidden ref will make the ref visible</li>
+    <li>Add Recent Repositories to Welcome Page</li>
+    <li>Search: Added <tt>before</tt> and <tt>after</tt> operators</li>
+    <li>Added <tt>set_preference</tt> and <tt>toggle_preference</tt> commands</li>
+    <li>Added gitflow publish support</li>
+    <li>Preferences: Updating settings via the preferences dialog no longer clears comments in the settings file</li>
+    <li>Preferences: Added Preferences entry for Ignore Whitespace in diffs</li>
+    <li>Added checks for pushDefault and pushRemote when pushing</li>
+    <li>Added <i>Tools/Show Console</i></li>
+    <li>Improved selection behavior while loading large repositories</li>
+    <li>Improved menu auto hide behavior on Linux and Windows</li>
+    <li>Improved performance with a very large number of untracked or modified files</li>
+    <li>Improved performance in repositories with a large number of authors</li>
+    <li>Running <tt>smerge</tt> without any arguments will focus the current window, if any</li>
+    <li>Fixed not being able to commit when email is set to empty string</li>
+    <li>Fixed a bug in destination path calculation in the clone dialog</li>
+    <li>Fixed Create Tag with an empty message creating the tag incorrectly</li>
+    <li>Fixed hunk staging using the wrong encoding in some scenarios</li>
+    <li>Fixed shift+enter staging a file even when focus is in commit message box</li>
+</ul>
+
+<h3>Merge Tool</h3>
+<ul class="topic">
+    <li>Indentation settings are now automatically detected from the contents of the file</li>
+    <li>Saving a file with unresolved conflicts will warn before saving</li>
+    <li>Added a preference to trim trailing whitespace on save</li>
+</ul>
+
+<h3>GPU Rendering</h3>
+<ul class="topic">
+    <li>New <tt>hardware_acceleration</tt> setting will composite the UI on the GPU</li>
+    <li>By default, GPU rendering is enabled on Mac, and disabled on Windows and Linux. This can be changed via the Preferences dialog.</li>
+    <li>Details about the active GPU will be displayed in the Console</li>
+</ul>
+
+<h3>Git</h3>
+<ul class="topic">
+    <li>Git: Added support for <tt>smudge</tt> and <tt>clean</tt> filters, enabling Git LFS support</li>
+    <li>Git: Improved handling of the <tt>working-tree-encoding</tt> attribute</li>
+    <li>Git: Improved parsing of <tt>.gitattributes</tt> files</li>
+    <li>Git: Added support for GUI encoding config</li>
+    <li>Windows and Mac: Updated bundled Git to 2.26.2</li>
+    <li>Windows: Fixed <tt>core.worktree</tt> support</li>
+    <li>Submodules: Added <i>Initialize All Submodules</i> context menu</li>
+    <li>Submodules: The location bar now indicates the value of HEAD for each submodule</li>
+</ul>
+
+<h3>Editor Control</h3>
+<ul class="topic">
+    <li>Expanded <tt>draw_white_space</tt> setting, supporting leading and trailing white space</li>
+    <li>Unicode white space characters, such as the zero width no-break space, are now drawn as hex values. Controlled via <tt>draw_unicode_white_space</tt> setting.</li>
+    <li>Spell Checking: Added support for languages with upper case characters after start of word</li>
+    <li>Spell Checking: Updated dictionaries</li>
+    <li>Spell Checking: Added support for non-utf8 dictionaries</li>
+    <li>Spell Checking: System dictionaries are now available on Linux</li>
+    <li>Spell Checking: Dictionaries in <tt>~/Library/Spelling</tt> are now available on Mac</li>
+    <li>Linux: Text drag and drop is now supported</li>
+    <li>Linux: Added support for alternate font weight names</li>
+    <li>Linux: Selection is no longer cleared when another application makes a selection</li>
+</ul>
+
+<h3>Text Commands</h3>
+<ul class="topic">
+    <li>Improved behavior of <i>Wrap Paragraph</i></li>
+    <li>Improved behavior of <i>Swap Lines</i></li>
+    <li>Added <i>Selection/Expand Selection</i> as a general mechanism to expand the selection</li>
+    <li><i>Selection/Split into Lines</i> will now split a selection into words if the selection doesn't contain any newlines</li>
+    <li>Fixed <tt>swap_line_down</tt> not being able to swap an empty line onto the last line of a file</li>
+</ul>
+
+<h3>Input Handling</h3>
+<ul class="topic">
+    <li>Modifier key taps can now be used as part of a key binding. For example, <tt>["ctrl", "ctrl"]</tt> will trigger when <i>Ctrl</i> is pressed twice without pressing any other keys in between.</li>
+    <li>Linux: <i>AltGr</i> can now be used in key bindings via <tt>altgr</tt></li>
+    <li>Linux: Added a workaround for a touchscreen driver bug, which would cause right click and mouse scrolling to stop working</li>
+    <li>Linux: When the menu is hidden, pressing alt will show it</li>
+    <li>Linux: Improved compatibility with some keyboard layouts</li>
+    <li>Mac: Fix Pinyin input</li>
+    <li>Mac: Keypad keys can now be bound to as expected</li>
+    <li>Mac: Improved compatibility with some keyboard layouts</li>
+    <li>Windows, Linux: Hide mouse cursor when typing. Controlled via <tt>hide_pointer_while_typing</tt> setting.</li>
+    <li>Windows, Linux: Fixed being unable to bind <i>Ctrl+Break</i></li>
+    <li>Windows: Improved IME support</li>
+    <li>Windows, Linux: Added Shift+F10 key binding to open the context menu</li>
+</ul>
+
+<h3>UI</h3>
+<ul class="topic">
+    <li>Added <tt>highlight_gutter</tt> and <tt>highlight_line_number</tt> settings</li>
+    <li>Themes now have a <tt>style</tt> property for <tt>title_bar</tt> element, for better integration with OS "dark modes"</li>
+    <li>Color Schemes: Added <tt>glow</tt> font option to color schemes</li>
+    <li>Color Schemes: Added support for the <tt>underline</tt> font style</li>
+    <li>Linux: Show sequential key bindings in the menu</li>
+    <li>Linux: Fixed context menu position being slightly offset</li>
+</ul>
+
+<h3>Rendering</h3>
+<ul class="topic">
+    <li>Windows, Linux: Added support for per-display subpixel ordering</li>
+    <li>Mac: Improved window resize performance</li>
+    <li>Windows: Fixed rendering bug where other applications could cause persistent artifacts via window animations</li>
+</ul>
+
+<h3>Application Behavior</h3>
+<ul class="topic">
+    <li>Added <i>Safe Mode</i>, to simulate a clean install. Enabled by passing <tt>--safe-mode</tt> on the command line.</li>
+    <li>Holding down Shift on Windows, or Option on macOS, will start Sublime Merge in Safe Mode</li>
+    <li>Settings containing a UTF-8 BOM will no longer fail to load</li>
+</ul>
+
+<h3>Syntax Definitions</h3>
+<ul class="topic">
+    <li>Added ability to "branch" within syntax definitions, for non-deterministic or multi-line constructs</li>
+    <li>Many syntax highlighting improvements, including significant improvements to:
+        <ul>
+            <li><i>Erlang</i>, with thanks to <a href="https://github.com/deathaxe">deathaxe</a></li>
+        </ul>
+    </li>
+    <li>Improved syntax definition load time</li>
+    <li>Fixed a performance issue with bounded repeats in regular expressions</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1116</h2>
+<div class="release-date">3 June 2019</div>
+<ul>
+    <li>Large files are now only diffed when clicked on</li>
+    <li>Merge Tool: Added <i>Take Left</i> and <i>Take Right</i> options</li>
+    <li>Merge Tool: Can now <i>Save and Stage</i> in one action</li>
+    <li><tt>--no-verify</tt> can be passed when committing</li>
+    <li><tt>Rebase Commit</tt> is now available in the context menu for all commits</li>
+    <li><tt>Revert Commit</tt> now works with merge commits</li>
+    <li>Added separate key bindings for Stage All and Stage All Modified files for clarity</li>
+    <li>Added an explicit close button to the search bar</li>
+    <li>Table of Contents: Clicking an already selected row no longer closes the diff</li>
+    <li>Various syntax highlighting improvements</li>
+    <li>Improved behavior when doing a line restricted file history search and toggling ignore whitespace</li>
+    <li>Added support for the <tt>intent-to-add</tt> flag in the index</li>
+    <li>Fixed <tt>includeIf</tt> handling in git config files not interpreting <tt>~</tt> relative paths correctly</li>
+    <li>Fixed UTF8 BOMs not being handled correctly in <tt>.gitignore</tt> files</li>
+    <li>Fixed Edit Commit Message not working in work trees</li>
+    <li>Fixed standalone merge tool not supporting the key binding for Next Conflict</li>
+    <li>Fixed <tt>smerge mergetool</tt> not handling relative paths correctly</li>
+    <li>Fixed <tt>smerge log &lt;dir&gt;</tt> not working as expected</li>
+    <li>Mac: Added a workaround for a macOS OpenGL driver bug in 10.14.4</li>
+    <li>Linux: Fixed incorrect file ownership in the deb packages</li>
+    <li>Linux: Added support for text drag and drop</li>
+    <li>Linux: Improved high dpi handling under KDE</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1107</h2>
+<div class="release-date">12 March 2019</div>
+<div class="forum-link">See also the <a href="https://www.sublimemerge.com/blog/sublime-merge-build-1107">Blog Post</a></div>
+<ul>
+    <li>The <i>Contents</i> section of the sidebar can now be switched between showing changed files and all files</li>
+    <li>Sublime Merge can now be used as a standalone merge tool, via the <tt>smerge</tt> command line helper. See <a href="https://www.sublimemerge.com/docs/command_line"><tt>smerge --help</tt></a> for details.</li>
+    <li>Merge tool: Improved UI for switching between the Base file and the Merged file</li>
+    <li>Added <i>Navigate/Go to Parent</i> menu item</li>
+    <li>Improved clone dialog</li>
+    <li>Improved side bar context menus</li>
+    <li>Various syntax highlighting improvements</li>
+    <li>Merge tool now indicates which lines have been modified in the merged file</li>
+    <li>Merge tool: <tt>swap_line_up</tt>, <tt>swap_line_down</tt> and <tt>duplicate_line</tt> commands are now supported</li>
+    <li>Fixed git flow commands appearing inconsistently</li>
+    <li>Mac: Add full support for macOS native tabs</li>
+    <li>Mac: Ensure context menus are shown without scrolling</li>
+    <li>Mac: Error message dialogs can now be closed with the escape key</li>
+    <li>Linux: Color glyphs are now drawn properly on light backgrounds</li>
+    <li>Windows: Fix DirectWrite handling of fonts with lineGap > 0</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1103</h2>
+<div class="release-date">24 January 2019</div>
+<ul>
+    <li>New Preferences Dialog</li>
+    <li>New Merge Dialog</li>
+    <li>Added support for <tt>includeIf</tt> in Git config files</li>
+    <li>Various syntax highlighting improvements</li>
+    <li>Windows and Linux: Improved IME compatibility</li>
+    <li>Added <i>Navigate to Branch</i></li>
+    <li>Added <i>Navigate to Tag</i></li>
+    <li>Added <i>Set Branch Upstream</i> to the Command Palette</li>
+    <li>Added <i>Hide Branch</i> to the branch context menu</li>
+    <li>Added <i>Hard Reset</i> option to the diverged banner</li>
+    <li>The diverged banner now shows the exact git commands that will be run in tooltips</li>
+    <li>Improved behavior of clone dialog when selecting a target directory</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1097</h2>
+<div class="release-date">6 December 2018</div>
+<ul>
+    <li>Various syntax highlighting improvements</li>
+    <li>Fixed backspace not discarding selected lines</li>
+    <li>Mac: Improved resize performance</li>
+    <li>Mac: Fixed missing key bindings in menu items</li>
+    <li>Windows: Fixed Clone dialog not working correctly</li>
+    <li>Windows: Updated Git Credential Manager to 1.18.1</li>
+    <li>Linux: GTK3 + Wayland compatibility fixes</li>
+    <li>Linux: Fixed GTK3 double and triple click handling</li>
+    <li>Linux: Fixed a crash when using <tt>GTK_IM_MODULE=xim</tt></li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1092</h2>
+<div class="release-date">29 November 2018</div>
+<div class="forum-link">See also the <a href="https://www.sublimemerge.com/blog/sublime-merge-build-1092">Blog Post</a></div>
+<ul>
+    <li>Added <i>Contents</i> view in the side bar, to focus on individual files</li>
+    <li>Double-clicking or pressing space in the commit graph will focus on the first file of the selected commit</li>
+    <li>Added Word Wrap</li>
+    <li>Clone: Can now change the directory name being cloned into</li>
+    <li>Added <tt>hide_menu</tt> setting</li>
+    <li>Edit Commit: Added <i>Edit Commit Contents</i></li>
+    <li>Edit Commit: Added <i>Fixup Commits</i></li>
+    <li>Edit Commit: Can now Drop multiple commits at once</li>
+    <li>Edit Commit: All Edit Commit operations now work with a detached head</li>
+    <li>Preferences: Can now set <tt>rulers</tt> via the preferences menu</li>
+    <li>Added <i>Open Repository in Sublime Text</i> menu item</li>
+    <li>Binary file detection heuristic now matches Git</li>
+    <li>Search help text is scrollable</li>
+    <li>Unicode: Improved rendering of combining characters</li>
+    <li>Ignore whitespace now only ignores space and tab changes, not newline changes</li>
+    <li><tt>smerge blame</tt> now starts the blame from HEAD, rather than the selected commit</li>
+    <li>Fixed Delete Branch not always prompting for force delete when it needs to</li>
+    <li>Fixed line history not showing the initial commit that added the file</li>
+    <li>Fixed <tt>smerge blame</tt> not navigating to the target line when Sublime Merge is already running</li>
+    <li>Fixed search results being cleared when the repository is modified</li>
+    <li>Fixed viewing trees from search results not working when the commit is folded away</li>
+    <li>Git Flow: Fixed menu commands not working as expected</li>
+    <li>Fixed SSH Askpass helper only showing the first prompt line</li>
+    <li>Windows: Fixed handling of daylight saving time</li>
+    <li>Linux: Moved to GTK3</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1084</h2>
+<div class="release-date">29 October 2018</div>
+<ul>
+    <li>Search: Added <tt>contents:</tt> operator, to find commits introducing or removing text</li>
+    <li>Can now ignore whitespace changes in diffs (available from the context menu)</li>
+    <li>Edit Commit: Added <i>Squash Selected Commits</i></li>
+    <li>Support for <tt>core.worktree</tt></li>
+    <li>Window state is now restored when re-opening a repository</li>
+    <li>Search: Merge commits are now automatically excluded when the query includes <tt>path:</tt>, <tt>file:</tt> or <tt>contents:</tt>. Specify <tt>min-parents: 0</tt> to include them.</li>
+
+    <li>Location Bar: Tags are grouped into folders if they have a slash in their name</li>
+    <li>Tweaked commit graph rendering</li>
+
+    <li>Add new preference, <tt>time_format</tt></li>
+    <li>Preferences: Default values are now indicated, rather than <tt>null</tt></li>
+    <li>Preferences: Unquoted strings are accepted</li>
+
+    <li>Improved handling of network issues when working with repositories over a networked file system</li>
+
+    <li>Navigate to Commit now works as expected for hidden commits</li>
+    <li>Fixed context splitter showing through hunk headers</li>
+    <li>Fixed <tt>expand_merge_commits_by_default</tt> not being applied correctly at startup</li>
+    <li>Fixed bold text sometimes being applied incorrectly in the side bar</li>
+
+    <li>Fixed a blame regression in 1079</li>
+    <li>Mac: Added <tt>gpu_window_buffer</tt> setting, to disable usage of OpenGL</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1079</h2>
+<div class="release-date">21 October 2018</div>
+<ul>
+    <li>Added "Merge With…" context menu to merge a branch with flags (<tt>--squash</tt>, <tt>--no-ff</tt>, etc)</li>
+    <li>Edit Commit: Added <i>Move Commit Up</i></li>
+    <li>Edit Commit: Added <i>Move Commit Down</i></li>
+    <li>Edit Commit: Added <i>Drop Commit</i></li>
+    <li>Commit context menu tweaks</li>
+    <li>Location Bar: Refs are sorted via natural sorting, making numeric refs sort as expected</li>
+    <li>Make tag message optional for git flow finish command</li>
+    <li>Add <tt>git_env</tt> preference, to set the env vars git is launched with</li>
+    <li>Fixed a crash regression in 1075</li>
+    <li>Fixed stash labels having the wrong size</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1075</h2>
+<div class="release-date">16 October 2018</div>
+<ul>
+    <li>Submodules are shown in the location bar</li>
+    <li>Submodules: Double clicking on a submodule will open the corresponding repository</li>
+    <li>Submodules: The number of modified and untracked files are shown next to each submodule</li>
+    <li>Submodules: New submodules can be added by right clicking in the location bar, or via the Command Palette</li>
+    <li>Submodules: Added functionality for Initialize, Update and Sync</li>
+    <li>Git Flow: Added support for git flow commands, via the Command Palette</li>
+    <li>Added setting <tt>expand_merge_commits_by_default</tt>, to unfold all merge commits by default</li>
+    <li>Show line and column position when entering a commit message</li>
+    <li>Partially entered commit messages are stored in the session</li>
+    <li>Hovering over a remote in the location bar will show its URL</li>
+    <li>Added key bindings for Pull and Push</li>
+    <li>Stage All will set input focus to the Commit Message entry box</li>
+    <li>Fixed Stash key bindings not being set correctly on Windows and Linux</li>
+    <li>Fixed per-branch ahead/behind counters not matching git output</li>
+    <li>Fixed entries removed from <tt>.gitmodules</tt> not being handled the same way as git</li>
+    <li>Fixed always visible scrollbars for submodule changes</li>
+    <li>Fixed a case where remote branches would be displayed incorrectly in the location bar</li>
+    <li>Fixed remotes with dots in their name not being parsed correctly</li>
+    <li>Fixed unix domain sockets showing up as untracked files</li>
+    <li>Windows: Updated bundled git to 2.19.1</li>
+    <li>Windows: Fixed extraneous horizontal scrollbar in some high dpi modes</li>
+    <li>Windows: Minimized and Maximized windows are now restored as expected</li>
+    <li>Mac: Updated bundled git to 2.19.0</li>
+    <li>Mac: Clicking on the dock icon will create a window if there are none</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1070</h2>
+<div class="release-date">10 October 2018</div>
+<ul>
+    <li>Commit Folding: Merge commits are now folded by default; click on their icon to unfold</li>
+    <li>Location Bar: Branches can be hidden by clicking on the new eye icon</li>
+    <li>Location Bar: Alt-clicking will hide everything but the clicked on branch</li>
+    <li>Location Bar: The location bar is now a tree</li>
+    <li>Location Bar: Branches with slashes in their name are grouped in folders</li>
+    <li>Location Bar: Added per-branch ahead/behind counters</li>
+    <li>Location Bar: Width is stored in the session</li>
+
+    <li>Added Copy to Clipboard in the branch context menu</li>
+    <li>The commit message is now preserved when <tt>git commit</tt> fails</li>
+    <li>Added a <i>Tools/Password Caching</i> menu to easily setup credential caching on Linux</li>
+    <li>Added a <tt>git_config</tt> command to set git configuration options via the keyboard or menu</li>
+    <li>Clicking next to the author label no longer shows the Edit User dialog</li>
+    <li>Allow creating tags with empty messages</li>
+
+    <li>Fixed incorrect submodule handling with <tt>core.ignorecase</tt> turned on</li>
+    <li>Fixed a regression where the <i>Continue Rebase</i> button wasn't being shown</li>
+    <li>Fixed a case where git attributes weren't interpreted correctly</li>
+    <li>Changed handling of invalid gitignore rules, such as <tt>**\test</tt> to treat them the same way as Git</li>
+    <li>Fixed a crash that could occur when parsing git config files</li>
+    <li>Fixed a crash that could occur when closing a repository</li>
+
+    <li>Mac: Improved font rendering on Mojave</li>
+    <li>Mac: Fixed some commands not working when using the bundled version of git</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1065</h2>
+<div class="release-date">2 October 2018</div>
+<ul>
+    <li>Added Stage All and Discard All buttons</li>
+    <li>Git worktrees are now supported</li>
+    <li>Support for <tt>.git</tt> directories populated with symlinks, as in AOSP</li>
+    <li><tt>core.commentchar</tt> is now understood</li>
+    <li>Improved comment filtering when entering commit messages: only automatically generated comments will be stripped</li>
+    <li>Improved rename detection when viewing diffs and searching for files</li>
+    <li>Search: Now accepts "commit:" terms for search by commit hash</li>
+    <li>Restyled git error popup</li>
+    <li>Stash can now accept a message</li>
+    <li>Merge Tool: Improved LF vs CRLF selection logic</li>
+    <li>Fixed incorrect default value for <tt>core.excludesfiles</tt></li>
+    <li>Fixed handling of backslashes in <tt>.gitignore</tt> files</li>
+    <li>Ctrl+F/Cmd+F no longer starts searching while in merge mode</li>
+    <li>Mac: Fixed windows being created offscreen in some setups</li>
+    <li>Mac: Fixed alpha blended windows on Mojave</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1062</h2>
+<div class="release-date">27 September 2018</div>
+<ul>
+    <li>Fixed a regression in 1061 where unmerged files weren't updating</li>
+    <li>Mac: Basic support for Mojave Dark Mode</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1061</h2>
+<div class="release-date">26 September 2018</div>
+<ul>
+    <li>Full <tt>core.ignorecase</tt> support, fixing some cases where status output differed from git</li>
+    <li>Added support for <tt>core.precomposedunicode</tt></li>
+    <li>Added support for <tt>core.filemode</tt></li>
+    <li>Added support for <tt>core.symlinks</tt></li>
+    <li>Mac: Query login shell for default env vars</li>
+    <li>Fixed not checking $HOME/.config/git/config as a default config file path</li>
+    <li>Improve change descriptions for submodule changes</li>
+    <li>Merge Tool: Improved LF vs CRLF selection logic</li>
+    <li>Tweaked scroll delta when scrolling with the mouse wheel</li>
+    <li>Windows: Adjust $HOME calculation to match Git</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1058</h2>
+<div class="release-date">21 September 2018</div>
+<ul>
+    <li><tt>.gitgnore</tt> rule handling improvements</li>
+    <li>Improve handling of case-insensitive repositories</li>
+    <li>Allow committing to a detached head</li>
+    <li>Support for files marked <tt>--assume-unchanged</tt> and <tt>--skip-worktree</tt></li>
+    <li>Fix dropping of stashes from the location bar not working correctly</li>
+    <li>Windows: Added SSH askpass support</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 1055</h2>
+<div class="release-date">20 September 2018</div>
+<ul>
+    <li>Welcome!</li>
+</ul>
+</article>

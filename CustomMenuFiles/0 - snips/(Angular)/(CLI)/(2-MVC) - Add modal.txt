@@ -1,0 +1,2 @@
+ng add @angular/material && ng generate component ModelDialog
+

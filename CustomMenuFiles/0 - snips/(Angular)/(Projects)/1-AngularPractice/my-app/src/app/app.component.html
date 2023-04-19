@@ -1,0 +1,37 @@
+<router-outlet></router-outlet>
+
+<table>
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Type</th>
+  </thead>
+</table>
+<tbody>
+<!-- //ngClass ================ -->
+  <tr *ngFor="let pokemon of pokemons; let i = index">
+    <td [class.cool-bool]="pokemon.isCool">{{ pokemon.id }}</td>
+    <td>{{ pokemon.name }}</td>
+    <td>{{ pokemon.type }}</td>
+  </tr>
+  <!-- //ngClass 'oldschool' way================ -->
+   <tr *ngFor="let pokemon of pokemons; let i = index">
+    <td [ngClass]="{'cool-bool' : pokemon.isCool}">{{ pokemon.id }}</td>
+    <td>{{ pokemon.name }}</td>
+    <td>{{ pokemon.type }}</td>
+  </tr>
+</tbody>
+
+<input type="text" #pokemonName id="pokemonid" title="name" />
+<button (click)="handleSearchPokemonClick(pokemonName)">Search</button>
+{{ title }}
+{{ numberOne + numberTwo }}
+{{ togglePokemon ? "isPokemon": "isNotPokemon" }}
+
+<h1 [innerHTML]="title"></h1>
+
+<img [src]="imgSrc" alt="Pokemon Bulbasaur" />
+
+<input [(ngModel)]="favoriteAnimal" id="name" title="name" required minlength="4" maxlength="12" size="12"  />
+<p> {{favoriteAnimal}} </p>
+

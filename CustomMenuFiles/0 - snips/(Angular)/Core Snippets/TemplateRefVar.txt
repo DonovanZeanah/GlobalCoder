@@ -1,0 +1,11 @@
+
+//app.component.ts
+handleSearchPokemonClick(value: any)
+{
+  console.log(value);
+}
+ 
+ /* 
+<input type="text" #pokemonName />
+<button type="button" (click)="callphone(phone.value)">call</button>
+*/
