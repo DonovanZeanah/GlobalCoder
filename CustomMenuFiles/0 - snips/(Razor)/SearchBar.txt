@@ -1,0 +1,28 @@
+@using IMS.CoreBusiness.Models
+@namespace IMS.WebApp.Pages
+
+<div>
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Search for..." 
+        @bind-value="@SearchTerm" 
+        @bind-value:event="oninput" 
+        @onkeyup="OnSearchInput" />
+</div>
+
+@code {
+    [Parameter]
+    public string SearchTerm { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnSearch { get; set; }
+
+    private async Task OnSearchInput(KeyboardEventArgs e)
+    {
+        Console.WriteLine("SearchBar_Component: OnSearchInput()");
+        Console.WriteLine($"Search term entered: {SearchTerm}");
+
+        await OnSearch.InvokeAsync(SearchTerm);
+    }
+}

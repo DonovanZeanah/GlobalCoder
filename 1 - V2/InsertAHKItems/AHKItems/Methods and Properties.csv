@@ -1,0 +1,92 @@
+; AHK build in methods and properties
+; Class
+__New()
+__Get([Key, Key2, ...])
+__Set([Key, Key2, ...], Value)
+__Call(Name [, Params...])
+__Delete()
+
+; Objects
+.InsertAt(Pos, Value1 [, Value2, ... ValueN])
+.RemoveAt(Pos [, Length])
+.Push([ Value, Value2, ..., ValueN ])
+.Pop()
+.Delete(Key)
+.Delete(FirstKey, LastKey)
+.MinIndex()
+.MaxIndex()
+.Length()
+.Count()
+.SetCapacity(MaxItems)
+.SetCapacity(Key, ByteSize)
+.GetCapacity()
+.GetCapacity(Key)
+.GetAddress(Key)
+._NewEnum()
+.HasKey(Key)
+.Clone()
+.Base
+
+; Files
+.Read([Characters])
+.Write(String)
+.ReadLine()
+.WriteLine([String])
+.ReadNumType()
+.WriteNumType(Num)
+.RawRead(VarOrAddress, Bytes)
+.RawWrite(VarOrAddress, Bytes)
+.Seek(Distance [, Origin := 0])
+.Position := Distance
+.Pos := Distance
+.Tell()
+.Position
+.Pos
+.Length
+.AtEOF
+.Close()
+.Encoding
+.__Handle
+
+; Func
+.Call(Param1, Param2, ...)  
+.Bind(Param1, Param2, ...)
+.Name
+.IsBuiltIn
+.IsVariadic
+.MinParams
+.MaxParams
+.IsByRef([ParamIndex])
+.IsOptional([ParamIndex])
+
+; Match
+.Pos(N)
+.Len(N)
+.Value(N)
+.Name(N)
+.Count()
+.Mark()
+
+; InputHook
+.KeyOpt(Keys, KeyOptions)
+.Start()
+.Wait([MaxTime])
+.Stop()
+.EndKey
+.EndMods
+.EndReason
+.InProgress
+.Input
+.Match
+.OnEnd
+.OnChar
+.OnKeyDown
+.OnKeyUp
+.BackspaceIsUndo
+.CaseSensitive
+.FindAnywhere
+.MinSendLevel
+.NotifyNonText
+.Timeout
+.VisibleNonText
+.VisibleText

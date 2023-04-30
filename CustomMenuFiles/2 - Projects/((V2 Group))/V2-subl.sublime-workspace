@@ -1,0 +1,1388 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"A_",
+				"A_ScriptDir"
+			],
+			[
+				"men",
+				"Menu"
+			],
+			[
+				"if",
+				"If"
+			],
+			[
+				"note",
+				"notepath"
+			],
+			[
+				"menu",
+				"Menu"
+			],
+			[
+				"key",
+				"KeyWait"
+			],
+			[
+				"keyw",
+				"KeyWait"
+			],
+			[
+				"a_",
+				"A_Index"
+			],
+			[
+				"Loop",
+				"Loop parse"
+			],
+			[
+				"msgb",
+				"MsgBox"
+			],
+			[
+				"go",
+				"Gosub"
+			],
+			[
+				"sys",
+				"SysGet"
+			],
+			[
+				"a_loo",
+				"A_LoopFileName"
+			],
+			[
+				"no",
+				"NoTrayIcon"
+			],
+			[
+				"work",
+				"SetWorkingDir"
+			],
+			[
+				"DE",
+				"Destroy"
+			],
+			[
+				"msg",
+				"MsgBox"
+			],
+			[
+				"got",
+				"Goto"
+			],
+			[
+				"file",
+				"FileAppend"
+			],
+			[
+				"close",
+				"Close()"
+			],
+			[
+				"gui",
+				"Gui"
+			],
+			[
+				"Guic",
+				"GuiEscape"
+			],
+			[
+				"guio",
+				"GuiClose"
+			],
+			[
+				"hide",
+				"HideGUI"
+			],
+			[
+				"ahk_",
+				"ahk_exe"
+			],
+			[
+				"setw",
+				"SetWorkingDir"
+			],
+			[
+				"a_this",
+				"A_ThisFunc"
+			],
+			[
+				"c",
+				"CustomMenuFiles"
+			],
+			[
+				"winwai",
+				"WinWaitActive"
+			],
+			[
+				"Input",
+				"InputBox"
+			],
+			[
+				"input",
+				"InputBox"
+			],
+			[
+				"stringre",
+				"StringReplace"
+			],
+			[
+				"a_pro",
+				"A_ProgramFiles"
+			],
+			[
+				"a_script",
+				"A_ScriptFullPath"
+			],
+			[
+				"regexr",
+				"RegExReplace()"
+			],
+			[
+				"FileCreate",
+				"FileCreateDir"
+			],
+			[
+				"exist",
+				"FileExist()"
+			],
+			[
+				"timesin",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_p",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_ho",
+				"A_PriorHotkey"
+			],
+			[
+				"fileappen",
+				"FileAppend"
+			],
+			[
+				"a_screen",
+				"A_ScreenHeight"
+			],
+			[
+				"a_scr",
+				"A_ScreenWidth"
+			],
+			[
+				"winget",
+				"WinGetTitle"
+			],
+			[
+				"Winget",
+				"WinGetTitle"
+			],
+			[
+				"setk",
+				"SetKeyDelay"
+			],
+			[
+				"a_pr",
+				"A_PriorHotkey"
+			],
+			[
+				"too",
+				"ToolTip"
+			],
+			[
+				"string",
+				"StringReplace"
+			],
+			[
+				"strre",
+				"StrReplace()"
+			],
+			[
+				"repl",
+				"StrReplace()"
+			],
+			[
+				"win",
+				"WinActivate"
+			],
+			[
+				"change",
+				"changeFirstName"
+			],
+			[
+				"rnd",
+				"Round()"
+			],
+			[
+				"str",
+				"StrSplit()"
+			],
+			[
+				"getke",
+				"GetKeyState()"
+			],
+			[
+				"br",
+				"Break"
+			],
+			[
+				"ifwi",
+				"IfWinActive"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
+				"caps",
+				"CapsLock"
+			],
+			[
+				"Sendi",
+				"SendInput"
+			],
+			[
+				"sen",
+				"SendMessage"
+			],
+			[
+				"retur",
+				"ReturnValue"
+			],
+			[
+				"sendmod",
+				"SendMode"
+			],
+			[
+				"contro",
+				"ControlList"
+			],
+			[
+				"inire",
+				"IniRead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+			"settings":
+			{
+				"buffer_size": 160681,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAB5IAAAAAAAAH0gAAAAAAAAAAAAAH0gAAAAAAAAgSAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHkgAAAAAAAAeSAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "gcom"
+					},
+					"BAAAACBIAAAAAAAAIUgAAAAAAAAAAAAAIUgAAAAAAAAiSAAAAAAAAAAAAAAiSAAAAAAAACNIAAAAAAAAAAAAACNIAAAAAAAAJEgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIEgAAAAAAAAgSAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					4,
+					"left_delete",
+					null,
+					"BAAAACNIAAAAAAAAI0gAAAAAAAABAAAAbSJIAAAAAAAAIkgAAAAAAAABAAAAbyFIAAAAAAAAIUgAAAAAAAABAAAAYyBIAAAAAAAAIEgAAAAAAAABAAAAZw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAJEgAAAAAAAAkSAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAACBIAAAAAAAA9UgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIEgAAAAAAAAgSAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					41,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAKZIAAAAAAAAp0gAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAApkgAAAAAAACmSAAAAAAAAP///////+9/"
+				],
+				[
+					54,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAKhIAAAAAAAAqUgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqEgAAAAAAACoSAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAANNKAAAAAAAA1EoAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA00oAAAAAAADTSgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					64,
+					1,
+					"left_delete",
+					null,
+					"AQAAANRKAAAAAAAA1EoAAAAAAAABAAAAJw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA1UoAAAAAAADVSgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAHEiAAAAAAAAciIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcSIAAAAAAABxIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					70,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAHIiAAAAAAAAACcAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAciIAAAAAAAByIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"toggle_comment",
+					{
+						"block": true
+					},
+					"BAAAAAEnAAAAAAAAAicAAAAAAAAAAAAAAicAAAAAAAAFJwAAAAAAAAAAAAABJwAAAAAAAAEnAAAAAAAAAQAAAHgBJwAAAAAAAAMnAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAScAAAAAAAABJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAMnAAAAAAAABCcAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAycAAAAAAAADJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					75,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAAQnAAAAAAAASDQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABCcAAAAAAAAEJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAEg0AAAAAAAASTQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAASDQAAAAAAABINAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					2,
+					"left_delete",
+					null,
+					"AgAAAL0tAAAAAAAAvS0AAAAAAAABAAAAL7wtAAAAAAAAvC0AAAAAAAABAAAAKg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvi0AAAAAAAC+LQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"insert",
+					{
+						"characters": "/*"
+					},
+					"AgAAALwtAAAAAAAAvS0AAAAAAAAAAAAAvS0AAAAAAAC+LQAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvC0AAAAAAAC8LQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					2,
+					"left_delete",
+					null,
+					"AgAAAL0tAAAAAAAAvS0AAAAAAAABAAAAKrwtAAAAAAAAvC0AAAAAAAABAAAALw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvi0AAAAAAAC+LQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					90,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAAnAAAAAAAAAScAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAACcAAAAAAAAAJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					93,
+					1,
+					"toggle_comment",
+					{
+						"block": true
+					},
+					"AgAAAAAnAAAAAAAAAycAAAAAAAAAAAAAciIAAAAAAAB0IgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAciIAAAAAAAAAJwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					101,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAcnAAAAAAAABycAAAAAAABGDQAALyoKfkN0cmw6OiAgICAgO2dlc3R1cmUgaG90a2V5LCBpIGltYWdpbmUgbW9zdCB3b3VsZCB1c2UgYSBtb3VzZWtleSBmb3IgZ2VzdHVyZXMsY3RybCBpcyBzaW1wbHkgYW4gZXhhbXBsZSBzdWl0YWJsZSBmb3IgdGVzdGluZyBhcyBpJ3ZlIGdvdCByYWRpYWwgbWVudSBydW5uaW5nLi4uCiAgICBHZXRNb3VzZUdlc3R1cmUoVHJ1ZSkKICAgIFdoaWxlIEdldEtleVN0YXRlKExUcmltKEFfVGhpc0hvdGtleSwifiIpKXsKICAgICAgICBUb29sVGlwICUgTUcgOj0gR2V0TW91c2VHZXN0dXJlKCkKICAgICAgICBTbGVlcCAxNTAKICAgIH0KICAgIDtsZWZ0IDw9IDIwJSBvZiBzY3JlZW4gd2lkdGgsIHJpZ2h0ID49IDgwJSBvZiBzY3JlZW4gd2lkdGgsIHRvcCA8PSAyMCUgb2Ygc2NyZWVuIGhlaWdodCwgYm90dG9tID49IDgwJSBvZiBzY3JlZW4gaGVpZ2h0CiAgICBNUSA6PSBTdWJTdHIoTW91c2VRdWFkcmFudCgyMCw4MCwyMCw4MCksMSwxKSAgICA7dGFrZSBvbmx5IHRoZSBmaXJzdCBsZXR0ZXIgb2YgdGhlIHF1YWRyYW50LGZvciBzaW1wbGlmaWVkIGZ1bmN0aW9uIG5hbWVzLi4uCiAgICBJc0Z1bmMoTUcgIl8iIE1RKSA/ICVNRyVfJU1RJSgpIDogKElzRnVuYyhNRykgPyAlTUclKCkgOiAiIikgICAgO2V4YW1wbGUgYWxsb3dzIGNyZWF0aW9uIG9mIGdlc3R1cmVzIGJ5IGRlZmluaW5nIGZ1bmN0aW9ucyB0aGF0IGNvbXByaXNlIFUsRCxSLEwgYXMgZnVuY3Rpb24gbmFtZSx3aXRoIG5vIHVwcGVyIGxpbWl0IG9uIHRoZSBleHRlbnQgb2YgdGhlIGdlc3R1cmUsaS5lIFVEVURVRFVETCBmb3IgZXguCiAgICBUb29sVGlwCiAgICBHZXRNb3VzZUdlc3R1cmUoVHJ1ZSkKUmV0dXJuCgoKVURMKCl7CiAgICBNc2dCb3ggJSAiRnVuY3Rpb24gUnVuLGlmIG5vIGZ1bmN0aW9uIHdhcyBkZWZpbmVkIGZvciBzcGVjaWZpYyBxdWFkcmFudC4gT3IgUXVhZHJhbnQgSGFzIE5vIEFzc2lnbmVkIEZ1bmN0aW9uLmBuYG4gQ3VycmVudFF1YWRyYW50OmBuYHQiIE1vdXNlUXVhZHJhbnQoMjAsODAsMjAsODApCn0KClVETF9UKCl7ICAgIDtmdW5jdGlvbiBkZWZpbmVkIGdlc3R1cmUgZXhhbXBsZSBmb3IgZXhhbXBsZSBiZWxvdwogICAgTXNnQm94IEdlc3R1cmUgT24gVG9wCn0KClVETF9MKCl7ICAgIDtmdW5jdGlvbiBkZWZpbmVkIGdlc3R1cmUgZXhhbXBsZSBmb3IgZXhhbXBsZSBiZWxvdwogICAgTXNnQm94IEdlc3R1cmUgVG8gVGhlIExFRlQKfQoKVURMX1IoKXsgICAgO2Z1bmN0aW9uIGRlZmluZWQgZ2VzdHVyZSBleGFtcGxlIGZvciBleGFtcGxlIGJlbG93CiAgICBNc2dCb3ggR2VzdHVyZSBUbyBUaGUgUmlnaHQKfQoKCjtyZXR1cm5zIGlmIHNjcmVlbiBpcyBvbiB0b3AsYm90dG9tLGNlbnRlcixsZWZ0LHJpZ2h0IGFyZWEgb2Ygc2NyZWVuIGdpdmVuIHRoZSBkZWZpbmVkIHNjb3BlIGluIHBlcmNlbnQgb2YgZWFjaCBhcmVhLi4uc2VlIGV4YW1wbGUuCi8qCiAgICAgICAgICAgICAgICAgICAgVG9wCiAgICBfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fXwogICAgTCAgIHwgICAgICAgICAgICAgICAgICAgICAgIHwgICBSCiAgICBFICAgfCAgICAgICAgICAgICAgICAgICAgICAgfCAgIHkKICAgIEYgICB8ICAgICAgIEMgRSBOIFQgRSBSICAgICB8ICAgVAogICAgVCAgIHwgICAgICAgICAgICAgICAgICAgICAgIHwKICAgIF9fX198X19fX19fX19fX19fX19fX19fX19fX198X19fX19fCiAgICAgICAgICAgICAgICAgICAgQm90dG9tCgo7ZGVmaW5lZCBzY29wZXMgYXJlIGluICdwZXJjZW50JyxpLmUgbGVmdCBzY29wZSBtZWFucyBhbnl0aGluZyBiZWxvdyBkZWZpbmVkICUgaXMgZGVzaWduYXRlZCBsZWZ0LHJpZ2h0IHNjb3BlIGlzIGFueXRoaW5nIGFib3ZlIGRlZmluZWQgJS4uLgpNb3VzZVF1YWRyYW50KGxlZnRTY29wZSxyaWdodFNjb3BlLHRvcFNjb3BlLGJvdHRvbVNjb3BlLGNvb3JkTW9kZTo9InNjcmVlbiIpeyAgIDtjb29yZE1vZGUgc2hvdWxkIGVpdGhlciBiZSAnd2luZG93JyBvciAnc2NyZWVuJwogICAgQ29vcmRNb2RlLCBNb3VzZSwgJSBjb29yZE1vZGUKICAgIE1vdXNlR2V0UG9zLCBtWCwgbVksIG1Id25kLCBtQ3RybAogICAgV2luR2V0UG9zLCB3WCwgd1ksIHdXLCBoSCwgQQogICAgCiAgICBJZiAobVggPD0gbGVmdFNjb3BlLzEwMCooY29vcmRNb2RlID0gInNjcmVlbiIgPyBBX1NjcmVlbldpZHRoIDogd1cpICYmIG1ZID49IHRvcFNjb3BlLzEwMCooY29vcmRNb2RlID0gInNjcmVlbiIgPyBBX1NjcmVlbkhlaWdodCA6IGhIKSAmJiBtWSA8PSBib3R0b21TY29wZS8xMDAqKGNvb3JkTW9kZSA9ICJzY3JlZW4iID8gQV9TY3JlZW5IZWlnaHQgOiBoSCkpCiAgICAgICAgUmV0dXJuICJMRUZUIgogICAgRWxzZSBJZiAobVggPj0gcmlnaHRTY29wZS8xMDAqKGNvb3JkTW9kZSA9ICJzY3JlZW4iID8gQV9TY3JlZW5XaWR0aCA6IHdXKSAmJiBtWSA+PSB0b3BTY29wZS8xMDAqKGNvb3JkTW9kZSA9ICJzY3JlZW4iID8gQV9TY3JlZW5IZWlnaHQgOiBoSCkgJiYgbVkgPD0gYm90dG9tU2NvcGUvMTAwKihjb29yZE1vZGUgPSAic2NyZWVuIiA/IEFfU2NyZWVuSGVpZ2h0IDogaEgpKQogICAgICAgIFJldHVybiAiUklHSFQiCiAgICBFbHNlIElmIChtWSA8PSB0b3BTY29wZS8xMDAqKGNvb3JkTW9kZSA9ICJzY3JlZW4iID8gQV9TY3JlZW5IZWlnaHQgOiBoSCkpCiAgICAgICAgUmV0dXJuICJUT1AiCiAgICBFbHNlIElmIChtWSA+PSBib3R0b21TY29wZS8xMDAqKGNvb3JkTW9kZSA9ICJzY3JlZW4iID8gQV9TY3JlZW5IZWlnaHQgOiBoSCkpCiAgICAgICAgUmV0dXJuICJCT1RUT00iCiAgICBFbHNlCiAgICAgICAgUmV0dXJuICJDRU5URVIiCiAgICAKfQoKCkdldE1vdXNlR2VzdHVyZShyZXNldCA6PSBmYWxzZSl7CiAgICBTdGF0aWMKICAgIG1vdXNlZ2V0cG9zLHhwb3MyLCB5cG9zMgogICAgZHg6PXhwb3MyLXhwb3MxLGR5Oj15cG9zMS15cG9zMgogICAgLCggYWJzKGR5KSA+PSBhYnMoZHgpID8gKGR5ID4gMCA/ICh0cmFjazo9InUiKSA6ICh0cmFjazo9ImQiKSkgOiAoZHggPiAwID8gKHRyYWNrOj0iciIpIDogKHRyYWNrOj0ibCIpKSApICAgO3RyYWNrIGlzIHVwIG9yIGRvd24sIGxlZnQgb3IgcmlnaHQKICAgICxhYnMoZHkpPDQgYW5kIGFicyhkeCk8NCA/ICh0cmFjayA6PSAiIikgOiAiIiAgIDtub3QgdHJhY2tpbmcgYXQgYWxsIGlmIG5vIHNpZ25pZmljYW50IGNoYW5nZSBpbiB4IG9yIHkKICAgICx4cG9zMTo9eHBvczIseXBvczE6PXlwb3MyCiAgICAsdHJhY2s8PlN1YlN0cihnZXN0dXJlLCAwLCAxKSA/IChnZXN0dXJlIDo9IGdlc3R1cmUgLiB0cmFjaykgOiAiIiAgIDtpZ25vcmUgdHJhY2sgaWYgbm90IGNoYW5naW5nIHNpbmNlIHByZXZpb3VzIHRyYWNrCiAgICAsZ2VzdHVyZSA6PSByZXNldCA/ICIiIDogZ2VzdHVyZQogICAgUmV0dXJuIGdlc3R1cmUKfQo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABycAAAAAAABNNAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					104,
+					1,
+					"left_delete",
+					null,
+					"AQAAAL8iAAAAAAAAvyIAAAAAAABLBAAAQ3RybDo6ICAgICA7Z2VzdHVyZSBob3RrZXksIGkgaW1hZ2luZSBtb3N0IHdvdWxkIHVzZSBhIG1vdXNla2V5IGZvciBnZXN0dXJlcyxjdHJsIGlzIHNpbXBseSBhbiBleGFtcGxlIHN1aXRhYmxlIGZvciB0ZXN0aW5nIGFzIGkndmUgZ290IHJhZGlhbCBtZW51IHJ1bm5pbmcuLi4KR2V0TW91c2VHZXN0dXJlKFRydWUpCldoaWxlIEdldEtleVN0YXRlKExUcmltKEFfVGhpc0hvdGtleSwifiIpKXsKICAgIFRvb2xUaXAgJSBNRyA6PSBHZXRNb3VzZUdlc3R1cmUoKQogICAgU2xlZXAgMTUwCn0KSXNGdW5jKE1HKSA/ICVNRyUoKSA6ICIiICAgIDtleGFtcGxlIGFsbG93cyBjcmVhdGlvbiBvZiBnZXN0dXJlcyBieSBkZWZpbmluZyBmdW5jdGlvbnMgdGhhdCBjb21wcmlzZSBVLEQsUixMIGFzIGZ1bmN0aW9uIG5hbWUsd2l0aCBubyB1cHBlciBsaW1pdCBvbiB0aGUgZXh0ZW50IG9mIHRoZSBnZXN0dXJlLGkuZSBVRFVEVURVREwgZm9yIGV4LgpUb29sVGlwCkdldE1vdXNlR2VzdHVyZShUcnVlKQpSZXR1cm4KCgpHZXRNb3VzZUdlc3R1cmUocmVzZXQgOj0gZmFsc2UpewogICAgU3RhdGljCiAgICBtb3VzZWdldHBvcyx4cG9zMiwgeXBvczIKICAgIGR4Oj14cG9zMi14cG9zMSxkeTo9eXBvczEteXBvczIKICAgICwoIGFicyhkeSkgPj0gYWJzKGR4KSA/IChkeSA+IDAgPyAodHJhY2s6PSJ1IikgOiAodHJhY2s6PSJkIikpIDogKGR4ID4gMCA/ICh0cmFjazo9InIiKSA6ICh0cmFjazo9ImwiKSkgKSAgIDt0cmFjayBpcyB1cCBvciBkb3duLCBsZWZ0IG9yIHJpZ2h0CiAgICAsYWJzKGR5KTw0IGFuZCBhYnMoZHgpPDQgPyAodHJhY2sgOj0gIiIpIDogIiIgICA7bm90IHRyYWNraW5nIGF0IGFsbCBpZiBubyBzaWduaWZpY2FudCBjaGFuZ2UgaW4geCBvciB5CiAgICAseHBvczE6PXhwb3MyLHlwb3MxOj15cG9zMgogICAgLHRyYWNrPD5TdWJTdHIoZ2VzdHVyZSwgMCwgMSkgPyAoZ2VzdHVyZSA6PSBnZXN0dXJlIC4gdHJhY2spIDogIiIgICA7aWdub3JlIHRyYWNrIGlmIG5vdCBjaGFuZ2luZyBzaW5jZSBwcmV2aW91cyB0cmFjawogICAgLGdlc3R1cmUgOj0gcmVzZXQgPyAiIiA6IGdlc3R1cmUKICAgIFJldHVybiBnZXN0dXJlCn0KKi8KCgoqLw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACicAAAAAAAC/IgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					107,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHIiAAAAAAAAciIAAAAAAABNAAAALypVREwoKXsgIDtmdW5jdGlvbiBkZWZpbmVkIGdlc3R1cmUgZXhhbXBsZSBmb3IgZXhhbXBsZSBiZWxvdwogICAgTXNnQm94Cn0KCn4",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvyIAAAAAAAByIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					110,
+					1,
+					"paste_and_indent",
+					null,
+					"AQAAAHIiAAAAAAAAti8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAciIAAAAAAAByIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					113,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALcvAAAAAAAAuC8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAty8AAAAAAAC3LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					114,
+					1,
+					"insert",
+					{
+						"characters": "//================"
+					},
+					"EgAAALgvAAAAAAAAuS8AAAAAAAAAAAAAuS8AAAAAAAC6LwAAAAAAAAAAAAC6LwAAAAAAALsvAAAAAAAAAAAAALsvAAAAAAAAvC8AAAAAAAAAAAAAvC8AAAAAAAC9LwAAAAAAAAAAAAC9LwAAAAAAAL4vAAAAAAAAAAAAAL4vAAAAAAAAvy8AAAAAAAAAAAAAvy8AAAAAAADALwAAAAAAAAAAAADALwAAAAAAAMEvAAAAAAAAAAAAAMEvAAAAAAAAwi8AAAAAAAAAAAAAwi8AAAAAAADDLwAAAAAAAAAAAADDLwAAAAAAAMQvAAAAAAAAAAAAAMQvAAAAAAAAxS8AAAAAAAAAAAAAxS8AAAAAAADGLwAAAAAAAAAAAADGLwAAAAAAAMcvAAAAAAAAAAAAAMcvAAAAAAAAyC8AAAAAAAAAAAAAyC8AAAAAAADJLwAAAAAAAAAAAADJLwAAAAAAAMovAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAuC8AAAAAAAC4LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					117,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AgAAALgvAAAAAAAAuS8AAAAAAAAAAAAAuS8AAAAAAAC5LwAAAAAAABIAAAAvLz09PT09PT09PT09PT09PT0",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAyi8AAAAAAAC4LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					118,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAALkvAAAAAAAAuy8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAuS8AAAAAAAC5LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					120,
+					1,
+					"insert",
+					{
+						"characters": "=============================="
+					},
+					"HgAAALsvAAAAAAAAvC8AAAAAAAAAAAAAvC8AAAAAAAC9LwAAAAAAAAAAAAC9LwAAAAAAAL4vAAAAAAAAAAAAAL4vAAAAAAAAvy8AAAAAAAAAAAAAvy8AAAAAAADALwAAAAAAAAAAAADALwAAAAAAAMEvAAAAAAAAAAAAAMEvAAAAAAAAwi8AAAAAAAAAAAAAwi8AAAAAAADDLwAAAAAAAAAAAADDLwAAAAAAAMQvAAAAAAAAAAAAAMQvAAAAAAAAxS8AAAAAAAAAAAAAxS8AAAAAAADGLwAAAAAAAAAAAADGLwAAAAAAAMcvAAAAAAAAAAAAAMcvAAAAAAAAyC8AAAAAAAAAAAAAyC8AAAAAAADJLwAAAAAAAAAAAADJLwAAAAAAAMovAAAAAAAAAAAAAMovAAAAAAAAyy8AAAAAAAAAAAAAyy8AAAAAAADMLwAAAAAAAAAAAADMLwAAAAAAAM0vAAAAAAAAAAAAAM0vAAAAAAAAzi8AAAAAAAAAAAAAzi8AAAAAAADPLwAAAAAAAAAAAADPLwAAAAAAANAvAAAAAAAAAAAAANAvAAAAAAAA0S8AAAAAAAAAAAAA0S8AAAAAAADSLwAAAAAAAAAAAADSLwAAAAAAANMvAAAAAAAAAAAAANMvAAAAAAAA1C8AAAAAAAAAAAAA1C8AAAAAAADVLwAAAAAAAAAAAADVLwAAAAAAANYvAAAAAAAAAAAAANYvAAAAAAAA1y8AAAAAAAAAAAAA1y8AAAAAAADYLwAAAAAAAAAAAADYLwAAAAAAANkvAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAuy8AAAAAAAC7LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					121,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAANkvAAAAAAAA2y8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA2S8AAAAAAADZLwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					123,
+					1,
+					"insert",
+					{
+						"characters": "================================="
+					},
+					"IQAAANsvAAAAAAAA3C8AAAAAAAAAAAAA3C8AAAAAAADdLwAAAAAAAAAAAADdLwAAAAAAAN4vAAAAAAAAAAAAAN4vAAAAAAAA3y8AAAAAAAAAAAAA3y8AAAAAAADgLwAAAAAAAAAAAADgLwAAAAAAAOEvAAAAAAAAAAAAAOEvAAAAAAAA4i8AAAAAAAAAAAAA4i8AAAAAAADjLwAAAAAAAAAAAADjLwAAAAAAAOQvAAAAAAAAAAAAAOQvAAAAAAAA5S8AAAAAAAAAAAAA5S8AAAAAAADmLwAAAAAAAAAAAADmLwAAAAAAAOcvAAAAAAAAAAAAAOcvAAAAAAAA6C8AAAAAAAAAAAAA6C8AAAAAAADpLwAAAAAAAAAAAADpLwAAAAAAAOovAAAAAAAAAAAAAOovAAAAAAAA6y8AAAAAAAAAAAAA6y8AAAAAAADsLwAAAAAAAAAAAADsLwAAAAAAAO0vAAAAAAAAAAAAAO0vAAAAAAAA7i8AAAAAAAAAAAAA7i8AAAAAAADvLwAAAAAAAAAAAADvLwAAAAAAAPAvAAAAAAAAAAAAAPAvAAAAAAAA8S8AAAAAAAAAAAAA8S8AAAAAAADyLwAAAAAAAAAAAADyLwAAAAAAAPMvAAAAAAAAAAAAAPMvAAAAAAAA9C8AAAAAAAAAAAAA9C8AAAAAAAD1LwAAAAAAAAAAAAD1LwAAAAAAAPYvAAAAAAAAAAAAAPYvAAAAAAAA9y8AAAAAAAAAAAAA9y8AAAAAAAD4LwAAAAAAAAAAAAD4LwAAAAAAAPkvAAAAAAAAAAAAAPkvAAAAAAAA+i8AAAAAAAAAAAAA+i8AAAAAAAD7LwAAAAAAAAAAAAD7LwAAAAAAAPwvAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA2y8AAAAAAADbLwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					124,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAAPwvAAAAAAAA/i8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA/C8AAAAAAAD8LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					126,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAP4vAAAAAAAA/y8AAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA/i8AAAAAAAD+LwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					142,
+					4,
+					"left_delete",
+					null,
+					"BAAAAHYiAAAAAAAAdiIAAAAAAAABAAAAbHUiAAAAAAAAdSIAAAAAAAABAAAAcnQiAAAAAAAAdCIAAAAAAAABAAAAdHMiAAAAAAAAcyIAAAAAAAABAAAAQw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAdyIAAAAAAAB3IgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					143,
+					1,
+					"insert",
+					{
+						"characters": "^!"
+					},
+					"AgAAAHMiAAAAAAAAdCIAAAAAAAAAAAAAdCIAAAAAAAB1IgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAcyIAAAAAAABzIgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					146,
+					1,
+					"toggle_comment",
+					{
+						"block": true
+					},
+					"AgAAALIlAAAAAAAAtSUAAAAAAAAAAAAAciIAAAAAAAB0IgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAciIAAAAAAACyJQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					173,
+					1,
+					"insert",
+					{
+						"characters": "\nf24"
+					},
+					"BAAAAAIwAAAAAAAAAzAAAAAAAAAAAAAAAzAAAAAAAAAEMAAAAAAAAAAAAAAEMAAAAAAAAAUwAAAAAAAAAAAAAAUwAAAAAAAABjAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAjAAAAAAAAACMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					174,
+					1,
+					"insert",
+					{
+						"characters": " &"
+					},
+					"AgAAAAYwAAAAAAAABzAAAAAAAAAAAAAABzAAAAAAAAAIMAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABjAAAAAAAAAGMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					175,
+					1,
+					"insert",
+					{
+						"characters": " e"
+					},
+					"AgAAAAgwAAAAAAAACTAAAAAAAAAAAAAACTAAAAAAAAAKMAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACDAAAAAAAAAIMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					176,
+					1,
+					"insert",
+					{
+						"characters": "::"
+					},
+					"AgAAAAowAAAAAAAACzAAAAAAAAAAAAAACzAAAAAAAAAMMAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACjAAAAAAAAAKMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					177,
+					1,
+					"insert",
+					{
+						"characters": " r"
+					},
+					"AgAAAAwwAAAAAAAADTAAAAAAAAAAAAAADTAAAAAAAAAOMAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAADDAAAAAAAAAMMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					178,
+					1,
+					"insert",
+					{
+						"characters": "un,"
+					},
+					"AwAAAA4wAAAAAAAADzAAAAAAAAAAAAAADzAAAAAAAAAQMAAAAAAAAAAAAAAQMAAAAAAAABEwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAADjAAAAAAAAAOMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					179,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAABEwAAAAAAAAEjAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAETAAAAAAAAARMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					180,
+					1,
+					"insert",
+					{
+						"characters": "%A_"
+					},
+					"AwAAABIwAAAAAAAAEzAAAAAAAAAAAAAAEzAAAAAAAAAUMAAAAAAAAAAAAAAUMAAAAAAAABUwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAEjAAAAAAAAASMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					183,
+					1,
+					"insert_completion",
+					{
+						"completion": "A_ScriptDir",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "A_ScriptDir"
+					},
+					"AgAAABMwAAAAAAAAEzAAAAAAAAACAAAAQV8TMAAAAAAAAB4wAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAFTAAAAAAAAAVMAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					184,
+					1,
+					"insert",
+					{
+						"characters": "%"
+					},
+					"AQAAAB4wAAAAAAAAHzAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAHjAAAAAAAAAeMAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SendCode/build_systems/IPython - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+				"Default"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"nu",
+				"Insert Nums"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"run",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"termi",
+				"Terminus: List Shells"
+			],
+			[
+				"termin",
+				"Terminus: List Shells"
+			],
+			[
+				"autoho",
+				"AutoHotkey - Run"
+			],
+			[
+				"auto",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"",
+				"Build With: AutoHotkey"
+			],
+			[
+				"tern",
+				"Terminus: Close All"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"refres",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxfold ke",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"syntax",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"fold ",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxa",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"preferences pack",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"resouu",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"history",
+				"History: Revert Modification"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: SideBarTools Settings"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"viewer",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"white sp",
+				"Trim Trailing White Space"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"ahk",
+				"AutoHotkey - Run"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				"find ",
+				"Preferences: Search in Project Settings – Default"
+			],
+			[
+				"conda",
+				"Conda: List Packages"
+			],
+			[
+				"high",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"highl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"rename",
+				"Rename File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"gh repo clone hi5/Rufaydium-Webdriver"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/regexTester(RE).ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/print.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/CodeQuickTester v2.ah1",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Wordlist.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/tlinelogger.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TextFileProcessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test (2).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/emp-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLite_L.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickConvertorV2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/read-ini.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks_gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController copy.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/mySQL.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/guiclass.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Minerva-Handlers.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/logfile2.txt",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gui.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptGenerated.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptgen2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/generate.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen2.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Class_SQLiteDB.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Example7 - OpenGoogleMaps.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/employee-class-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDBv2_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDB_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Examples)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/globalcoder - Copy.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/GlobalCoder.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((GlobalCoder)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/try.ah2",
+		"/C/Users/donov/OneDrive/Desktop/MSSAProjects-main/MSSAProjects-main/TextBasedGame/TextBasedGame.py",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/hotstring_hints-main/hotstring_hints-main/hotstring_hints.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/discord-v2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Notes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Tests)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Mvc)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/menu.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/MGLahk140/Setup.vbs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/(functions).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/RichEdit_demo.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/Class_RichEdit.ahk",
+		"/D/lib/V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/Gui-Script-text-editor-w-menu.ah2",
+		"/D/AHK-v2-script-converter-master/AHK-v2-script-converter-master/tests/Test_Folder/Window/Control/Menu_ex3_(nested).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-Menu.ah2",
+		"/D/lib/V2/((dump)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/lib-v2-main/lib-v2-main/Tools/CleanInputBox.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_Default.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_User.ahk",
+		"/C/Users/donov/OneDrive/Desktop/Inventory-Management-System-master/Inventory-Management-System-master/IMS.DataStore.HardCoded/ProductRepository.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarNote.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarMaintenance.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/Car.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-ranking.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-mvc.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/Miverva v2 funcs.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/OnMessage-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/envset.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/CallbackCreate-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/scratch.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/textprocessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TemplateControllerGenerator.ahk",
+		"/C/Users/donov/OneDrive/Documents/RunGroop-master/KingdomWebApp/Models/AppUser.cs",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/proxy.conf.json",
+		"/D/skills.txt",
+		"/D/kingdomWebApp.publishsettings",
+		"/G/((top))/_Dev_/BlazorWithIdentity-master/BlazorWithIdentity-master/global.json",
+		"/C/Users/donov/OneDrive/Desktop/psmenu.ahk",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/.zip/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/Deployment-Microsoft.Web-WebAppDatabase-Portal-1148428d-9563/deployment.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/package.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Properties/launchSettings.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/Kingdom.csproj",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev.PublishSettings",
+		"/D/Kingdom3/k1/.github/workflows/master_mykd.yml",
+		"/D/Kingdom3/k1/.github/workflows/main.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/master_mykd.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/MyKd.PublishSettings",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.Development.json",
+		"/C/Users/donov/AppData/Roaming/Microsoft/UserSecrets/2017a5be-f3c0-45e3-a400-56ea583c695c/secrets.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.json",
+		"/D/Kingdom/KingdomWebApp/Program.cs",
+		"/D/Kingdom3/.github/workflows/main.yml",
+		"/C/Users/donov/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev (1).PublishSettings",
+		"/D/Kingdom3/KingdomWebApp/KingdomWebApp.csproj",
+		"/D/Kingdom3/KingdomWebApp/ClientApp/angular.json",
+		"/D/IncludeAngular-CopyToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/deployment-microsoft/master_mykd(dev).yml",
+		"/D/Kingdom3/deployment-microsoft/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/master_mykd(dev).yml",
+		"/D/azureyaml.txt",
+		"/D/Kingdom3/ClientApp/angular.json",
+		"/D/IncludeAngular-AngularJsonAutoMoveToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/.gitignore",
+		"/D/profile.publishsettings",
+		"/D/Kingdom/.gitignore"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"byref",
+			"d",
+			"\" ",
+			"\"  ",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160681,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+									[
+										7197,
+										7197
+									],
+									[
+										123377,
+										123377
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								31353,
+								31353
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "2aac11fa",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14506.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.865644171779,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 126.400001526
+	},
+	"output.Terminus 2":
+	{
+		"height": 126.400001526
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/zeanah2/Autohotkey2.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 44.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\(github)\\GlobalCoder\\gc\\GlobalCoder\\GC-Workspace.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 300.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

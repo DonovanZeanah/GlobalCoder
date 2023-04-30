@@ -1,0 +1,81 @@
+; Deprecated AHK items
+
+; Keys
+Return ;Deprecated: Use the synonym Enter instead to reduce ambiguity.
+Break  ;Deprecated: Use the synonym Pause instead.
+
+; Keywords
+ComSpec
+
+; Functions
+ParamObj := ComObjMissing()
+ComObject := ComObjEnwrap(DispPtr)
+DispPtr := ComObjUnwrap(ComObject)
+
+; Commands
+EnvDiv, Var, Value
+EnvMult, Var, Value
+GetKeyState, OutputVar, KeyName [, Mode]
+OnExit [, Label]
+RegDelete, RootKey, SubKey [, ValueName]
+RegRead, OutputVar, RootKey, SubKey [, ValueName]
+RegWrite, ValueType, RootKey, SubKey [, ValueName, Value]
+SetEnv, Var, Value
+SetFormat, NumberType, Format
+StringLeft, OutputVar, InputVar, Count
+StringRight, OutputVar, InputVar, Count
+StringLen, OutputVar, InputVar
+StringMid, OutputVar, InputVar, StartChar [, Count, L]
+StringReplace, OutputVar, InputVar, SearchText [, ReplaceText, ReplaceAll?]
+StringSplit, OutputArray, InputVar [, Delimiters, OmitChars]
+StringGetPos, OutputVar, InputVar, SearchText [, Occurrence, Offset]
+StringTrimLeft, OutputVar, InputVar, Count
+StringTrimRight, OutputVar, InputVar, Count
+Transform, OutputVar, Asc, String
+Transform, OutputVar, Chr, Number
+Transform, OutputVar, Mod, Dividend, Divisor
+Transform, OutputVar, Exp, N
+Transform, OutputVar, Sqrt, Number
+Transform, OutputVar, Log, Number
+Transform, OutputVar, Ln, Number
+Transform, OutputVar, Round, Number [, N]
+Transform, OutputVar, Ceil, Number
+Transform, OutputVar, Floor, Number
+Transform, OutputVar, Abs, Number
+Transform, OutputVar, Sin, Number
+Transform, OutputVar, Cos, Number
+Transform, OutputVar, Tan, Number
+Transform, OutputVar, ASin, Number
+Transform, OutputVar, ACos, Number
+Transform, OutputVar, ATan, Number
+Transform, OutputVar, Pow, Base, Exponent
+Transform, OutputVar, BitNot, Number
+Transform, OutputVar, BitAnd, Number1, Number2
+Transform, OutputVar, BitOr, Number1, Number2
+Transform, OutputVar, BitXOr, Number1, Number2
+Transform, OutputVar, BitShiftLeft, Number, N
+Transform, OutputVar, BitShiftRight, Number, N
+IfWinActive [, WinTitle, WinText, ExcludeTitle, ExcludeText]
+IfWinNotActive [, WinTitle, WinText, ExcludeTitle, ExcludeText]
+IfWinExist [, WinTitle, WinText, ExcludeTitle, ExcludeText]
+IfWinNotExist [, WinTitle, WinText, ExcludeTitle, ExcludeText]
+
+; Flow
+IfEqual, Var [, Value]          ; if Var = Value
+IfNotEqual, Var [, Value]       ; if Var != Value
+IfLess, Var [, Value]           ; if Var &lt; Value
+IfLessOrEqual, Var [, Value]    ; if Var &lt;= Value
+IfGreater, Var [, Value]        ; if Var &gt; Value
+IfGreaterOrEqual, Var [, Value] ; if Var &gt;= Value
+IfInString, Var, SearchString
+IfNotInString, Var, SearchString
+IfExist, FilePattern
+IfNotExist, FilePattern
+Loop, FilePattern [, IncludeFolders?, Recurse?]
+Loop, RootKey [, Key, IncludeSubkeys?, Recurse?]
+
+; Methods
+.Insert(Pos, Value1 [, Value2, ... ValueN ])
+.Insert(Value)
+.Insert(StringOrObjectKey, Value)
+.Remove(FirstKey, LastKey)

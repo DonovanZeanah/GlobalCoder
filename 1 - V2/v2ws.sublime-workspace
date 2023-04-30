@@ -1,0 +1,5699 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"A_",
+				"A_ScriptDir"
+			],
+			[
+				"men",
+				"Menu"
+			],
+			[
+				"if",
+				"If"
+			],
+			[
+				"note",
+				"notepath"
+			],
+			[
+				"menu",
+				"Menu"
+			],
+			[
+				"key",
+				"KeyWait"
+			],
+			[
+				"keyw",
+				"KeyWait"
+			],
+			[
+				"a_",
+				"A_Index"
+			],
+			[
+				"Loop",
+				"Loop parse"
+			],
+			[
+				"msgb",
+				"MsgBox"
+			],
+			[
+				"go",
+				"Gosub"
+			],
+			[
+				"sys",
+				"SysGet"
+			],
+			[
+				"a_loo",
+				"A_LoopFileName"
+			],
+			[
+				"no",
+				"NoTrayIcon"
+			],
+			[
+				"work",
+				"SetWorkingDir"
+			],
+			[
+				"DE",
+				"Destroy"
+			],
+			[
+				"msg",
+				"MsgBox"
+			],
+			[
+				"got",
+				"Goto"
+			],
+			[
+				"file",
+				"FileAppend"
+			],
+			[
+				"close",
+				"Close()"
+			],
+			[
+				"gui",
+				"Gui"
+			],
+			[
+				"Guic",
+				"GuiEscape"
+			],
+			[
+				"guio",
+				"GuiClose"
+			],
+			[
+				"hide",
+				"HideGUI"
+			],
+			[
+				"ahk_",
+				"ahk_exe"
+			],
+			[
+				"setw",
+				"SetWorkingDir"
+			],
+			[
+				"a_this",
+				"A_ThisFunc"
+			],
+			[
+				"c",
+				"CustomMenuFiles"
+			],
+			[
+				"winwai",
+				"WinWaitActive"
+			],
+			[
+				"Input",
+				"InputBox"
+			],
+			[
+				"input",
+				"InputBox"
+			],
+			[
+				"stringre",
+				"StringReplace"
+			],
+			[
+				"a_pro",
+				"A_ProgramFiles"
+			],
+			[
+				"a_script",
+				"A_ScriptFullPath"
+			],
+			[
+				"regexr",
+				"RegExReplace()"
+			],
+			[
+				"FileCreate",
+				"FileCreateDir"
+			],
+			[
+				"exist",
+				"FileExist()"
+			],
+			[
+				"timesin",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_p",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_ho",
+				"A_PriorHotkey"
+			],
+			[
+				"fileappen",
+				"FileAppend"
+			],
+			[
+				"a_screen",
+				"A_ScreenHeight"
+			],
+			[
+				"a_scr",
+				"A_ScreenWidth"
+			],
+			[
+				"winget",
+				"WinGetTitle"
+			],
+			[
+				"Winget",
+				"WinGetTitle"
+			],
+			[
+				"setk",
+				"SetKeyDelay"
+			],
+			[
+				"a_pr",
+				"A_PriorHotkey"
+			],
+			[
+				"too",
+				"ToolTip"
+			],
+			[
+				"string",
+				"StringReplace"
+			],
+			[
+				"strre",
+				"StrReplace()"
+			],
+			[
+				"repl",
+				"StrReplace()"
+			],
+			[
+				"win",
+				"WinActivate"
+			],
+			[
+				"change",
+				"changeFirstName"
+			],
+			[
+				"rnd",
+				"Round()"
+			],
+			[
+				"str",
+				"StrSplit()"
+			],
+			[
+				"getke",
+				"GetKeyState()"
+			],
+			[
+				"br",
+				"Break"
+			],
+			[
+				"ifwi",
+				"IfWinActive"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
+				"caps",
+				"CapsLock"
+			],
+			[
+				"Sendi",
+				"SendInput"
+			],
+			[
+				"sen",
+				"SendMessage"
+			],
+			[
+				"retur",
+				"ReturnValue"
+			],
+			[
+				"sendmod",
+				"SendMode"
+			],
+			[
+				"contro",
+				"ControlList"
+			],
+			[
+				"inire",
+				"IniRead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Wordlist.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/CodeQuickTester v2.ah1",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TextFileProcessor.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/tlinelogger.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test (2).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/emp-bingchat.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex2.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite2.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLite_L.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickConvertorV2.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/read-ini.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController.cs",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks_gpt.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController copy.cs",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/mySQL.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/guiclass.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/logfile2.txt",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Minerva-Handlers.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gui.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptGenerated.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptgen2.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/generate.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen2.cs",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.cs",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Class_SQLiteDB.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Example7 - OpenGoogleMaps.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/employee-class-bingchat.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDBv2_sample.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDB_sample.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((classes)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Examples)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/globalcoder - Copy.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/GlobalCoder.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((GlobalCoder)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"file": "GlobalCoderv2.ah2",
+			"settings":
+			{
+				"buffer_size": 125173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/classes.ah2",
+			"settings":
+			{
+				"buffer_size": 67407,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/1_globalcoder_ParseAHK.ahk",
+			"settings":
+			{
+				"buffer_size": 37357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x15 - GcAdditionalImpliments/1_globalcoder_ParseAHK - Copy.ahk",
+			"settings":
+			{
+				"buffer_size": 37357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/ParseAHK_V2 (2).ahk",
+			"settings":
+			{
+				"buffer_size": 31352,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/1_globalcoder/scratch/1ParseAHK.ahk",
+			"settings":
+			{
+				"buffer_size": 37651,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+			"settings":
+			{
+				"buffer_size": 160653,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "((classes)).ah2",
+			"settings":
+			{
+				"buffer_size": 96603,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/ParseAHK_V2.ahk",
+			"settings":
+			{
+				"buffer_size": 31352,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/parseahk-functions-results.ahk",
+			"settings":
+			{
+				"buffer_size": 457,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((Examples)) (2).ah2",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((GlobalCoder)).ah2",
+			"settings":
+			{
+				"buffer_size": 10731,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "((functions)).ah2",
+			"settings":
+			{
+				"buffer_size": 68381,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((Examples)).ah2",
+			"settings":
+			{
+				"buffer_size": 106942,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((GlobalCoder)) (2).ah2",
+			"settings":
+			{
+				"buffer_size": 1513,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "((v2--GlobalCoder-FULLFILE)).ah2",
+			"settings":
+			{
+				"buffer_size": 125173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((v2-GlobalCoder-FULLFILE)).ah2",
+			"settings":
+			{
+				"buffer_size": 115102,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "((v2GlobalCoder)).ah2",
+			"settings":
+			{
+				"buffer_size": 125166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/donov/OneDrive/Desktop/Quick-AHKv2-Converter-1/src/lib/2Functions.ahk",
+			"settings":
+			{
+				"buffer_size": 17428,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/lib/((fUNCTIONS)).ahk",
+			"settings":
+			{
+				"buffer_size": 64488,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)-MAINS/GlobalCoder/parseahk-functions.ahk",
+			"settings":
+			{
+				"buffer_size": 2014,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/o-z/Parse.ahk",
+			"settings":
+			{
+				"buffer_size": 4874,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/(ext)/Lib/ScriptParser.ahk",
+			"settings":
+			{
+				"buffer_size": 8208,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection/more libs/CGUI/Parse.ahk",
+			"settings":
+			{
+				"buffer_size": 4192,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection/libs/o-z/ScriptParser.ahk",
+			"settings":
+			{
+				"buffer_size": 8208,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/repo-masters/.AHK-libs-and-classes-collection/libs/o-z/Parse.ahk",
+			"settings":
+			{
+				"buffer_size": 4874,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/repo-masters/AHK-libs-and-classes-collection/FileFunctionList.ahk",
+			"settings":
+			{
+				"buffer_size": 355105,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/parseahk-functions.ahk",
+			"settings":
+			{
+				"buffer_size": 2014,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GlobalCoder.ah2",
+			"settings":
+			{
+				"buffer_size": 115095,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ah1",
+			"settings":
+			{
+				"buffer_size": 102583,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/regexTester(RE).ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/print.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/try.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x14 - Docs & PDF/Top ASP.NET Interview Question- www.c-sharpcorner.com",
+			"settings":
+			{
+				"buffer_size": 8393206,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((functions)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2--GlobalCoder-FULLFILE)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2-GlobalCoder-FULLFILE)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2GlobalCoder)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((GlobalCoder)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/discord&GPT/discord-v2.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/Axle/Tools/CleanInputBox.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/QuickLinks.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/Misc/Tools/CleanInputBox.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/classes.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"file": "/C/Users/donov/AppData/Roaming/Code/User/History/5d37f5c0/E8DF.ah2",
+			"settings":
+			{
+				"buffer_size": 74182,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/donov/AppData/Roaming/Code/User/History/779f8d02/2JIZ.ah2",
+			"settings":
+			{
+				"buffer_size": 48610,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/donov/AppData/Roaming/Code/User/History/-2b92b89/08hh.ah2",
+			"settings":
+			{
+				"buffer_size": 115095,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/lex/GetDefaultIcon.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/lex/(examples/class_scintilla_A-test-script.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/(functions).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2--GlobalCoder-FULLFILE)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2-GlobalCoder-FULLFILE)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2GlobalCoder)).ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/GlobalCoder.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/GlobalCoderv2.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/discord-v2.ahk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/FavoriteFolders.ah2",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"file": "/D/WorkingKingdomWebAppYaml.txt",
+			"settings":
+			{
+				"buffer_size": 155303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/KingdomDocContext.cs",
+			"settings":
+			{
+				"buffer_size": 10405,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/WorkshopGroup/WorkshopGroup/Controllers/HomeController.cs",
+			"settings":
+			{
+				"buffer_size": 2461,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/(check&delete)/HomeController.cs",
+			"settings":
+			{
+				"buffer_size": 4801,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SendCode/build_systems/IPython - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+				"Default"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"nu",
+				"Insert Nums"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"run",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"termi",
+				"Terminus: List Shells"
+			],
+			[
+				"termin",
+				"Terminus: List Shells"
+			],
+			[
+				"autoho",
+				"AutoHotkey - Run"
+			],
+			[
+				"auto",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"",
+				"Build With: AutoHotkey"
+			],
+			[
+				"tern",
+				"Terminus: Close All"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"refres",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxfold ke",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"syntax",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"fold ",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxa",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"preferences pack",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"resouu",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"history",
+				"History: Revert Modification"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: SideBarTools Settings"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"viewer",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"white sp",
+				"Trim Trailing White Space"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"ahk",
+				"AutoHotkey - Run"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				"find ",
+				"Preferences: Search in Project Settings – Default"
+			],
+			[
+				"conda",
+				"Conda: List Packages"
+			],
+			[
+				"high",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"highl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"rename",
+				"Rename File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"gh repo clone hi5/Rufaydium-Webdriver"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/1 - V2"
+	],
+	"file_history":
+	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Wordlist.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/CodeQuickTester v2.ah1",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TextFileProcessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/tlinelogger.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test (2).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/emp-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLite_L.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickConvertorV2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/read-ini.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks_gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController copy.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/mySQL.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/guiclass.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/logfile2.txt",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Minerva-Handlers.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gui.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptGenerated.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptgen2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/generate.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen2.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Class_SQLiteDB.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Example7 - OpenGoogleMaps.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/employee-class-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDBv2_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDB_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Examples)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/globalcoder - Copy.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/GlobalCoder.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((GlobalCoder)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/regexTester(RE).ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/print.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/try.ah2",
+		"/C/Users/donov/OneDrive/Desktop/MSSAProjects-main/MSSAProjects-main/TextBasedGame/TextBasedGame.py",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/hotstring_hints-main/hotstring_hints-main/hotstring_hints.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/discord-v2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Notes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Tests)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Mvc)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/menu.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/MGLahk140/Setup.vbs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/(functions).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/RichEdit_demo.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/Class_RichEdit.ahk",
+		"/D/lib/V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/Gui-Script-text-editor-w-menu.ah2",
+		"/D/AHK-v2-script-converter-master/AHK-v2-script-converter-master/tests/Test_Folder/Window/Control/Menu_ex3_(nested).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-Menu.ah2",
+		"/D/lib/V2/((dump)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/lib-v2-main/lib-v2-main/Tools/CleanInputBox.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_Default.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_User.ahk",
+		"/C/Users/donov/OneDrive/Desktop/Inventory-Management-System-master/Inventory-Management-System-master/IMS.DataStore.HardCoded/ProductRepository.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarNote.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarMaintenance.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/Car.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-ranking.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-mvc.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/Miverva v2 funcs.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/OnMessage-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/envset.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/CallbackCreate-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/scratch.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/textprocessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TemplateControllerGenerator.ahk",
+		"/C/Users/donov/OneDrive/Documents/RunGroop-master/KingdomWebApp/Models/AppUser.cs",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/proxy.conf.json",
+		"/D/skills.txt",
+		"/D/kingdomWebApp.publishsettings",
+		"/G/((top))/_Dev_/BlazorWithIdentity-master/BlazorWithIdentity-master/global.json",
+		"/C/Users/donov/OneDrive/Desktop/psmenu.ahk",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/.zip/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/Deployment-Microsoft.Web-WebAppDatabase-Portal-1148428d-9563/deployment.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/package.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Properties/launchSettings.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/Kingdom.csproj",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev.PublishSettings",
+		"/D/Kingdom3/k1/.github/workflows/master_mykd.yml",
+		"/D/Kingdom3/k1/.github/workflows/main.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/master_mykd.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/MyKd.PublishSettings",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.Development.json",
+		"/C/Users/donov/AppData/Roaming/Microsoft/UserSecrets/2017a5be-f3c0-45e3-a400-56ea583c695c/secrets.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.json",
+		"/D/Kingdom/KingdomWebApp/Program.cs",
+		"/D/Kingdom3/.github/workflows/main.yml",
+		"/C/Users/donov/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev (1).PublishSettings",
+		"/D/Kingdom3/KingdomWebApp/KingdomWebApp.csproj",
+		"/D/Kingdom3/KingdomWebApp/ClientApp/angular.json",
+		"/D/IncludeAngular-CopyToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/deployment-microsoft/master_mykd(dev).yml",
+		"/D/Kingdom3/deployment-microsoft/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/master_mykd(dev).yml",
+		"/D/azureyaml.txt",
+		"/D/Kingdom3/ClientApp/angular.json",
+		"/D/IncludeAngular-AngularJsonAutoMoveToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/.gitignore",
+		"/D/profile.publishsettings",
+		"/D/Kingdom/.gitignore"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "ba406481",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/QuickLinks.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 103,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Wordlist.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "43118ec2",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/Wordlist.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 102,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/CodeQuickTester v2.ah1",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "361e3a03",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/CodeQuickTester%20v2.ah1",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 101,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TextFileProcessor.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "14cde04f",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/class%20TextFileProcessor.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 100,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/tlinelogger.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "02a21d8c",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/tlinelogger.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 99,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "5de5011a",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/test.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 98,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test (2).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "97fd5621",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/test%20%282%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 97,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/emp-bingchat.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "7c953097",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/emp-bingchat.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 96,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "eb923397",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/sqliteex2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 95,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "d2f47387",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/sqliteex.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 94,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "0c74e1f5",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/rewrite2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 93,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLite_L.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "001730dd",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/SQLite_L.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 92,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickConvertorV2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "e11a275a",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/QuickConvertorV2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 91,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "ec8e62a8",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/rewrite.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 90,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/read-ini.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "3608f243",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/read-ini.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 89,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "b5a23569",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/PlaceholderController.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 88,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks_gpt.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "db17542f",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/QuickLinks_gpt.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 87,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController copy.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "7029945a",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/PlaceholderController%20copy.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 86,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/mySQL.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "1e6952f2",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/mySQL.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 85,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/guiclass.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "a45f23df",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/guiclass.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 84,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/logfile2.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "f89a7a94",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/logfile2.txt",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 83,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Minerva-Handlers.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "3f5bb2c8",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/Minerva-Handlers.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 82,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gui.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "787aef6f",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gui.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 81,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "2895d6db",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gpt-logger-timeline.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 80,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "133bfb52",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 79,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptGenerated.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "619367f9",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gptGenerated.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 78,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptgen2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "16c96df0",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gptgen2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 77,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/generate.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "a9841611",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/generate.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 76,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen2.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "6ad258da",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gen2.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 75,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "a3df5e82",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gen.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 74,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "b14ddfd7",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/gen.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 73,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Class_SQLiteDB.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "c997e9a3",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/Class_SQLiteDB.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 72,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Example7 - OpenGoogleMaps.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "22e47e93",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/Example7%20-%20OpenGoogleMaps.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 71,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/employee-class-bingchat.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "86e8aed7",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/employee-class-bingchat.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 70,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDBv2_sample.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "e2ffd9c3",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/SQLiteDBv2_sample.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 69,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDB_sample.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "b51d778c",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/SQLiteDB_sample.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 68,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((classes)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "da5c5a2e",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/%28%28classes%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 67,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Examples)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "d65f8e00",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/%28%28Examples%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.33333333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 66,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/globalcoder - Copy.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "1140f9d7",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/globalcoder%20-%20Copy.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 65,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/GlobalCoder.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "ecfa639b",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/GlobalCoder.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.33333333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 64,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "ab905490",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/%28%28GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 63,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "GlobalCoderv2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27485,
+								27502
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "1b626f46",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/GlobalCoderv2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 62,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "lib/classes.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 67407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54731,
+								54748
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "3f358d19",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/lib/classes.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 27715.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 61,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/1_globalcoder_ParseAHK.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "909b2307",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/collection/%21%21GlobalCoder_Catch_All/1_globalcoder_ParseAHK.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 60,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x15 - GcAdditionalImpliments/1_globalcoder_ParseAHK - Copy.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "a9894963",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x15%20-%20GcAdditionalImpliments/1_globalcoder_ParseAHK%20-%20Copy.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 59,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "test/ParseAHK_V2 (2).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "f9436431",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/test/ParseAHK_V2%20%282%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 58,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/1_globalcoder/scratch/1ParseAHK.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13938,
+								13938
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "7f372e49",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/1_globalcoder/scratch/1ParseAHK.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 57,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160653,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+									[
+										7197,
+										7197
+									],
+									[
+										123377,
+										123377
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								27494,
+								27494
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "2aac11fa",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12301.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 56,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "((classes)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82591,
+								82699
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "7f9ee597",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28classes%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 40172.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 55,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "test/ParseAHK_V2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "93e3d0d6",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/test/ParseAHK_V2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 54,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/parseahk-functions-results.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5981ba67",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/parseahk-functions-results.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 53,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "((Examples)) (2).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "6f670caf",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28Examples%29%29%20%282%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 52,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "((GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "dbd57843",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 51,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "((functions)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "5292642c",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28functions%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 50,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 54,
+					"file": "((Examples)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22160,
+								22169
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "87e16af5",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28Examples%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8866.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 49,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 55,
+					"file": "((GlobalCoder)) (2).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1513,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "9f7d5d73",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28GlobalCoder%29%29%20%282%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 48,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 56,
+					"file": "((v2--GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "45b3a9f6",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28v2--GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 47,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 57,
+					"file": "((v2-GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17007,
+								20939
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "819b4376",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28v2-GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7448.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 46,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 58,
+					"file": "((v2GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "29f1b7a1",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/%28%28v2GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60430.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 45,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 59,
+					"file": "/C/Users/donov/OneDrive/Desktop/Quick-AHKv2-Converter-1/src/lib/2Functions.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "9566143a",
+							"lsp_uri": "file:///C:/Users/donov/OneDrive/Desktop/Quick-AHKv2-Converter-1/src/lib/2Functions.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 44,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 60,
+					"file": "/D/lib/((fUNCTIONS)).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 64488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53923,
+								53931
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "7484a60e",
+							"lsp_uri": "file:///D:/lib/%28%28fUNCTIONS%29%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 23102.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 43,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 61,
+					"file": "/D/(github)-MAINS/GlobalCoder/parseahk-functions.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "bfed5a38",
+							"lsp_uri": "file:///D:/%28github%29-MAINS/GlobalCoder/parseahk-functions.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 42,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 62,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/o-z/Parse.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "6d329e08",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/MISC/GlobalCoder-Main/AHK/AHK-libs-and-classes-collection-master/AHK-libs-and-classes-collection-master/libs/o-z/Parse.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 41,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 63,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/(ext)/Lib/ScriptParser.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "a5029bde",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/%28ext%29/Lib/ScriptParser.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 40,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 64,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection/more libs/CGUI/Parse.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "9c89d0a1",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/MISC/GlobalCoder-Main/AHK/%28start%29/lib/AHK-libs-and-classes-collection/more%20libs/CGUI/Parse.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 39,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 65,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/MISC/GlobalCoder-Main/AHK/(start)/lib/AHK-libs-and-classes-collection/libs/o-z/ScriptParser.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "87828c5b",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/MISC/GlobalCoder-Main/AHK/%28start%29/lib/AHK-libs-and-classes-collection/libs/o-z/ScriptParser.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3493.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 38,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 66,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/repo-masters/.AHK-libs-and-classes-collection/libs/o-z/Parse.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "18199d54",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/collection/%21%21GlobalCoder_Catch_All/repo-masters/.AHK-libs-and-classes-collection/libs/o-z/Parse.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 67,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/collection/!!GlobalCoder_Catch_All/repo-masters/AHK-libs-and-classes-collection/FileFunctionList.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "bee9496a",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/collection/%21%21GlobalCoder_Catch_All/repo-masters/AHK-libs-and-classes-collection/FileFunctionList.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 68,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/(dev)/parseahk-functions.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "5eadc220",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/%28dev%29/parseahk-functions.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 69,
+					"file": "GlobalCoder.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17000,
+								17017
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "61677338",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/1%20-%20V2/GlobalCoder.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7928.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 70,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ah1",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "188bf46b",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder.ah1",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 71,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/regexTester(RE).ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "61cad0fd",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/RichEditBox-master/RichEditBox-master/regexTester%28RE%29.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 72,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "dccd47d2",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 73,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/print.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "d2689534",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/RichEditBox-master/RichEditBox-master/print.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 74,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "5c53db46",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.666666666667,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 75,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/try.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "01b0d1f4",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/RichEditBox-master/RichEditBox-master/try.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 76,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x14 - Docs & PDF/Top ASP.NET Interview Question- www.c-sharpcorner.com",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8393206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "6f38415f",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/x14%20-%20Docs%20%26%20PDF/Top%20ASP.NET%20Interview%20Question-%20www.c-sharpcorner.com",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 77,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((functions)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "1858ef43",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28%28functions%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 78,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2--GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "072ec83e",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28%28v2--GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 79,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2-GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "4d0c7945",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28%28v2-GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 80,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((v2GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "dfe19964",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28%28v2GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 81,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/((GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "8b304a62",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28%28GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 82,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/discord&GPT/discord-v2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "34f04e85",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/discord%26GPT/discord-v2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 83,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/Axle/Tools/CleanInputBox.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "1a0776e8",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/lib/Axle/Tools/CleanInputBox.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 84,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/QuickLinks.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "8a7397cc",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/QuickLinks.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 85,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/Misc/Tools/CleanInputBox.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "4b87ee19",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/lib/Misc/Tools/CleanInputBox.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 86,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/classes.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "f18815be",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/lib/classes.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 87,
+					"file": "/C/Users/donov/AppData/Roaming/Code/User/History/5d37f5c0/E8DF.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "b30b2609",
+							"lsp_uri": "file:///C:/Users/donov/AppData/Roaming/Code/User/History/5d37f5c0/E8DF.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1767.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 88,
+					"file": "/C/Users/donov/AppData/Roaming/Code/User/History/779f8d02/2JIZ.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "8dd3cc99",
+							"lsp_uri": "file:///C:/Users/donov/AppData/Roaming/Code/User/History/779f8d02/2JIZ.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 89,
+					"file": "/C/Users/donov/AppData/Roaming/Code/User/History/-2b92b89/08hh.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "6d69ac00",
+							"lsp_uri": "file:///C:/Users/donov/AppData/Roaming/Code/User/History/-2b92b89/08hh.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 90,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/lex/GetDefaultIcon.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "546c141a",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/lib/lex/GetDefaultIcon.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 91,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/lib/lex/(examples/class_scintilla_A-test-script.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "726eaef2",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/lib/lex/%28examples/class_scintilla_A-test-script.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 92,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/(functions).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "69f248bd",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/%28functions%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 93,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2--GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "865e0523",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/Misc/%28%28v2--GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 94,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2-GlobalCoder-FULLFILE)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "a35beb81",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/Misc/%28%28v2-GlobalCoder-FULLFILE%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 95,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/Misc/((v2GlobalCoder)).ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "45423052",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/Misc/%28%28v2GlobalCoder%29%29.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 96,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/GlobalCoder.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "2b6f64da",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/GlobalCoder.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 97,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2 - V2/GlobalCoderv2.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "5f829492",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/2%20-%20V2/GlobalCoderv2.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 98,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/discord-v2.ahk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "3b23caf4",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/discord-v2.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 99,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/FavoriteFolders.ah2",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey2",
+							"buffer_scroll_name": "b3573ea6",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7%20-%20V2/FavoriteFolders.ah2",
+							"spell_check": false,
+							"syntax": "Packages/User/zeanah2/Autohotkey2.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.6,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 100,
+					"file": "/D/WorkingKingdomWebAppYaml.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 155303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "3aa06d30",
+							"lsp_uri": "file:///D:/WorkingKingdomWebAppYaml.txt",
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 101,
+					"file": "/D/KingdomDocContext.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "36876fbb",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/KingdomDocContext.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 102,
+					"file": "/D/WorkshopGroup/WorkshopGroup/Controllers/HomeController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "29201d29",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/WorkshopGroup/WorkshopGroup/Controllers/HomeController.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 103,
+					"file": "/D/(check&delete)/HomeController.cs",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								934,
+								934
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								},
+								{
+									"characters": ". ",
+									"registration_id": "e1ba826c-b247-4acb-ac74-cc5f01f6c0bc",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "OmniSharp"
+								}
+							],
+							"bs_sintax": "unityc#",
+							"buffer_scroll_name": "fc7b8ea4",
+							"lsp_active": true,
+							"lsp_hover_provider_count": 2,
+							"lsp_uri": "file:///D:/%28check%26delete%29/HomeController.cs",
+							"show_definitions": false,
+							"spell_check": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.666666667,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 126.400001526
+	},
+	"output.Terminus 2":
+	{
+		"height": 126.400001526
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/zeanah2/Autohotkey2.sublime-build",
+	"project": "v2ws.sublime-project",
+	"replace":
+	{
+		"height": 44.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"P:\\App\\App\\ws\\tools & WS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 323.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

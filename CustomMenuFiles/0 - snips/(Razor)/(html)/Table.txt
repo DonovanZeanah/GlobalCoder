@@ -1,0 +1,27 @@
+<table>
+    <thead>
+    <tr>
+        <th>
+            1
+        </th>
+        <th>
+            2
+        </th>
+        <th>
+            3
+        </th>
+        <th>
+            4
+        </th>
+        <th>
+            5
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var mercede in mercedes)
+        {
+            <Mercedes_Item_Component mercedes="@mercede"></Mercedes_Item_Component>
+        })
+    </tbody>
+</table>

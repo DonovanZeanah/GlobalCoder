@@ -18,7 +18,7 @@ SetKeyDelay(50)
 CoordMode("Caret", "Screen")
 CoordMode("Mouse", "Screen")
 Suspend(true)
-#Include "lib\((functions)).ah2"
+#Include "..\lib\((functions)).ah2"
 ;#Include, lib\Gdip.ahk
 #Include "lib\read-ini.ah2"
 ;#Include "lib\JXON.ah2"

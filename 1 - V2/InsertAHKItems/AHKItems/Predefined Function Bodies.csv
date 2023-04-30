@@ -1,0 +1,14 @@
+; AHK function bodys
+
+Exception(Message [, What, Extra])
+
+gGuiControlLabel(CtrlHwnd, GuiEvent, EventInfo, ErrLevel:="")`n{`n`t|`b|`r}
+gMenuLabel(ItemName, ItemPos, MenuName)`n{`n  |`n}
+gClipboardChangeFuncName(Type)`n{`n  |`n}
+gExitFunc(ExitReason, ExitCode)`n{`n  |`n}
+gRegExCalloutFunction(Match, CalloutNumber, FoundPos, Haystack, NeedleRegEx)`n{`n  |`n}
+GuiSize(GuiHwnd, EventInfo, Width, Height)`n{`n  |`n}
+GuiClose(GuiHwnd)`n{`n  |`n}
+GuiEscape(GuiHwnd)`n{`n  |`n}
+GuiContextMenu(GuiHwnd, CtrlHwnd, EventInfo, IsRightClick, X, Y)`n{`n  |`n}
+GuiDropFiles(GuiHwnd, FileArray, CtrlHwnd, X, Y)`n{`n  |`n}

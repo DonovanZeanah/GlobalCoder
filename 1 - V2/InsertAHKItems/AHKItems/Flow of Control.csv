@@ -1,0 +1,25 @@
+; AHK Flow of Control
+class ClassName {`n  `n}
+Try Statement
+Catch [, OutputVar]
+Finally Statement
+Switch [SwitchValue]`n{`n  Case CaseValue1:`n    |`n  Default:`n    |`n}
+If Var between LowerBound and UpperBound`n{`n  |`n}
+If Var not between LowerBound and UpperBound`n{`n  |`n}
+If (Expression)`n{`n  |`n}
+If Var in MatchList`n{`n  |`n}
+If Var not in MatchList`n{`n  |`n}
+If Var contains MatchList`n{`n  |`n}
+If Var not contains MatchList`n{`n  |`n}
+If Var is Type`n{`n  |`n}
+If Var is not Type`n{`n  |`n}
+Else `n{`n  |`n}
+For Key [, Value] in Expression`n{`n  |`n}
+Loop [, Count]`n{`n  |`n}
+Loop, Files, FilePattern [, Mode]`n{`n  |`n}
+Loop, Parse, InputVar [, Delimiters, OmitChars]`n{`n  |`n}
+Loop, Read, InputFile [, OutputFile]`n{`n  |`n}
+Loop, Reg, KeyName [, Mode]`n{`n  |`n}
+Loop `n{`n  |`n} Until Expression
+While Expression`n{`n  |`n}
+While(Expression)`n{`n  |`n}

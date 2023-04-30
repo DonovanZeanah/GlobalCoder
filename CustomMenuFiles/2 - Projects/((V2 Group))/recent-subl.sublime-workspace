@@ -1,0 +1,958 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"A_",
+				"A_ScriptDir"
+			],
+			[
+				"men",
+				"Menu"
+			],
+			[
+				"if",
+				"If"
+			],
+			[
+				"note",
+				"notepath"
+			],
+			[
+				"menu",
+				"Menu"
+			],
+			[
+				"key",
+				"KeyWait"
+			],
+			[
+				"keyw",
+				"KeyWait"
+			],
+			[
+				"a_",
+				"A_Index"
+			],
+			[
+				"Loop",
+				"Loop parse"
+			],
+			[
+				"msgb",
+				"MsgBox"
+			],
+			[
+				"go",
+				"Gosub"
+			],
+			[
+				"sys",
+				"SysGet"
+			],
+			[
+				"a_loo",
+				"A_LoopFileName"
+			],
+			[
+				"no",
+				"NoTrayIcon"
+			],
+			[
+				"work",
+				"SetWorkingDir"
+			],
+			[
+				"DE",
+				"Destroy"
+			],
+			[
+				"msg",
+				"MsgBox"
+			],
+			[
+				"got",
+				"Goto"
+			],
+			[
+				"file",
+				"FileAppend"
+			],
+			[
+				"close",
+				"Close()"
+			],
+			[
+				"gui",
+				"Gui"
+			],
+			[
+				"Guic",
+				"GuiEscape"
+			],
+			[
+				"guio",
+				"GuiClose"
+			],
+			[
+				"hide",
+				"HideGUI"
+			],
+			[
+				"ahk_",
+				"ahk_exe"
+			],
+			[
+				"setw",
+				"SetWorkingDir"
+			],
+			[
+				"a_this",
+				"A_ThisFunc"
+			],
+			[
+				"c",
+				"CustomMenuFiles"
+			],
+			[
+				"winwai",
+				"WinWaitActive"
+			],
+			[
+				"Input",
+				"InputBox"
+			],
+			[
+				"input",
+				"InputBox"
+			],
+			[
+				"stringre",
+				"StringReplace"
+			],
+			[
+				"a_pro",
+				"A_ProgramFiles"
+			],
+			[
+				"a_script",
+				"A_ScriptFullPath"
+			],
+			[
+				"regexr",
+				"RegExReplace()"
+			],
+			[
+				"FileCreate",
+				"FileCreateDir"
+			],
+			[
+				"exist",
+				"FileExist()"
+			],
+			[
+				"timesin",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_p",
+				"A_TimeSincePriorHotkey"
+			],
+			[
+				"a_ho",
+				"A_PriorHotkey"
+			],
+			[
+				"fileappen",
+				"FileAppend"
+			],
+			[
+				"a_screen",
+				"A_ScreenHeight"
+			],
+			[
+				"a_scr",
+				"A_ScreenWidth"
+			],
+			[
+				"winget",
+				"WinGetTitle"
+			],
+			[
+				"Winget",
+				"WinGetTitle"
+			],
+			[
+				"setk",
+				"SetKeyDelay"
+			],
+			[
+				"a_pr",
+				"A_PriorHotkey"
+			],
+			[
+				"too",
+				"ToolTip"
+			],
+			[
+				"string",
+				"StringReplace"
+			],
+			[
+				"strre",
+				"StrReplace()"
+			],
+			[
+				"repl",
+				"StrReplace()"
+			],
+			[
+				"win",
+				"WinActivate"
+			],
+			[
+				"change",
+				"changeFirstName"
+			],
+			[
+				"rnd",
+				"Round()"
+			],
+			[
+				"str",
+				"StrSplit()"
+			],
+			[
+				"getke",
+				"GetKeyState()"
+			],
+			[
+				"br",
+				"Break"
+			],
+			[
+				"ifwi",
+				"IfWinActive"
+			],
+			[
+				"winwait",
+				"WinWaitActive"
+			],
+			[
+				"caps",
+				"CapsLock"
+			],
+			[
+				"Sendi",
+				"SendInput"
+			],
+			[
+				"sen",
+				"SendMessage"
+			],
+			[
+				"retur",
+				"ReturnValue"
+			],
+			[
+				"sendmod",
+				"SendMode"
+			],
+			[
+				"contro",
+				"ControlList"
+			],
+			[
+				"inire",
+				"IniRead"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+			"settings":
+			{
+				"buffer_size": 160680,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Default"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/AutoHotkey/AutoHotkey.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey/AutoHotkey.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/AutoHotkey2/AutoHotKey2.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/AutoHotkey2/Autohotkey2.sublime-build",
+					""
+				],
+				[
+					"Packages/SendCode/build_systems/IPython - Source File.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Default"
+				],
+				[
+					"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/ahkpkgcustom/AutoHotkey.sublime-build",
+				"Default"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"nu",
+				"Insert Nums"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"run",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"termi",
+				"Terminus: List Shells"
+			],
+			[
+				"termin",
+				"Terminus: List Shells"
+			],
+			[
+				"autoho",
+				"AutoHotkey - Run"
+			],
+			[
+				"auto",
+				"AutoHotkey v2 - runner"
+			],
+			[
+				"",
+				"Build With: AutoHotkey"
+			],
+			[
+				"tern",
+				"Terminus: Close All"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"refres",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxfold ke",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"syntax",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"fold ",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"syntaxa",
+				"SyntaxFold: Fold All"
+			],
+			[
+				"settings",
+				"Preferences: SyntaxFold Settings - User"
+			],
+			[
+				"preferences pack",
+				"Preferences: SyntaxFold Keybindings - Default"
+			],
+			[
+				"package",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"resouu",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"history",
+				"History: Revert Modification"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: SideBarTools Settings"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"viewer",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"white sp",
+				"Trim Trailing White Space"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"ahk",
+				"AutoHotkey - Run"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"search",
+				"File: Search Files"
+			],
+			[
+				"find ",
+				"Preferences: Search in Project Settings – Default"
+			],
+			[
+				"conda",
+				"Conda: List Packages"
+			],
+			[
+				"high",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"highl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"rename",
+				"Rename File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"gh repo clone hi5/Rufaydium-Webdriver"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/CodeQuickTester v2.ah1",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Wordlist.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TextFileProcessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/tlinelogger.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/test (2).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/emp-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/sqliteex.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLite_L.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickConvertorV2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/rewrite.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/read-ini.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/QuickLinks_gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/PlaceholderController copy.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/mySQL.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/guiclass.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/logfile2.txt",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Minerva-Handlers.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gui.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gpt-logger-timeline-syntax-reevaluation.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptGenerated.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gptgen2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/generate.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen2.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/gen.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Class_SQLiteDB.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/Example7 - OpenGoogleMaps.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/employee-class-bingchat.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDBv2_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/SQLiteDB_sample.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Examples)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/globalcoder - Copy.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/GlobalCoder.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((GlobalCoder)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/regexTester(RE).ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/textCompare.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/print.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoderv2.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/try.ah2",
+		"/C/Users/donov/OneDrive/Desktop/MSSAProjects-main/MSSAProjects-main/TextBasedGame/TextBasedGame.py",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/hotstring_hints-main/hotstring_hints-main/hotstring_hints.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/discord-v2.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Notes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Tests)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/((Mvc)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/menu.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/MGLahk140/Setup.vbs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/(functions).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/RichEdit_demo.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/RichEditBox-master/RichEditBox-master/Class_RichEdit.ahk",
+		"/D/lib/V2/((classes)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/Gui-Script-text-editor-w-menu.ah2",
+		"/D/AHK-v2-script-converter-master/AHK-v2-script-converter-master/tests/Test_Folder/Window/Control/Menu_ex3_(nested).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-Menu.ah2",
+		"/D/lib/V2/((dump)).ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/lib-v2-main/lib-v2-main/Tools/CleanInputBox.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_Default.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures.ahk",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/LexikosGestures/Gestures/Gestures_User.ahk",
+		"/C/Users/donov/OneDrive/Desktop/Inventory-Management-System-master/Inventory-Management-System-master/IMS.DataStore.HardCoded/ProductRepository.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarNote.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/CarMaintenance.cs",
+		"/D/(github)/IMS/IMS.WebApp/IMS.CoreBusiness/Models/Extra/Car.cs",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-ranking.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/!v2-gpt-class-mvc.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/Miverva v2 funcs.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/OnMessage-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/envset.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/CallbackCreate-Script.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/gpt.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/scratch.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/v2/textprocessor.ah2",
+		"/D/(github)/GlobalCoder/gc/GlobalCoder/CustomMenuFiles/7 - V2/class TemplateControllerGenerator.ahk",
+		"/C/Users/donov/OneDrive/Documents/RunGroop-master/KingdomWebApp/Models/AppUser.cs",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/KingdomWebAppApi/ClientApp/proxy.conf.json",
+		"/D/skills.txt",
+		"/D/kingdomWebApp.publishsettings",
+		"/G/((top))/_Dev_/BlazorWithIdentity-master/BlazorWithIdentity-master/global.json",
+		"/C/Users/donov/OneDrive/Desktop/psmenu.ahk",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/.zip/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/angular.json",
+		"/C/Users/donov/OneDrive/Desktop/Deployment-Microsoft.Web-WebAppDatabase-Portal-1148428d-9563/deployment.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Client/package.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/OneDrive/Documents/realtime-charts-signalr-angular-master/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/Properties/launchSettings.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/angular.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/ClientApp1/package.json",
+		"/C/Users/donov/source/repos/Kingdom/Kingdom/Kingdom.csproj",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev.PublishSettings",
+		"/D/Kingdom3/k1/.github/workflows/master_mykd.yml",
+		"/D/Kingdom3/k1/.github/workflows/main.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/master_mykd.yml",
+		"/C/Users/donov/source/repos/Kingdom/.github/workflows/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/MyKd.PublishSettings",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/Program.cs",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.Development.json",
+		"/C/Users/donov/AppData/Roaming/Microsoft/UserSecrets/2017a5be-f3c0-45e3-a400-56ea583c695c/secrets.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.Development.json",
+		"/C/Users/donov/AppData/Local/Temp/Temp1_realtime-charts-signalr-angular-master.zip/realtime-charts-signalr-angular-master/RealTimeCharts.Server/RealTimeCharts.Server/appsettings.json",
+		"/C/Users/donov/OneDrive/Documents/Kingdom/Kingdom/appsettings.json",
+		"/D/Kingdom/KingdomWebApp/Program.cs",
+		"/D/Kingdom3/.github/workflows/main.yml",
+		"/C/Users/donov/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json",
+		"/C/Users/donov/OneDrive/Desktop/mykd_Dev (1).PublishSettings",
+		"/D/Kingdom3/KingdomWebApp/KingdomWebApp.csproj",
+		"/D/Kingdom3/KingdomWebApp/ClientApp/angular.json",
+		"/D/IncludeAngular-CopyToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/deployment-microsoft/master_mykd(dev).yml",
+		"/D/Kingdom3/deployment-microsoft/main.yml",
+		"/C/Users/donov/OneDrive/Desktop/master_mykd(dev).yml",
+		"/D/azureyaml.txt",
+		"/D/Kingdom3/ClientApp/angular.json",
+		"/D/IncludeAngular-AngularJsonAutoMoveToWwwroot-ToDevSlotOnMaster-master_mykd(Dev).yaml",
+		"/D/Kingdom3/.gitignore",
+		"/D/profile.publishsettings",
+		"/D/Kingdom/.gitignore"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"byref",
+			"d",
+			"\" ",
+			"\"  ",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/(github)/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160680,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+									[
+										7197,
+										7197
+									],
+									[
+										123377,
+										123377
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								27495,
+								27495
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "autohotkey",
+							"buffer_scroll_name": "2aac11fa",
+							"lsp_uri": "file:///D:/%28github%29/GlobalCoder/gc/GlobalCoder/GlobalCoder.ahk",
+							"spell_check": false,
+							"syntax": "Packages/User/Zeanah/AutoHotkey.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12301.3333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.865644171779,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 126.400001526
+	},
+	"output.Terminus 2":
+	{
+		"height": 126.400001526
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/zeanah2/Autohotkey2.sublime-build",
+	"project": "recent-subl.sublime-project",
+	"replace":
+	{
+		"height": 44.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"P:\\App\\App\\ws\\tools & WS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 300.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

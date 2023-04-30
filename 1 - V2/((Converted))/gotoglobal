@@ -1,0 +1,246 @@
+#Requires AutoHotkey v2.0-a
+
+
+class GoTo_v2 {
+    GOTOS := {}
+    filecheckTimer := ""
+    resizable := ""
+    goto_cache := {}
+
+    __New(resizable := true) {
+        this.GOTOS := {}
+        this.GOTOS.filelist := []
+        SetBatchLines(-1)
+        this.resizable := resizable
+        if resizable {
+            OnMessage(0x201, Func("DragGotoGui").Bind(this))
+        }
+    }
+
+    GoTo_AutoExecute() {
+        this.filecheckTimer := A_TickCount + 200
+    }
+
+    GoTo_Readfile(File) {
+        Critical("On")
+        static filecount, commentneedle := A_Space . ";|" . A_Tab . ";"
+
+        if (filecount_N := this.fileiscached(File))
+            Filename := filecount_N
+        else {
+            Filename := filecount := filecount ? filecount + 1 : 1
+            this.GOTOS.filelist.Push(file)
+        }
+        this.GOTOS[Filename] := {}
+
+        Loop file, "\*", "frd" {
+            readline := StrTrim(A_LoopReadLine)
+            if block_comments {
+                if InStr(readline, "*/") = 1 {
+                    block_comments := false
+                    continue
+                } else {
+                    continue
+                }
+            }
+
+            if InStr(readline, ";") = 1 {
+                continue
+            }
+
+            if InStr(readline, "/*") = 1 {
+                block_comments := true
+                continue
+            }
+
+            readline := StrTrim(SubStr(readline, 1, SuperInstr(readline, commentneedle, 1) ? SuperInstr(readline, commentneedle, 1) - 1 : StrLen(readline)))
+
+            if (readline_temp := this.Check4Hotkey(readline))
+                this.CreateCache(Filename, "hotkey", readline_temp, A_Index)
+            else if (InStr(readline, ":") = 1) and (InStr(readline, "::", false, 0) > 1)
+                this.CreateCache(Filename, "hotstr", SubStr(readline, 1, InStr(readline, "::", false, 0) - 1), A_Index)
+            else if !SuperInstr(readline, "``|`t| |,", false) and SubStr(readline, 0) == ":"
+                this.CreateCache(Filename, "label", readline, A_Index)
+            else if this.Check4func(readline, A_Index, File)
+                this.CreateCache(Filename, "func", SubStr(readline, 1, InStr(readline, "(")) . ")", A_Index)
+        }
+    }
+
+    CreateCache(hostfile, type, data, linenum) {
+        if type = "func" {
+            if (
+			SubStr(data, 1, SuperInstr(data, " |`t|,|(", 1) - 1) == "while") {
+return
+}
+}
+if !IsObject(this.GOTOS[hostfile][type]) {
+this.GOTOS[hostfile][type] := {}
+}
+this.GOTOS[hostfile][type][linenum] := data
+}
+Check4Hotkey(line) {
+    if (InStr(line, "::") = 1) and (InStr(line, ":", false, 0) = 3) {
+        return ""
+    }
+    hK := SubStr(line, 1, (InStr(line, ":::") ? InStr(line, ":::") + 2 : (InStr(line, "::") ? InStr(line, "::") + 1 : StrLen(line) + 2)) - StrLen(line) - 2)
+    if (hK = "") {
+        return
+    }
+
+    if !SuperInstr(hK, " |	", false) {
+        if !SuperInstr(hK, "^|!|+|#", false) and RegExMatch(hK, "[a-z]+[,(]") {
+            return
+        } else {
+            return hK
+        }
+    } else {
+        if InStr(hK, " & ") or (SubStr(hK, -1) == "UP") {
+            return hK
+        }
+    }
+}
+
+Check4func(readline, linenum, file) {
+    if RegExMatch(readline, "i)[A-Z0-9#_@\$?[\]]+\(.*\)") != 1 {
+        return
+    }
+    if (SubStr(readline, 0) == "{") {
+        return 1
+    }
+
+    Loop {
+        FileReadLine(cl, file, linenum + A_Index)
+        if ErrorLevel = 1 {
+            return
+        }
+        cl := StrTrim(SubStr(cl, 1, InStr(cl, ";") ? InStr(cl, ";") - 1 : StrLen(cl)))
+        if (cl = "") {
+            continue
+        }
+
+        if block_comments {
+            if InStr(readline, "*/") = 1 {
+                block_comments := false
+                continue
+            } else {
+                continue
+            }
+        }
+
+        if InStr(readline, "/*") = 1 {
+            block_comments := true
+            continue
+        }
+
+        return InStr(cl, "{") = 1 ? 1 : 0
+    }
+}
+
+filecheck() {
+    FileGetTime(Timeforfile, goto_tempfile := this.GetActiveFile(), "M")
+    if (this.goto_cache[goto_tempfile] != Timeforfile) {
+        this.goto_cache[goto_tempfile] := Timeforfile
+        this.GoTo_Readfile(goto_tempfile)
+    }
+    return
+}
+
+fileiscached(file) {
+    for k, v in this.GOTOS.filelist {
+        if (file == v) {
+            return k
+        }
+    }
+}
+
+; Additional GUI methods and remaining code should be converted to class methods and updated for AHK v2 syntax
+Goto_Main_GUI() {
+    global gotoInstance
+    static IsGuicreated , Activefile_old
+
+    Activefileindex := gotoInstance.fileiscached( gotoInstance.GetActiveFile() )
+
+    if ( Activefile_old != Activefileindex ) {
+        GuiControl, Goto:, Mainlist, "|"
+        GuiControl, Goto:Choose, maintab, 1
+        GuiControl, Goto:, goTosearch
+        GuiControl, Goto:Focus, goTosearch    ; important
+        Update_GUI(blank, activefileindex)
+    }
+
+    if !IsGuicreated {
+        Gui, Goto:New
+        Gui, +AlwaysOnTop -Caption +ToolWindow
+        Gui, Margin, 3, 3
+        Gui, Font, s11, Consolas
+        Gui, Add, Tab2, "w" 380 " h30 vmaintab gtabclick AltSubmit buttons", All|Labels|Functions|Hotkeys|Hotstrings
+        Gui, Tab
+        Gui, Font, s10, Courier New
+        Gui, Add, Edit, "xs y+10 vgoTosearch ggoTosearch w" 370
+        Gui, Add, ListBox, "xs y+10 r10 vMainList gDDLclick w" 370
+        Update_GUI(blank, activefileindex)
+        IsGuicreated := 1
+    }
+    if !WinExist("GoTo ahk_class AutoHotkeyGUI") {
+        Gui, Goto:Show,, GoTo
+        GuiControl, Focus, goTosearch
+    } else {
+        Gui, Goto:Hide
+    }
+    Activefile_old := Activefileindex
+    return
+}
+
+DDLclick:
+    Gui, Goto:submit, nohide
+    gotoInstance.GoToMacro(ActivefileIndex, Typefromtab(Maintab), Mainlist)
+    return
+
+goTosearch:
+tabClick:
+    Gui, Goto:submit, nohide
+    Update_GUI(Typefromtab(maintab), Activefileindex, Trim(goTosearch))
+    return
+
+GotoGUIEscape:
+    Gui, Goto:Hide
+    return
+}
+
+Update_GUI(mode, fileindex, find:=""){
+    global gotoInstance
+    if !fileindex
+        return
+    if mode=
+        loop 4
+            for k,v in gotoInstance.GOTOS[fileindex][Typefromtab(A_Index+1)]
+                MainList .= Instr( v, find ) ? "|" v : ""
+    else
+        for k,v in gotoInstance.GOTOS[fileIndex][mode]
+            MainList .= Instr( v, find ) ? "|" v : ""
+    GuiControl, Goto:,Mainlist, !MainList ? "|" : Mainlist
+}
+
+GoToMacro(Fileindex, type, tojump){
+    global gotoInstance
+    BlockInput, On
+    Gui, Goto:Hide
+    loop 4
+        for k,v in gotoInstance.GOTOS[fileindex][Typefromtab(A_Index+1)]
+            if ( v == tojump ) {
+                runline := k
+                break
+            }
+    SendInput, ^g
+    sleep, 100
+    SendInput, runline "{Enter}"
+    BlockInput, Off
+}
+;---------------------------------------------------------------------------------------------------------
+
+GetActiveFile(){
+    WinGetActiveTitle, Title
+    if !( Instr(title, ".ahk") and Instr(title, ":\") )
+        return ""
+    return Trim( Substr( Title, temp := Instr(Title, ":\")-1
+

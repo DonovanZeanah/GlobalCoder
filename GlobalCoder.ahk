@@ -224,7 +224,7 @@ Return
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================End Auto Execute
-
+:*:v2::autohotkey version 2
 
 loadminerva(){
     FindAmountItems()
@@ -1054,8 +1054,8 @@ return
 ;------------------------------------------------| MENU |------------------------------------------------#
 
 ;/ premaremenu(path) ; a main function for creating menu system using folder paths
-PrepareMenu(PATH)
-{
+;PrepareMenu(PATH)
+;{
 
 	;static custom1 := A_ScriptDir "\custom1"
 	/*static urls := { 0: ""
@@ -1066,42 +1066,43 @@ PrepareMenu(PATH)
 	        */
 
 	   ;global
+PrepareMenu(PATH)
+{
+	; GUI loading/progress bar
+	Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
+	Gui, add, Progress, w200 vMyProgress range1-%items%, 0	; Adding progressbar
+	Gui, show	  											; Displaying Progressbar
 
-		; GUI loading/progress bar
-		Gui, new, +ToolWindow, % ScriptName " is Loading"		; Adding title to progressbar
-		Gui, add, Progress, w200 vMyProgress range1-%items%, 0	; Adding progressbar
-		Gui, show	  											; Displaying Progressbar
+	; Add Name, Icon and seperating line
+	Menu, %PATH%, Add, % "g&oogler", googler ; Regular search ;googler								; Name
 
-		; Add Name, Icon and seperating line
-		Menu, %PATH%, Add, % "g&oogler", googler ; Regular search ;googler								; Name
+	Menu, %PATH%, Add, 																			; seperating
 
-		Menu, %PATH%, Add, 																			; seperating
+	; Add all custom items using algorithm
+	LoopOverFolder(Path)
+   ;loopoverfolder(singles)
 
-		; Add all custom items using algorithm
-		LoopOverFolder(Path)
-	   ;loopoverfolder(singles)
-
-	                                                       ; seperating
+                                                       ; seperating
 
 
-		; Add Admin Panel
-		Sleep, 200
-		Menu, %PATH%, Add,
-        menu, %path%"\new", Add, &n test, ReloadProgram 													; seperating line
-		Menu, %PATH%"\Admin", Add, &3 Restart, ReloadProgram				; Add Reload option
-		Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
-		Menu, %PATH%"\Admin", Add, &1 Go to Parent Folder, GoToRootFolder	; Open script folder
-		Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
-		
-        ;bottom sec
-        Menu, %PATH%, Add, &1 Admin, :%PATH%"\Admin"						; Adds Admin section
-        Menu, %PATH%, Add, &2 New, :%PATH%"\New" 
-        Menu, %PATH%, Add,   ; seperater
-        Menu, %PATH%, Add, % "&" ScriptName " vers. " Version, github ;googler                        ; Name
-        Menu, %PATH%, Add,                           ; Adds Admin section
+	; Add Admin Panel
+	Sleep, 200
+	Menu, %PATH%, Add,
+    menu, %path%"\new", Add, &n test, ReloadProgram 													; seperating line
+	Menu, %PATH%"\Admin", Add, &3 Restart, ReloadProgram				; Add Reload option
+	Menu, %PATH%"\Admin", Add, &2 Exit, ExitApp							; Add Exit option
+	Menu, %PATH%"\Admin", Add, &1 Go to Parent Folder, GoToRootFolder	; Open script folder
+	Menu, %PATH%"\Admin", Add, &4 Add Custom Item, GoToCustomFolder		; Open custom folder
+	
+    ;bottom sec
+    Menu, %PATH%, Add, &1 Admin, :%PATH%"\Admin"						; Adds Admin section
+    Menu, %PATH%, Add, &2 New, :%PATH%"\New" 
+    Menu, %PATH%, Add,   ; seperater
+    Menu, %PATH%, Add, % "&" ScriptName " vers. " Version, github ;googler                        ; Name
+    Menu, %PATH%, Add,                           ; Adds Admin section
 
-		; Loadingbar GUI is no longer needed, remove it from memory
-		Gui, Destroy
+	; Loadingbar GUI is no longer needed, remove it from memory
+	Gui, Destroy
 }
 ;// end
 

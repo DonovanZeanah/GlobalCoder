@@ -1,0 +1,50 @@
+; AHK Directives
+#AllowSameLineComments
+#ClipboardTimeout Milliseconds
+#CommentFlag NewString
+#ErrorStdOut
+#EscapeChar NewChar
+#HotkeyInterval Milliseconds
+#HotkeyModifierTimeout Milliseconds
+#Hotstring NoMouse
+#Hotstring EndChars NewChars
+#Hotstring NewOptions
+#If [Expression]
+#IfTimeout Timeout
+#IfWinActive [WinTitle, WinText]
+#IfWinExist [WinTitle, WinText]
+#IfWinNotActive [WinTitle, WinText]
+#IfWinNotExist [WinTitle, WinText]
+#If [, Expression]
+#Include FileOrDirName
+#Include <LibName>
+#IncludeAgain FileOrDirName
+#InputLevel [Level]
+#InstallKeybdHook
+#InstallMouseHook
+#KeyHistory MaxEvents
+#MaxHotkeysPerInterval Value
+#MaxMem Megabytes
+#MaxThreads Value
+#MaxThreadsBuffer On
+#MaxThreadsBuffer Off
+#MaxThreadsPerHotkey Value
+#MenuMaskKey KeyName
+#NoEnv
+#NoTrayIcon
+#Persistent
+#SingleInstance ; ask with dialog box
+#SingleInstance [Force]
+#SingleInstance [Ignore]
+#SingleInstance [Off]
+#UseHook ; defaults to On
+#UseHook [On]
+#UseHook [Off]
+#Warn [UseUnsetLocal, WarningMode]
+#Warn [UseUnsetGlobal, WarningMode]
+#Warn [UseEnv, WarningMode]
+#Warn [LocalSameAsGlobal, WarningMode]
+#Warn [ClassOverwrite, WarningMode]
+#Warn [All, WarningMode]
+#Warn ; All in MsgBox
+#WinActivateForce
