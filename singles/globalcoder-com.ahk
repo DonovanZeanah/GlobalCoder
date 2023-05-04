@@ -3,7 +3,7 @@ WebRequest := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 WebRequest.Open("GET", "http://www.autohotkey.net/~Lexikos/AutoHotkey_L/docs/AHKL_ChangeLog.htm")
 WebRequest.Send()
 RegExMatch(WebRequest.ResponseText, "(?<=<h2>).*?(?=</h2>)", ver)
-MsgBox % ver
+;MsgBox % ver
 WebRequest := ""
 
 
@@ -15,13 +15,13 @@ sd.Add("Abv", "AHK")
 sd.Item("URL") := "www.autohotkey.com"
 
 ;// Get Item
-MsgBox, , Get Key, % "Name = " sd.item("Name")
+MsgBox "Name = " sd.item("Name")
 
 ;// Get Number of Items
-MsgBox, , Item Count, % "Total Items: " sd.Count
+;MsgBox, , Item Count, % "Total Items: " sd.Count
 
 ;// Check for Key Existance
-MsgBox, , Key Exist?
+;MsgBox, , Key Exist?
   , % "Abv Exist: " sd.Exists("Abv") "`n"
   . "Test Exist: " sd.Exists("Test")
 

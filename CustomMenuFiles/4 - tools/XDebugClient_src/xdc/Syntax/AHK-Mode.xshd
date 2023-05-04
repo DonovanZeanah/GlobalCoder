@@ -1,0 +1,658 @@
+﻿<SyntaxDefinition name="AHK" extensions=".ahk">
+  <!--
+  <Environment>
+    Keys: Default, Selection, VRuler, InvalidLines,
+          CaretMarker, LineNumbers, FoldLine, FoldMarker, SelectedFoldLine,
+          EOLMarkers, SpaceMarkers, TabMarkers
+    Key Attributes: color, bgcolor
+    Note: Colors are specified as Color names (i.e. "Red", "Blue") or numbers ("#BBGGRR")
+  </Environment>
+  -->
+  <Environment>
+    <Default color="Black" bgcolor="White"/>
+    <CaretMarker color="#F8F8F8"/>
+  </Environment>
+  <Properties>
+    <Property name="LineComment" value=";" />
+  </Properties>
+  <Digits name="Digits" bold="false" color="#007F7F" />
+  <RuleSets>
+    <RuleSet ignorecase="true">
+      <Delimiters>&amp;&lt;&gt;~!@%^*()-+=|\/{}[]:;"' ,	.?</Delimiters>
+      <Span name="LineComment" rule="CommentMarkerSet" bold="false" color="#808080" stopateol="true">
+        <Begin>;</Begin>
+      </Span>
+      <Span name="BlockComment" rule="CommentMarkerSet" bold="false" color="#808080">
+        <Begin>/*</Begin>
+        <End>*/</End>
+      </Span>
+      <Span name="String" bold="false" color="Purple" stopateol="true">
+        <Begin>"</Begin>
+        <End>"</End>
+      </Span>
+      <Span name="ForcedExpression" color="Black" stopateol="true">
+        <Begin>% </Begin>
+        <End></End>
+      </Span>
+      <Span name="Variable" rule="VariableDerefSet" color="Black" bgcolor="#F0F0F0" stopateol="true">
+        <Begin>%</Begin>
+        <End>%</End>
+      </Span>
+      <MarkPrevious bold="true" color="Black">(</MarkPrevious>
+      <KeyWords name="Punctuation" bold="false" color="Black">
+        <Key word="?" />
+        <Key word="," />
+        <Key word="." />
+        <Key word=";" />
+        <Key word="(" />
+        <Key word=")" />
+        <Key word="[" />
+        <Key word="]" />
+        <Key word="{" />
+        <Key word="}" />
+        <Key word="+" />
+        <Key word="-" />
+        <Key word="/" />
+        <Key word="%" />
+        <Key word="*" />
+        <Key word="&lt;" />
+        <Key word="&gt;" />
+        <Key word="^" />
+        <Key word="=" />
+        <Key word="~" />
+        <Key word="!" />
+        <Key word="|" />
+        <Key word="&amp;" />
+      </KeyWords>
+      <KeyWords name="FlowKeywords" bold="false" color="Green">
+        <Key word="break"/>
+        <Key word="continue"/>
+        <Key word="else"/>
+        <Key word="exit"/>
+        <Key word="exitapp"/>
+        <Key word="gosub"/>
+        <Key word="goto"/>
+        <Key word="if"/>
+        <Key word="ifequal"/>
+        <Key word="ifexist"/>
+        <Key word="ifgreater"/>
+        <Key word="ifgreaterorequal"/>
+        <Key word="ifinstring"/>
+        <Key word="ifless"/>
+        <Key word="iflessorequal"/>
+        <Key word="ifmsgbox"/>
+        <Key word="ifnotequal"/>
+        <Key word="ifnotexist"/>
+        <Key word="ifnotinstring"/>
+        <Key word="ifwinactive"/>
+        <Key word="ifwinexist"/>
+        <Key word="ifwinnotactive"/>
+        <Key word="ifwinnotexist"/>
+        <Key word="loop"/>
+        <Key word="while"/>
+        <Key word="onexit"/>
+        <Key word="pause"/>
+        <Key word="repeat"/>
+        <Key word="return"/>
+        <Key word="setbatchlines"/>
+        <Key word="settimer"/>
+        <Key word="sleep"/>
+        <Key word="suspend"/>
+        <Key word="byref"/>
+      </KeyWords>
+      <KeyWords name="Declarations" italic="true" color="Green">
+        <Key word="static"/>
+        <Key word="global"/>
+        <Key word="local"/>
+      </KeyWords>
+      <KeyWords name="Methods" bold="false" color="MidnightBlue">
+        <Key word="autotrim"/>
+        <Key word="blockinput"/>
+        <Key word="clipwait"/>
+        <Key word="control"/>
+        <Key word="controlclick"/>
+        <Key word="controlfocus"/>
+        <Key word="controlget"/>
+        <Key word="controlgetfocus"/>
+        <Key word="controlgetpos"/>
+        <Key word="controlgettext"/>
+        <Key word="controlmove"/>
+        <Key word="controlsend"/>
+        <Key word="controlsendraw"/>
+        <Key word="controlsettext"/>
+        <Key word="coordmode"/>
+        <Key word="critical"/>
+        <Key word="detecthiddentext"/>
+        <Key word="detecthiddenwindows"/>
+        <Key word="drive"/>
+        <Key word="driveget"/>
+        <Key word="drivespacefree"/>
+        <Key word="edit"/>
+        <Key word="endrepeat"/>
+        <Key word="envadd"/>
+        <Key word="envdiv"/>
+        <Key word="envget"/>
+        <Key word="envmult"/>
+        <Key word="envset"/>
+        <Key word="envsub"/>
+        <Key word="envupdate"/>
+        <Key word="fileappend"/>
+        <Key word="filecopy"/>
+        <Key word="filecopydir"/>
+        <Key word="filecreatedir"/>
+        <Key word="filecreateshortcut"/>
+        <Key word="filedelete"/>
+        <Key word="filegetattrib"/>
+        <Key word="filegetshortcut"/>
+        <Key word="filegetsize"/>
+        <Key word="filegettime"/>
+        <Key word="filegetversion"/>
+        <Key word="fileinstall"/>
+        <Key word="filemove"/>
+        <Key word="filemovedir"/>
+        <Key word="fileread"/>
+        <Key word="filereadline"/>
+        <Key word="filerecycle"/>
+        <Key word="filerecycleempty"/>
+        <Key word="fileremovedir"/>
+        <Key word="fileselectfile"/>
+        <Key word="fileselectfolder"/>
+        <Key word="filesetattrib"/>
+        <Key word="filesettime"/>
+        <Key word="formattime"/>
+        <Key word="getkeystate"/>
+        <Key word="groupactivate"/>
+        <Key word="groupadd"/>
+        <Key word="groupclose"/>
+        <Key word="groupdeactivate"/>
+        <Key word="gui"/>
+        <Key word="guicontrol"/>
+        <Key word="guicontrolget"/>
+        <Key word="hideautoitwin"/>
+        <Key word="hotkey"/>
+        <Key word="imagesearch"/>
+        <Key word="inidelete"/>
+        <Key word="iniread"/>
+        <Key word="iniwrite"/>
+        <Key word="input"/>
+        <Key word="inputbox"/>
+        <Key word="keyhistory"/>
+        <Key word="keywait"/>
+        <Key word="listhotkeys"/>
+        <Key word="listlines"/>
+        <Key word="listvars"/>
+        <Key word="menu"/>
+        <Key word="mouseclick"/>
+        <Key word="mouseclickdrag"/>
+        <Key word="mousegetpos"/>
+        <Key word="mousemove"/>
+        <Key word="msgbox"/>
+        <Key word="numget"/>
+        <Key word="numput"/>
+        <Key word="outputdebug"/>
+        <Key word="pixelgetcolor"/>
+        <Key word="pixelsearch"/>
+        <Key word="postmessage"/>
+        <Key word="process"/>
+        <Key word="progress"/>
+        <Key word="random"/>
+        <Key word="regdelete"/>
+        <Key word="registercallback"/>
+        <Key word="regread"/>
+        <Key word="regwrite"/>
+        <Key word="reload"/>
+        <Key word="run"/>
+        <Key word="runas"/>
+        <Key word="runwait"/>
+        <Key word="send"/>
+        <Key word="sendevent"/>
+        <Key word="sendinput"/>
+        <Key word="sendmessage"/>
+        <Key word="sendmode"/>
+        <Key word="sendplay"/>
+        <Key word="sendraw"/>
+        <Key word="setcapslockstate"/>
+        <Key word="setcontroldelay"/>
+        <Key word="setdefaultmousespeed"/>
+        <Key word="setenv"/>
+        <Key word="setformat"/>
+        <Key word="setkeydelay"/>
+        <Key word="setmousedelay"/>
+        <Key word="setnumlockstate"/>
+        <Key word="setscrolllockstate"/>
+        <Key word="setstorecapslockmode"/>
+        <Key word="settitlematchmode"/>
+        <Key word="setwindelay"/>
+        <Key word="setworkingdir"/>
+        <Key word="shutdown"/>
+        <Key word="sort"/>
+        <Key word="soundbeep"/>
+        <Key word="soundget"/>
+        <Key word="soundgetwavevolume"/>
+        <Key word="soundplay"/>
+        <Key word="soundset"/>
+        <Key word="soundsetwavevolume"/>
+        <Key word="splashimage"/>
+        <Key word="splashtextoff"/>
+        <Key word="splashtexton"/>
+        <Key word="splitpath"/>
+        <Key word="statusbargettext"/>
+        <Key word="statusbarwait"/>
+        <Key word="stringcasesense"/>
+        <Key word="stringgetpos"/>
+        <Key word="stringleft"/>
+        <Key word="stringlen"/>
+        <Key word="stringlower"/>
+        <Key word="stringmid"/>
+        <Key word="stringreplace"/>
+        <Key word="stringright"/>
+        <Key word="stringsplit"/>
+        <Key word="stringtrimleft"/>
+        <Key word="stringtrimright"/>
+        <Key word="stringupper"/>
+        <Key word="sysget"/>
+        <Key word="thread"/>
+        <Key word="tooltip"/>
+        <Key word="transform"/>
+        <Key word="traytip"/>
+        <Key word="urldownloadtofile"/>
+        <Key word="winactivate"/>
+        <Key word="winactivatebottom"/>
+        <Key word="winclose"/>
+        <Key word="winget"/>
+        <Key word="wingetactivestats"/>
+        <Key word="wingetactivetitle"/>
+        <Key word="wingetclass"/>
+        <Key word="wingetpos"/>
+        <Key word="wingettext"/>
+        <Key word="wingettitle"/>
+        <Key word="winhide"/>
+        <Key word="winkill"/>
+        <Key word="winmaximize"/>
+        <Key word="winmenuselectitem"/>
+        <Key word="winminimize"/>
+        <Key word="winminimizeall"/>
+        <Key word="winminimizeallundo"/>
+        <Key word="winmove"/>
+        <Key word="winrestore"/>
+        <Key word="winset"/>
+        <Key word="winsettitle"/>
+        <Key word="winshow"/>
+        <Key word="winwait"/>
+        <Key word="winwaitactive"/>
+        <Key word="winwaitclose"/>
+        <Key word="winwaitnotactive"/>
+      </KeyWords>
+      <KeyWords name="BIF" color="MidnightBlue">
+        <Key word="abs"/>
+        <Key word="acos"/>
+        <Key word="asc"/>
+        <Key word="asin"/>
+        <Key word="atan"/>
+        <Key word="ceil"/>
+        <Key word="chr"/>
+        <Key word="cos"/>
+        <Key word="dllcall"/>
+        <Key word="exp"/>
+        <Key word="fileexist"/>
+        <Key word="floor"/>
+        <Key word="getkeystate"/>
+        <Key word="il_add"/>
+        <Key word="il_create"/>
+        <Key word="il_destroy"/>
+        <Key word="instr"/>
+        <Key word="islabel"/>
+        <Key word="ln"/>
+        <Key word="log"/>
+        <Key word="lv_add"/>
+        <Key word="lv_delete"/>
+        <Key word="lv_deletecol"/>
+        <Key word="lv_getcount"/>
+        <Key word="lv_getnext"/>
+        <Key word="lv_gettext"/>
+        <Key word="lv_insert"/>
+        <Key word="lv_insertcol"/>
+        <Key word="lv_modify"/>
+        <Key word="lv_modifycol"/>
+        <Key word="lv_setimagelist"/>
+        <Key word="mod"/>
+        <Key word="onmessage"/>
+        <Key word="round"/>
+        <Key word="regexmatch"/>
+        <Key word="regexreplace"/>
+        <Key word="sb_seticon"/>
+        <Key word="sb_setparts"/>
+        <Key word="sb_settext"/>
+        <Key word="sin"/>
+        <Key word="sqrt"/>
+        <Key word="strlen"/>
+        <Key word="substr"/>
+        <Key word="tan"/>
+        <Key word="tv_add"/>
+        <Key word="tv_delete"/>
+        <Key word="tv_getchild"/>
+        <Key word="tv_getcount"/>
+        <Key word="tv_getnext"/>
+        <Key word="tv_get"/>
+        <Key word="tv_getparent"/>
+        <Key word="tv_getprev"/>
+        <Key word="tv_getselection"/>
+        <Key word="tv_gettext"/>
+        <Key word="tv_modify"/>
+        <Key word="varsetcapacity"/>
+        <Key word="winactive"/>
+        <Key word="winexist"/>
+      </KeyWords>
+      <KeyWords name="BIV" color="Green">
+        <Key word="a_ahkpath"/>
+        <Key word="a_ahkversion"/>
+        <Key word="a_appdata"/>
+        <Key word="a_appdatacommon"/>
+        <Key word="a_autotrim"/>
+        <Key word="a_batchlines"/>
+        <Key word="a_caretx"/>
+        <Key word="a_carety"/>
+        <Key word="a_computername"/>
+        <Key word="a_controldelay"/>
+        <Key word="a_cursor"/>
+        <Key word="a_dd"/>
+        <Key word="a_ddd"/>
+        <Key word="a_dddd"/>
+        <Key word="a_defaultmousespeed"/>
+        <Key word="a_desktop"/>
+        <Key word="a_desktopcommon"/>
+        <Key word="a_detecthiddentext"/>
+        <Key word="a_detecthiddenwindows"/>
+        <Key word="a_endchar"/>
+        <Key word="a_eventinfo"/>
+        <Key word="a_exitreason"/>
+        <Key word="a_formatfloat"/>
+        <Key word="a_formatinteger"/>
+        <Key word="a_gui"/>
+        <Key word="a_guievent"/>
+        <Key word="a_guicontrol"/>
+        <Key word="a_guicontrolevent"/>
+        <Key word="a_guiheight"/>
+        <Key word="a_guiwidth"/>
+        <Key word="a_guix"/>
+        <Key word="a_guiy"/>
+        <Key word="a_hour"/>
+        <Key word="a_iconfile"/>
+        <Key word="a_iconhidden"/>
+        <Key word="a_iconnumber"/>
+        <Key word="a_icontip"/>
+        <Key word="a_index"/>
+        <Key word="a_ipaddress1"/>
+        <Key word="a_ipaddress2"/>
+        <Key word="a_ipaddress3"/>
+        <Key word="a_ipaddress4"/>
+        <Key word="a_isadmin"/>
+        <Key word="a_iscompiled"/>
+        <Key word="a_issuspended"/>
+        <Key word="a_keydelay"/>
+        <Key word="a_language"/>
+        <Key word="a_lasterror"/>
+        <Key word="a_linefile"/>
+        <Key word="a_linenumber"/>
+        <Key word="a_loopfield"/>
+        <Key word="a_loopfileattrib"/>
+        <Key word="a_loopfiledir"/>
+        <Key word="a_loopfileext"/>
+        <Key word="a_loopfilefullpath"/>
+        <Key word="a_loopfilelongpath"/>
+        <Key word="a_loopfilename"/>
+        <Key word="a_loopfileshortname"/>
+        <Key word="a_loopfileshortpath"/>
+        <Key word="a_loopfilesize"/>
+        <Key word="a_loopfilesizekb"/>
+        <Key word="a_loopfilesizemb"/>
+        <Key word="a_loopfiletimeaccessed"/>
+        <Key word="a_loopfiletimecreated"/>
+        <Key word="a_loopfiletimemodified"/>
+        <Key word="a_loopreadline"/>
+        <Key word="a_loopregkey"/>
+        <Key word="a_loopregname"/>
+        <Key word="a_loopregsubkey"/>
+        <Key word="a_loopregtimemodified"/>
+        <Key word="a_loopregtype"/>
+        <Key word="a_mday"/>
+        <Key word="a_min"/>
+        <Key word="a_mm"/>
+        <Key word="a_mmm"/>
+        <Key word="a_mmmm"/>
+        <Key word="a_mon"/>
+        <Key word="a_mousedelay"/>
+        <Key word="a_msec"/>
+        <Key word="a_mydocuments"/>
+        <Key word="a_now"/>
+        <Key word="a_nowutc"/>
+        <Key word="a_numbatchlines"/>
+        <Key word="a_ostype"/>
+        <Key word="a_osversion"/>
+        <Key word="a_priorhotkey"/>
+        <Key word="a_programfiles"/>
+        <Key word="a_programs"/>
+        <Key word="a_programscommon"/>
+        <Key word="a_screenheight"/>
+        <Key word="a_screenwidth"/>
+        <Key word="a_scriptdir"/>
+        <Key word="a_scriptfullpath"/>
+        <Key word="a_scriptname"/>
+        <Key word="a_sec"/>
+        <Key word="a_space"/>
+        <Key word="a_startmenu"/>
+        <Key word="a_startmenucommon"/>
+        <Key word="a_startup"/>
+        <Key word="a_startupcommon"/>
+        <Key word="a_stringcasesense"/>
+        <Key word="a_tab"/>
+        <Key word="a_temp"/>
+        <Key word="a_thisfunc"/>
+        <Key word="a_thishotkey"/>
+        <Key word="a_thislabel"/>
+        <Key word="a_thismenu"/>
+        <Key word="a_thismenuitem"/>
+        <Key word="a_thismenuitempos"/>
+        <Key word="a_tickcount"/>
+        <Key word="a_timeidle"/>
+        <Key word="a_timeidlephysical"/>
+        <Key word="a_timesincepriorhotkey"/>
+        <Key word="a_timesincethishotkey"/>
+        <Key word="a_titlematchmode"/>
+        <Key word="a_titlematchmodespeed"/>
+        <Key word="a_username"/>
+        <Key word="a_wday"/>
+        <Key word="a_windelay"/>
+        <Key word="a_windir"/>
+        <Key word="a_workingdir"/>
+        <Key word="a_yday"/>
+        <Key word="a_year"/>
+        <Key word="a_yweek"/>
+        <Key word="a_yyyy"/>
+        <Key word="clipboard"/>
+        <Key word="clipboardall"/>
+        <Key word="comspec"/>
+        <Key word="errorlevel"/>
+        <Key word="programfiles"/>
+        <Key word="true"/>
+        <Key word="false"/>
+      </KeyWords>
+      <KeyWords name="Directive" color="MidnightBlue" bgcolor="#E0F0FF">
+        <Key word="#allowsamelinecomments"/>
+        <Key word="#clipboardtimeout"/>
+        <Key word="#commentflag"/>
+        <Key word="#errorstdout"/>
+        <Key word="#escapechar"/>
+        <Key word="#hotkeyinterval"/>
+        <Key word="#hotkeymodifiertimeout"/>
+        <Key word="#hotstring"/>
+        <Key word="#ifwinactive"/>
+        <Key word="#ifwinexist"/>
+        <Key word="#include"/>
+        <Key word="#includeagain"/>
+        <Key word="#installkeybdhook"/>
+        <Key word="#installmousehook"/>
+        <Key word="#keyhistory"/>
+        <Key word="#ltrim"/>
+        <Key word="#maxhotkeysperinterval"/>
+        <Key word="#maxmem"/>
+        <Key word="#maxthreads"/>
+        <Key word="#maxthreadsbuffer"/>
+        <Key word="#maxthreadsperhotkey"/>
+        <Key word="#noenv"/>
+        <Key word="#notrayicon"/>
+        <Key word="#persistent"/>
+        <Key word="#singleinstance"/>
+        <Key word="#usehook"/>
+        <Key word="#winactivateforce"/>
+      </KeyWords>
+    </RuleSet>
+    <RuleSet name="CommentMarkerSet" ignorecase="true">
+      <Delimiters>&lt;&gt;~!@%^*()-+=|\#/{}[]:;"' ,	.?</Delimiters>
+      <KeyWords name="ErrorWords" bold="true" color="Red">
+        <Key word="TODO" />
+        <Key word="FIXME" />
+      </KeyWords>
+      <KeyWords name="WarningWords" bold="true" color="#EEE0E000">
+        <Key word="HACK" />
+        <Key word="UNDONE" />
+      </KeyWords>
+    </RuleSet>
+    <RuleSet name="VariableDerefSet" ignorecase="true">
+      <KeyWords name="BIV" color="Green" bgcolor="#F0F0F0">
+        <Key word="a_ahkpath"/>
+        <Key word="a_ahkversion"/>
+        <Key word="a_appdata"/>
+        <Key word="a_appdatacommon"/>
+        <Key word="a_autotrim"/>
+        <Key word="a_batchlines"/>
+        <Key word="a_caretx"/>
+        <Key word="a_carety"/>
+        <Key word="a_computername"/>
+        <Key word="a_controldelay"/>
+        <Key word="a_cursor"/>
+        <Key word="a_dd"/>
+        <Key word="a_ddd"/>
+        <Key word="a_dddd"/>
+        <Key word="a_defaultmousespeed"/>
+        <Key word="a_desktop"/>
+        <Key word="a_desktopcommon"/>
+        <Key word="a_detecthiddentext"/>
+        <Key word="a_detecthiddenwindows"/>
+        <Key word="a_endchar"/>
+        <Key word="a_eventinfo"/>
+        <Key word="a_exitreason"/>
+        <Key word="a_formatfloat"/>
+        <Key word="a_formatinteger"/>
+        <Key word="a_gui"/>
+        <Key word="a_guievent"/>
+        <Key word="a_guicontrol"/>
+        <Key word="a_guicontrolevent"/>
+        <Key word="a_guiheight"/>
+        <Key word="a_guiwidth"/>
+        <Key word="a_guix"/>
+        <Key word="a_guiy"/>
+        <Key word="a_hour"/>
+        <Key word="a_iconfile"/>
+        <Key word="a_iconhidden"/>
+        <Key word="a_iconnumber"/>
+        <Key word="a_icontip"/>
+        <Key word="a_index"/>
+        <Key word="a_ipaddress1"/>
+        <Key word="a_ipaddress2"/>
+        <Key word="a_ipaddress3"/>
+        <Key word="a_ipaddress4"/>
+        <Key word="a_isadmin"/>
+        <Key word="a_iscompiled"/>
+        <Key word="a_issuspended"/>
+        <Key word="a_keydelay"/>
+        <Key word="a_language"/>
+        <Key word="a_lasterror"/>
+        <Key word="a_linefile"/>
+        <Key word="a_linenumber"/>
+        <Key word="a_loopfield"/>
+        <Key word="a_loopfileattrib"/>
+        <Key word="a_loopfiledir"/>
+        <Key word="a_loopfileext"/>
+        <Key word="a_loopfilefullpath"/>
+        <Key word="a_loopfilelongpath"/>
+        <Key word="a_loopfilename"/>
+        <Key word="a_loopfileshortname"/>
+        <Key word="a_loopfileshortpath"/>
+        <Key word="a_loopfilesize"/>
+        <Key word="a_loopfilesizekb"/>
+        <Key word="a_loopfilesizemb"/>
+        <Key word="a_loopfiletimeaccessed"/>
+        <Key word="a_loopfiletimecreated"/>
+        <Key word="a_loopfiletimemodified"/>
+        <Key word="a_loopreadline"/>
+        <Key word="a_loopregkey"/>
+        <Key word="a_loopregname"/>
+        <Key word="a_loopregsubkey"/>
+        <Key word="a_loopregtimemodified"/>
+        <Key word="a_loopregtype"/>
+        <Key word="a_mday"/>
+        <Key word="a_min"/>
+        <Key word="a_mm"/>
+        <Key word="a_mmm"/>
+        <Key word="a_mmmm"/>
+        <Key word="a_mon"/>
+        <Key word="a_mousedelay"/>
+        <Key word="a_msec"/>
+        <Key word="a_mydocuments"/>
+        <Key word="a_now"/>
+        <Key word="a_nowutc"/>
+        <Key word="a_numbatchlines"/>
+        <Key word="a_ostype"/>
+        <Key word="a_osversion"/>
+        <Key word="a_priorhotkey"/>
+        <Key word="a_programfiles"/>
+        <Key word="a_programs"/>
+        <Key word="a_programscommon"/>
+        <Key word="a_screenheight"/>
+        <Key word="a_screenwidth"/>
+        <Key word="a_scriptdir"/>
+        <Key word="a_scriptfullpath"/>
+        <Key word="a_scriptname"/>
+        <Key word="a_sec"/>
+        <Key word="a_space"/>
+        <Key word="a_startmenu"/>
+        <Key word="a_startmenucommon"/>
+        <Key word="a_startup"/>
+        <Key word="a_startupcommon"/>
+        <Key word="a_stringcasesense"/>
+        <Key word="a_tab"/>
+        <Key word="a_temp"/>
+        <Key word="a_thisfunc"/>
+        <Key word="a_thishotkey"/>
+        <Key word="a_thislabel"/>
+        <Key word="a_thismenu"/>
+        <Key word="a_thismenuitem"/>
+        <Key word="a_thismenuitempos"/>
+        <Key word="a_tickcount"/>
+        <Key word="a_timeidle"/>
+        <Key word="a_timeidlephysical"/>
+        <Key word="a_timesincepriorhotkey"/>
+        <Key word="a_timesincethishotkey"/>
+        <Key word="a_titlematchmode"/>
+        <Key word="a_titlematchmodespeed"/>
+        <Key word="a_username"/>
+        <Key word="a_wday"/>
+        <Key word="a_windelay"/>
+        <Key word="a_windir"/>
+        <Key word="a_workingdir"/>
+        <Key word="a_yday"/>
+        <Key word="a_year"/>
+        <Key word="a_yweek"/>
+        <Key word="a_yyyy"/>
+        <Key word="clipboard"/>
+        <Key word="clipboardall"/>
+        <Key word="comspec"/>
+        <Key word="errorlevel"/>
+        <Key word="programfiles"/>
+        <Key word="true"/>
+        <Key word="false"/>
+      </KeyWords>
+    </RuleSet>
+  </RuleSets>
+</SyntaxDefinition>

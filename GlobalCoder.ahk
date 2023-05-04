@@ -70,6 +70,7 @@ GC_Subjects.folders := {test : A_ScriptDir . "/notes/test", code : A_ScriptDir .
 GC_Subjects.Keywords := { 1 : "test", 2 : "code", 3 : "git"}
 GC_Subjects.path := { 1 : "%a_scriptdir%/notes/test", 2 : "%a_scriptdir%/notes/code", 3 : "%a_scriptdir%/notes/git"}
 
+loadminerva()
 class GC
 {
     ;/[class] class subject{ } ;//
@@ -186,7 +187,7 @@ if (A_PtrSize == 8) {
 g_PID := DllCall("GetCurrentProcessId")
 AutoTrim, Off
 
-loadminerva()
+
 InitializeListBox()
 BlockInput, Send
 InitializeHotKeys()
@@ -223,10 +224,11 @@ Return
 
 ;END Auto Execute===========================================================================================================================================================================================
 ;===========================================================================================================================================================================================
-;===========================================================================================================================================================================================End Auto Execute
+;=====================================================S======================================================================================================================================End Auto Execute
 :*:v2::autohotkey version 2
 
 loadminerva(){
+    listlines
     FindAmountItems()
     PrepareMenu(A_ScriptDir "\CustomMenuFiles")
     PrepareMenu(A_ScriptDir "\singles")
@@ -1125,6 +1127,13 @@ LoopOverFolder(PATH){
 		; Current item is a directory
 		if (VALUE = "D")
 		{
+            ; Check if directory name starts with "."
+                        /*if (SubStr(A_LoopFileName, 1, 1) = ".")
+                        {
+                            msgbox, % "skipped" a_loopfilename
+                            continue  ; Skip this directory
+                        }
+*/
 			;~ MsgBox, % "Pushing to folders`n" A_LoopFilePath
 			FolderArray.Push(A_LoopFilePath)
 		}
@@ -1176,6 +1185,140 @@ LoopOverFolder(PATH){
 		FoundItem("File")
 	}
 }
+
+/* 
+LoopOverFolder(PATH){
+    ; Prepare empty arrays for folders and files
+    FolderArray := []
+    FileArray   := []
+    skipped := ""
+    looper := 0
+
+
+if (VALUE = "D" && !(SubStr(A_LoopFileName, 1, 1) = ".")
+{
+    ; Check if directory name starts with "."
+                if (SubStr(A_LoopFileName, 1, 1) = ".")
+                {
+                    msgbox, % "skipped looper" . looper++
+                    skipped .= A_LoopFileFullPath
+                    msgbox, % "skipped" . A_LoopFileFullPath
+                    continue  ; Skip this directory
+                }
+                msgbox, % "Item: "A_LoopFilePath . " `nfolder looper" . looper++ 
+
+    ;~ MsgBox, % "Pushing to folders`n" A_LoopFilePath
+    FolderArray.Push(A_LoopFilePath)
+}
+; Current item is a file
+else
+{
+    msgbox, % "file looper" . looper++
+
+    MsgBox, % "Pushing to files`n" A_LoopFilePath
+    FileArray.Push(A_LoopFilePath)
+}
+    ; Loop over all files and folders in input path, but do NOT recurse
+   Loop, Files, %PATH%\* , DF
+    {
+        VALUE := ""
+        VALUE := FileExist(A_LoopFilePath)
+        ;msgbox, % "value of fileexist(a_Loopfilepath) : `n" . VALUE
+        skipped1 .= a_loopfilefullpath . "`n"
+
+        if !(SubStr(A_LoopFileName, 1, 1) = ".")
+        {
+            ;msgbox, % "no contain ."
+            
+
+            ; Current item is a directory
+            if (VALUE = "D")
+            {
+                ; Check if directory name starts with "."
+                            if (SubStr(A_LoopFileName, 1, 1) = ".")
+                            {
+                                skipped2 .= a_loopfilefullpath . "`n"
+
+                                ;msgbox, % "skipped" . A_LoopFileFullPath
+                                continue  ; Skip this directory
+                            }
+                            ;OutputDebug, % "Item: "A_LoopFilePath . " `nfolder looper" . looper++ 
+
+                ;~ MsgBox, % "Pushing to folders`n" A_LoopFilePath
+                FolderArray.Push(A_LoopFilePath)
+            }
+            ; Current item is a file
+            else
+            {
+                ;OutputDebug, % "file looper" . looper++
+
+                ;OutputDebug, % "Pushing to files`n" A_LoopFilePath
+                FileArray.Push(A_LoopFilePath)
+            }
+
+        }
+        else
+        {
+            ;msgbox, % "skipped" . A_LoopFileFullPath
+            skipped1 .= a_loopfilefullpath . "`n"
+            continue  ; Skip this directory
+        }
+        ; Clear return value from last iteration, and assign it to attribute of current item
+       
+    }
+
+
+    ;OutputDebug, % "end looper" . looper++
+   ; OutputDebug, % "skipped: `n" . skipped
+
+    ; Arrays are sorted to get alphabetical representation in GUI menu
+    Sort, FolderArray
+    Sort, FileArray
+
+    for k,v in folderarray
+{
+    value  .= v "`n"
+}
+;msgbox, % "value: `n" . value
+
+
+    for k,v in filearray
+{
+    value2  .= v "`n"
+}
+;msgbox, % "value2: `n" . value2
+
+
+
+    ; First add all folders, so files have a place to stay
+    for index, element in FolderArray
+    {
+        ; Recurse into next folder
+        LoopOverFolder(element)
+
+        ; Then add it as item to menu
+        SplitPath, element, name, dir, ext, name_no_ext, drive
+        Menu, %dir%, Add, &%name%, :%element%
+        ;Menu, MenuName, Cmd [, P3, P4, P5]
+
+        ; Iterate loading GUI progress
+        FoundItem("Folder")
+    }
+
+    ; Then add all files to folders
+    for index, element in FileArray
+    {
+        ; Add To Menu
+        SplitPath, element, name, dir, ext, name_no_ext, drive
+        Menu, %dir%, Add, %name%, MenuEventHandler
+
+        ; Iterate GUI loading
+        FoundItem("File")
+    }
+}
+*/
+
+
 
 ; Hotkey x
 

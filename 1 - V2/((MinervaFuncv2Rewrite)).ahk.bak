@@ -287,7 +287,7 @@ return
 	         sorted_keys.Insert(key)
 	     }
 	     sorted_keys.Sort()
-	    
+
 	     ; Create a new sorted dictionary
 	     sorted_output := Object()
 	     for key in sorted_keys {
@@ -750,7 +750,7 @@ PrepareMenu(PATH, menu1) {
 
     ; GUI loading/progress bar
     MyGui := Gui("+ToolWindow", A_ScriptName " is Loading") ; Adding title to progressbar
-    ;MyGui.Add("Progress", "w200 vMyProgress range1-`%items% 0") ; Adding progressbar
+    MyGui.Add("Progress", "w200 vMyProgress") ;Adding progressbar
     MyGui.Show() ; Displaying Progressbar
 
     ; Add Name, Icon and separating line
@@ -1014,7 +1014,7 @@ LoopOverFolderMY(PATH) {
         }
         ;MsgBox "Size of " WhichFolder " is " FolderSizeKB " KB."
     }
-    else 
+    else
     {
         ;FolderSizeKB := 0
        ;msgbox passedpath . "`n passedpath var in looperfunc"
@@ -1067,7 +1067,7 @@ LoopOverFolderMY(PATH) {
        }
        msgbox looperpaths
        msgbox looper
-       
+
        looper := 0
 
        For File in Files {
@@ -1090,7 +1090,7 @@ LoopOverFolderMY(PATH) {
             MsgBox FolderArray[3]
         }*/
         }
-    
+
 
        ;block1
 

@@ -1,0 +1,207 @@
+MOVE CURSOR / SELECT TEXT:
+HORIZONTAL MOVE CURSOR SELECT/SELECT TO
+1 Character left <Left> <Shift><Left>
+1 Character right <Right> <Shift><Right>
+1 Word part left <Ctrl></> <Shift><Ctrl></>
+1 Word part right <Ctrl><\> <Shift><Ctrl><\>
+1 Word left <Ctrl><Left> <Shift><Ctrl><Left>
+1 Word right <Ctrl><Right> <Shift><Ctrl><Right>
+Start of line (left) <Alt><Home> <Shift><Alt><Home>
+End of line (right) <Alt><End> <Shift><Alt><End>
+Start of document <Ctrl><Home> <Shift><Ctrl><Home>
+End of document <Ctrl><End> <Shift><Ctrl><End>
+VERTICAL MOVE CURSOR SELECT/ SELECT TO
+1 Line up <Up> <Shift><Up>
+1 Line down <Down> <Shift><Down>
+Scroll up <Ctrl><Up> -----
+Scroll down <Ctrl><Down> -----
+1 Paragraph up <Ctrl><[> <Shift><Ctrl><[>
+1 Paragraph down <Ctrl><]> <Shift><Ctrl><]>
+Start of page <PageUp> <Shift><PageUp>
+End of page <PageDown> <Shift><PageDown>
+
+DELETE:
+1 CHARACTER WORD (Partial) START/END OF LINE
+Left <Back> <Ctrl><Back> <Shift><Ctrl><Back> (to SOL)
+Right <Del> <Ctrl><Del> <Shift><Ctrl><Del> (to EOL)
+
+LINE OPERATIONS:
+Line -----/Delete ------ <Shift><Ctrl><L>
+Line Cut/Copy <Ctrl><T> <Shift><Ctrl><T>
+
+SELECT:
+PRIMARY SELECT TO
+Select All <Ctrl><A> -----
+Match Brace (Move/Select> <Ctrl><E> <Shift><Ctrl><E>
+To Bookmark (Next/Previous) <Alt><F2> <Shift><Alt><F2>
+Find search text (forwards/backwards) <F3> <Ctrl><F3>
+Backwards matching preprocessor (conditional) - Skips if nested (Find/Select) <Ctrl><J> <Shift><Ctrl><J>
+Forwards matching preprocessor (conditional) - Skips if nested (Find/Select) <Ctrl><K> <Shift><Ctrl><K>
+
+BLOCK PROCESSING:
+Block Select <Shift><Alt>[Cursor Movement]
+Block Replace <Ctrl><F>
+Block Add Next <Shift><Ctrl><D>
+Block Add Each <Alt><S> <>
+Block Duplicate <Ctrl><D>
+Block Uppercase <Shift><Ctrl><U>
+Block Lowercase <Ctrl><U>
+Block Reverse Selected Lines <Alt><E> <>
+Block Copy Selection as RTF <Alt><E> <>
+Block Indent <Tab>
+Block Delete <Shift><Tab>
+Block Encoding > <Alt><F> <G>
+• Code Page Property <Alt><F> <G> <C>
+• UTF-16 Big Endian <Alt><F> <G> <B>
+• UTF-16 Little Endian <Alt><F> <G> <E>
+• UTF-8 with BOM <Alt><F> <G> <W>
+• UTF-8 <Alt><F> <G> <U>
+Block Export > <Alt><F> <E>
+• As HTML… <Alt><F> <E> <H>
+• As RTF… <Alt><F> <E> <R>
+• As PDF… <Alt><F> <E> <P>
+• As LaTex… <Alt><F> <E> <L>
+• As XML… <Alt><F> <E> <X>
+
+FIND:
+Find… <Ctrl><F>
+Find Next <F3>
+Find Previous <Shift><F3>
+Find in Files… <Shift><Ctrl><F>
+Incremental Search… <Ctrl><Alt><I>
+Filter… <Ctrl><Alt><F>
+Go to… <Ctrl><G>
+
+BOOKMARKS:
+Next Bookmark <F2>
+Previous Bookmark <Shift><F2>
+Toggle Bookmark <Ctrl><F2>
+Clear All Bookmarks <Alt><S> <C>
+Select All Bookmarks <Alt><S> <B>
+
+EDITTING:
+Undo <Ctrl><Z>
+Redo <Ctrl><Y>
+Cut <Ctrl><X>
+Copy <Ctrl><C>
+Paste <Ctrl><V>
+Duplicate <Ctrl><D>
+Delete (block) <Del>
+Complete Symbol <Ctrl><I>
+Complete Word <Enter>
+Expand Abbreviation <Ctrl><B>
+Insert Abbreviation <Shift><Ctrl><R>
+Copy Path <Alt><F> <H>
+Block Comment or Uncomment <Ctrl><Q>
+Box Comment <Shift><Ctrl><B>
+Stream Comment <Shift><Ctrl><Q>
+• Paragraph Join <Alt><E> <G> <J>
+• Paragraph Split <Alt><E> <G> <S>
+
+FOLDS:
+Toggle current fold <Ctrl>+<Keypad*>
+Toggle all folds <Alt><V> <A> OR <Ctrl><Shift><LClick> on fold column
+
+FILE OPERATIONS:
+New <Ctrl><N> ------
+Open / Open Selected <Ctrl><O> <Shift><Ctrl><O>
+Revert <Ctrl><R> ------
+Close/Close All <Ctrl><W> <Alt><B> <C>
+Save/Save As <Ctrl><S> <Shift><Ctrl><S>
+Save All <Alt><B> <S> ------
+Print/Save a Copy <Ctrl><P> <Shift><Ctrl><P>
+Cycle through recent files <Ctrl><Tab> ------
+Next/Previous <F6> <Shift><F6>
+List of open files (See below) <Alt><B> ------
+Open files here (Steps through Open … List) <Alt><O> <O> ------
+To select from the list of open files: 1 you can select from the first 10 files by entering the number1 through 0 that appears before the file. For files beyond #10, enter the letter of the first letter in the listed full path. Continuing to press that letter will step through files that begin with that letter. Note: Doing so will skip any files beginning with your letter if they are in the first 10 files.
+
+
+PART 2. SCITE4AUTOHOTKEY
+
+EDITOR SETTINGS:
+SciTE4AutoHotkey settings… <Alt><T> Click
+SciTE4AutoHotkey Diagnostics Utility <Alt><T> <>
+Page Setup <Alt><F> <U>
+Change Indentation Settings… <Shift><Ctrl><I>
+Show Calltip <Shift><Ctrl><Space>
+Load Session <Alt><F> <L>
+Save Session <Alt><F> <V>
+Full Screen <F11>
+Tool Bar <Alt><V> <T>
+Tab Bar <Alt><V> <B>
+Status Bar <Alt><V> <S>
+Whitespace <Shift><Ctrl><8>
+End of Line <Shift><Ctrl><9>
+Indentation Guides <Alt><V> <I>
+Line Numbers <Alt><V> <L>
+Bookmarks and Breaks Column (Margins) <Alt><V> <M>
+Folds Column (Margin) <Alt><V> <F>
+Always On Top <Alt><O><A>
+Open Files Here <Alt><O><H>
+Read-Only <Alt><O><R>
+Line End Characters > <Alt><O><L>
+• CR+LF <Alt><O><L> <+>
+• CR <Alt><O><L> <C>
+• LF <Alt><O><L> <L>
+Convert Line End Characters <Alt><O><>
+Font -Use Monospaced <Ctrl><F11>
+Font - Magnify <Ctrl><Keypad+>
+Font - Shrink <Ctrl><Keypad->
+Font - Restore Size <Ctrl><Keypad/>
+Language - AutoHotkey <Alt><L> <A>
+Language - Lua <Alt><L> <L>
+Language - INI and property files <Alt><L> <I>
+Language - Difference <Alt><L> <D>
+Exit <Alt><F> <X>
+
+PROGRAMMING TOOLS:
+Compile <Ctrl><F7>
+Debug <F7>
+Clean <Shift><F7>
+Parameters > <Shift><F8>
+Run <F5>
+Debug a currently running script… <Shift><Ctrl><F7>
+Next Message <F4>
+Previous Message <Shift><F4>
+Stop Executing <Ctrl><Break>
+Open containing folder… <Alt><T> <>
+Output Window <F8>
+Output - Wrap <Alt><O> <W>
+Output - Clear <Shift><F5>
+Switch Pane <Ctrl><F6>
+Vertical Split <Alt><O> <S>
+Output Window <F8>
+
+MACROS:
+List Macros… <Shift><F9>
+Run Current Macro <F9>
+Record Macro <Ctrl><F9>
+Stop Recording Macro <Shift><Ctrl><F9>
+
+OPEN SPECIFIC SCITE4AHK FILES:
+OPEN PROPERTY FILES: Repeat <O> to step through the list of property files below and then <ENTER> to open the currently selected property file. <Alt><O> <O>
+Open Abbreviations File (AhkAbbrevs.properties) <Alt><O><B>
+Open per-folder properties (SciTE.properties) ------
+Open Per-project properties (user defined) ------
+Open User properties (SciTEUser.properties) ------
+Open Global properties (SciTEGlobal.properties) ------
+Open Global Lua Script (ahk.lua) ------
+Open ahk1.keywords.properties ------
+Open ahk2.keywords.properties ------
+Open ahk.keys.properties ------
+Open ahk.commands.properties ------
+Open tillagoto.properties ------
+Open ahk.properties ------
+Open lua.properties ------
+Open other.properties ------
+Open …platform.properties ------
+Open SciTE4AutoHotey Light.style.properties ------
+Open _extensions.properties ------
+Open config.properties (_config.properties) ------
+NOTE: Be sure to use INI and property file language model when editing (see below)
+
+HELP MENU
+Help <F1>
+SciTEAutoHotkey Help <Alt><H> <S>
+About SciTE4AutoHotkey <Alt><H> <A>
